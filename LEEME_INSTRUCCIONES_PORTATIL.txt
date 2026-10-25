@@ -36,6 +36,28 @@ Asignatura: Nuevas Perspectivas de la Ciencia, la Tecnología y la Innovación
 - Calendario Sencillo de Repasos (7 días) y Modo Caminata con fragmentos MP3 (~48 s).
 - Exportación e Importación de copias de seguridad (.json) con tus marcadores y repasos.
 
+NOVEDADES PARA ESTUDIAR EN EL TELÉFONO
+-------------------------------------
+- En una versión publicada por HTTPS, la navegación inferior mantiene visibles
+  Escuchar, Profesor, Practicar, Caminar y Más.
+- El guion ilumina el párrafo aproximado que corresponde al audio. La vista PDF
+  seguida avanza de página y muestra el párrafo activo debajo. Solo 18 puntos
+  de inicio están verificados acústicamente; los demás tiempos son estimados y
+  pueden calibrarse manualmente.
+- La sección Biblioteca permite guardar el MP3 y el PDF de cada unidad en el
+  dispositivo para volver a abrirlos sin conexión. La primera descarga requiere
+  internet y espacio libre. El paquete de archivos abierto con file:/// sigue
+  siendo la opción portátil para un computador.
+- La IA de Gemini no se utiliza automáticamente. Guardar una clave no envía
+  ninguna solicitud; cada explicación adicional requiere pulsar su botón y
+  confirmar. Para evitar cargos, utiliza solo un proyecto Gemini API Free Tier
+  sin facturación habilitada. La cuota de Antigravity no cubre estas llamadas.
+- Los ejemplos y analogías adicionales son apoyo para comprender. Las preguntas
+  de test y las rúbricas de evaluación se basan solo en los PDF del curso.
+- El audio puede controlarse desde la pantalla bloqueada cuando el navegador lo
+  permite. Las preguntas por micrófono requieren abrir la aplicación y, en los
+  navegadores que usan reconocimiento remoto, tener conexión a internet.
+
 
 3. QUÉ FUNCIONES DEPENDEN DEL NAVEGADOR O REQUIEREN CONEXIÓN A INTERNET
 --------------------------------------------------------------------------------

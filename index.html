@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="manifest" href="manifest.webmanifest" />
   <title>Sistema de Estudio MUECTI V3 · Auditoría Acústica (18 Puntos), Profesor Verificado, Seguridad XSS y Paquete Portátil</title>
   <style>
     :root {
@@ -324,10 +326,75 @@
       border: 1px solid var(--accent); border-radius: 10px; padding: 12px 14px;
       margin-bottom: 12px; line-height: 1.58;
     }
+    .tab-label-short { display: none; }
+    .reader-status {
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+      margin-bottom: 10px; padding: 10px 12px; border-radius: 10px;
+      background: var(--highlight-bg); border: 1px solid var(--highlight-border);
+      font-size: 0.84rem;
+    }
+    .reader-status strong { color: var(--primary); }
+    .reader-panel { min-width: 0; }
+    .teacher-tools, .walk-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .teacher-tools { margin: 10px 0; }
+    .teacher-note { color: var(--text-muted); font-size: 0.82rem; margin: 8px 0; }
+    .teacher-note strong { color: var(--text); }
+    .mobile-pdf-note { display: none; }
+    .mobile-reader-toggle, .pdf-follow { display: none; }
+    .pdf-follow { background: #111c30; padding: 10px; border-radius: 10px; }
+    .pdf-follow canvas { display: block; max-width: 100%; height: auto; margin: 0 auto; background: #fff; }
+    .pdf-follow-fragment { margin-top: 10px; padding: 12px; border: 2px solid var(--highlight-border);
+      border-radius: 10px; background: var(--highlight-bg); font-size: 0.95rem; }
+    [hidden] { display: none !important; }
     @media (max-width: 700px) {
       header { padding: 10px 12px; }
       .brand h1 { font-size: 0.98rem; }
-      .player-bar { padding: 10px 12px; }
+      .brand p { display: none; }
+      .unit-selector-bar { width: 100%; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
+      .unit-pill { flex: none; }
+      nav.tabs {
+        position: fixed; inset: auto 0 0; z-index: 100; padding: 4px 4px calc(4px + env(safe-area-inset-bottom));
+        display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0;
+        overflow: visible; border-top: 1px solid var(--border); border-bottom: 0;
+        box-shadow: 0 -5px 18px rgba(0, 0, 0, 0.35);
+      }
+      .tab-btn { min-width: 0; min-height: 54px; padding: 5px 2px; justify-content: center;
+        flex-direction: column; gap: 1px; white-space: normal; text-align: center; font-size: 0.68rem;
+        border-bottom: 0; border-top: 3px solid transparent; }
+      .tab-btn.active { border-top-color: var(--primary); }
+      .tab-label-full, .tab-btn .badge { display: none; }
+      .tab-label-short { display: block; }
+      main { padding: 12px 12px calc(84px + env(safe-area-inset-bottom)); }
+      .player-bar { padding: 8px 10px; gap: 7px; top: 0; }
+      .player-controls { width: 100%; display: grid; grid-template-columns: repeat(4, 1fr) auto; gap: 5px; }
+      .player-controls .btn { min-height: 44px; justify-content: center; padding: 6px 4px; font-size: 0.74rem; }
+      .player-controls .speed-select { min-width: 54px; max-width: 74px; font-size: 0.75rem; }
+      .player-timeline { width: 100%; min-width: 0; }
+      .timeline-top { flex-wrap: wrap; font-size: 0.72rem; }
+      #lblUnidadActual { width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      #lblPrecisionViva { display: none; }
+      .live-pdf-indicator { width: 100%; padding: 4px 7px; gap: 6px; justify-content: space-between; }
+      .live-pdf-indicator .btn { min-height: 40px; padding: 6px 8px; }
+      #lnkAbrirPdfVivo { display: none; }
+      .study-grid { display: flex; flex-direction: column; }
+      .study-grid > .panel-box { width: 100%; }
+      .reader-panel { order: 0; }
+      .study-grid > .index-panel { order: 1; }
+      #panelDerecho { order: 2; }
+      .transcript-container { max-height: none; overflow: visible; }
+      .p-card { scroll-margin-top: 180px; }
+      .p-card.active { border-width: 2px; box-shadow: 0 0 0 3px rgba(56,189,248,0.14); }
+      .mobile-reader-toggle { display: inline-flex; }
+      .reader-panel.pdf-mode .transcript-container { display: none; }
+      .reader-panel.pdf-mode .pdf-follow { display: block; }
+      .p-actions .mini-btn, .reader-status .mini-btn { min-height: 38px; padding: 6px 9px; }
+      .pdf-iframe { height: 62vh; }
+      .mobile-pdf-note { display: block; color: var(--text-muted); font-size: 0.78rem; margin-bottom: 8px; }
+      .teacher-tools > *, .walk-actions .btn { min-height: 44px; }
+      .teacher-tools select { max-width: 100%; }
+      .input-row input { min-width: 0; width: 100%; }
+      #panelCaminataActiva { grid-template-columns: 1fr !important; }
+      #tab-evaluacion .study-grid { display: flex !important; flex-direction: column; }
       .btn-ctrl { padding: 8px 11px; font-size: 0.84rem; }
       .cards-grid { grid-template-columns: 1fr; }
     }
@@ -340,13 +407,13 @@
     <div class="brand">
       <div class="brand-icon">🎧</div>
       <div>
-        <h1>Sistema de Estudio MUECTI (V3 + IA Híbrida) · Nuevas Perspectivas CTI</h1>
-        <p>18 Puntos en Audio · Profesor Local + IA Gratuita Google Gemini (RAG con Citas PDF) · Controles de Pantalla Bloqueada en Móvil</p>
+        <h1>Sistema de Estudio MUECTI · Nuevas Perspectivas CTI</h1>
+        <p>Escucha, sigue el texto y practica con los PDF · IA opcional solo bajo tu control</p>
       </div>
     </div>
     <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-      <button class="ia-config-btn" id="btnConfigIA" onclick="togglePanelConfigIA()" title="Conectar o configurar IA Gratuita de Google Gemini (se guarda solo en tu navegador)">
-        🔑 IA Gemini (Gratis): Modo Local
+      <button class="ia-config-btn" id="btnConfigIA" onclick="togglePanelConfigIA()" title="Configurar IA opcional; no se usa automáticamente">
+        🔑 IA opcional: Modo Local
       </button>
       <div class="unit-selector-bar" id="unitSelectorBar"></div>
     </div>
@@ -357,27 +424,28 @@
     <div style="max-width:1150px; margin:0 auto;">
       <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; flex-wrap:wrap; margin-bottom:10px;">
         <div>
-          <strong style="color:#ddd6fe; font-size:0.95rem;">🤖 Modo Híbrido: Motor Local V3 + IA Conversacional Gratuita (Google Gemini API)</strong>
+          <strong style="color:#ddd6fe; font-size:0.95rem;">🤖 Motor local + IA opcional de Google Gemini</strong>
           <p style="color:var(--text-muted); margin-top:4px; line-height:1.45;">
             • <strong>Sin llave (Modo Local por defecto):</strong> Todo funciona 100% gratis y sin internet usando las 15 síntesis preparadas, el buscador literal del PDF y las listas de ideas clave.<br>
-            • <strong>Con tu llave gratuita de Google Gemini:</strong> El Profesor Virtual y el Evaluador Oral le envían automáticamente a Gemini los párrafos exactos de tus 6 PDFs oficiales (<em> arquitectura RAG</em>) para que te explique con ejemplos cotidianos, relacione unidades y evalúe tus respuestas orales citando siempre <code>(Unidad X, Pág. Y)</code>.<br>
-            • 🔒 <strong>Privacidad total para GitHub:</strong> Tu llave se guarda <u>únicamente</u> en la memoria privada de este navegador (<code>localStorage</code>) y <strong>jamás se sube a GitHub</strong> ni la ven tus compañeros. Cada compañero puede pegar la suya propia gratis en su teléfono o PC.
+            • <strong>Con una clave de Gemini API:</strong> puedes solicitar una explicación adicional cuando tú pulses el botón. Ninguna pregunta, test o evaluación envía datos automáticamente.<br>
+            • <strong>Costos:</strong> Antigravity y Gemini API tienen cuotas distintas. Usa solo una clave de un proyecto <em>Free Tier sin facturación habilitada</em> si quieres evitar cargos. La aplicación no puede verificar el tipo de proyecto por ti.<br>
+            • <strong>Privacidad:</strong> la clave se guarda en este navegador (<code>localStorage</code>), no en el repositorio. Evita usar una clave de pago en una página compartida.
           </p>
         </div>
         <button class="mini-btn" onclick="togglePanelConfigIA()">✖ Cerrar panel</button>
       </div>
       <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center; background:rgba(15,23,42,0.75); padding:10px 12px; border-radius:10px; border:1px solid var(--border);">
-        <span style="font-size:0.8rem; font-weight:700; color:var(--primary);">1️⃣ Obtén tu llave gratis (1 min):</span>
+        <span style="font-size:0.8rem; font-weight:700; color:var(--primary);">1️⃣ Verifica que tu proyecto sea Free Tier sin facturación:</span>
         <a href="https://aistudio.google.com/apikey" target="_blank" class="mini-btn" style="border-color:var(--primary); color:var(--primary); font-weight:700;">
-          🔗 Abrir Google AI Studio (Create API Key)
+          🔗 Abrir Google AI Studio
         </a>
         <span style="font-size:0.8rem; font-weight:700; color:var(--primary); margin-left:4px;">2️⃣ Pégala aquí:</span>
         <input type="password" id="inpGeminiKey" placeholder="AIzaSy..." style="flex:1; min-width:210px; background:#0f172a; color:var(--text); border:1px solid var(--border); border-radius:6px; padding:6px 10px; font-size:0.82rem;" />
         <select id="selGeminiModel" style="background:#0f172a; color:var(--text); border:1px solid var(--border); border-radius:6px; padding:6px 8px; font-size:0.8rem;">
-          <option value="gemini-2.5-flash">Gemini 2.5 Flash (Recomendado · Gratis)</option>
-          <option value="gemini-2.0-flash">Gemini 2.0 Flash (Alternativo · Gratis)</option>
+          <option value="gemini-3.8-flash">Gemini 3.8 Flash (revisa disponibilidad gratuita)</option>
+          <option value="gemini-3.5-flash-lite">Gemini 3.5 Flash-Lite (revisa disponibilidad gratuita)</option>
         </select>
-        <button class="btn-ctrl primary" style="padding:6px 12px; font-size:0.8rem;" onclick="guardarYProbarClaveGemini()">💾 Guardar y Probar IA</button>
+        <button class="btn-ctrl primary" style="padding:6px 12px; font-size:0.8rem;" onclick="guardarYProbarClaveGemini()">💾 Guardar sin consultar</button>
         <button class="mini-btn" style="border-color:var(--danger); color:#fca5a5;" onclick="borrarClaveGemini()">🔌 Usar solo Modo Local</button>
       </div>
       <div id="estadoConexionGemini" style="margin-top:8px; font-size:0.8rem; color:var(--text-muted);"></div>
@@ -385,21 +453,21 @@
   </div>
 
   <!-- PESTAÑAS DE LAS 5 FUNCIONES CONECTADAS -->
-  <nav class="tabs">
+  <nav class="tabs" aria-label="Funciones de estudio">
     <button class="tab-btn active" id="tabBtn_reproductor" onclick="cambiarTab('reproductor', this)">
-      1. 🎧 Reproductor y PDF Sincronizado <span class="badge" id="badgeParrafos">0</span>
+      <span class="tab-label-full">1. 🎧 Reproductor y PDF Sincronizado <span class="badge" id="badgeParrafos">0</span></span><span class="tab-label-short">🎧<br>Escuchar</span>
     </button>
     <button class="tab-btn" id="tabBtn_profesor" onclick="cambiarTab('profesor', this)">
-      2. 🧑‍🏫 Profesor Virtual (Síntesis vs. Citas)
+      <span class="tab-label-full">2. 🧑‍🏫 Profesor Virtual (Síntesis vs. Citas)</span><span class="tab-label-short">🧑‍🏫<br>Profesor</span>
     </button>
     <button class="tab-btn" id="tabBtn_evaluacion" onclick="cambiarTab('evaluacion', this)">
-      3. 🗣️ Evaluación Oral por Ideas y Test
+      <span class="tab-label-full">3. 🗣️ Evaluación Oral por Ideas y Test</span><span class="tab-label-short">✅<br>Practicar</span>
     </button>
     <button class="tab-btn" id="tabBtn_repasos" onclick="cambiarTab('repasos', this)">
-      4. 📅 Calendario de Repasos y Modo Caminata <span class="badge" id="badgeRepasos">0</span>
+      <span class="tab-label-full">4. 📅 Calendario de Repasos y Modo Caminata <span class="badge" id="badgeRepasos">0</span></span><span class="tab-label-short">🚶<br>Caminar</span>
     </button>
     <button class="tab-btn" id="tabBtn_biblioteca" onclick="cambiarTab('biblioteca', this)">
-      5. 📚 Biblioteca, Auditoría (18 Puntos) y Portabilidad
+      <span class="tab-label-full">5. 📚 Biblioteca, Auditoría (18 Puntos) y Portabilidad</span><span class="tab-label-short">📚<br>Más</span>
     </button>
   </nav>
 
@@ -411,6 +479,7 @@
       <button class="btn btn-primary" id="btnPlayPause" onclick="togglePlay()">▶ Reproducir</button>
       <button class="btn" onclick="saltarSegundos(-10)" title="Retroceder 10 segundos">⏪ -10s</button>
       <button class="btn" onclick="saltarSegundos(10)" title="Avanzar 10 segundos">⏩ +10s</button>
+      <button class="btn btn-warning" onclick="marcarFragmentoActual()" title="Guardar un marcador en el segundo actual">🔖 Marcar</button>
       <select class="speed-select" id="speedSelect" onchange="cambiarVelocidad(this.value)" title="Velocidad de lectura">
         <option value="0.8">0.8x (Pausado)</option>
         <option value="0.9">0.9x</option>
@@ -463,7 +532,7 @@
 
       <div class="study-grid" id="studyGrid">
         <!-- Columna izquierda: Índice de apartados con página del PDF -->
-        <div class="panel-box">
+        <div class="panel-box index-panel">
           <div class="panel-title">
             <span>📑 Índice de la Unidad</span>
             <a id="lnkDescargarMp3" href="#" download class="mini-btn">⬇ MP3</a>
@@ -472,7 +541,7 @@
         </div>
 
         <!-- Columna central: Guion sincronizado párrafo por párrafo -->
-        <div class="panel-box">
+        <div class="panel-box reader-panel">
           <div class="panel-title">
             <span>📝 Guion Sincronizado (Clic para escuchar · "⏱️ Ajustar" para fijar segundo exacto)</span>
             <div style="display:flex; gap:8px; align-items:center;">
@@ -480,6 +549,19 @@
                 <input type="checkbox" id="chkAutoScroll" checked /> Auto-scroll
               </label>
               <button class="mini-btn" onclick="toggleVisorPdf()">👁️ Alternar Visor PDF Lateral</button>
+              <button class="mini-btn mobile-reader-toggle" id="btnVistaPDFMovil" onclick="alternarLecturaPDFMovil()">📄 Ver PDF seguido</button>
+            </div>
+          </div>
+          <div class="reader-status" aria-live="polite">
+            <div><strong id="readerCurrentPage">Página actual</strong><br><span id="readerCurrentSection">El texto que suena se ilumina abajo.</span></div>
+            <button class="mini-btn" onclick="seguirLecturaActual()">↘ Seguir texto</button>
+          </div>
+          <div class="pdf-follow" id="pdfFollowPanel">
+            <div class="teacher-note" id="pdfFollowStatus">Preparando la página actual del PDF...</div>
+            <div id="pdfCanvasHost"></div>
+            <div class="pdf-follow-fragment" aria-live="polite">
+              <strong id="pdfFollowPage">Página actual</strong>
+              <p id="pdfFollowParagraph"></p>
             </div>
           </div>
           <div class="transcript-container" id="contenedorParrafos"></div>
@@ -503,7 +585,8 @@
               <span id="lblTituloVisorPdf">📄 Visor PDF Sincronizado</span>
               <button class="mini-btn" onclick="toggleVisorPdf()">Ver Marcadores</button>
             </div>
-            <iframe id="iframePdf" class="pdf-iframe" src=""></iframe>
+            <p class="mobile-pdf-note">En el teléfono sigue el párrafo iluminado en el guion. El visor PDF depende del navegador; usa el enlace de página para consultar el original.</p>
+            <iframe id="iframePdf" class="pdf-iframe" src="" title="PDF original de la unidad"></iframe>
           </div>
         </div>
       </div>
@@ -537,6 +620,16 @@
             </div>
           </div>
 
+          <div class="teacher-tools">
+            <label for="selModoTutor">Tipo de explicación:</label>
+            <select id="selModoTutor" class="speed-select">
+              <option value="curso">Según los PDF del curso</option>
+              <option value="ejemplos">Con ejemplos y analogías identificados</option>
+            </select>
+            <button class="btn btn-success" id="btnContinuarAudio" onclick="continuarAudioTrasProfesor()" hidden>▶ Continuar audiolibro</button>
+          </div>
+          <p class="teacher-note">Los <strong>test y las evaluaciones</strong> usan únicamente el contenido de los PDF. Los ejemplos de apoyo se señalan aparte y no se consideran materia de examen.</p>
+
           <div class="input-row">
             <button class="btn mic-btn" id="btnMicTutor" onclick="iniciarDictadoTutor()">
               🎤 Preguntar por Voz
@@ -558,7 +651,7 @@
           <div class="panel-box" style="font-size:0.79rem; color:var(--text-muted);">
             <div class="panel-title"><span>⚙️ Alcance del Profesor Local vs. IA Externa</span></div>
             <p style="margin-bottom:6px;">
-              <strong>Qué hace este motor local (100% offline y gratuito):</strong> Cuenta con 16 síntesis académicas curadas y revisadas manualmente página por página en las 6 unidades, un diccionario de sinónimos y raíces para reconocer preguntas formuladas con otras palabras, y un buscador literal sobre los 401 párrafos.
+              <strong>Qué hace este motor local (sin llamadas a IA):</strong> Cuenta con 15 síntesis académicas preparadas para las 6 unidades, un diccionario de sinónimos y raíces para reconocer preguntas formuladas con otras palabras, y un buscador literal sobre los 401 párrafos.
             </p>
             <p>
               <strong>Limitación honesta:</strong> No es un modelo generativo libre (LLM); no redacta ensayos nuevos en tiempo real para preguntas inéditas fuera de las síntesis preparadas, sino que entrega las citas literales exactas del PDF.
@@ -588,10 +681,15 @@
             <span>✅ Cuestionario de Comprobación Rápida (Con vínculo a Página del PDF)</span>
           </div>
           <p style="font-size:0.82rem; color:var(--text-muted); margin-bottom:12px;">
-            Verifica datos concretos de la unidad. Si fallas una pregunta, se programa automáticamente en tu <strong>Calendario de Repasos</strong> para mañana.
+            Todas las preguntas se basan en los PDF del curso, con enlace a la página. Los ejemplos ilustrativos del Profesor no entran en el test. Si fallas, se programa un repaso para mañana.
           </p>
           <div id="contenedorEvaluacionTest"></div>
         </div>
+      </div>
+      <div class="panel-box" style="margin-top:16px;">
+        <div class="panel-title">📘 Práctica de comprensión basada en los PDF</div>
+        <p class="teacher-note">Responde con tus palabras antes de revelar el fragmento del curso. Los ejemplos del Profesor no se usan aquí. Tu valoración programa el siguiente repaso.</p>
+        <div id="panelPracticaPDF"></div>
       </div>
     </section>
 
@@ -613,6 +711,7 @@
             </select>
             <button class="btn btn-primary" id="btnIniciarCaminata" onclick="iniciarSiguienteCapsulaCaminata()">▶ Reproducir Cápsula</button>
             <button class="btn" onclick="detenerCaminata()">⏹ Detener</button>
+            <button class="btn btn-warning" onclick="marcarCapsulaCaminata()">🔖 Marcar esta cápsula</button>
           </div>
         </div>
 
@@ -634,6 +733,7 @@
             <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
               <button class="btn mic-btn" id="btnMicCaminata" onclick="responderCaminataPorVoz()">🎤 Responder por Voz</button>
               <button class="btn" onclick="leerSintesisCaminataEnVozAlta()">🔊 Escuchar ideas clave</button>
+              <button class="btn" onclick="preguntarSobreCapsulaCaminata()">❓ Preguntar al profesor</button>
             </div>
             <textarea id="txtRespuestaCaminata" class="oral-input" style="min-height:58px; margin:6px 0;" placeholder="Aquí aparecerá lo que respondas por voz (o escríbelo si prefieres)..."></textarea>
             <div style="font-size:0.78rem; color:var(--text-muted); margin-bottom:6px;">¿Cómo recordaste este concepto hoy? (Programa automáticamente el siguiente repaso):</div>
@@ -694,10 +794,10 @@
             </p>
           </div>
           <div style="background:var(--bg-card); padding:11px; border-radius:8px; border-left:3px solid var(--primary);">
-            <strong style="color:var(--primary);">🔌 2. Funciones 100% Offline (Sin Internet en Chrome, Edge, Firefox, Safari)</strong>
+            <strong style="color:var(--primary);">🔌 2. Funciones sin conexión cuando tienes los archivos descargados</strong>
             <p style="color:var(--text-muted); margin-top:4px;">
               • Reproductor de los 6 MP3, control de velocidad (0.8x–2.0x) y guion sincronizado.<br>
-              • Apertura de los 6 PDF en la página exacta (<code>#page=N</code>).<br>
+              • Consulta de los PDF originales; la navegación a una página concreta depende del visor del navegador. En la versión HTTPS, la vista PDF seguida usa un visor propio en el teléfono.<br>
               • Marcadores, calibración manual de tiempos, Profesor Virtual (por texto), Evaluación Oral (escrita), Test, Calendario de Repasos y Exportación/Importación <code>.json</code>.
             </p>
           </div>
@@ -705,7 +805,7 @@
             <strong style="color:#fcd34d;">🌐 3. Funciones que Dependen del Navegador o de Conexión a Internet</strong>
             <p style="color:var(--text-muted); margin-top:4px;">
               • <strong>🎤 Dictado por voz (Reconocimiento de voz):</strong> Funciona únicamente en navegadores basados en Chromium (<strong>Google Chrome y Microsoft Edge</strong>; no disponible en Firefox estándar) y <strong>requiere conexión a internet activa</strong> porque el navegador envía el audio al servicio de voz del fabricante. Además, al abrirse como archivo local (<code>file:///</code>), el navegador pedirá permiso de micrófono en cada sesión.<br>
-              • <strong>🔊 Lectura en voz alta de síntesis (<code>speechSynthesis</code>):</strong> Funciona <strong>sin internet</strong> usando las voces en español instaladas en el sistema operativo (Windows/macOS), por lo que el timbre de esa voz auxiliar varía según el equipo (los 6 audiolibros principales MP3 suenan siempre idénticos).
+              • <strong>🔊 Lectura en voz alta de síntesis (<code>speechSynthesis</code>):</strong> Puede funcionar sin internet si el dispositivo tiene una voz local en español; depende del navegador y de las voces instaladas. Los audiolibros principales son MP3 pregrabados.
             </p>
           </div>
         </div>
@@ -730,11 +830,39 @@
   <script src="datos_unidades.js"></script>
   <script>
     const DATA = window.DATOS_MUECTI || { unidades: [], base_conocimiento_profesor: [], capsulas_base: [] };
+    // Analogías creadas para estudiar: nunca se presentan como contenido del PDF ni se usan en los test.
+    const EJEMPLOS_ILUSTRATIVOS = [
+      'Imagina una ciudad que usa sensores para ahorrar agua. El conocimiento técnico ayuda a administrar mejor el recurso, pero también obliga a discutir qué ocurre si los sensores fallan o si solo ciertos barrios reciben el beneficio.',
+      'Si una familia elige una nueva tecnología para su casa, ya no puede apoyarse solo en una costumbre heredada: debe comparar información, posibles beneficios y riesgos, y asumir una decisión propia.',
+      'Ante una planta industrial, un equipo técnico puede calcular probabilidades de daño; los vecinos pueden preocuparse por quién soporta ese daño y cuánto confían en la institución que lo evalúa. Son preguntas diferentes sobre el mismo riesgo.',
+      'Un gran observatorio financiado por un gobierno necesita equipos, personal y presupuestos coordinados. Además de producir conocimiento, quienes lo administran deben negociar prioridades con quienes aportan los recursos.',
+      'Para diseñar una herramienta de salud, un equipo puede reunir investigadores, médicos, pacientes y empresas desde el principio. La pregunta de investigación se ajusta al problema práctico y a varios criterios de utilidad.',
+      'Una autoridad debe decidir sobre una sustancia nueva con datos incompletos y posibles efectos amplios. Invitar a personas afectadas a examinar los supuestos puede mejorar la discusión pública, aunque no elimine la incertidumbre.',
+      'Una investigadora puede estudiar cómo un laboratorio llega a un resultado; una organización vecinal puede preguntar cómo ese resultado afecta una decisión pública. Ambas observan relaciones entre ciencia y sociedad desde objetivos distintos.',
+      'Si una hipótesis resulta aceptada y otra rechazada, el análisis simétrico pregunta por las condiciones sociales de ambos resultados, en lugar de explicar solo el error mediante factores sociales.',
+      'En un sistema de bicicletas compartidas intervienen personas, aplicaciones, estaciones, candados y reglas de uso. Cambiar un candado puede alterar las acciones de todos los participantes de la red.',
+      'Un torniquete de acceso permite pasar a unas personas y detiene a otras según la regla inscrita en su diseño. Estudiar el objeto exige preguntar quién decidió esa regla y a quién afecta.',
+      'Un hospital instala una herramienta automática para ordenar solicitudes. Si produce una decisión injusta, intervienen quienes la diseñaron, compraron, configuraron y usaron: identificar responsabilidades requiere mirar la cadena completa.',
+      'Una empresa presenta una tecnología como solución universal mientras un grupo ciudadano teme sus efectos sociales. La discusión mejora cuando se examinan tanto las promesas como los límites del artefacto concreto.',
+      'Un municipio puede probar una tecnología de reciclaje con técnicos y habitantes, recoger experiencias de uso y modificar el diseño antes de extenderla a toda la ciudad.',
+      'Una ciudad instala cámaras para reducir congestión, pero el nuevo sistema crea preguntas sobre privacidad, mantenimiento y quién controla los datos. Resolver un problema puede producir otros que requieren nuevas decisiones.',
+      'Para decidir cómo medir la calidad del aire, un gobierno puede reunir científicos, vecinos y organizaciones. Cada parte aporta información y criterios; la decisión se construye mediante coordinación y debate.'
+    ];
     let unidadActualIdx = 0;
     let parrafoActivoIdx = 0;
     let factorEscalaAudio = 1.0;
     let visorPdfAbierto = false;
     let filtroCalendarioActual = 'todos';
+    let audioPausadoPorProfesor = false;
+    const consultasPendientesIA = new Map();
+    let indicePracticaPDF = 0;
+    let practicaPDFRevelada = false;
+    let pdfMovilModuloPromise = null;
+    let pdfMovilDocumento = null;
+    let pdfMovilDocumentoPromise = null;
+    let pdfMovilUnidad = null;
+    let pdfMovilPagina = null;
+    let pdfMovilSolicitud = 0;
 
     // Estado del Modo Caminata
     let colaCaminata = [];
@@ -916,6 +1044,7 @@
 
     // Inicialización
     window.addEventListener('DOMContentLoaded', () => {
+      registrarModoOffline();
       inicializarEstadoGeminiUI();
       renderBarraUnidades();
       configurarEventosAudio();
@@ -961,6 +1090,9 @@
       renderMarcadoresUnidad();
       renderSugerenciasTutor();
       renderEvaluacionesUnidad();
+      indicePracticaPDF = 0;
+      practicaPDFRevelada = false;
+      renderPracticaPDF();
 
       if (saltarASegundo !== null) {
         reproducirDesdeSegundo(saltarASegundo);
@@ -1144,6 +1276,9 @@
       });
 
       audio.addEventListener('play', () => {
+        detenerVozSintetica();
+        audioPausadoPorProfesor = false;
+        actualizarBotonContinuarAudio();
         document.getElementById('btnPlayPause').innerHTML = '⏸ Pausar';
         if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
       });
@@ -1211,15 +1346,27 @@
 
     function resaltarParrafoActivo(idx) {
       const anterior = document.getElementById(`pcard_${parrafoActivoIdx}`);
-      if (anterior) anterior.classList.remove('active');
+      if (anterior) {
+        anterior.classList.remove('active');
+        anterior.removeAttribute('aria-current');
+      }
       parrafoActivoIdx = idx;
       const nuevo = document.getElementById(`pcard_${idx}`);
       if (nuevo) {
         nuevo.classList.add('active');
-        if (document.getElementById('chkAutoScroll').checked) {
+        nuevo.setAttribute('aria-current', 'true');
+        if (document.getElementById('chkAutoScroll').checked && document.getElementById('tab-reproductor').classList.contains('active')) {
           nuevo.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
       }
+    }
+
+    function seguirLecturaActual() {
+      cambiarTab('reproductor', document.getElementById('tabBtn_reproductor'));
+      const destino = document.querySelector('.reader-panel.pdf-mode')
+        ? document.getElementById('pdfFollowPanel')
+        : document.getElementById(`pcard_${parrafoActivoIdx}`);
+      destino?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 
     function actualizarMediaSessionMovil(u, p, pagEf) {
@@ -1242,6 +1389,10 @@
 
       document.getElementById('lblPaginaViva').textContent = `📄 Pág. ${pagEf} del PDF`;
       document.getElementById('lblSeccionViva').textContent = p.seccion;
+      document.getElementById('readerCurrentPage').textContent = `Unidad ${u.numero} · Pág. ${pagEf} · Párrafo ${idxParrafo + 1} de ${u.parrafos.length}`;
+      document.getElementById('readerCurrentSection').textContent = p.seccion;
+      document.getElementById('pdfFollowPage').textContent = `Unidad ${u.numero} · Página ${pagEf} · ${p.seccion}`;
+      document.getElementById('pdfFollowParagraph').textContent = p.texto;
       const urlPdf = `${encodeURI(u.archivo_pdf)}#page=${pagEf}`;
       document.getElementById('lnkAbrirPdfVivo').href = urlPdf;
       document.getElementById('lnkAbrirPdfVivo').textContent = `📖 Ir a Pág. ${pagEf} en PDF`;
@@ -1266,6 +1417,63 @@
           iframe.setAttribute('data-page', `${u.numero}_${pagEf}`);
           document.getElementById('lblTituloVisorPdf').textContent = `📄 ${u.nombre_base} (Página ${pagEf})`;
         }
+      }
+      if (document.querySelector('.reader-panel.pdf-mode')) renderizarPaginaPDFMovil(u, pagEf);
+    }
+
+    function alternarLecturaPDFMovil() {
+      const panel = document.querySelector('.reader-panel');
+      if (!panel) return;
+      if (location.protocol === 'file:') {
+        alert('Para seguir el PDF dentro de la aplicación en un teléfono, abre la versión HTTPS. El guion iluminado y el enlace al PDF original siguen disponibles en el paquete portátil.');
+        return;
+      }
+      const mostrarPDF = panel.classList.toggle('pdf-mode');
+      document.getElementById('btnVistaPDFMovil').textContent = mostrarPDF ? '📝 Seguir guion' : '📄 Ver PDF seguido';
+      if (mostrarPDF) {
+        const u = DATA.unidades[unidadActualIdx];
+        renderizarPaginaPDFMovil(u, obtenerPaginaEfectivaParrafo(u, parrafoActivoIdx));
+      }
+    }
+
+    async function renderizarPaginaPDFMovil(u, numeroPagina) {
+      if (!u || !document.querySelector('.reader-panel.pdf-mode')) return;
+      if (pdfMovilUnidad === u.numero && pdfMovilPagina === numeroPagina) return;
+      const solicitud = ++pdfMovilSolicitud;
+      const estado = document.getElementById('pdfFollowStatus');
+      const host = document.getElementById('pdfCanvasHost');
+      estado.textContent = `⏳ Abriendo página ${numeroPagina}...`;
+      try {
+        if (!pdfMovilModuloPromise) pdfMovilModuloPromise = import('./vendor/pdfjs/pdf.min.mjs');
+        const pdfjs = await pdfMovilModuloPromise;
+        pdfjs.GlobalWorkerOptions.workerSrc = new URL('./vendor/pdfjs/pdf.worker.min.mjs', location.href).href;
+        if (pdfMovilUnidad !== u.numero || !pdfMovilDocumentoPromise) {
+          if (pdfMovilDocumento) pdfMovilDocumento.destroy();
+          pdfMovilDocumento = null;
+          pdfMovilUnidad = u.numero;
+          pdfMovilPagina = null;
+          pdfMovilDocumentoPromise = pdfjs.getDocument(new URL(encodeURI(u.archivo_pdf), location.href).href).promise;
+        }
+        const documento = await pdfMovilDocumentoPromise;
+        if (solicitud !== pdfMovilSolicitud) return;
+        pdfMovilDocumento = documento;
+        const pagina = await documento.getPage(Math.max(1, Math.min(numeroPagina, documento.numPages)));
+        const anchoBase = pagina.getViewport({ scale: 1 }).width;
+        const escala = Math.min(2, Math.max(0.4, (host.clientWidth || 320) / anchoBase));
+        const densidad = Math.min(window.devicePixelRatio || 1, 2);
+        const vista = pagina.getViewport({ scale: escala * densidad });
+        const canvas = document.createElement('canvas');
+        canvas.width = Math.ceil(vista.width);
+        canvas.height = Math.ceil(vista.height);
+        canvas.style.width = `${Math.ceil(vista.width / densidad)}px`;
+        await pagina.render({ canvasContext: canvas.getContext('2d'), viewport: vista }).promise;
+        if (solicitud !== pdfMovilSolicitud) return;
+        host.replaceChildren(canvas);
+        pdfMovilPagina = numeroPagina;
+        estado.textContent = `PDF original · página ${numeroPagina}. El recuadro inferior muestra el párrafo que está sonando; su tiempo puede ser aproximado.`;
+      } catch (err) {
+        if (solicitud !== pdfMovilSolicitud) return;
+        estado.textContent = 'No se pudo abrir la página dentro de la aplicación. Usa el guion iluminado o el enlace al PDF original.';
       }
     }
 
@@ -1309,6 +1517,7 @@
     function togglePlay() {
       const audio = document.getElementById('mainAudio');
       if (audio.paused) {
+        detenerVozSintetica();
         audio.playbackRate = parseFloat(document.getElementById('speedSelect').value || '1');
         audio.play().catch(err => console.warn('Error al reproducir:', err));
       } else {
@@ -1340,6 +1549,18 @@
       const audio = document.getElementById('mainAudio');
       const segReal = (audio && audio.currentTime > 0) ? Math.round(audio.currentTime) : null;
       marcarParrafo(parrafoActivoIdx, segReal);
+    }
+
+    function marcarCapsulaCaminata() {
+      const cap = colaCaminata[idxCaminataActual];
+      if (!cap) return;
+      const idxUnidad = DATA.unidades.findIndex(u => u.numero === cap.unidadNum);
+      if (idxUnidad < 0) return;
+      if (idxUnidad !== unidadActualIdx) seleccionarUnidad(idxUnidad);
+      const audio = document.getElementById('mainAudio');
+      const segundo = caminataReproduciendoMp3 && audio.currentTime > 0
+        ? Math.round(audio.currentTime) : Math.round(cap.inicio_s || 0);
+      marcarParrafo(cap.parrafoIdx, segundo);
     }
 
     function marcarParrafo(idx, segundoExactoAudio = null) {
@@ -1695,6 +1916,7 @@
     }
 
     function enviarPreguntaTutor(parrafoForzado = null) {
+      pausarAudioParaProfesor();
       const input = document.getElementById('txtPreguntaTutor');
       const pregunta = input.value.trim();
       if (!pregunta) return;
@@ -1824,13 +2046,17 @@
       let textoVoz = '';
 
       const tieneGeminiActivo = Boolean(obtenerClaveGemini());
+      const modoTutor = document.getElementById('selModoTutor').value;
       const idCajaGemini = 'gemini_prof_' + Date.now() + '_' + Math.floor(Math.random() * 1000);
       const bloqueGeminiPlaceholder = tieneGeminiActivo ? `
         <div class="ia-box-resp" id="${idCajaGemini}">
-          <strong style="color:#ddd6fe;">🤖 IA Google Gemini (Modo RAG Académico):</strong>
-          <span style="color:var(--text-muted); margin-left:6px;">Analizando los fragmentos oficiales del PDF para elaborar tu explicación personalizada... ⏳</span>
+          <strong style="color:#ddd6fe;">🤖 Explicación adicional opcional:</strong>
+          <button class="mini-btn" onclick="solicitarExplicacionIA('${idCajaGemini}')">Solicitar con IA ahora</button>
+          <span style="color:var(--text-muted);">Solo se enviará esta consulta si pulsas el botón y confirmas.</span>
         </div>
-      ` : '';
+      ` : (modoTutor === 'ejemplos' ? `
+        <div class="teacher-note">Cuando haya una síntesis preparada, verás también un ejemplo ilustrativo local. Para pedir una analogía nueva con IA, tendrías que configurar un proyecto Gemini API Free Tier sin facturación y solicitarla manualmente.</div>
+      ` : '');
 
       if (sinCoberturaSuficiente) {
         const listaNoRespaldada = (especificosFaltantes.length > 0 ? especificosFaltantes : terminosFaltantes).join(', ') || pregunta;
@@ -1853,6 +2079,9 @@
           const uConcIdx = DATA.unidades.findIndex(x => x.numero === mejorConcepto.unidad);
           const uConc = DATA.unidades[uConcIdx] || DATA.unidades[unidadActualIdx];
           const urlPdfConc = `${encodeURI(uConc.archivo_pdf)}#page=${mejorConcepto.pagina_principal}`;
+          const ejemploIlustrativo = modoTutor === 'ejemplos'
+            ? EJEMPLOS_ILUSTRATIVOS[DATA.base_conocimiento_profesor.indexOf(mejorConcepto)]
+            : null;
           textoVoz = `Síntesis preparada del apartado en la Unidad ${mejorConcepto.unidad}, ${mejorConcepto.paginas}. ${mejorConcepto.sintesis_elaborada.replace(/[*#]/g, '')}`;
           htmlBloqueSuperior = `
             <div class="elab-card">
@@ -1867,6 +2096,11 @@
                 ℹ️ <em>Etiqueta de transparencia: Este resumen académico fue preelaborado y verificado sobre las ${escaparHTML(mejorConcepto.paginas)} de la Unidad ${mejorConcepto.unidad}. Debajo tienes las citas textuales exactas del documento.</em>
               </div>
               <div>${formatearMarkdownBasico(mejorConcepto.sintesis_elaborada)}</div>
+              ${ejemploIlustrativo ? `<div class="cite-card" style="margin-top:10px; border-left-color:var(--warning);">
+                <strong>💡 Ejemplo ilustrativo, no evaluable · fuera del PDF</strong>
+                <p style="margin:8px 0 0;">${escaparHTML(ejemploIlustrativo)}</p>
+                <button class="mini-btn" style="margin-top:8px;" onclick="hablarTexto('${escaparJSString(ejemploIlustrativo)}')">🔊 Escuchar ejemplo</button>
+              </div>` : ''}
             </div>
           `;
         } else {
@@ -1913,7 +2147,9 @@
       chat.scrollTop = chat.scrollHeight;
 
       if (tieneGeminiActivo) {
-        consultarGeminiProfesorRAG(pregunta, candidatosParrafos.slice(0, 5), mejorConcepto, idCajaGemini);
+        consultasPendientesIA.set(idCajaGemini, {
+          pregunta, fragmentos: candidatosParrafos.slice(0, 5), mejorConcepto, modoTutor
+        });
       }
     }
 
@@ -1930,9 +2166,10 @@
 
     function obtenerModeloGemini() {
       try {
-        return localStorage.getItem('muecti_gemini_model') || 'gemini-2.5-flash';
+        const modelo = localStorage.getItem('muecti_gemini_model');
+        return ['gemini-3.8-flash', 'gemini-3.5-flash-lite'].includes(modelo) ? modelo : 'gemini-3.8-flash';
       } catch (e) {
-        return 'gemini-2.5-flash';
+        return 'gemini-3.8-flash';
       }
     }
 
@@ -1953,16 +2190,16 @@
       if (btn) {
         if (key) {
           btn.classList.add('connected');
-          btn.innerHTML = '🤖 IA Gemini: Conectada (Gratis)';
+          btn.textContent = '🤖 IA configurada: uso manual';
         } else {
           btn.classList.remove('connected');
-          btn.innerHTML = '🔑 IA Gemini (Gratis): Modo Local';
+          btn.textContent = '🔑 IA opcional: Modo Local';
         }
       }
       if (est) {
         est.innerHTML = key
-          ? `<span style="color:#86efac;">✅ Llave activa en este navegador (${escaparHTML(model)}). El Profesor Virtual y la Evaluación Oral usarán IA + citas literales del PDF.</span>`
-          : `<span>ℹ️ Actualmente en <strong>Modo Local V3</strong> (100% sin internet). Si deseas respuestas conversacionales y ejemplos libres, pega arriba tu llave gratuita de Google AI Studio.</span>`;
+          ? `<span style="color:#86efac;">✅ Clave guardada en este navegador (${escaparHTML(model)}). No se enviarán consultas automáticamente. Comprueba en AI Studio que el proyecto sea Free Tier sin facturación.</span>`
+          : `<span>ℹ️ Actualmente en <strong>Modo Local</strong> (sin llamadas a Gemini). Para ejemplos conversacionales, configura una clave de un proyecto Free Tier sin facturación.</span>`;
       }
     }
 
@@ -1971,7 +2208,7 @@
       const sel = document.getElementById('selGeminiModel');
       const est = document.getElementById('estadoConexionGemini');
       const key = (inp ? inp.value : '').trim();
-      const model = sel ? sel.value : 'gemini-2.5-flash';
+      const model = sel ? sel.value : 'gemini-3.8-flash';
       if (!key || key.length < 15) {
         alert('Por favor pega una llave API válida de Google AI Studio (suele comenzar por AIza...).');
         return;
@@ -1982,17 +2219,7 @@
       } catch (e) {}
       inicializarEstadoGeminiUI();
       if (est) {
-        est.innerHTML = `<span style="color:#fcd34d;">⏳ Probando conexión con Google Gemini (${escaparHTML(model)})...</span>`;
-      }
-      try {
-        const resp = await llamarGeminiAPI('Responde únicamente con la frase: Conexión verificada con el sistema de estudio MUECTI.');
-        if (est) {
-          est.innerHTML = `<span style="color:#86efac;">✅ ¡Conexión exitosa! Respuesta de Gemini: "${escaparHTML(resp.trim())}"</span>`;
-        }
-      } catch (err) {
-        if (est) {
-          est.innerHTML = `<span style="color:#fca5a5;">⚠️ No se pudo verificar la llave: ${escaparHTML(err.message || String(err))}. Revisa que hayas copiado bien la API Key desde aistudio.google.com/apikey.</span>`;
-        }
+        est.innerHTML = `<span style="color:#86efac;">✅ Clave guardada sin realizar ninguna llamada. Consulta solo cuando tú pulses el botón correspondiente.</span>`;
       }
     }
 
@@ -2008,14 +2235,9 @@
     async function llamarGeminiAPI(promptTexto) {
       const apiKey = obtenerClaveGemini();
       if (!apiKey) throw new Error('Sin llave API configurada.');
-      const preferido = obtenerModeloGemini();
-      const modelos = [preferido, 'gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'].filter((v, i, a) => a.indexOf(v) === i);
-      let ultimoError = null;
-
-      for (const mod of modelos) {
-        try {
-          const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(mod)}:generateContent?key=${encodeURIComponent(apiKey)}`;
-          const res = await fetch(url, {
+      const mod = obtenerModeloGemini();
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(mod)}:generateContent?key=${encodeURIComponent(apiKey)}`;
+      const res = await fetch(url, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -2025,22 +2247,32 @@
                 maxOutputTokens: 900
               }
             })
-          });
-          if (!res.ok) {
-            const errJson = await res.json().catch(() => ({}));
-            throw new Error(errJson?.error?.message || `HTTP ${res.status}`);
-          }
-          const data = await res.json();
-          const texto = data?.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('\n') || '';
-          if (texto.trim()) return texto.trim();
-        } catch (err) {
-          ultimoError = err;
-        }
+      });
+      if (!res.ok) {
+        const errJson = await res.json().catch(() => ({}));
+        throw new Error(errJson?.error?.message || `HTTP ${res.status}`);
       }
-      throw ultimoError || new Error('Error al conectar con Google Gemini API.');
+      const data = await res.json();
+      const texto = data?.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('\n') || '';
+      if (!texto.trim()) throw new Error('Gemini no devolvió una explicación.');
+      return texto.trim();
     }
 
-    async function consultarGeminiProfesorRAG(pregunta, fragmentosContexto, mejorConcepto, divId) {
+    function confirmarConsultaIA() {
+      return window.confirm('Esta consulta enviará texto a Gemini API. La aplicación no puede comprobar si tu proyecto tiene facturación. Continúa solo si verificaste en Google AI Studio que tu proyecto es Free Tier sin facturación habilitada. ¿Enviar esta consulta?');
+    }
+
+    function solicitarExplicacionIA(divId) {
+      const pendiente = consultasPendientesIA.get(divId);
+      if (!pendiente || !obtenerClaveGemini() || !confirmarConsultaIA()) return;
+      consultasPendientesIA.delete(divId);
+      const contenedor = document.getElementById(divId);
+      if (contenedor) contenedor.textContent = '⏳ Preparando explicación con el material del curso...';
+      consultarGeminiProfesorRAG(pendiente.pregunta, pendiente.fragmentos,
+        pendiente.mejorConcepto, divId, pendiente.modoTutor);
+    }
+
+    async function consultarGeminiProfesorRAG(pregunta, fragmentosContexto, mejorConcepto, divId, modoTutor = 'curso') {
       const contenedor = document.getElementById(divId);
       if (!contenedor) return;
 
@@ -2065,15 +2297,16 @@ ${bloquesPdf || '(No se encontraron párrafos con coincidencia literal directa p
 INSTRUCCIONES ACADÉMICAS ESTRICTAS:
 1. Responde en español claro, cercano y didáctico, en 2 o 3 párrafos breves o viñetas bien estructuradas.
 2. Basa tu explicación rigurosamente en los fragmentos oficiales proporcionados arriba y cita SIEMPRE entre paréntesis la unidad y página exacta, por ejemplo: (Unidad 1, Pág. 8).
-3. Si el estudiante pide un ejemplo cotidiano, una comparación o una aclaración con otras palabras, elabora el ejemplo conectándolo explícitamente con los conceptos y autores del PDF citado.
-4. Si la pregunta consulta sobre un tema ajeno que NO aparece en los fragmentos del PDF, indícalo con total honestidad ("Los PDFs oficiales del curso no abordan directamente X, aunque en la Unidad Y, Pág. Z se estudia...").`;
+3. ${modoTutor === 'ejemplos' ? 'Después de explicar el concepto del PDF, añade un apartado titulado "Ejemplo ilustrativo, no evaluable". Puede usar una analogía cotidiana o un caso hipotético más amplio, pero señala que es un apoyo pedagógico y no una afirmación del PDF. No atribuyas al PDF datos de ese ejemplo.' : 'No añadas datos, autores ni ejemplos ajenos a los fragmentos proporcionados.'}
+4. Si los fragmentos no permiten responder, dilo con honestidad. Nunca inventes una cita o página.
+5. No redactes preguntas de test a partir de los ejemplos: el contenido evaluable procede solo de los PDF.`;
 
       try {
         const respuestaIA = await llamarGeminiAPI(promptRAG);
         const textoLimpioVoz = respuestaIA.replace(/[*#_`]/g, '');
         contenedor.innerHTML = `
           <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:6px;">
-            <strong style="color:#ddd6fe;">🤖 Explicación Conversacional con IA Google Gemini (RAG sobre tus PDFs):</strong>
+            <strong style="color:#ddd6fe;">🤖 ${modoTutor === 'ejemplos' ? 'Explicación del PDF + ejemplo ilustrativo no evaluable' : 'Explicación basada en los PDF'}:</strong>
             <button class="mini-btn" onclick="hablarTexto('${escaparJSString(textoLimpioVoz)}')">🔊 Escuchar explicación IA</button>
           </div>
           <div>${formatearMarkdownBasico(respuestaIA)}</div>
@@ -2158,6 +2391,14 @@ Cita siempre la página correspondiente.`;
 
     function hablarTexto(texto) {
       if (!('speechSynthesis' in window)) return;
+      const audio = document.getElementById('mainAudio');
+      if (audio && !audio.paused) {
+        audio.pause();
+        if (document.getElementById('tab-profesor').classList.contains('active')) {
+          audioPausadoPorProfesor = true;
+          actualizarBotonContinuarAudio();
+        }
+      }
       window.speechSynthesis.cancel();
       const utter = new SpeechSynthesisUtterance(texto);
       utter.lang = 'es-ES';
@@ -2176,6 +2417,7 @@ Cita siempre la página correspondiente.`;
         return;
       }
       const btn = document.getElementById('btnMicTutor');
+      pausarAudioParaProfesor();
       const rec = new SpeechRec();
       rec.lang = 'es-ES';
       rec.interimResults = false;
@@ -2251,6 +2493,61 @@ Cita siempre la página correspondiente.`;
       }).join('');
     }
 
+    function renderPracticaPDF() {
+      const panel = document.getElementById('panelPracticaPDF');
+      if (!panel) return;
+      const unidad = DATA.unidades[unidadActualIdx];
+      const preguntas = (DATA.capsulas_base || []).filter(c => c.unidadNum === unidad.numero && c.pregunta_caminata);
+      if (!preguntas.length) {
+        panel.textContent = 'Todavía no hay preguntas de comprensión preparadas para esta unidad.';
+        return;
+      }
+      const cap = preguntas[indicePracticaPDF % preguntas.length];
+      const urlPdf = `${encodeURI(unidad.archivo_pdf)}#page=${cap.pagina}`;
+      panel.innerHTML = `
+        <div class="eval-card" style="margin-bottom:0;">
+          <div style="color:var(--primary); font-size:0.82rem; font-weight:700;">Unidad ${unidad.numero} · Pregunta ${(indicePracticaPDF % preguntas.length) + 1} de ${preguntas.length} · Página ${cap.pagina}</div>
+          <h3 style="font-size:1rem; margin:8px 0;">${escaparHTML(cap.pregunta_caminata)}</h3>
+          <p class="teacher-note">Piensa tu respuesta antes de mirar el texto. Algunas preguntas relacionan varias páginas del PDF.</p>
+          <div class="walk-actions">
+            <button class="btn btn-primary" onclick="revelarPracticaPDF()">📖 Ver apoyo del PDF</button>
+            <button class="btn" onclick="siguientePracticaPDF()">Otra pregunta →</button>
+          </div>
+          <div id="respuestaPracticaPDF" class="cite-card" style="margin-top:12px; ${practicaPDFRevelada ? '' : 'display:none;'}">
+            <strong>Fragmento de partida del PDF · Unidad ${unidad.numero}, página ${cap.pagina}</strong>
+            <p style="margin:8px 0;">${escaparHTML(cap.descripcion)}</p>
+            <p class="teacher-note">Si la pregunta compara autores o apartados, revisa también las otras páginas de la unidad antes de valorar tu respuesta.</p>
+            <div class="walk-actions">
+              <a class="mini-btn" href="${urlPdf}" target="_blank">Ver página original</a>
+              <button class="btn btn-success" onclick="valorarPracticaPDF('recordado')">Lo expliqué bien</button>
+              <button class="btn btn-warning" onclick="valorarPracticaPDF('parcial')">Parcial</button>
+              <button class="btn btn-danger" onclick="valorarPracticaPDF('fallado')">Debo repasarlo</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function revelarPracticaPDF() {
+      practicaPDFRevelada = true;
+      const respuesta = document.getElementById('respuestaPracticaPDF');
+      if (respuesta) respuesta.style.display = 'block';
+    }
+
+    function siguientePracticaPDF() {
+      indicePracticaPDF += 1;
+      practicaPDFRevelada = false;
+      renderPracticaPDF();
+    }
+
+    function valorarPracticaPDF(resultado) {
+      const preguntas = (DATA.capsulas_base || []).filter(c => c.unidadNum === DATA.unidades[unidadActualIdx].numero && c.pregunta_caminata);
+      const cap = preguntas[indicePracticaPDF % preguntas.length];
+      if (!cap) return;
+      actualizarResultadoItemCalendario(cap.id, resultado, 'Práctica de comprensión del PDF');
+      siguientePracticaPDF();
+    }
+
     function dictarRespuestaOral(oralId) {
       const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
       if (!SpeechRec) {
@@ -2297,7 +2594,7 @@ Cita siempre la página correspondiente.`;
         }
       });
 
-      renderPanelConfirmacionOral(idx, true);
+      renderPanelConfirmacionOral(idx, false);
     }
 
     function cambiarEstadoIdeaOral(idxPregunta, idIdea, nuevoEstado) {
@@ -2350,7 +2647,7 @@ Cita siempre la página correspondiente.`;
 
       const bloqueIAOral = tieneGemini ? `
         <div class="ia-box-resp" id="${idDivOralIA}">
-          ${htmlPrevioIA || `<strong style="color:#ddd6fe;">🤖 Evaluador Oral IA Google Gemini:</strong> <span style="color:var(--text-muted);">Analizando tu respuesta con respecto a las ideas clave de las ${escaparHTML(o.paginas_ref)}... ⏳</span>`}
+          ${htmlPrevioIA || `<strong style="color:#ddd6fe;">🤖 Análisis adicional opcional:</strong> <button class="mini-btn" onclick="solicitarEvaluacionOralIA(${idx})">Solicitar análisis con IA</button> <span style="color:var(--text-muted);">Solo se enviará si pulsas y confirmas. La rúbrica del PDF ya está disponible abajo.</span>`}
         </div>
       ` : '';
 
@@ -2392,10 +2689,17 @@ Cita siempre la página correspondiente.`;
         </div>
       `;
 
-      if (solicitarIA && tieneGemini) {
-        const respActual = (document.getElementById(`oral_txt_${o.id}`)?.value || '').trim();
-        consultarGeminiEvaluacionOral(u, o, respActual, idDivOralIA);
-      }
+    }
+
+    function solicitarEvaluacionOralIA(idx) {
+      const u = DATA.unidades[unidadActualIdx];
+      const o = u?.evaluacion?.orales?.[idx];
+      if (!o || !obtenerClaveGemini() || !confirmarConsultaIA()) return;
+      const divId = `gemini_oral_${o.id}`;
+      const contenedor = document.getElementById(divId);
+      if (contenedor) contenedor.textContent = '⏳ Comparando tu respuesta con la rúbrica del PDF...';
+      const respuesta = (document.getElementById(`oral_txt_${o.id}`)?.value || '').trim();
+      consultarGeminiEvaluacionOral(u, o, respuesta, divId);
     }
 
     function confirmarValoracionOral(idx, resultadoConfirmado) {
@@ -2753,6 +3057,16 @@ Cita siempre la página correspondiente.`;
       }
     }
 
+    function preguntarSobreCapsulaCaminata() {
+      const cap = colaCaminata[idxCaminataActual];
+      if (!cap) return;
+      detenerCaminata();
+      cambiarTab('profesor', document.getElementById('tabBtn_profesor'));
+      document.getElementById('txtPreguntaTutor').value =
+        `Explícame con palabras sencillas: ${cap.pregunta_caminata || cap.titulo} (Unidad ${cap.unidadNum}, página ${cap.pagina}).`;
+      document.getElementById('txtPreguntaTutor').focus();
+    }
+
     function detenerCaminata() {
       caminataReproduciendoMp3 = false;
       finSegundoCaminataMp3 = null;
@@ -2836,10 +3150,56 @@ Cita siempre la página correspondiente.`;
               <a class="btn" href="${encodeURI(u.archivo_pdf)}" target="_blank">📄 PDF</a>
               <a class="btn" href="${encodeURI(u.archivo_mp3)}" download>⬇ MP3</a>
               <a class="btn" href="${encodeURI(u.archivo_guion)}" target="_blank">📝 Guion</a>
+              <button class="btn btn-success" id="btnOffline_${idx}" onclick="guardarUnidadOffline(${idx})">📥 Guardar unidad para uso sin conexión</button>
             </div>
+            <div class="teacher-note" id="offlineEstado_${idx}">En teléfono: abre la versión HTTPS una vez y guarda cada unidad que quieras escuchar sin conexión.</div>
           </div>
         `;
       }).join('');
+      actualizarEstadosOffline();
+    }
+
+    async function registrarModoOffline() {
+      if (!('serviceWorker' in navigator) || !['https:', 'http:'].includes(location.protocol)) return;
+      try {
+        await navigator.serviceWorker.register('./sw.js');
+      } catch (err) {
+        console.warn('No se pudo preparar el modo sin conexión:', err);
+      }
+    }
+
+    async function actualizarEstadosOffline() {
+      if (!('caches' in window) || location.protocol === 'file:') return;
+      for (let idx = 0; idx < DATA.unidades.length; idx++) {
+        const u = DATA.unidades[idx];
+        const audio = await caches.match(new URL(encodeURI(u.archivo_mp3), location.href).href).catch(() => null);
+        const pdf = await caches.match(new URL(encodeURI(u.archivo_pdf), location.href).href).catch(() => null);
+        const estado = document.getElementById(`offlineEstado_${idx}`);
+        if (estado && audio && pdf) estado.textContent = '✅ MP3 y PDF guardados en este dispositivo para abrirlos sin conexión.';
+      }
+    }
+
+    async function guardarUnidadOffline(idx) {
+      const u = DATA.unidades[idx];
+      const estado = document.getElementById(`offlineEstado_${idx}`);
+      const boton = document.getElementById(`btnOffline_${idx}`);
+      if (!u || !estado) return;
+      if (!('serviceWorker' in navigator) || !('caches' in window) || location.protocol === 'file:') {
+        estado.textContent = 'Para guardar unidades en el teléfono, abre la versión HTTPS de esta plataforma. En computador puedes seguir usando la carpeta portátil.';
+        return;
+      }
+      boton.disabled = true;
+      estado.textContent = '⏳ Guardando MP3 y PDF. Mantén esta página abierta...';
+      try {
+        await navigator.serviceWorker.ready;
+        const cache = await caches.open('muecti-unidades-v1');
+        await cache.addAll([encodeURI(u.archivo_mp3), encodeURI(u.archivo_pdf)]);
+        estado.textContent = '✅ MP3 y PDF guardados en este dispositivo. La IA y el dictado por voz siguen requiriendo conexión.';
+      } catch (err) {
+        estado.textContent = 'No se pudo guardar esta unidad. Comprueba la conexión y el espacio libre del teléfono antes de reintentar.';
+      } finally {
+        boton.disabled = false;
+      }
     }
 
     function renderAuditoriaSincronizacion() {
@@ -2998,7 +3358,29 @@ Cita siempre la página correspondiente.`;
       reader.readAsText(file);
     }
 
+    function pausarAudioParaProfesor() {
+      const audio = document.getElementById('mainAudio');
+      if (audio && !audio.paused) {
+        audio.pause();
+        audioPausadoPorProfesor = true;
+      }
+      actualizarBotonContinuarAudio();
+    }
+
+    function actualizarBotonContinuarAudio() {
+      const boton = document.getElementById('btnContinuarAudio');
+      if (boton) boton.hidden = !audioPausadoPorProfesor;
+    }
+
+    function continuarAudioTrasProfesor() {
+      if (!audioPausadoPorProfesor) return;
+      detenerVozSintetica();
+      seguirLecturaActual();
+      document.getElementById('mainAudio').play().catch(() => {});
+    }
+
     function cambiarTab(tabId, btnEl) {
+      if (tabId === 'profesor') pausarAudioParaProfesor();
       document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       document.getElementById(`tab-${tabId}`).classList.add('active');

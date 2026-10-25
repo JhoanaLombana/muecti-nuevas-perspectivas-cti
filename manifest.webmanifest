@@ -1,0 +1,13 @@
+{
+  "name": "Sistema de Estudio MUECTI",
+  "short_name": "Estudio MUECTI",
+  "description": "Escucha, lee y practica las seis unidades de Nuevas Perspectivas CTI.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
