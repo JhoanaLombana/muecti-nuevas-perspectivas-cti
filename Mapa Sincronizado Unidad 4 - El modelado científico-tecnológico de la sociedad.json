@@ -1,0 +1,3125 @@
+{
+  "numero": 4,
+  "nombre_base": "Unidad 4 - El modelado científico-tecnológico de la sociedad",
+  "titulo_corto": "El modelado científico-tecnológico de la sociedad",
+  "asignatura": "Nuevas perspectivas en los estudios sobre ciencia, tecnología e innovación",
+  "unidad_portada": "TEMA 2. Unidad 4. Enfoques contemporáneos en el estudio de la ciencia y la. tecnología. El modelado científico-tecnológico de la sociedad",
+  "archivo_pdf": "Unidad 4 - El modelado científico-tecnológico de la sociedad.pdf",
+  "archivo_mp3": "Unidad 4 - El modelado científico-tecnológico de la sociedad.mp3",
+  "archivo_guion": "Guion Unidad 4 - El modelado científico-tecnológico de la sociedad.txt",
+  "total_paginas_pdf": 17,
+  "total_palabras": 6075,
+  "duracion_estimada_s": 2387.98,
+  "tamano_mb": 13.66,
+  "bloques_tts_mp3": 19,
+  "puntos_verificados_audio": [
+    {
+      "unidad": 4,
+      "punto": "Comienzo",
+      "parrafo_idx": 2,
+      "seccion": "1. El modelado científico-tecnológico de la sociedad",
+      "pagina_pdf": 3,
+      "segundo_esperado_s": 23.83,
+      "segundo_esperado_fmt": "00:23",
+      "segundo_real_s": 21.32,
+      "segundo_real_fmt": "00:21",
+      "diferencia_s": -2.51,
+      "frase_guion_pdf": "Los últimos enfoques mencionados en la unidad anterior ya no se ocupaban, en sentido estricto, del “moldeado social…",
+      "frase_escuchada_mp3": "Los últimos enfoques mencionados en la unidad anterior que no se ocupaban en sentido estricto del moldeados social de la ciencia y la tecnología puesto que asumen que"
+    },
+    {
+      "unidad": 4,
+      "punto": "Mitad",
+      "parrafo_idx": 64,
+      "seccion": "1986 Explosión de la nave espacial Challenger y muerte de los siete tripulantes",
+      "pagina_pdf": 6,
+      "segundo_esperado_s": 644.05,
+      "segundo_esperado_fmt": "10:44",
+      "segundo_real_s": 643.4,
+      "segundo_real_fmt": "10:43",
+      "diferencia_s": -0.65,
+      "frase_guion_pdf": "1987 Protocolo de Montreal, firmado por 24 países, para restringir la producción de CFC y detener la destrucción de…",
+      "frase_escuchada_mp3": "1987 protocolo de Montreal firmado por 24 países para restringir la producción de cfc y detener la destrucción de la capa de"
+    },
+    {
+      "unidad": 4,
+      "punto": "Final",
+      "parrafo_idx": 126,
+      "seccion": "6. Autonomía y determinismo tecnológico",
+      "pagina_pdf": 15,
+      "segundo_esperado_s": 2353.73,
+      "segundo_esperado_fmt": "39:13",
+      "segundo_real_s": 2353.9,
+      "segundo_real_fmt": "39:13",
+      "diferencia_s": 0.17,
+      "frase_guion_pdf": "Al buscar caminos intermedios entre las opciones a menudo enfrentadas de la autonomía y el determinismo, estas prop…",
+      "frase_escuchada_mp3": "Al buscar caminos intermedios entre las opciones a menudo enfrentadas de la autonomía y el determinismo"
+    }
+  ],
+  "secciones": [
+    {
+      "titulo": "Portada e identificación",
+      "pagina": 1,
+      "inicio_s": 0.18,
+      "tiempo_fmt": "00:00",
+      "parrafo_idx": 0,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1. El modelado científico-tecnológico de la sociedad",
+      "pagina": 3,
+      "inicio_s": 17.78,
+      "tiempo_fmt": "00:17",
+      "parrafo_idx": 1,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1 Autoría: Marta I. González García y J.A. López Cerezo",
+      "pagina": 3,
+      "inicio_s": 202.16,
+      "tiempo_fmt": "03:22",
+      "parrafo_idx": 5,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2. Breve cronología CTS",
+      "pagina": 4,
+      "inicio_s": 207.0,
+      "tiempo_fmt": "03:27",
+      "parrafo_idx": 6,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1945 Primera explosión atómica de prueba en Estados Unidos (16 de julio, Nuevo México",
+      "pagina": 4,
+      "inicio_s": 313.5,
+      "tiempo_fmt": "05:13",
+      "parrafo_idx": 11,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1946 Primer ordenador electrónico (ENIAC)",
+      "pagina": 4,
+      "inicio_s": 330.78,
+      "tiempo_fmt": "05:30",
+      "parrafo_idx": 14,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1949 La URSS prueba su primera bomba atómica",
+      "pagina": 4,
+      "inicio_s": 335.42,
+      "tiempo_fmt": "05:35",
+      "parrafo_idx": 15,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1950 Primer trasplante de riñón; al que siguen otros órganos",
+      "pagina": 4,
+      "inicio_s": 340.08,
+      "tiempo_fmt": "05:40",
+      "parrafo_idx": 16,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1951 Primera explosión de prueba de la bomba de hidrógeno en Estados Unidos, a la que seguirá la URSS",
+      "pagina": 4,
+      "inicio_s": 345.52,
+      "tiempo_fmt": "05:45",
+      "parrafo_idx": 17,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1954 Primer submarino nuclear: el USS Nautilus",
+      "pagina": 4,
+      "inicio_s": 365.76,
+      "tiempo_fmt": "06:05",
+      "parrafo_idx": 19,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1955 Producción comercial de electricidad por una central nuclear",
+      "pagina": 4,
+      "inicio_s": 371.36,
+      "tiempo_fmt": "06:11",
+      "parrafo_idx": 20,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1957 Lanzamiento del Sputnik I, primer satélite artificial alrededor de la tierra",
+      "pagina": 5,
+      "inicio_s": 384.18,
+      "tiempo_fmt": "06:24",
+      "parrafo_idx": 23,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1958 Creación de la NASA",
+      "pagina": 5,
+      "inicio_s": 400.68,
+      "tiempo_fmt": "06:40",
+      "parrafo_idx": 25,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1960 Invención del láser",
+      "pagina": 5,
+      "inicio_s": 418.12,
+      "tiempo_fmt": "06:58",
+      "parrafo_idx": 28,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1961 Yuri Gagarin se convierte en el primer humano en el espacio",
+      "pagina": 5,
+      "inicio_s": 421.46,
+      "tiempo_fmt": "07:01",
+      "parrafo_idx": 29,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1962 El Marine 2 se convierte en la primera nave espacial en explorar otro planeta (Venus)",
+      "pagina": 5,
+      "inicio_s": 429.1,
+      "tiempo_fmt": "07:09",
+      "parrafo_idx": 31,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1963 Tratado de limitación de pruebas nucleares",
+      "pagina": 5,
+      "inicio_s": 440.26,
+      "tiempo_fmt": "07:20",
+      "parrafo_idx": 33,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1968 El Papa Pablo VI hace público el rechazo a la contracepción artificial en Humanae vitae",
+      "pagina": 5,
+      "inicio_s": 475.7,
+      "tiempo_fmt": "07:55",
+      "parrafo_idx": 37,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1969 Neil Armstrong pone su pie en la Luna",
+      "pagina": 5,
+      "inicio_s": 490.62,
+      "tiempo_fmt": "08:10",
+      "parrafo_idx": 39,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1970 Se cancela la financiación del Concorde en Estados Unidos",
+      "pagina": 5,
+      "inicio_s": 509.44,
+      "tiempo_fmt": "08:29",
+      "parrafo_idx": 43,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1971 Fundación del Instituto de Ética Kennedy en la Universidad de Georgetown",
+      "pagina": 5,
+      "inicio_s": 514.7,
+      "tiempo_fmt": "08:34",
+      "parrafo_idx": 44,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1972 La EPA prohíbe el uso del DDT",
+      "pagina": 5,
+      "inicio_s": 533.86,
+      "tiempo_fmt": "08:53",
+      "parrafo_idx": 46,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1973 Primer organismo producido por ingeniería genética",
+      "pagina": 6,
+      "inicio_s": 546.46,
+      "tiempo_fmt": "09:06",
+      "parrafo_idx": 48,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1974 Moratoria sobre ingeniería genética tras la conferencia de Asilomar (California)",
+      "pagina": 6,
+      "inicio_s": 553.84,
+      "tiempo_fmt": "09:13",
+      "parrafo_idx": 50,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1976 Tres ingenieros de General Electric abandonan la compañía en protesta por los peligros de la energía nuclear",
+      "pagina": 6,
+      "inicio_s": 564.4,
+      "tiempo_fmt": "09:24",
+      "parrafo_idx": 52,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1978 El satélite soviético Cosmos 954, con reactor nuclear incluido, se desintegra sobre el norte de Canadá",
+      "pagina": 6,
+      "inicio_s": 572.34,
+      "tiempo_fmt": "09:32",
+      "parrafo_idx": 53,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1979 Fusión parcial del reactor nuclear en Three Mile Island",
+      "pagina": 6,
+      "inicio_s": 592.14,
+      "tiempo_fmt": "09:52",
+      "parrafo_idx": 56,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1981 Fundación de Earth First!",
+      "pagina": 6,
+      "inicio_s": 597.46,
+      "tiempo_fmt": "09:57",
+      "parrafo_idx": 57,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1982 Primer corazón artificial",
+      "pagina": 6,
+      "inicio_s": 601.24,
+      "tiempo_fmt": "10:01",
+      "parrafo_idx": 58,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1985 Científicos británicos denuncian la constante reducción de la capa de ozono sobre la Antártida desde 1979",
+      "pagina": 6,
+      "inicio_s": 621.98,
+      "tiempo_fmt": "10:21",
+      "parrafo_idx": 61,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1986 Explosión de la nave espacial Challenger y muerte de los siete tripulantes",
+      "pagina": 6,
+      "inicio_s": 631.12,
+      "tiempo_fmt": "10:31",
+      "parrafo_idx": 62,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1989 Caída del muro de Berlín",
+      "pagina": 6,
+      "inicio_s": 671.8,
+      "tiempo_fmt": "11:11",
+      "parrafo_idx": 67,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1990 Se pone en marcha a nivel internacional el Proyecto Genoma Humano",
+      "pagina": 6,
+      "inicio_s": 678.98,
+      "tiempo_fmt": "11:18",
+      "parrafo_idx": 69,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1992 Cumbre de la Tierra en Río",
+      "pagina": 6,
+      "inicio_s": 687.04,
+      "tiempo_fmt": "11:27",
+      "parrafo_idx": 71,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1997 Protocolo de Kioto",
+      "pagina": 7,
+      "inicio_s": 712.3,
+      "tiempo_fmt": "11:52",
+      "parrafo_idx": 75,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1998 Dolly Parton da nombre a una famosa oveja clónica",
+      "pagina": 7,
+      "inicio_s": 716.02,
+      "tiempo_fmt": "11:56",
+      "parrafo_idx": 76,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2000 Enviados los primeros astronautas a la estación espacial internacional",
+      "pagina": 7,
+      "inicio_s": 732.12,
+      "tiempo_fmt": "12:12",
+      "parrafo_idx": 79,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2001 Dennis Tito se convierte en el primer turista espacial en su vista a la estación espacial internacional",
+      "pagina": 7,
+      "inicio_s": 737.18,
+      "tiempo_fmt": "12:17",
+      "parrafo_idx": 80,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2002 Hundimiento del petrolero Prestige frente a las costas de Galicia",
+      "pagina": 7,
+      "inicio_s": 743.68,
+      "tiempo_fmt": "12:23",
+      "parrafo_idx": 81,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2003 Completado el Proyecto Genoma Humano",
+      "pagina": 7,
+      "inicio_s": 748.54,
+      "tiempo_fmt": "12:28",
+      "parrafo_idx": 82,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2004 Marck Zuckerberg crea Facebook",
+      "pagina": 7,
+      "inicio_s": 755.26,
+      "tiempo_fmt": "12:35",
+      "parrafo_idx": 84,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2005 El protocolo de Kioto entra en vigor",
+      "pagina": 7,
+      "inicio_s": 761.24,
+      "tiempo_fmt": "12:41",
+      "parrafo_idx": 86,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2006 La FDA aprueba la polémica vacuna contra el virus del papiloma humano para prevenir el cáncer de útero",
+      "pagina": 7,
+      "inicio_s": 771.98,
+      "tiempo_fmt": "12:51",
+      "parrafo_idx": 89,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2007 Los científicos del IPCC concluyen que el cambio climático es responsabilidad humana",
+      "pagina": 7,
+      "inicio_s": 782.02,
+      "tiempo_fmt": "13:02",
+      "parrafo_idx": 91,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2009 Crisis mundial por la epidemia de gripe A (H1N)",
+      "pagina": 7,
+      "inicio_s": 788.2,
+      "tiempo_fmt": "13:08",
+      "parrafo_idx": 92,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2011 Accidente en la central nuclear de Fukushima",
+      "pagina": 7,
+      "inicio_s": 793.04,
+      "tiempo_fmt": "13:13",
+      "parrafo_idx": 93,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2012 El CERN anuncia la observación de una partícula consistente con el bosón de Higgs",
+      "pagina": 7,
+      "inicio_s": 796.98,
+      "tiempo_fmt": "13:16",
+      "parrafo_idx": 94,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2016 Anuncio de la detección de ondas gravitacionales",
+      "pagina": 7,
+      "inicio_s": 802.66,
+      "tiempo_fmt": "13:22",
+      "parrafo_idx": 95,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "3. Crítica política a la ciencia y la tecnología",
+      "pagina": 7,
+      "inicio_s": 807.2,
+      "tiempo_fmt": "13:27",
+      "parrafo_idx": 96,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "4. Enfoques filosóficos",
+      "pagina": 9,
+      "inicio_s": 1074.7,
+      "tiempo_fmt": "17:54",
+      "parrafo_idx": 102,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "5. Ética de la tecnología",
+      "pagina": 11,
+      "inicio_s": 1597.98,
+      "tiempo_fmt": "26:37",
+      "parrafo_idx": 112,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "6. Autonomía y determinismo tecnológico",
+      "pagina": 13,
+      "inicio_s": 2055.46,
+      "tiempo_fmt": "34:15",
+      "parrafo_idx": 119,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "Cierre de la unidad",
+      "pagina": 15,
+      "inicio_s": 2373.66,
+      "tiempo_fmt": "39:33",
+      "parrafo_idx": 127,
+      "precision_tiempo": "aproximado_acustico"
+    }
+  ],
+  "parrafos": [
+    {
+      "texto": "Audiolibro de estudio. Asignatura: Nuevas perspectivas en los estudios sobre ciencia, tecnología e innovación. TEMA 2. Unidad 4. Enfoques contemporáneos en el estudio de la ciencia y la. tecnología. El modelado científico-tecnológico de la sociedad.",
+      "pagina_inicio": 1,
+      "pagina_fin": 1,
+      "paginas": [
+        1
+      ],
+      "seccion": "Portada e identificación",
+      "es_titulo": true,
+      "id": "u4_p0",
+      "indice": 0,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 0.0,
+      "inicio_s": 0.18,
+      "fin_s": 17.78,
+      "tiempo_fmt": "00:00",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "1. El modelado científico-tecnológico de la sociedad.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. El modelado científico-tecnológico de la sociedad",
+      "es_titulo": true,
+      "id": "u4_p1",
+      "indice": 1,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 18.87,
+      "inicio_s": 17.78,
+      "fin_s": 21.32,
+      "tiempo_fmt": "00:17",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "Los últimos enfoques mencionados en la unidad anterior ya no se ocupaban, en sentido estricto, del “moldeado social de la ciencia y la tecnología”, puesto que asumen que sociedad, ciencia y tecnología se moldean mutuamente, se coproducen, en expresión de Latour. No obstante, es posible diferenciar un conjunto de enfoques de origen y naturaleza diversa, que se centran fundamentalmente en los efectos sociales del desarrollo científico-tecnológico prestando una menor y desigual atención al carácter contingente y contextual del mismo. Son los enfoques CTS cuyo foco de análisis es la huella de la ciencia y la tecnología en la sociedad, o el modelado científico-tecnológico de las sociedades.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. El modelado científico-tecnológico de la sociedad",
+      "es_titulo": false,
+      "id": "u4_p2",
+      "indice": 2,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 23.83,
+      "inicio_s": 21.32,
+      "fin_s": 64.74,
+      "tiempo_fmt": "00:21",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "Mientras la tradición académica aborda fundamentalmente la investigación acerca de cómo se produce la ciencia a través de casos de estudio empíricos y enfoques teóricos desarrollados en interacción con los mismos, la rama de CTS originada en la preocupación por las consecuencias sociales del desarrollo científico-tecnológico, ha mantenido una perspectiva global y macro, ocupándose fundamentalmente de la conformación de las modernas “sociedades del conocimiento” o “culturas tecnocientíficas”, y su gobernanza y control. La historia de CTS desde este punto de vista no parte de Kuhn, sino de los movimientos de ecologistas y consumidores de los años 60 y 70. Las preocupaciones iniciales se centraron en cuestiones como la de la tecnología al servicio de la industria armamentística (inquietud derivada del rechazo popular de la bomba atómica y la guerra del Vietnam), la proliferación de la energía nuclear, o los riesgos de pesticidas químicos como el DDT. Como veremos, sin embargo, también este tipo de enfoques se desarrollan hacia posturas en las que se evidencia el modelado mutuo de la ciencia, la tecnología y la sociedad.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. El modelado científico-tecnológico de la sociedad",
+      "es_titulo": false,
+      "id": "u4_p3",
+      "indice": 3,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 63.96,
+      "inicio_s": 64.74,
+      "fin_s": 128.78,
+      "tiempo_fmt": "01:04",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "La tecnología se trata en principio típicamente como producto y se aborda desde una perspectiva estrechamente relacionada con la filosofía y la teoría política, destacando las profundas implicaciones políticas, educativas y sociales de la tecnología en su contexto social. CTS como “movimiento” declara entre sus influencias las de Jacques Ellul y Lewis Mumford, y entre sus temas más importantes aquellos ligados a las discusiones sobre la autonomía de la tecnología y el determinismo tecnológico, la historia, la filosofía y la ética de la ciencia y la tecnología. Las ramas más prácticas de CTS se caracterizan también por el interés en las relaciones entre ciencia y política en varias vertientes: el establecimiento de políticas científicas en los estados, la evaluación de tecnologías, el control social, la participación del público no experto, y la renovación educativa. Algunas de estas cuestiones se trataron ya en unidades anteriores y en la asignatura 1. Otras, las relacionadas con la política científica y la implicación ciudadana, se tratarán posteriormente (y de forma detallada en el módulo optativo de la especialización en Políticas y participación ciudadana en ciencia y tecnología). Nos detendremos por tanto aquí algunos temas y enfoques que fundamentan estas discusiones.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. El modelado científico-tecnológico de la sociedad",
+      "es_titulo": false,
+      "id": "u4_p4",
+      "indice": 4,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 128.59,
+      "inicio_s": 128.78,
+      "fin_s": 202.16,
+      "tiempo_fmt": "02:08",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "1 Autoría: Marta I. González García y J.A. López Cerezo.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1 Autoría: Marta I. González García y J.A. López Cerezo",
+      "es_titulo": true,
+      "id": "u4_p5",
+      "indice": 5,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 201.63,
+      "inicio_s": 202.16,
+      "fin_s": 207.0,
+      "tiempo_fmt": "03:22",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "2. Breve cronología CTS.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "2. Breve cronología CTS",
+      "es_titulo": true,
+      "id": "u4_p6",
+      "indice": 6,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 208.04,
+      "inicio_s": 207.0,
+      "fin_s": 210.28,
+      "tiempo_fmt": "03:27",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "De acuerdo con Carl Mitcham, es posible identificar tres periodos en la historia social del movimiento CTS en los países occidentales y especialmente en Estados Unidos:",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "2. Breve cronología CTS",
+      "es_titulo": false,
+      "id": "u4_p7",
+      "indice": 7,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 211.35,
+      "inicio_s": 210.28,
+      "fin_s": 219.96,
+      "tiempo_fmt": "03:30",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "1. Optimismo. El primero, desde el fin de la Segunda Guerra Mundial hasta 1955 (con el manifiesto de Russell y Einstein sobre la responsabilidad social de la ciencia), se trata de una década optimista de demostración del poder de la ciencia y la tecnología, de firme convicción en el modelo unidireccional de progreso y de apoyo público incondicional a la ciencia-tecnología 2. Alerta. En el segundo periodo (desde el lanzamiento del Sputnik y el accidente de la central nuclear de Windscale en 1957 hasta el cenit del movimiento contracultural y las revueltas contra la guerra de Vietnam), comienzan a salir a la luz pública los primeros grandes desastres producidos por una tecnología fuera de control. Los movimientos sociales y políticos de lucha contra el sistema hacen de la tecnología moderna y del estado tecnocrático el blanco de su lucha.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "2. Breve cronología CTS",
+      "es_titulo": false,
+      "id": "u4_p8",
+      "indice": 8,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 221.08,
+      "inicio_s": 219.96,
+      "fin_s": 270.3,
+      "tiempo_fmt": "03:39",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "3. Reacción. El tercer periodo, desde 1969 en adelante, describe la consolidación educativa y administrativa del movimiento CTS como respuesta académica, educativa y política a la sensibilización social sobre los problemas relacionados con la tecnología y el ambiente. Es el momento de la revisión y corrección del modelo unidireccional de progreso como base para el diseño de la política científico-tecnológica.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "2. Breve cronología CTS",
+      "es_titulo": false,
+      "id": "u4_p9",
+      "indice": 9,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 270.12,
+      "inicio_s": 270.3,
+      "fin_s": 296.58,
+      "tiempo_fmt": "04:30",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "El siguiente resumen cronológico de hitos relacionados con el desarrollo científicotecnológico (centrada especialmente en la segunda mitad del siglo XX) puede ilustrar esta evolución (basado en Mitcham, 1984 y González García et al., 1995):",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "2. Breve cronología CTS",
+      "es_titulo": false,
+      "id": "u4_p10",
+      "indice": 10,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 296.43,
+      "inicio_s": 296.58,
+      "fin_s": 313.5,
+      "tiempo_fmt": "04:56",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1945 Primera explosión atómica de prueba en Estados Unidos (16 de julio, Nuevo México.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1945 Primera explosión atómica de prueba en Estados Unidos (16 de julio, Nuevo México",
+      "es_titulo": true,
+      "id": "u4_p11",
+      "indice": 11,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 313.13,
+      "inicio_s": 313.5,
+      "fin_s": 321.18,
+      "tiempo_fmt": "05:13",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "Informe de Vannevar Bush: Science - The Endless Frontier.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1945 Primera explosión atómica de prueba en Estados Unidos (16 de julio, Nuevo México",
+      "es_titulo": false,
+      "id": "u4_p12",
+      "indice": 12,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 320.4,
+      "inicio_s": 321.18,
+      "fin_s": 325.14,
+      "tiempo_fmt": "05:21",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "Explosiones atómicas de Hiroshima (6 de agosto) y Nagasaki (9 de agosto).",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1945 Primera explosión atómica de prueba en Estados Unidos (16 de julio, Nuevo México",
+      "es_titulo": false,
+      "id": "u4_p13",
+      "indice": 13,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 324.95,
+      "inicio_s": 325.14,
+      "fin_s": 330.78,
+      "tiempo_fmt": "05:25",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1946 Primer ordenador electrónico (ENIAC).",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1946 Primer ordenador electrónico (ENIAC)",
+      "es_titulo": true,
+      "id": "u4_p14",
+      "indice": 14,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 331.1,
+      "inicio_s": 330.78,
+      "fin_s": 335.42,
+      "tiempo_fmt": "05:30",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1949 La URSS prueba su primera bomba atómica.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1949 La URSS prueba su primera bomba atómica",
+      "es_titulo": true,
+      "id": "u4_p15",
+      "indice": 15,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 335.83,
+      "inicio_s": 335.42,
+      "fin_s": 340.08,
+      "tiempo_fmt": "05:35",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1950 Primer trasplante de riñón; al que siguen otros órganos.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1950 Primer trasplante de riñón; al que siguen otros órganos",
+      "es_titulo": true,
+      "id": "u4_p16",
+      "indice": 16,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 340.21,
+      "inicio_s": 340.08,
+      "fin_s": 345.52,
+      "tiempo_fmt": "05:40",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1951 Primera explosión de prueba de la bomba de hidrógeno en Estados Unidos, a la que seguirá la URSS.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1951 Primera explosión de prueba de la bomba de hidrógeno en Estados Unidos, a la que seguirá la URSS",
+      "es_titulo": true,
+      "id": "u4_p17",
+      "indice": 17,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 345.79,
+      "inicio_s": 345.52,
+      "fin_s": 352.78,
+      "tiempo_fmt": "05:45",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "Crecimiento notable del presupuesto investigación y desarrollo del Departamento de Defensa en Estados Unidos 1953 Descubrimiento de la estructura del ADN, base del desarrollo posterior de la ingeniería genética.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1951 Primera explosión de prueba de la bomba de hidrógeno en Estados Unidos, a la que seguirá la URSS",
+      "es_titulo": false,
+      "id": "u4_p18",
+      "indice": 18,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 353.26,
+      "inicio_s": 352.78,
+      "fin_s": 365.76,
+      "tiempo_fmt": "05:52",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1954 Primer submarino nuclear: el USS Nautilus.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1954 Primer submarino nuclear: el USS Nautilus",
+      "es_titulo": true,
+      "id": "u4_p19",
+      "indice": 19,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 366.65,
+      "inicio_s": 365.76,
+      "fin_s": 371.36,
+      "tiempo_fmt": "06:05",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1955 Producción comercial de electricidad por una central nuclear.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1955 Producción comercial de electricidad por una central nuclear",
+      "es_titulo": true,
+      "id": "u4_p20",
+      "indice": 20,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 371.57,
+      "inicio_s": 371.36,
+      "fin_s": 377.06,
+      "tiempo_fmt": "06:11",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "Primera píldora anticonceptiva.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1955 Producción comercial de electricidad por una central nuclear",
+      "es_titulo": false,
+      "id": "u4_p21",
+      "indice": 21,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 377.14,
+      "inicio_s": 377.06,
+      "fin_s": 379.82,
+      "tiempo_fmt": "06:17",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "Manifiesto de B. Russell y A. Einstein: Pugwash Conferences.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1955 Producción comercial de electricidad por una central nuclear",
+      "es_titulo": false,
+      "id": "u4_p22",
+      "indice": 22,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 380.22,
+      "inicio_s": 379.82,
+      "fin_s": 384.18,
+      "tiempo_fmt": "06:19",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1957 Lanzamiento del Sputnik I, primer satélite artificial alrededor de la tierra.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1957 Lanzamiento del Sputnik I, primer satélite artificial alrededor de la tierra",
+      "es_titulo": true,
+      "id": "u4_p23",
+      "indice": 23,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 386.2,
+      "inicio_s": 384.18,
+      "fin_s": 390.86,
+      "tiempo_fmt": "06:24",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "Accidente del reactor nuclear de Windscale, Reino Unido. Explosión del depósito nuclear Kyshtym, en los Urales.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1957 Lanzamiento del Sputnik I, primer satélite artificial alrededor de la tierra",
+      "es_titulo": false,
+      "id": "u4_p24",
+      "indice": 24,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 392.81,
+      "inicio_s": 390.86,
+      "fin_s": 400.68,
+      "tiempo_fmt": "06:30",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1958 Creación de la NASA.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1958 Creación de la NASA",
+      "es_titulo": true,
+      "id": "u4_p25",
+      "indice": 25,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 400.91,
+      "inicio_s": 400.68,
+      "fin_s": 404.42,
+      "tiempo_fmt": "06:40",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1959 Conferencia Rede de C.P. Snow, en la que denuncia el abismo ente la cultura humanística y la cultura científica.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1958 Creación de la NASA",
+      "es_titulo": false,
+      "id": "u4_p26",
+      "indice": 26,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 404.25,
+      "inicio_s": 404.42,
+      "fin_s": 413.28,
+      "tiempo_fmt": "06:44",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "60s Movimientos contraculturales y pro tecnología alternativa.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1958 Creación de la NASA",
+      "es_titulo": false,
+      "id": "u4_p27",
+      "indice": 27,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 413.54,
+      "inicio_s": 413.28,
+      "fin_s": 418.12,
+      "tiempo_fmt": "06:53",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1960 Invención del láser.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1960 Invención del láser",
+      "es_titulo": true,
+      "id": "u4_p28",
+      "indice": 28,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 418.54,
+      "inicio_s": 418.12,
+      "fin_s": 421.46,
+      "tiempo_fmt": "06:58",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1961 Yuri Gagarin se convierte en el primer humano en el espacio.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1961 Yuri Gagarin se convierte en el primer humano en el espacio",
+      "es_titulo": true,
+      "id": "u4_p29",
+      "indice": 29,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 421.9,
+      "inicio_s": 421.46,
+      "fin_s": 426.74,
+      "tiempo_fmt": "07:01",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "Prohibición de la talidomida.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1961 Yuri Gagarin se convierte en el primer humano en el espacio",
+      "es_titulo": false,
+      "id": "u4_p30",
+      "indice": 30,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 427.31,
+      "inicio_s": 426.74,
+      "fin_s": 429.1,
+      "tiempo_fmt": "07:06",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1962 El Marine 2 se convierte en la primera nave espacial en explorar otro planeta (Venus).",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1962 El Marine 2 se convierte en la primera nave espacial en explorar otro planeta (Venus)",
+      "es_titulo": true,
+      "id": "u4_p31",
+      "indice": 31,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 430.23,
+      "inicio_s": 429.1,
+      "fin_s": 436.12,
+      "tiempo_fmt": "07:09",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "Publicación de La primavera silenciosa, de Rachel Carson.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1962 El Marine 2 se convierte en la primera nave espacial en explorar otro planeta (Venus)",
+      "es_titulo": false,
+      "id": "u4_p32",
+      "indice": 32,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 437.47,
+      "inicio_s": 436.12,
+      "fin_s": 440.26,
+      "tiempo_fmt": "07:16",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1963 Tratado de limitación de pruebas nucleares.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1963 Tratado de limitación de pruebas nucleares",
+      "es_titulo": true,
+      "id": "u4_p33",
+      "indice": 33,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 442.03,
+      "inicio_s": 440.26,
+      "fin_s": 445.14,
+      "tiempo_fmt": "07:20",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "Se hunde el submarino nuclear USS Thesher, seguido por otros.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1963 Tratado de limitación de pruebas nucleares",
+      "es_titulo": false,
+      "id": "u4_p34",
+      "indice": 34,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 446.67,
+      "inicio_s": 445.14,
+      "fin_s": 449.8,
+      "tiempo_fmt": "07:25",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "1964 IBM patrocina el Program on Technology and Society de la Universidad de Harvard. 1966 Se estrella un B-52 con cuatro bombas de hidrógeno cerca de Palomares (Almería, España).",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1963 Tratado de limitación de pruebas nucleares",
+      "es_titulo": false,
+      "id": "u4_p35",
+      "indice": 35,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 451.33,
+      "inicio_s": 449.8,
+      "fin_s": 464.5,
+      "tiempo_fmt": "07:29",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "Movimiento de oposición a la propuesta de crear un banco de datos nacional en Estados Unidos 1967 Primer gran vertido accidental de petróleo (Torry Canyon, sur de Inglaterra).",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1963 Tratado de limitación de pruebas nucleares",
+      "es_titulo": false,
+      "id": "u4_p36",
+      "indice": 36,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 464.33,
+      "inicio_s": 464.5,
+      "fin_s": 475.7,
+      "tiempo_fmt": "07:44",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1968 El Papa Pablo VI hace público el rechazo a la contracepción artificial en Humanae vitae.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1968 El Papa Pablo VI hace público el rechazo a la contracepción artificial en Humanae vitae",
+      "es_titulo": true,
+      "id": "u4_p37",
+      "indice": 37,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 475.97,
+      "inicio_s": 475.7,
+      "fin_s": 482.84,
+      "tiempo_fmt": "07:55",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Grandes revueltas en Estados Unidos contra la guerra de Vietnam y el uso del napalm. Mayo del 68.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1968 El Papa Pablo VI hace público el rechazo a la contracepción artificial en Humanae vitae",
+      "es_titulo": false,
+      "id": "u4_p38",
+      "indice": 38,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 482.97,
+      "inicio_s": 482.84,
+      "fin_s": 490.62,
+      "tiempo_fmt": "08:02",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1969 Neil Armstrong pone su pie en la Luna.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1969 Neil Armstrong pone su pie en la Luna",
+      "es_titulo": true,
+      "id": "u4_p39",
+      "indice": 39,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 490.1,
+      "inicio_s": 490.62,
+      "fin_s": 495.12,
+      "tiempo_fmt": "08:10",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Se funda Greenpeace.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1969 Neil Armstrong pone su pie en la Luna",
+      "es_titulo": false,
+      "id": "u4_p40",
+      "indice": 40,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 494.31,
+      "inicio_s": 495.12,
+      "fin_s": 497.16,
+      "tiempo_fmt": "08:15",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Creación de la EPA (Environmental Protection Agency).",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1969 Neil Armstrong pone su pie en la Luna",
+      "es_titulo": false,
+      "id": "u4_p41",
+      "indice": 41,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 496.75,
+      "inicio_s": 497.16,
+      "fin_s": 500.94,
+      "tiempo_fmt": "08:17",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Primeros programas STS (Science, Tecnology and Society) en las universidades del Estado de Pensilvania y Cornell (Estados Unidos).",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1969 Neil Armstrong pone su pie en la Luna",
+      "es_titulo": false,
+      "id": "u4_p42",
+      "indice": 42,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 501.32,
+      "inicio_s": 500.94,
+      "fin_s": 509.44,
+      "tiempo_fmt": "08:20",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1970 Se cancela la financiación del Concorde en Estados Unidos.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1970 Se cancela la financiación del Concorde en Estados Unidos",
+      "es_titulo": true,
+      "id": "u4_p43",
+      "indice": 43,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 510.44,
+      "inicio_s": 509.44,
+      "fin_s": 514.7,
+      "tiempo_fmt": "08:29",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1971 Fundación del Instituto de Ética Kennedy en la Universidad de Georgetown.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1971 Fundación del Instituto de Ética Kennedy en la Universidad de Georgetown",
+      "es_titulo": true,
+      "id": "u4_p44",
+      "indice": 44,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 515.86,
+      "inicio_s": 514.7,
+      "fin_s": 520.82,
+      "tiempo_fmt": "08:34",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1972 Tres ingenieros que trabajan en el proyecto de transporte rápido de la bahía de San Francisco (BART) son despedidos por criticar su seguridad. Siete meses después se produce un accidente.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1971 Fundación del Instituto de Ética Kennedy en la Universidad de Georgetown",
+      "es_titulo": false,
+      "id": "u4_p45",
+      "indice": 45,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 522.08,
+      "inicio_s": 520.82,
+      "fin_s": 533.86,
+      "tiempo_fmt": "08:40",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1972 La EPA prohíbe el uso del DDT.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1972 La EPA prohíbe el uso del DDT",
+      "es_titulo": true,
+      "id": "u4_p46",
+      "indice": 46,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 534.95,
+      "inicio_s": 533.86,
+      "fin_s": 538.16,
+      "tiempo_fmt": "08:53",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "El Congreso de Estados Unidos crea la OTA (Office of Technology Assessment). El Club de Roma publica The Limits of Growth.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1972 La EPA prohíbe el uso del DDT",
+      "es_titulo": false,
+      "id": "u4_p47",
+      "indice": 47,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 538.72,
+      "inicio_s": 538.16,
+      "fin_s": 546.46,
+      "tiempo_fmt": "08:58",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1973 Primer organismo producido por ingeniería genética.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1973 Primer organismo producido por ingeniería genética",
+      "es_titulo": true,
+      "id": "u4_p48",
+      "indice": 48,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 547.23,
+      "inicio_s": 546.46,
+      "fin_s": 551.78,
+      "tiempo_fmt": "09:06",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Crisis del petróleo.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1973 Primer organismo producido por ingeniería genética",
+      "es_titulo": false,
+      "id": "u4_p49",
+      "indice": 49,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 552.42,
+      "inicio_s": 551.78,
+      "fin_s": 553.84,
+      "tiempo_fmt": "09:11",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1974 Moratoria sobre ingeniería genética tras la conferencia de Asilomar (California).",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1974 Moratoria sobre ingeniería genética tras la conferencia de Asilomar (California)",
+      "es_titulo": true,
+      "id": "u4_p50",
+      "indice": 50,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 554.83,
+      "inicio_s": 553.84,
+      "fin_s": 560.62,
+      "tiempo_fmt": "09:13",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Se estrella un DC-10 a las afueras de París.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1974 Moratoria sobre ingeniería genética tras la conferencia de Asilomar (California)",
+      "es_titulo": false,
+      "id": "u4_p51",
+      "indice": 51,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 562.07,
+      "inicio_s": 560.62,
+      "fin_s": 564.4,
+      "tiempo_fmt": "09:20",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1976 Tres ingenieros de General Electric abandonan la compañía en protesta por los peligros de la energía nuclear.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1976 Tres ingenieros de General Electric abandonan la compañía en protesta por los peligros de la energía nuclear",
+      "es_titulo": true,
+      "id": "u4_p52",
+      "indice": 52,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 565.83,
+      "inicio_s": 564.4,
+      "fin_s": 572.34,
+      "tiempo_fmt": "09:24",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1978 El satélite soviético Cosmos 954, con reactor nuclear incluido, se desintegra sobre el norte de Canadá.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1978 El satélite soviético Cosmos 954, con reactor nuclear incluido, se desintegra sobre el norte de Canadá",
+      "es_titulo": true,
+      "id": "u4_p53",
+      "indice": 53,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 573.92,
+      "inicio_s": 572.34,
+      "fin_s": 581.56,
+      "tiempo_fmt": "09:32",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Primera niña probeta: Louise Brown.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1978 El satélite soviético Cosmos 954, con reactor nuclear incluido, se desintegra sobre el norte de Canadá",
+      "es_titulo": false,
+      "id": "u4_p54",
+      "indice": 54,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 582.51,
+      "inicio_s": 581.56,
+      "fin_s": 584.76,
+      "tiempo_fmt": "09:41",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Los tres ingenieros despedidos de BART reciben el I Premio IEEE por “servicios destacados al interés público”.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1978 El satélite soviético Cosmos 954, con reactor nuclear incluido, se desintegra sobre el norte de Canadá",
+      "es_titulo": false,
+      "id": "u4_p55",
+      "indice": 55,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 586.13,
+      "inicio_s": 584.76,
+      "fin_s": 592.14,
+      "tiempo_fmt": "09:44",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1979 Fusión parcial del reactor nuclear en Three Mile Island.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1979 Fusión parcial del reactor nuclear en Three Mile Island",
+      "es_titulo": true,
+      "id": "u4_p56",
+      "indice": 56,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 593.7,
+      "inicio_s": 592.14,
+      "fin_s": 597.46,
+      "tiempo_fmt": "09:52",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1981 Fundación de Earth First!",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1981 Fundación de Earth First!",
+      "es_titulo": true,
+      "id": "u4_p57",
+      "indice": 57,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 598.96,
+      "inicio_s": 597.46,
+      "fin_s": 601.24,
+      "tiempo_fmt": "09:57",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1982 Primer corazón artificial.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1982 Primer corazón artificial",
+      "es_titulo": true,
+      "id": "u4_p58",
+      "indice": 58,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 602.58,
+      "inicio_s": 601.24,
+      "fin_s": 605.2,
+      "tiempo_fmt": "10:01",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Autorización de la venta de insulina producida por ingeniería genética en Estados Unidos y el Reino Unido.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1982 Primer corazón artificial",
+      "es_titulo": false,
+      "id": "u4_p59",
+      "indice": 59,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 606.36,
+      "inicio_s": 605.2,
+      "fin_s": 611.72,
+      "tiempo_fmt": "10:05",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1983 La National Science Teachers Association (NSTA) introduce la enseñanza de las ciencias con orientación CTS en educación secundaria.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1982 Primer corazón artificial",
+      "es_titulo": false,
+      "id": "u4_p60",
+      "indice": 60,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 613.45,
+      "inicio_s": 611.72,
+      "fin_s": 621.98,
+      "tiempo_fmt": "10:11",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1985 Científicos británicos denuncian la constante reducción de la capa de ozono sobre la Antártida desde 1979.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1985 Científicos británicos denuncian la constante reducción de la capa de ozono sobre la Antártida desde 1979",
+      "es_titulo": true,
+      "id": "u4_p61",
+      "indice": 61,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 623.11,
+      "inicio_s": 621.98,
+      "fin_s": 631.12,
+      "tiempo_fmt": "10:21",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1986 Explosión de la nave espacial Challenger y muerte de los siete tripulantes.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1986 Explosión de la nave espacial Challenger y muerte de los siete tripulantes",
+      "es_titulo": true,
+      "id": "u4_p62",
+      "indice": 62,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 631.66,
+      "inicio_s": 631.12,
+      "fin_s": 637.54,
+      "tiempo_fmt": "10:31",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Accidente de Chernóbil (Ucrania). Gigantesco vertido químico en el Rin.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1986 Explosión de la nave espacial Challenger y muerte de los siete tripulantes",
+      "es_titulo": false,
+      "id": "u4_p63",
+      "indice": 63,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 637.93,
+      "inicio_s": 637.54,
+      "fin_s": 643.4,
+      "tiempo_fmt": "10:37",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1987 Protocolo de Montreal, firmado por 24 países, para restringir la producción de CFC y detener la destrucción de la capa de ozono.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1986 Explosión de la nave espacial Challenger y muerte de los siete tripulantes",
+      "es_titulo": false,
+      "id": "u4_p64",
+      "indice": 64,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 644.05,
+      "inicio_s": 643.4,
+      "fin_s": 653.6,
+      "tiempo_fmt": "10:43",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "El Informe Brundtland (Our Common Future) de la Comisión de las Naciones Unidas sobre Medio Ambiente y Desarrollo acuña el término “desarrollo sostenible”.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1986 Explosión de la nave espacial Challenger y muerte de los siete tripulantes",
+      "es_titulo": false,
+      "id": "u4_p65",
+      "indice": 65,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 653.42,
+      "inicio_s": 653.6,
+      "fin_s": 662.44,
+      "tiempo_fmt": "10:53",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "La Oficina de Patentes norteamericana concede el derecho a patentar animales domésticos (producidos por ingeniería genética), aunque prohíbe patentar seres humanos.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1986 Explosión de la nave espacial Challenger y muerte de los siete tripulantes",
+      "es_titulo": false,
+      "id": "u4_p66",
+      "indice": 66,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 662.83,
+      "inicio_s": 662.44,
+      "fin_s": 671.8,
+      "tiempo_fmt": "11:02",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "1989 Caída del muro de Berlín.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1989 Caída del muro de Berlín",
+      "es_titulo": true,
+      "id": "u4_p67",
+      "indice": 67,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 672.8,
+      "inicio_s": 671.8,
+      "fin_s": 675.8,
+      "tiempo_fmt": "11:11",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Primera patente de un ratón transgénico.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1989 Caída del muro de Berlín",
+      "es_titulo": false,
+      "id": "u4_p68",
+      "indice": 68,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 676.07,
+      "inicio_s": 675.8,
+      "fin_s": 678.98,
+      "tiempo_fmt": "11:15",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "1990 Se pone en marcha a nivel internacional el Proyecto Genoma Humano.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1990 Se pone en marcha a nivel internacional el Proyecto Genoma Humano",
+      "es_titulo": true,
+      "id": "u4_p69",
+      "indice": 69,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 679.23,
+      "inicio_s": 678.98,
+      "fin_s": 684.5,
+      "tiempo_fmt": "11:18",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Creación de la World Wide Web.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1990 Se pone en marcha a nivel internacional el Proyecto Genoma Humano",
+      "es_titulo": false,
+      "id": "u4_p70",
+      "indice": 70,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 684.52,
+      "inicio_s": 684.5,
+      "fin_s": 687.04,
+      "tiempo_fmt": "11:24",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "1992 Cumbre de la Tierra en Río.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1992 Cumbre de la Tierra en Río",
+      "es_titulo": true,
+      "id": "u4_p71",
+      "indice": 71,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 687.11,
+      "inicio_s": 687.04,
+      "fin_s": 691.02,
+      "tiempo_fmt": "11:27",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "1993 Se detiene en Estados Unidos la financiación del ambicioso acelerador de partículas que iba a construirse en Texas.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "1992 Cumbre de la Tierra en Río",
+      "es_titulo": false,
+      "id": "u4_p72",
+      "indice": 72,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 690.46,
+      "inicio_s": 691.02,
+      "fin_s": 699.5,
+      "tiempo_fmt": "11:31",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "1995 Primer encuentro en el espacio entre la estación espacial rusa Mir y el transbordador norteamericano Discovery.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "1992 Cumbre de la Tierra en Río",
+      "es_titulo": false,
+      "id": "u4_p73",
+      "indice": 73,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 698.09,
+      "inicio_s": 699.5,
+      "fin_s": 707.74,
+      "tiempo_fmt": "11:39",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Comienza la comercialización de organismos genéticamente modificados.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "1992 Cumbre de la Tierra en Río",
+      "es_titulo": false,
+      "id": "u4_p74",
+      "indice": 74,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 705.47,
+      "inicio_s": 707.74,
+      "fin_s": 712.3,
+      "tiempo_fmt": "11:47",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "1997 Protocolo de Kioto.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "1997 Protocolo de Kioto",
+      "es_titulo": true,
+      "id": "u4_p75",
+      "indice": 75,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 710.29,
+      "inicio_s": 712.3,
+      "fin_s": 716.02,
+      "tiempo_fmt": "11:52",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "1998 Dolly Parton da nombre a una famosa oveja clónica.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "1998 Dolly Parton da nombre a una famosa oveja clónica",
+      "es_titulo": true,
+      "id": "u4_p76",
+      "indice": 76,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 713.36,
+      "inicio_s": 716.02,
+      "fin_s": 721.18,
+      "tiempo_fmt": "11:56",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Ensamblados los primeros módulos de la estación espacial internacional.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "1998 Dolly Parton da nombre a una famosa oveja clónica",
+      "es_titulo": false,
+      "id": "u4_p77",
+      "indice": 77,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 717.83,
+      "inicio_s": 721.18,
+      "fin_s": 725.78,
+      "tiempo_fmt": "12:01",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Normativa de la Comisión Europea sobre liberación y etiquetado de organismos genéticamente manipulados.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "1998 Dolly Parton da nombre a una famosa oveja clónica",
+      "es_titulo": false,
+      "id": "u4_p78",
+      "indice": 78,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 722.6,
+      "inicio_s": 725.78,
+      "fin_s": 732.12,
+      "tiempo_fmt": "12:05",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2000 Enviados los primeros astronautas a la estación espacial internacional.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2000 Enviados los primeros astronautas a la estación espacial internacional",
+      "es_titulo": true,
+      "id": "u4_p79",
+      "indice": 79,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 729.09,
+      "inicio_s": 732.12,
+      "fin_s": 737.18,
+      "tiempo_fmt": "12:12",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2001 Dennis Tito se convierte en el primer turista espacial en su vista a la estación espacial internacional.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2001 Dennis Tito se convierte en el primer turista espacial en su vista a la estación espacial internacional",
+      "es_titulo": true,
+      "id": "u4_p80",
+      "indice": 80,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 734.81,
+      "inicio_s": 737.18,
+      "fin_s": 743.68,
+      "tiempo_fmt": "12:17",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2002 Hundimiento del petrolero Prestige frente a las costas de Galicia.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2002 Hundimiento del petrolero Prestige frente a las costas de Galicia",
+      "es_titulo": true,
+      "id": "u4_p81",
+      "indice": 81,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 741.95,
+      "inicio_s": 743.68,
+      "fin_s": 748.54,
+      "tiempo_fmt": "12:23",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2003 Completado el Proyecto Genoma Humano.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2003 Completado el Proyecto Genoma Humano",
+      "es_titulo": true,
+      "id": "u4_p82",
+      "indice": 82,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 747.27,
+      "inicio_s": 748.54,
+      "fin_s": 752.14,
+      "tiempo_fmt": "12:28",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Explosión de la nave espacial Columbia.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2003 Completado el Proyecto Genoma Humano",
+      "es_titulo": false,
+      "id": "u4_p83",
+      "indice": 83,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 751.22,
+      "inicio_s": 752.14,
+      "fin_s": 755.26,
+      "tiempo_fmt": "12:32",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2004 Marck Zuckerberg crea Facebook.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2004 Marck Zuckerberg crea Facebook",
+      "es_titulo": true,
+      "id": "u4_p84",
+      "indice": 84,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 754.38,
+      "inicio_s": 755.26,
+      "fin_s": 758.74,
+      "tiempo_fmt": "12:35",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Descubrimiento del grafeno.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2004 Marck Zuckerberg crea Facebook",
+      "es_titulo": false,
+      "id": "u4_p85",
+      "indice": 85,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 758.01,
+      "inicio_s": 758.74,
+      "fin_s": 761.24,
+      "tiempo_fmt": "12:38",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2005 El protocolo de Kioto entra en vigor.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2005 El protocolo de Kioto entra en vigor",
+      "es_titulo": true,
+      "id": "u4_p86",
+      "indice": 86,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 760.6,
+      "inicio_s": 761.24,
+      "fin_s": 764.76,
+      "tiempo_fmt": "12:41",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Disponibilidad comercial de la tecnología GPS.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2005 El protocolo de Kioto entra en vigor",
+      "es_titulo": false,
+      "id": "u4_p87",
+      "indice": 87,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 764.46,
+      "inicio_s": 764.76,
+      "fin_s": 768.58,
+      "tiempo_fmt": "12:44",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Tres antiguos empleados de Paypal fundan Youtube.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2005 El protocolo de Kioto entra en vigor",
+      "es_titulo": false,
+      "id": "u4_p88",
+      "indice": 88,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 767.97,
+      "inicio_s": 768.58,
+      "fin_s": 771.98,
+      "tiempo_fmt": "12:48",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2006 La FDA aprueba la polémica vacuna contra el virus del papiloma humano para prevenir el cáncer de útero.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2006 La FDA aprueba la polémica vacuna contra el virus del papiloma humano para prevenir el cáncer de útero",
+      "es_titulo": true,
+      "id": "u4_p89",
+      "indice": 89,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 771.59,
+      "inicio_s": 771.98,
+      "fin_s": 778.96,
+      "tiempo_fmt": "12:51",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Jarck Dorsey lanza al mundo el primer tweet.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2006 La FDA aprueba la polémica vacuna contra el virus del papiloma humano para prevenir el cáncer de útero",
+      "es_titulo": false,
+      "id": "u4_p90",
+      "indice": 90,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 778.62,
+      "inicio_s": 778.96,
+      "fin_s": 782.02,
+      "tiempo_fmt": "12:58",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2007 Los científicos del IPCC concluyen que el cambio climático es responsabilidad humana.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2007 Los científicos del IPCC concluyen que el cambio climático es responsabilidad humana",
+      "es_titulo": true,
+      "id": "u4_p91",
+      "indice": 91,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 781.84,
+      "inicio_s": 782.02,
+      "fin_s": 788.2,
+      "tiempo_fmt": "13:02",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2009 Crisis mundial por la epidemia de gripe A (H1N).",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2009 Crisis mundial por la epidemia de gripe A (H1N)",
+      "es_titulo": true,
+      "id": "u4_p92",
+      "indice": 92,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 788.12,
+      "inicio_s": 788.2,
+      "fin_s": 793.04,
+      "tiempo_fmt": "13:08",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2011 Accidente en la central nuclear de Fukushima.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2011 Accidente en la central nuclear de Fukushima",
+      "es_titulo": true,
+      "id": "u4_p93",
+      "indice": 93,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 792.92,
+      "inicio_s": 793.04,
+      "fin_s": 796.98,
+      "tiempo_fmt": "13:13",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2012 El CERN anuncia la observación de una partícula consistente con el bosón de Higgs.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2012 El CERN anuncia la observación de una partícula consistente con el bosón de Higgs",
+      "es_titulo": true,
+      "id": "u4_p94",
+      "indice": 94,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 797.21,
+      "inicio_s": 796.98,
+      "fin_s": 802.66,
+      "tiempo_fmt": "13:16",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2016 Anuncio de la detección de ondas gravitacionales.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2016 Anuncio de la detección de ondas gravitacionales",
+      "es_titulo": true,
+      "id": "u4_p95",
+      "indice": 95,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 803.2,
+      "inicio_s": 802.66,
+      "fin_s": 807.2,
+      "tiempo_fmt": "13:22",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "3. Crítica política a la ciencia y la tecnología.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3. Crítica política a la ciencia y la tecnología",
+      "es_titulo": true,
+      "id": "u4_p96",
+      "indice": 96,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 807.77,
+      "inicio_s": 807.2,
+      "fin_s": 811.08,
+      "tiempo_fmt": "13:27",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "La guerra del Vietnam, los problemas ecológicos, los usos sexistas o racistas de algunas teorías científicas y los riesgos farmacológicos fueron algunos de los factores que promovieron, desde los años 60 y 70 del pasado siglo XX, la crítica de desarrollos científico-tecnológicos por parte de colectivos ecologistas, pacifistas, feministas o marxistas.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3. Crítica política a la ciencia y la tecnología",
+      "es_titulo": false,
+      "id": "u4_p97",
+      "indice": 97,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 812.16,
+      "inicio_s": 811.08,
+      "fin_s": 832.06,
+      "tiempo_fmt": "13:31",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Algunos científicos también se aliaron en asociaciones como Science for the People para oponerse a instancias de la ciencia que entendían al servicio de injusticias o desigualdades, como las duras críticas de R. Lewontin, Hilary y Steve Rose o S. J. Gould a la sociobiología y enfoques derivados que trataban de dar cuenta de los comportamientos sociales recurriendo al determinismo biológico.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3. Crítica política a la ciencia y la tecnología",
+      "es_titulo": false,
+      "id": "u4_p98",
+      "indice": 98,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 831.89,
+      "inicio_s": 832.06,
+      "fin_s": 853.78,
+      "tiempo_fmt": "13:52",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "Las críticas feministas a algunos aspectos o variedades de las tecnologías reproductivas o las ecologistas a los riesgos de prácticas como el fracking son algunos ejemplos más recientes de la vigencia de este tipo de identificación y denuncia de efectos negativos de la ciencia y la tecnología. En algunos casos, únicamente se critican usos indebidos que contribuyen a la degradación del ambiente, la destrucción causada por la guerra, la naturalización de la inferioridad de las mujeres, la perpetuación de las desigualdades de clase, o cualquier otro riesgo o prejuicio social, manteniendo una imagen tradicional de la ciencia y la tecnología como instrumentos neutrales. No obstante, algunos de estos analistas han desarrollado también críticas globales a la ciencia y la tecnología como armas de dominación y control o determinantes de nuestras formas de vida, defendiendo transformaciones en los objetivos de investigación, la estructura organizativa de la ciencia, el papel de los no expertos o la idea misma de objetividad.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3. Crítica política a la ciencia y la tecnología",
+      "es_titulo": false,
+      "id": "u4_p99",
+      "indice": 99,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 854.65,
+      "inicio_s": 853.78,
+      "fin_s": 909.88,
+      "tiempo_fmt": "14:13",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "La imagen de Jacques Ellul de una tecnología autónoma, convertida en un fin en sí misma, es retomada por uno de los analistas de la tecnología más influyentes de nuestros días, Langdon Winner. En Tecnología autónoma, Winner discute con Ellul, reconociendo la deuda con su obra, pero tomando postura de forma diferente respecto a sus consecuencias deterministas. Sin embargo, también Winner es crítico con nuestra aceptación automática y abandono a la tecnología. En sus obras, describe este abandono como “sonambulismo tecnológico”. Caminamos dormidos, afirma, por los procesos de reconstrucción tecnológica de nuestra existencia. En el conocido ensayo que abre La ballena y el reactor, Winner se pregunta si los artefactos tecnológicos tienen política. La respuesta del autor es afirmativa, las tecnologías tienen política en varios sentidos. En uno de ellos, las tecnologías pueden usarse para fines políticos, como un diseño urbanístico que favorezca la segregación de clases o razas, por ejemplo. Esto es lo que habría ocurrido, de acuerdo con Winner, cuando Robert Moses diseñó los puentes de Long Island deliberadamente bajos con el fin de que no permitieran el paso de autobuses, limitando por tanto el acceso a la zona a aquellas personas que no pudieran desplazarse en automóvil. Pero hay también tecnologías que pueden ser inherentemente políticas, en el sentido de que transforman los roles sociales y nos colocan en relaciones específicas de poder (al modo en el que lo hace, en su ejemplo preferido, basar la provisión energética de un país en la energía nuclear, ya que requiere centralización y autoritarismo). La crítica de Winner, no obstante, va más allá de los casos particulares para, basándose en la tesis del determinismo tecnológico, oponerse al orden social en el que somos “sonámbulos tecnológicos”.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3. Crítica política a la ciencia y la tecnología",
+      "es_titulo": false,
+      "id": "u4_p100",
+      "indice": 100,
+      "bloque_tts": 7,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 909.7,
+      "inicio_s": 909.88,
+      "fin_s": 1016.14,
+      "tiempo_fmt": "15:09",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #7)"
+    },
+    {
+      "texto": "Dorothy Nelkin (por ejemplo, 1979, 1984; Nelkin y Tancredi, 1994; Jasper y Nelkin, 1991) ha desarrollado también en su trabajo una crítica de carácter ético y político a diversos aspectos de la ciencia y la tecnología, centrándose en temas relacionados con la comunicación y percepción pública de la ciencia, la bioética (ingeniería genética, diagnóstico prenatal, derechos de los animales..), las controversias sociales sobre ciencia y tecnología, o el papel del asesoramiento experto en política y en los tribunales. En su trabajo, Nelkin ha analizado los conflictos entre valores que están a la base de las polémicas, y propone la apertura y discusión social de los mismos. En la misma línea de trabajo de crítica política, podemos citar a Ruth Hubbard (por ejemplo, 1993), también preocupada por cuestiones de bioética, o a Sheila Jasanoff, interesada en los procesos de toma de decisiones tecnocientíficas.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3. Crítica política a la ciencia y la tecnología",
+      "es_titulo": false,
+      "id": "u4_p101",
+      "indice": 101,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1015.97,
+      "inicio_s": 1016.14,
+      "fin_s": 1074.7,
+      "tiempo_fmt": "16:56",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #8)"
+    },
+    {
+      "texto": "4. Enfoques filosóficos.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "4. Enfoques filosóficos",
+      "es_titulo": true,
+      "id": "u4_p102",
+      "indice": 102,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1072.87,
+      "inicio_s": 1074.7,
+      "fin_s": 1077.5,
+      "tiempo_fmt": "17:54",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #8)"
+    },
+    {
+      "texto": "Dentro del marco de la filosofía, una parte importante de las reflexiones actuales sobre la tecnología recibe la influencia de corrientes filosóficas como la fenomenología, el existencialismo, la teoría crítica o el pragmatismo. La herencia de Dewey, Ellul, Heidegger, Ortega o Marcuse se utiliza para dar cuenta de la interferencia de la tecnología en las relaciones del ser humano con la naturaleza. No obstante, la filosofía de la tecnología sufre una importante transformación a partir de los años 80 del pasado siglo XX que algunos autores describen como un “giro empírico”. Mientras que la filosofía de la tecnología más clásica abordaba la tecnología como fenómeno en general, las nuevas investigaciones bajo el giro empírico se ocupan de tecnologías específicas, comprendiendo la tecnología como un producto contingente de un amplio y heterogéneo abanico de factores que incluyen aspectos sociales. Esta perspectiva centrada en casos de estudio particulares permite evitar posiciones deterministas generales sobre la tecnología, así como tanto la tecnofilia como la tecnofobia indiscriminadas. En el giro empírico, además, se encuentran un buen número de tradiciones y enfoques de la disciplina y se producen también intersecciones con otros campos de investigación como los estudios sobre ciencia, proporcionando un ámbito idóneo para explorar esas fertilizaciones cruzadas.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "4. Enfoques filosóficos",
+      "es_titulo": false,
+      "id": "u4_p103",
+      "indice": 103,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1076.28,
+      "inicio_s": 1077.5,
+      "fin_s": 1154.48,
+      "tiempo_fmt": "17:57",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #8)"
+    },
+    {
+      "texto": "Don Ihde analiza el modo en el que el mundo se nos presenta a través de artefactos tecnológicos, y cómo nuestra experiencia y nuestra imagen es transformada por estas mediaciones. El estudio de la tecnología es para Ihde el desarrollo de una fenomenología de la relación humano-máquina-mundo. En su análisis de tecnologías concretas, Ihde muestra las formas de experiencia del mundo que posibilitan las tecnologías. Es este un movimiento hacia una filosofía de la tecnología de carácter empírico, frente la posición clásica heideggeriana donde la tecnología moderna aparecía como la forma (única) de desvelamiento propia de nuestro mundo contemporáneo. En el plano corporal, Ihde identifica tres modos de relación entre sujetos humanos, tecnología y mundo. En la mediación, la tecnología media en la percepción del mundo, bien incorporándose al propio cuerpo (como unas gafas o un bastón) o posibilitando lecturas o interpretaciones del mismo (como un termómetro, por ejemplo). En la alteridad, el sujeto establece relación con el propio artefacto tecnológico (como la que se establece con un ordenador, un coche o un robot). Por último, en las relaciones de trasfondo, los artefactos tecnológicos funcionan como el contexto de nuestra experiencia, modelándola (como el contexto conformado por un sistema de calefacción o de red wifi). Al ocuparse de la relación entre la tecnología y la sociedad, en un sentido más general, la postura postfenomenológica de Ihde rechaza tanto el sustantivismo (la postura según la cual la tecnología es un factor independiente que ejerce influencia sobre la sociedad) como el instrumentalismo (la idea de que la tecnología es un mero instrumento neutral para el uso humano). Para Ihde, ambas posiciones asumen una idea de “tecnología en sí misma” que rechaza en favor de su propuesta de la consideración del par activo y relacional humanotecnología. En este sentido, la tecnología es multiestable (abierta a interpretaciones y usos distintos a aquellos para los que es diseñada) e intencional (nos dirige hacia determinados usos, tiene política o guiones). Aunque ambas caracterizaciones podrían aparecer en tensión, esta no es tal, ya que, si bien la tecnología es multiestable, su “intencionalidad” aflora al elegir un tipo de relación con ella y con el mundo a través de la misma.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "4. Enfoques filosóficos",
+      "es_titulo": false,
+      "id": "u4_p104",
+      "indice": 104,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1154.3,
+      "inicio_s": 1154.48,
+      "fin_s": 1285.74,
+      "tiempo_fmt": "19:14",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "Andrew Feenberg ejemplifica en su propia trayectoria el tránsito entre una reflexión sobre la tecnología clásica en el contexto de la teoría crítica y el giro empírico posterior. Si bien en sus primeros trabajos sobre la tecnología, mantuvo tesis generales sobre el carácter capitalista de la tecnología contemporánea y la propuesta de una tecnología socialista (en línea con la crítica a la racionalidad científico-tecnológica como forma de ideología de autores como Marcuse o Habermas), en sus escritos posteriores se aleja de las posturas tecnopesimistas y unidimensionales, entrando en diálogo con los análisis constructivistas y mostrando el modo en el que los valores sociales se incorporan en las tecnologías y la ambivalencia de las mismas. Por su parte, Paul Durbin y Larry Hickman siguen a John Dewey para proponer una llamada al activismo social en el primer caso, y una tecnología más comprehensiva y libre de intereses particulares o sesgos ideológicos en el segundo.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "4. Enfoques filosóficos",
+      "es_titulo": false,
+      "id": "u4_p105",
+      "indice": 105,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1285.56,
+      "inicio_s": 1285.74,
+      "fin_s": 1340.1,
+      "tiempo_fmt": "21:25",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #10)"
+    },
+    {
+      "texto": "Un autor a destacar, difícilmente clasificable, es Ivan Illich. Su obra, muy relacionada con los movimientos de crítica social de los años 60 y 70, aborda muchos de los aspectos estructurales que definen y determinan nuestra cultura occidental: la educación, la medicina, el género, las relaciones de producción, el sistema de transportes, etcétera. Todos ellos son “tecnologías sociales” que cumplen el papel de adaptar los individuos al sistema. En La Convivencialidad sostiene que las tecnologías pasan por dos umbrales de mutación: al traspasar el primero se convierten en productivas, pero la traspasar el segundo se vuelven disfuncionales al transformarse en fines en sí mismas. Por ejemplo, la televisión nos permite estar informados, pero su omnipresencia y su abuso crea dependencia y mutila la capacidad crítica de los individuos. Illich propone tecnologías para la convivencialidad que sean libremente elegidas, permitan la expresión activa de la vida personal y no estén monopolizadas por ninguna élite profesional. Las tecnologías para la convivencialidad serían herramientas potenciadoras de la creatividad, la autonomía y la libertad individual.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "4. Enfoques filosóficos",
+      "es_titulo": false,
+      "id": "u4_p106",
+      "indice": 106,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1339.73,
+      "inicio_s": 1340.1,
+      "fin_s": 1408.98,
+      "tiempo_fmt": "22:20",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #10)"
+    },
+    {
+      "texto": "Otro grupo de autores relevantes proviene de la tradición analítica en filosofía y han aplicado también sus análisis a la ciencia y la tecnología. Kristin Shrader-Frechette (por ejemplo, 1985, 1985b, 1989) ha trabajado en evaluación de tecnologías, democratización de la política tecnológica, percepción y gestión del riesgo, etcétera., siempre encuadrando sus análisis en el debate sobre la racionalidad. Para Shrader-Frechette, el problema de la racionalidad en la evaluación de riesgos (o en la evaluación de tecnologías en general) es paralelo al problema de la racionalidad científica. En este sentido, defiende un “naturalismo jerárquico”, intermedio entre los enfoques racionalistas tradicionales y los naturalismos más radicales, en el que la objetividad científica está garantizada por el consenso y la revisión crítica de la comunidad de científicos, aunque defendiendo la existencia de al menos un criterio universal de elección interteórica (el poder explicativo demostrado en la capacidad predictiva). Shrader-Frechette introduce además los valores éticos dentro de la racionalidad científico-tecnológica, lo que le permite defender la creación de mecanismos democráticos de participación pública en evaluación y política tecnológica.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "4. Enfoques filosóficos",
+      "es_titulo": false,
+      "id": "u4_p107",
+      "indice": 107,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1408.8,
+      "inicio_s": 1408.98,
+      "fin_s": 1482.22,
+      "tiempo_fmt": "23:28",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "La intersección entre la filosofía de la ciencia y la ética está también presente en el trabajo de Evandro Agazzi, que defiende la reglamentación ética y jurídica de la actividad científica basándose en la pluralidad de valores y fines presentes en ella, así como la relevancia de la ciencia para la propia ética. Nicholas Rescher por su parte analiza la relación entre ciencia y valores, interesándose por los límites cognitivos y éticos de la ciencia en cuanto a capacidad y actividad humana.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "4. Enfoques filosóficos",
+      "es_titulo": false,
+      "id": "u4_p108",
+      "indice": 108,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1481.44,
+      "inicio_s": 1482.22,
+      "fin_s": 1509.3,
+      "tiempo_fmt": "24:42",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "Con enfoques más epistemológicos que éticos, y fundamentalmente preocupados por la génesis y justificación del conocimiento, más que por sus efectos sociales, podemos también señalar los naturalismos contextuales de Helen Longino y Miriam Solomon, en los que, con diferentes matices, se reconoce la profunda contextualización de la ciencia sin renunciar a la objetividad y la normatividad epistémica. La postulación de un sujeto social para la ciencia (frente al sujeto individual de la epistemología tradicional) evita la amenaza relativista, al quedar neutralizados los sesgos particulares en la confrontación social de las diferentes perspectivas.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "4. Enfoques filosóficos",
+      "es_titulo": false,
+      "id": "u4_p109",
+      "indice": 109,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1508.31,
+      "inicio_s": 1509.3,
+      "fin_s": 1544.84,
+      "tiempo_fmt": "25:09",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "Otro enfoque naturalista es el de Steve Fuller, que defiende en su “epistemología social” una reorientación de los análisis sociológicos de la tradición académica con el fin de recuperar la dimensión normativa. La normatividad propuesta por Fuller no se trata solamente de averiguar (al modo naturalista) cómo debería proceder la investigación, sino también de articular los medios (en el ámbito de la gestión política) para la instanciación de las normas propuestas.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "4. Enfoques filosóficos",
+      "es_titulo": false,
+      "id": "u4_p110",
+      "indice": 110,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1544.66,
+      "inicio_s": 1544.84,
+      "fin_s": 1570.86,
+      "tiempo_fmt": "25:44",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "Algunos de estos enfoques defienden, como colofón de sus análisis acerca de las indeterminaciones epistemológicas y las dimensiones éticas de los fenómenos científico-tecnológicos, así como de sus efectos sociales, la apertura de los procesos de decisiones al público no experto, en definitiva, la democratización de la ciencia y la tecnología. En este sentido, indican como uno de los campos de investigación prioritarios de CTS el de las políticas de ciencia y tecnología.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "4. Enfoques filosóficos",
+      "es_titulo": false,
+      "id": "u4_p111",
+      "indice": 111,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1571.24,
+      "inicio_s": 1570.86,
+      "fin_s": 1597.98,
+      "tiempo_fmt": "26:10",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "5. Ética de la tecnología.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "5. Ética de la tecnología",
+      "es_titulo": true,
+      "id": "u4_p112",
+      "indice": 112,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1597.71,
+      "inicio_s": 1597.98,
+      "fin_s": 1600.8,
+      "tiempo_fmt": "26:37",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "Una buena parte de las discusiones de las que hablamos previamente se desarrollan en el contexto de la ética de la tecnología. Entre la diversidad que caracteriza la ética de la tecnología contemporánea se pueden distinguir tres tipos de ramas con un desarrollo independiente: los enfoques culturales y políticos (muy diversos en sí mismos y en los que ubicaríamos las reflexiones filosóficas de los apartados anteriores), la ética ingenieril y las éticas específicas.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "5. Ética de la tecnología",
+      "es_titulo": false,
+      "id": "u4_p113",
+      "indice": 113,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1601.08,
+      "inicio_s": 1600.8,
+      "fin_s": 1627.16,
+      "tiempo_fmt": "26:40",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "La ética ingenieril es un campo reciente de investigación y educación, que se generaliza en Estados Unidos en los años 80 del pasado siglo XX. Se trata de una ética profesional, que se ocupa de cuestiones relacionadas con los códigos éticos de la ingeniería, los conflictos de interés a los que se enfrentan los profesionales de la ingeniería en su trabajo, los valores de la profesión ingenieril (competencia, honestidad…), las alertas tempranas (whistle-blowing), etcétera. Mientras que la ética ingenieril es una ética profesional desarrollada fundamentalmente por los propios ingenieros, las éticas específicas son éticas aplicadas y tienen un importante desarrollo desde la ética filosófica. Las nuevas tecnologías, como las tecnologías de la información y las comunicaciones, la biotecnología, las nanotecnologías y las tecnologías convergentes son las que reciben mayor atención en la actualidad, en la medida en la que plantean cuestiones éticas novedosas en el contexto tecnológico como los temas de la privacidad, la propiedad intelectual, el patentado de seres vivos o el transhumanismo. La ética ambiental es otra rama de la ética en la que la reflexión sobre la tecnología desempeña un papel relevante. La necesidad de éticas específicas para determinadas tecnologías se ubica dentro de la discusión más general acerca de si las nuevas tecnologías plantean problemas éticos también novedosos, o se trata más bien de dilemas éticos clásicos en contextos tecnológicos distintos. Preguntas como la de si la propiedad del software debe estar protegida por la ley o la preocupación por la amenaza a la privacidad que suponen las grandes bases de datos se han interpretado por diferentes autores como cuestiones éticas específicas de los desarrollos tecnológicos que hacen posible y necesaria su formulación, mientras que en otras interpretaciones se trata de diferentes versiones de los viejos problemas de la propiedad o la privacidad.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "5. Ética de la tecnología",
+      "es_titulo": false,
+      "id": "u4_p114",
+      "indice": 114,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1626.98,
+      "inicio_s": 1627.16,
+      "fin_s": 1733.62,
+      "tiempo_fmt": "27:07",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "Aun cuando la tendencia general contemporánea al desarrollo de éticas específicas se corresponde con las aproximaciones más empíricas y orientadas a tecnologías concretas características de los enfoques actuales para el estudio de la tecnología, hay problemas éticos comunes relacionados con la tecnología, como los que identifican Fraassen et al. Algunos de ellos son los siguientes:",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "5. Ética de la tecnología",
+      "es_titulo": false,
+      "id": "u4_p115",
+      "indice": 115,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1733.56,
+      "inicio_s": 1733.62,
+      "fin_s": 1755.4,
+      "tiempo_fmt": "28:53",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "Un tema muy debatido en la ética actual de la tecnología es el de la posibilidad de adscribir agencia moral a los artefactos o sistemas técnicos. Aunque una posición común en la reflexión tradicional sobre la tecnología había sido la de su neutralidad (defendida en la actualidad por autores como Joseph Pitt, 2000), los artefactos técnicos influyen sobre el comportamiento humano de forma difícilmente comprensible si los tomamos como instrumentos pasivos que se utilizan para objetivos moralmente adecuados o inadecuados. Además, la mayor parte de los filósofos de la tecnología estaría de acuerdo en que las tecnologías se diseñan para ejercer una función y ser utilizadas para determinados fines (pese a que puedan ser utilizadas para otros objetivos no previstos en su diseño). En estos sentidos, es difícil mantener la tesis de la neutralidad moral de la tecnología, aunque los modos en los que se argumenta su carga moral pueden ser muy diversos. En el “giro material” en la ética, como lo denominan Kroes y Verbeek, las tecnologías son “agentes” en el sentido de que pueden influir sobre sus usuarios, sobre cómo perciben el mundo o interaccionan. En algunos enfoques se defiende incluso la agencia moral de la tecnología afirmando que las tecnologías pueden actuar moralmente y ser, por tanto, responsables de sus consecuencias. Las cuestiones a debate giran alrededor de si el impacto moral de la tecnología (positivo o negativo) es debido a su uso por parte de los humanos o es más bien consecuencia del modo en el que la propia tecnología condiciona activamente la vida humana, “actuando”, por tanto, como agente moral. Atribuir agencia moral a los artefactos es un movimiento arriesgado, y requiere repensar las nociones de agencia y de moralidad. Una opción sería la adoptada por ejemplo por Bruno Latour y la teoría del actor-red, que vimos en la unidad anterior: la de desconectar la agencia de la intencionalidad. Otros autores como Verbeek defenderán que la agencia moral es un fenómeno híbrido en el que los elementos humanos y no humanos actúan de forma articulada. Desde este punto de vista, la intencionalidad y la agencia son el resultado de las complejas conexiones entre humanos y artefactos. Otras posturas evitan la adscripción de agencia moral a los artefactos argumentando que son susceptibles de evaluación moral en la medida en que incorporan valores en su diseño. En este sentido, la agencia humana sería de algún modo constitutiva de los artefactos técnicos, ya que los valores y fines “inscritos” en la construcción de los artefactos son parte consustancial de ellos. La afirmación de que la tecnología tiene agencia moral sería entonces una forma osada y confusa de afirmar, simplemente, que la tecnología es moralmente relevante, de tal modo que la defensa de la carga valorativa de la tecnología no tendría necesariamente que ir unida a la más problemática defensa de su agencia moral.",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "5. Ética de la tecnología",
+      "es_titulo": false,
+      "id": "u4_p116",
+      "indice": 116,
+      "bloque_tts": 14,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1755.22,
+      "inicio_s": 1755.4,
+      "fin_s": 1958.18,
+      "tiempo_fmt": "29:15",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #14)"
+    },
+    {
+      "texto": "Otro de los temas recurrentes relacionados con la ética de la tecnología surge al centrarse, no en el uso de las tecnologías, sino en su producción. La atención creciente de la filosofía de la tecnología a las cuestiones del diseño también se refleja en la atención creciente de la ética a la incorporación de valores en el diseño. El planteamiento de cuestiones éticas relacionadas con el diseño de las tecnologías está asimismo en consonancia con los enfoques en estudios sociales que muestran la maleabilidad de las tecnologías durante su proceso de construcción. El diseño sensible a los valores en informática, el diseño para la sostenibilidad, el diseño inclusivo o el diseño afectivo son algunas áreas de la ingeniería en las que se emprende la tarea de implementar valores éticos en la construcción de tecnologías. La incorporación de valores éticos en el diseño de tecnologías puede suscitar problemas de conflicto con otros valores (eficacia, economía, seguridad, etcétera.) que requieren también un abordaje desde el punto de vista moral. Por otra parte, la cuestión de los valores éticos en el diseño de tecnologías se articula con un área de investigación y práctica de creciente actualidad: la innovación responsable, que a su vez suscita planteamientos relacionados con el trabajo sobre gobernanza y participación social.",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "5. Ética de la tecnología",
+      "es_titulo": false,
+      "id": "u4_p117",
+      "indice": 117,
+      "bloque_tts": 15,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1958.27,
+      "inicio_s": 1958.18,
+      "fin_s": 1990.72,
+      "tiempo_fmt": "32:38",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #15)"
+    },
+    {
+      "texto": "Muy relacionada con el tema de la agencia moral se encuentra la cuestión de la adscripción de responsabilidad. Se trata de un asunto de especial importancia en el ámbito de la ética ingenieril, donde se discute en relación con los códigos éticos de la profesión y con las situaciones habituales en la práctica de la ingeniería donde los fallos o los accidentes suceden en sistemas complejos desde el punto de vista de su organización tanto material como social. Los desastres tecnológicos (centrales nucleares, accidentes aéreos o navales, etc…) parecen ser el resultado de complejas coincidencias imposibles de predecir por las personas involucradas, lo que en ética ha venido de denominarse “el problema de las muchas manos” (“the problem of many hands”) y en sociología de la tecnología “accidentes normales”. Esta complejidad da lugar a desastres que suceden en circunstancias en las que no es identificable un agente intencional, no hay una acción voluntaria que haya ocasionado el accidente, o las consecuencias no eran conocidas de antemano. En estas condiciones, la atribución de responsabilidad resulta problemática, como ya se ha señalado en la primera unidad de esta asignatura.",
+      "pagina_inicio": 13,
+      "pagina_fin": 13,
+      "paginas": [
+        13
+      ],
+      "seccion": "5. Ética de la tecnología",
+      "es_titulo": false,
+      "id": "u4_p118",
+      "indice": 118,
+      "bloque_tts": 16,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1990.54,
+      "inicio_s": 1990.72,
+      "fin_s": 2055.46,
+      "tiempo_fmt": "33:10",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #16)"
+    },
+    {
+      "texto": "6. Autonomía y determinismo tecnológico.",
+      "pagina_inicio": 13,
+      "pagina_fin": 13,
+      "paginas": [
+        13
+      ],
+      "seccion": "6. Autonomía y determinismo tecnológico",
+      "es_titulo": true,
+      "id": "u4_p119",
+      "indice": 119,
+      "bloque_tts": 16,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 2055.74,
+      "inicio_s": 2055.46,
+      "fin_s": 2059.06,
+      "tiempo_fmt": "34:15",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #16)"
+    },
+    {
+      "texto": "La transición reciente entre una filosofía de la tecnología clásica, que entendía el fenómeno tecnológico como un todo problemático con consecuencias sociales negativas y una filosofía de la tecnología contemporánea, de carácter más empírico y centrada en las particularidades de los casos concretos de interacciones tecnologíasociedad, puede verse claramente en la discusión sobre uno de los temas más recurrentes de la reflexión sobre la tecnología: el de la autonomía y el determinismo tecnológico.",
+      "pagina_inicio": 14,
+      "pagina_fin": 14,
+      "paginas": [
+        14
+      ],
+      "seccion": "6. Autonomía y determinismo tecnológico",
+      "es_titulo": false,
+      "id": "u4_p120",
+      "indice": 120,
+      "bloque_tts": 16,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 2059.92,
+      "inicio_s": 2059.06,
+      "fin_s": 2087.48,
+      "tiempo_fmt": "34:19",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #16)"
+    },
+    {
+      "texto": "El tema de la autonomía de la tecnología y el determinismo tecnológico es uno de los temas clásicos del “movimiento” CTS que apunta hacia los efectos perniciosos de un crecimiento tecnológico descontrolado sobre sociedades sometidas. Según la mencionada metáfora de Langdon Winner, las tecnologías tienen el poder de transformar nuestros modos de vida y de hacernos caminar sonámbulos a través de los procesos de reconstrucción tecnológica de nuestras existencias. Las tecnologías tienen génesis ligadas a contingencias humanas, sin embargo, en cierto momento alcanzan un punto de no retorno y su desarrollo se convierte en autónomo respecto a sus creadores (síndrome de Frankenstein), de tal modo que esclavizan y someten los destinos humanos. Los caos producidos por caídas de los sistemas de electricidad en diversas ciudades, la capacidad de una inusitada afluencia de tráfico para colapsar una ciudad y causar víctimas, o las transformaciones radicales que las nuevas tecnologías de la información y las comunicaciones están introduciendo en las vidas de usuarios, las relaciones internacionales y el comercio mundial son algunos ejemplos de cómo los destinos humanos están de algún modo irreversiblemente guiados por desarrollos tecnológicos que han terminado por imponerse a expectativas, deseos y voluntades.",
+      "pagina_inicio": 14,
+      "pagina_fin": 14,
+      "paginas": [
+        14
+      ],
+      "seccion": "6. Autonomía y determinismo tecnológico",
+      "es_titulo": false,
+      "id": "u4_p121",
+      "indice": 121,
+      "bloque_tts": 17,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 2087.3,
+      "inicio_s": 2087.48,
+      "fin_s": 2159.78,
+      "tiempo_fmt": "34:47",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #17)"
+    },
+    {
+      "texto": "Esta interpretación de las relaciones entre tecnología y sociedad, sin embargo, es cuestionada por los enfoques “académicos” de CTS, que subrayan que la ciencia y la tecnología son actividades sociales, y rechazan la idea del determinismo tecnológico sustituyéndolo en algunas versiones por alguna forma de “determinismo social”, especialmente en las corrientes constructivistas. El “determinismo social” tiene la ventaja de que, al defender las posibilidades de incidir sobre el desarrollo tecnológico y, por tanto, sobre sus efectos en nuestras formas de vida, permite una vía de escape de las interpretaciones más pesimistas de la idea del “determinismo tecnológico”. Como productos humanos que son, las tecnologías, incluso aquellas que en apariencia son más autónomas, están de hecho dirigidas y guiadas por factores rastreables en intereses, voluntades o eventualidades humanas. Sacar estos factores a la luz, haciéndolos explícitos, se entiende como la estrategia más efectiva para poder incidir sobre su control.",
+      "pagina_inicio": 14,
+      "pagina_fin": 14,
+      "paginas": [
+        14
+      ],
+      "seccion": "6. Autonomía y determinismo tecnológico",
+      "es_titulo": false,
+      "id": "u4_p122",
+      "indice": 122,
+      "bloque_tts": 17,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 2158.66,
+      "inicio_s": 2159.78,
+      "fin_s": 2217.4,
+      "tiempo_fmt": "35:59",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #17)"
+    },
+    {
+      "texto": "Langdon Winner, sin embargo, señala la ironía que supone el hecho de que, mientras en el mundo académico han triunfado las nociones de “construcción social” o “modelado social” de las tecnologías, el mundo “ahí afuera” sufre más que nunca las consecuencias de su “modelado tecnológico” y determinación tecnológica. Quizá el ejemplo más evidente sea el del desarrollo de la informática: “la tecnología acelera rápidamente y hay que estar al día” son las palabras de S. Brand en la revista Wired. Y esto lo saben bien los millones de usuarios de ordenadores y teléfonos móviles inteligentes que se las ven y se las desean para no perder el tren de esta rápida aceleración. Economistas, políticos y teóricos de las TIC señalan el desarrollo de estas tecnologías como el evento que marcará el futuro de la humanidad en el nuevo milenio: transformaciones que afectarán desde la vida íntima a las relaciones internacionales. Para Winner, la literatura académica sobre elección, democratización y construcción social de la tecnología es voluntarista e ingenua, hecha de espaldas a una cruda realidad en la que las opciones disponibles son realmente escasas.",
+      "pagina_inicio": 14,
+      "pagina_fin": 15,
+      "paginas": [
+        14,
+        15
+      ],
+      "seccion": "6. Autonomía y determinismo tecnológico",
+      "es_titulo": false,
+      "id": "u4_p123",
+      "indice": 123,
+      "bloque_tts": 18,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 2217.22,
+      "inicio_s": 2217.4,
+      "fin_s": 2281.34,
+      "tiempo_fmt": "36:57",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #18)"
+    },
+    {
+      "texto": "Otros autores, como Lars Fuglsang han buscado un camino intermedio diferenciando entre estadios del desarrollo de una tecnología. Al principio, la tecnología será flexible y susceptible de control y “modelado social”. Pero a partir de cierto punto, adquirirá “momentum” y vida propia, haciéndose cada vez más complicado incidir sobre su desarrollo y derivando en la fase de “difusión” en algún tipo de “determinismo tecnológico” más o menos fuerte. No hay que olvidar, no obstante, que el “momentum” para Thomas Hughes no significa autonomía y, por tanto, determinismo. Las tecnologías logran para Hughes inercia, pero siguen sometidas a las fuerzas externas (como intereses invertidos) que sostienen su mantenimiento.",
+      "pagina_inicio": 15,
+      "pagina_fin": 15,
+      "paginas": [
+        15
+      ],
+      "seccion": "6. Autonomía y determinismo tecnológico",
+      "es_titulo": false,
+      "id": "u4_p124",
+      "indice": 124,
+      "bloque_tts": 18,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 2281.15,
+      "inicio_s": 2281.34,
+      "fin_s": 2322.94,
+      "tiempo_fmt": "38:01",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #18)"
+    },
+    {
+      "texto": "Es similar la propuesta de Wiebe Bijker de reconciliar los enfoques constructivistas con la crítica social a las consecuencias indeseadas del desarrollo científico-técnico. Según Bijker, mostrar la flexibilidad interpretativa de los artefactos, es decir, argumentar su maleabilidad y contingencia, es crucial para fundamentar una “política de la tecnología”. Así y todo, los artefactos pueden ser más o menos pertinaces e inflexibles, dependiendo del punto de su desarrollo que consideremos y de nuestra posición como actores frente a ellos.",
+      "pagina_inicio": 15,
+      "pagina_fin": 15,
+      "paginas": [
+        15
+      ],
+      "seccion": "6. Autonomía y determinismo tecnológico",
+      "es_titulo": false,
+      "id": "u4_p125",
+      "indice": 125,
+      "bloque_tts": 18,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 2323.41,
+      "inicio_s": 2322.94,
+      "fin_s": 2353.9,
+      "tiempo_fmt": "38:42",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #18)"
+    },
+    {
+      "texto": "Al buscar caminos intermedios entre las opciones a menudo enfrentadas de la autonomía y el determinismo, estas propuestas apuestan por la convergencia entre las dos tradiciones para el estudio social de la ciencia y la tecnología, una tendencia que ha ido ganando recientemente defensores y argumentos, y a la que se dedicará la siguiente unidad de esta asignatura.",
+      "pagina_inicio": 15,
+      "pagina_fin": 15,
+      "paginas": [
+        15
+      ],
+      "seccion": "6. Autonomía y determinismo tecnológico",
+      "es_titulo": false,
+      "id": "u4_p126",
+      "indice": 126,
+      "bloque_tts": 19,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 2353.73,
+      "inicio_s": 2353.9,
+      "fin_s": 2373.66,
+      "tiempo_fmt": "39:13",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "Fin del audiolibro de la unidad: TEMA 2. Unidad 4. Enfoques contemporáneos en el estudio de la ciencia y la. tecnología. El modelado científico-tecnológico de la sociedad.",
+      "pagina_inicio": 15,
+      "pagina_fin": 15,
+      "paginas": [
+        15
+      ],
+      "seccion": "Cierre de la unidad",
+      "es_titulo": true,
+      "id": "u4_p127",
+      "indice": 127,
+      "bloque_tts": 19,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 2374.61,
+      "inicio_s": 2373.66,
+      "fin_s": 2387.98,
+      "tiempo_fmt": "39:33",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #19)"
+    }
+  ],
+  "evaluacion": {
+    "orales": [
+      {
+        "id": "u4_o1",
+        "pregunta": "Explica por qué afirma Langdon Winner que 'los artefactos tienen política' (Unidad 4, pág. 8) y resume las aportaciones del giro empírico en filosofía (Ihde, Illich) y ética de la tecnología ('el problema de las muchas manos').",
+        "pagina": 8,
+        "paginas_ref": "Páginas 8 a 13",
+        "seccion": "3. Crítica política, 4. Enfoques filosóficos y 5. Ética de la tecnología",
+        "ideas_rubrica": [
+          {
+            "id": "u4_o1_i1",
+            "titulo": "Langdon Winner (pág. 8): sonambulismo tecnológico y las dos vías políticas de los artefactos",
+            "detalle": "Explicar el diseño con fines políticos de exclusión (los puentes bajos de Robert Moses en Long Island contra el paso de autobuses) y las tecnologías inherentemente políticas (la energía nuclear que exige centralización y autoritarismo).",
+            "pagina": 8,
+            "pistas": [
+              "winner",
+              "sonambulismo",
+              "moses",
+              "puentes",
+              "long island",
+              "autobuses",
+              "inherentemente",
+              "nuclear",
+              "autoritarismo",
+              "centralizacion"
+            ]
+          },
+          {
+            "id": "u4_o1_i2",
+            "titulo": "Giro empírico filosófico: Don Ihde (mediación, alteridad, trasfondo) e Ivan Illich (convivencialidad, págs. 9–10)",
+            "detalle": "Mencionar la postfenomenología relacional y multiestable de Ihde o los dos umbrales y las tecnologías convivenciales de Illich.",
+            "pagina": 9,
+            "pistas": [
+              "giro empirico",
+              "ihde",
+              "mediacion",
+              "alteridad",
+              "trasfondo",
+              "multiestable",
+              "illich",
+              "convivencialidad",
+              "feenberg"
+            ]
+          },
+          {
+            "id": "u4_o1_i3",
+            "titulo": "Ética de la tecnología: diseño sensible a valores y 'el problema de las muchas manos' (págs. 11–13)",
+            "detalle": "Explicar el debate sobre la carga valorativa en el diseño y la dificultad de atribuir responsabilidad en accidentes de sistemas complejos ('problema de las muchas manos' / 'accidentes normales').",
+            "pagina": 12,
+            "pistas": [
+              "etica",
+              "valores",
+              "diseno",
+              "muchas manos",
+              "accidentes normales",
+              "responsabilidad",
+              "agencia moral"
+            ]
+          }
+        ],
+        "respuesta_modelo": "En la página 8 de la Unidad 4, Langdon Winner denuncia nuestro 'sonambulismo tecnológico' y muestra que los artefactos tienen política de dos formas: por diseños que imponen exclusión social (como los puentes bajos de Robert Moses en Long Island para impedir el paso de autobuses públicos) y por tecnologías 'inherentemente políticas' que exigen centralización y autoritarismo (como la energía nuclear). En los apartados 4 y 5 (págs. 9–13), el giro empírico filosófico analiza relaciones concretas humano-tecnología (mediación, alteridad y trasfondo en Don Ihde; convivencialidad en Ivan Illich), mientras la ética aborda la incorporación de valores en el diseño y el 'problema de las muchas manos' en los accidentes normales de sistemas complejos."
+      }
+    ],
+    "test": [
+      {
+        "pregunta": "¿Qué ilustra Langdon Winner con el ejemplo de los puentes diseñados por Robert Moses en Long Island (Unidad 4, pág. 8)?",
+        "opciones": [
+          "Un fallo involuntario de ingeniería civil sin repercusión social.",
+          "Cómo un diseño urbanístico o técnico puede utilizarse con fines políticos para favorecer la segregación de clases o razas, al impedir deliberadamente el paso de autobuses públicos.",
+          "Que todas las infraestructuras de transporte son políticamente neutrales."
+        ],
+        "correcta": 1,
+        "pagina": 8,
+        "explicacion": "En la página 8 se explica que Robert Moses diseñó los puentes de Long Island deliberadamente bajos para impedir el paso de autobuses, limitando el acceso a quienes no disponían de automóvil propio."
+      }
+    ]
+  }
+}

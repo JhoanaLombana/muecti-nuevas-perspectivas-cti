@@ -1,0 +1,5 @@
+﻿backup_*/
+*.tmp
+.DS_Store
+Thumbs.db
+SUBIR_A_GITHUB_AUTOMATICO.bat

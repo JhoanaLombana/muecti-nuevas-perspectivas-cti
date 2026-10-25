@@ -1,0 +1,1651 @@
+{
+  "numero": 3,
+  "nombre_base": "Unidad 3 - El modelado social de la ciencia y la tecnología",
+  "titulo_corto": "El modelado social de la ciencia y la tecnología",
+  "asignatura": "Nuevas perspectivas en los estudios sobre ciencia, tecnología e innovación",
+  "unidad_portada": "TEMA 2. Unidad 3. Enfoques contemporáneos en el estudio de la ciencia y la. tecnología. El modelado social de la ciencia y la tecnología",
+  "archivo_pdf": "Unidad 3 - El modelado social de la ciencia y la tecnología.pdf",
+  "archivo_mp3": "Unidad 3 - El modelado social de la ciencia y la tecnología.mp3",
+  "archivo_guion": "Guion Unidad 3 - El modelado social de la ciencia y la tecnología.txt",
+  "total_paginas_pdf": 17,
+  "total_palabras": 5719,
+  "duracion_estimada_s": 2141.45,
+  "tamano_mb": 12.25,
+  "bloques_tts_mp3": 18,
+  "puntos_verificados_audio": [
+    {
+      "unidad": 3,
+      "punto": "Comienzo",
+      "parrafo_idx": 2,
+      "seccion": "1. Contenidos 1. Ciencia, tecnología y sociedad (CTS)",
+      "pagina_pdf": 3,
+      "segundo_esperado_s": 25.3,
+      "segundo_esperado_fmt": "00:25",
+      "segundo_real_s": 27.43,
+      "segundo_real_fmt": "00:27",
+      "diferencia_s": 2.13,
+      "frase_guion_pdf": "La historia de la investigación sobre las relaciones entre la ciencia, la tecnología y la sociedad suele remontarse…",
+      "frase_escuchada_mp3": "La historia de la investigación sobre las relaciones entre la ciencia, la tecnología y la sociedad"
+    },
+    {
+      "unidad": 3,
+      "punto": "Mitad",
+      "parrafo_idx": 34,
+      "seccion": "2.2.1. Estudios de laboratorio",
+      "pagina_pdf": 6,
+      "segundo_esperado_s": 873.74,
+      "segundo_esperado_fmt": "14:33",
+      "segundo_real_s": 873.92,
+      "segundo_real_fmt": "14:33",
+      "diferencia_s": 0.18,
+      "frase_guion_pdf": "Esta radicalización de los estudios sociales de la ciencia se desarrolla a partir de la influencia de la etnometodo…",
+      "frase_escuchada_mp3": "Esta radicalización de los estudios sociales de la ciencia se desarrolla a partir de la influencia de la ecn la metodología del socio lo cual se schultz"
+    },
+    {
+      "unidad": 3,
+      "punto": "Final",
+      "parrafo_idx": 67,
+      "seccion": "3. Los estudios de ciencia y tecnología en el siglo XXI",
+      "pagina_pdf": 13,
+      "segundo_esperado_s": 2091.72,
+      "segundo_esperado_fmt": "34:51",
+      "segundo_real_s": 2091.9,
+      "segundo_real_fmt": "34:51",
+      "diferencia_s": 0.18,
+      "frase_guion_pdf": "Algunas de estas investigaciones, al indagar acerca de las hibridaciones entre ciencia y política, o entre ciencia,…",
+      "frase_escuchada_mp3": "Algunas de estas investigaciones al indagar acerca de las invitaciones entre ciencia y política puente de ciencia política y ciudadanía abordan cuestiones que son"
+    }
+  ],
+  "secciones": [
+    {
+      "titulo": "Portada e identificación",
+      "pagina": 1,
+      "inicio_s": 0.18,
+      "tiempo_fmt": "00:00",
+      "parrafo_idx": 0,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1. Contenidos 1. Ciencia, tecnología y sociedad (CTS)",
+      "pagina": 3,
+      "inicio_s": 17.74,
+      "tiempo_fmt": "00:17",
+      "parrafo_idx": 1,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2. El modelado social de la ciencia y la tecnología",
+      "pagina": 4,
+      "inicio_s": 356.18,
+      "tiempo_fmt": "05:56",
+      "parrafo_idx": 10,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2.1. Enfoques macro y mesosociales",
+      "pagina": 4,
+      "inicio_s": 376.2,
+      "tiempo_fmt": "06:16",
+      "parrafo_idx": 12,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2.1.1. El programa fuerte",
+      "pagina": 4,
+      "inicio_s": 380.12,
+      "tiempo_fmt": "06:20",
+      "parrafo_idx": 13,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "4. Reflexividad: sus pautas explicativas han de poder aplicarse a la sociología misma. (Bloor, 1976/1991: 4-5)",
+      "pagina": 5,
+      "inicio_s": 501.74,
+      "tiempo_fmt": "08:21",
+      "parrafo_idx": 20,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2.1.2. Constructivismo social",
+      "pagina": 6,
+      "inicio_s": 603.34,
+      "tiempo_fmt": "10:03",
+      "parrafo_idx": 23,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2.2. De los estudios de laboratorio a la teoría del actor-red",
+      "pagina": 6,
+      "inicio_s": 784.18,
+      "tiempo_fmt": "13:04",
+      "parrafo_idx": 30,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2.2.1. Estudios de laboratorio",
+      "pagina": 6,
+      "inicio_s": 869.74,
+      "tiempo_fmt": "14:29",
+      "parrafo_idx": 33,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2.2.2. Teoría del actor-red",
+      "pagina": 7,
+      "inicio_s": 1023.84,
+      "tiempo_fmt": "17:03",
+      "parrafo_idx": 36,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2.3. Instrumentos, prácticas y mundos sociales",
+      "pagina": 9,
+      "inicio_s": 1451.2,
+      "tiempo_fmt": "24:11",
+      "parrafo_idx": 48,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2.3.1. Agencia material",
+      "pagina": 10,
+      "inicio_s": 1504.76,
+      "tiempo_fmt": "25:04",
+      "parrafo_idx": 51,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2.3.2. Enfoques sobre la práctica",
+      "pagina": 11,
+      "inicio_s": 1720.56,
+      "tiempo_fmt": "28:40",
+      "parrafo_idx": 56,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2.3.3 Mundos sociales",
+      "pagina": 12,
+      "inicio_s": 1907.0,
+      "tiempo_fmt": "31:47",
+      "parrafo_idx": 61,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "3. Los estudios de ciencia y tecnología en el siglo XXI",
+      "pagina": 13,
+      "inicio_s": 1998.08,
+      "tiempo_fmt": "33:18",
+      "parrafo_idx": 65,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "Cierre de la unidad",
+      "pagina": 13,
+      "inicio_s": 2127.16,
+      "tiempo_fmt": "35:27",
+      "parrafo_idx": 68,
+      "precision_tiempo": "aproximado_acustico"
+    }
+  ],
+  "parrafos": [
+    {
+      "texto": "Audiolibro de estudio. Asignatura: Nuevas perspectivas en los estudios sobre ciencia, tecnología e innovación. TEMA 2. Unidad 3. Enfoques contemporáneos en el estudio de la ciencia y la. tecnología. El modelado social de la ciencia y la tecnología.",
+      "pagina_inicio": 1,
+      "pagina_fin": 1,
+      "paginas": [
+        1
+      ],
+      "seccion": "Portada e identificación",
+      "es_titulo": true,
+      "id": "u3_p0",
+      "indice": 0,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 0.0,
+      "inicio_s": 0.18,
+      "fin_s": 17.74,
+      "tiempo_fmt": "00:00",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "1. Contenidos 1. Ciencia, tecnología y sociedad (CTS).",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Contenidos 1. Ciencia, tecnología y sociedad (CTS)",
+      "es_titulo": true,
+      "id": "u3_p1",
+      "indice": 1,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 19.03,
+      "inicio_s": 17.74,
+      "fin_s": 27.43,
+      "tiempo_fmt": "00:17",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "La historia de la investigación sobre las relaciones entre la ciencia, la tecnología y la sociedad suele remontarse a algunos pioneros como Marx, Weber o Durkheim, que trataron temas que pueden entenderse dentro de la órbita de interés CTS (Ciencia, tecnología y sociedad). Algunos antecedentes claros aparecen en los años 30, cuando Boris Hessen presenta su estudio sobre las raíces socioeconómicas de los Principia de Newton en el congreso de Historia de la Ciencia en Londres en 1931, J. D. Bernal escribe sobre el papel social de la ciencia y los científicos, y Ortega publica sus reflexiones sobre la técnica.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Contenidos 1. Ciencia, tecnología y sociedad (CTS)",
+      "es_titulo": false,
+      "id": "u3_p2",
+      "indice": 2,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 25.3,
+      "inicio_s": 27.43,
+      "fin_s": 64.1,
+      "tiempo_fmt": "00:27",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "Sin embargo, el origen de CTS como campo de estudio multidisciplinar se sitúa en los años 70 con la creación de los primeros programas de formación en STS (Science, Technology, and Society) en Estados Unidos y la publicación de los primeros estudios de casos y teóricos de la nueva sociología del conocimiento científico en lo que se interpreta como, por una parte, una reacción frente al triunfalismo con respecto a las potencialidades de la ciencia y la tecnología surgido del fin de la Segunda Guerra Mundial y, por otra parte, una reacción frente a la visión académica tradicional de la ciencia como actividad independiente de los contextos en los que se desarrolla. Ambas reacciones inauguran dos tendencias dentro de CTS cuyos hitos fundacionales suelen colocarse en 1962, año de la publicación de Primavera silenciosa, libro en el que Rachel Carson denunciaba los efectos nocivos del DDT, y de La estructura de las revoluciones científicas, con el que T. S. Kuhn abría la posibilidad del estudio de la ciencia en contexto.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Contenidos 1. Ciencia, tecnología y sociedad (CTS)",
+      "es_titulo": false,
+      "id": "u3_p3",
+      "indice": 3,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 62.6,
+      "inicio_s": 64.1,
+      "fin_s": 122.1,
+      "tiempo_fmt": "01:04",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "Estas dos tendencias de orígenes separados y fines distintos han terminado por reunirse bajo la etiqueta de CTS en castellano (STS en inglés), una etiqueta contestada e interpretada de formas diferentes.2 La CTS activista, surgida de la preocupación por los efectos indeseables del desarrollo científico-tecnológico, e introducida en diferentes niveles de la educación, respondía al acrónimo de “Science, Technology and Society” y tomaba como referencias las de Ellul o Mumford, autores que presentan la ciencia y, sobre todo, la tecnología como fuerzas autónomas incidiendo sobre la sociedad, y demandan control social. Se trata de enfoques relacionados fundamentalmente con los campos de la politología y la ética.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Contenidos 1. Ciencia, tecnología y sociedad (CTS)",
+      "es_titulo": false,
+      "id": "u3_p4",
+      "indice": 4,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 121.92,
+      "inicio_s": 122.1,
+      "fin_s": 164.82,
+      "tiempo_fmt": "02:02",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "Mientras tanto, el tipo de trabajo académico desarrollado a partir de la interpretación radical de la obra de Kuhn en lugares como Edimburgo, Bath o París adoptaba la denominación de sociología del conocimiento científico, una etiqueta que denota la oposición tanto a la tradicional sociología de la ciencia mertoniana (que si bien se ocupaba de la ciencia, no abordaba el análisis sociológico de sus contenidos) como a la sociología del conocimiento clásica (que si bien se ocupaba del análisis sociológico 1 Autoría: M.I. González García y J.A. López Cerezo. 2 Las dos tradiciones CTS, académica y activista, han recibido también otras denominaciones. González García et al. distinguen, atendiendo al criterio de origen geográfico, entre tradición europea y tradición americana. Steve Fuller propone irónicamente las etiquetas de Alta Iglesia y Baja Iglesia, y Rustum Roy las de “tradición disciplinar” y “tradición interdisciplinar”.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Contenidos 1. Ciencia, tecnología y sociedad (CTS)",
+      "es_titulo": false,
+      "id": "u3_p5",
+      "indice": 5,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 163.16,
+      "inicio_s": 164.82,
+      "fin_s": 221.58,
+      "tiempo_fmt": "02:44",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "del contenido del conocimiento, no abordaba el conocimiento científico) para proponer un análisis sociológico de los contenidos de la ciencia, hasta entonces campo exclusivo de tratamiento filosófico. En estos enfoques, desarrollados a partir de la sociología, la historia y la filosofía de la ciencia, la ciencia aparece como “variable dependiente”, proceso y producto social, resultado de choques de fuerzas e intereses del contexto.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1. Contenidos 1. Ciencia, tecnología y sociedad (CTS)",
+      "es_titulo": false,
+      "id": "u3_p6",
+      "indice": 6,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 220.62,
+      "inicio_s": 221.58,
+      "fin_s": 246.9,
+      "tiempo_fmt": "03:41",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "En los años 80, la versión académica de CTS, sobre todo con la extensión de sus análisis al caso de las tecnologías comienza a utilizar la etiqueta de STS (Studies on Science and Technology), que también usarán algunos departamentos de Estados Unidos que habían sido pioneros en los estudios STS (Science, Technology and Society), como el de Rensselaer Polytechnic Institute. Social Studies of Science (Estudios sociales de la ciencia) o Science Studies (Estudios sobre ciencia) son algunas otras de las etiquetas adoptadas por aquellos autores de la tradición académica que han preferido continuar delimitando su interés a la ciencia, pese a la ubicuidad contemporánea de las tecnologías y el reconocimiento de los inextricables nexos que las unen a las ciencias.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1. Contenidos 1. Ciencia, tecnología y sociedad (CTS)",
+      "es_titulo": false,
+      "id": "u3_p7",
+      "indice": 7,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 246.72,
+      "inicio_s": 246.9,
+      "fin_s": 289.38,
+      "tiempo_fmt": "04:06",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "Así, CTS entendido como “Ciencia, tecnología y sociedad” y CTS entendido como “Estudios sobre ciencia y tecnología” componen dos tradiciones distintas, cuyas relaciones a menudo son difíciles. Desde las versiones más activistas se critica el escoramiento de las versiones más académicas hacia un relativismo que es inaceptable si se pretende un posicionamiento crítico y normativo. Desde las versiones más académicas se denuncia la falta de rigor y la ideologización de muchas de las críticas activistas a la ciencia y la tecnología.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1. Contenidos 1. Ciencia, tecnología y sociedad (CTS)",
+      "es_titulo": false,
+      "id": "u3_p8",
+      "indice": 8,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 289.29,
+      "inicio_s": 289.38,
+      "fin_s": 321.02,
+      "tiempo_fmt": "04:49",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "CTS aparece entonces como un complejo campo interdisciplinar donde confluyen la filosofía, la sociología, la historia, la antropología, la economía, la ética, la politología, la psicología etcétera, en la comprensión de diferentes aspectos de las relaciones de la ciencia y la tecnología con la sociedad. En esta unidad nos detendremos brevemente en la primera de las tradiciones mencionadas, y nos ocuparemos de la segunda en la siguiente unidad. En la unidad cinco subrayaremos los puntos comunes entre ambas, más que sus desencuentros, y las potencialidades que ofrecen para el análisis y el cambio.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1. Contenidos 1. Ciencia, tecnología y sociedad (CTS)",
+      "es_titulo": false,
+      "id": "u3_p9",
+      "indice": 9,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 319.55,
+      "inicio_s": 321.02,
+      "fin_s": 356.18,
+      "tiempo_fmt": "05:21",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "2. El modelado social de la ciencia y la tecnología.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "2. El modelado social de la ciencia y la tecnología",
+      "es_titulo": true,
+      "id": "u3_p10",
+      "indice": 10,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 353.88,
+      "inicio_s": 356.18,
+      "fin_s": 360.2,
+      "tiempo_fmt": "05:56",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "La tradición académica se ha centrado fundamentalmente en la investigación del modo en que diversos factores sociales influyen sobre el cambio científico-tecnológico. Veamos ahora algunos de los enfoques más destacados, sus orígenes y su repercusión sobre este campo de trabajo.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "2. El modelado social de la ciencia y la tecnología",
+      "es_titulo": false,
+      "id": "u3_p11",
+      "indice": 11,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 358.52,
+      "inicio_s": 360.2,
+      "fin_s": 376.2,
+      "tiempo_fmt": "06:00",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "2.1. Enfoques macro y mesosociales.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "2.1. Enfoques macro y mesosociales",
+      "es_titulo": true,
+      "id": "u3_p12",
+      "indice": 12,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 374.5,
+      "inicio_s": 376.2,
+      "fin_s": 380.12,
+      "tiempo_fmt": "06:16",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "2.1.1. El programa fuerte.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "2.1.1. El programa fuerte",
+      "es_titulo": true,
+      "id": "u3_p13",
+      "indice": 13,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 379.07,
+      "inicio_s": 380.12,
+      "fin_s": 384.0,
+      "tiempo_fmt": "06:20",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "En la Universidad de Edimburgo tiene lugar el primer intento organizado de elaborar una sociología del conocimiento científico que, frente a los enfoques tradicionales en filosofía y sociología de la ciencia, no contemple la ciencia como un tipo privilegiado de conocimiento fuera del alcance del análisis empírico. La ciencia se presenta como un proceso social, y se enfatizan una gran variedad de factores no epistémicos (políticos, económicos, ideológicos, etcétera. - el \"contexto social\") en la explicación del origen, cambio y legitimación de las teorías científicas.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "2.1.1. El programa fuerte",
+      "es_titulo": false,
+      "id": "u3_p14",
+      "indice": 14,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 383.83,
+      "inicio_s": 384.0,
+      "fin_s": 416.32,
+      "tiempo_fmt": "06:24",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "En los años 70 del pasado siglo XX, Barry Barnes, director de la Science Studies Unit (Unidad de Estudios de la Ciencia) de la Universidad de Edimburgo, emprende la crítica teórica de la tradicional imagen esencialista de la actividad científica, tomando como base el Wittgenstein de las Investigaciones Filosóficas, la antropología cognitiva de Mary Douglas, el trabajo en filosofía de la ciencia de Mary Hesse, y, particularmente, una interpretación radical de Kuhn. La fundamentación teórica de lo que se llamó \"sociología del conocimiento científico\" cristalizaría en la declaración programática de la escuela de Edimburgo: el \"programa fuerte\" que enuncia David Bloor en.",
+      "pagina_inicio": 4,
+      "pagina_fin": 5,
+      "paginas": [
+        4,
+        5
+      ],
+      "seccion": "2.1.1. El programa fuerte",
+      "es_titulo": false,
+      "id": "u3_p15",
+      "indice": 15,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 416.59,
+      "inicio_s": 416.32,
+      "fin_s": 453.44,
+      "tiempo_fmt": "06:56",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "El programa fuerte (Strong Programme) pretende establecer los principios de una explicación satisfactoria (es decir, científica) de la naturaleza y cambio del conocimiento científico. Los principios del programa fuerte son los siguientes:",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2.1.1. El programa fuerte",
+      "es_titulo": false,
+      "id": "u3_p16",
+      "indice": 16,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 454.88,
+      "inicio_s": 453.44,
+      "fin_s": 467.34,
+      "tiempo_fmt": "07:33",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "1. Causalidad: la sociología del conocimiento científico ha de ser causal, esto es, ha de centrarse en las condiciones efectivas que producen creencia o estados de conocimiento.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2.1.1. El programa fuerte",
+      "es_titulo": false,
+      "id": "u3_p17",
+      "indice": 17,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 469.17,
+      "inicio_s": 467.34,
+      "fin_s": 478.22,
+      "tiempo_fmt": "07:47",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "2. Imparcialidad: ha de ser imparcial respecto de la verdad y la falsedad, la racionalidad y la irracionalidad, el éxito o el fracaso. Ambos lados de estas dicotomías requieren explicación.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2.1.1. El programa fuerte",
+      "es_titulo": false,
+      "id": "u3_p18",
+      "indice": 18,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 480.57,
+      "inicio_s": 478.22,
+      "fin_s": 490.98,
+      "tiempo_fmt": "07:58",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "3. Simetría: ha de ser simétrica en su estilo de explicación. Los mismos tipos de causa han de explicar, digamos, las creencias falsas y las verdaderas.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2.1.1. El programa fuerte",
+      "es_titulo": false,
+      "id": "u3_p19",
+      "indice": 19,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 492.97,
+      "inicio_s": 490.98,
+      "fin_s": 501.74,
+      "tiempo_fmt": "08:10",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "4. Reflexividad: sus pautas explicativas han de poder aplicarse a la sociología misma. (Bloor, 1976/1991: 4-5).",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "4. Reflexividad: sus pautas explicativas han de poder aplicarse a la sociología misma. (Bloor, 1976/1991: 4-5)",
+      "es_titulo": true,
+      "id": "u3_p20",
+      "indice": 20,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 503.34,
+      "inicio_s": 501.74,
+      "fin_s": 514.02,
+      "tiempo_fmt": "08:21",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Los esfuerzos de los sociólogos del conocimiento científico se encaminaron entonces a poner en práctica el programa de investigación fundamentado por Barnes y enunciado por Bloor, aplicándolo a determinados episodios de la historia de la ciencia. Algunos ejemplos de los resultados de esta tarea son los trabajos de S. Shapin sobre la anatomía cerebral del siglo XIX, de D. MacKenzie sobre el desarrollo de la estadística, de A. Pickering sobre los quarks, de Shapin y S. Schaffer sobre la controversia Hobbes-Boyle, de Collins sobre inteligencia artificial, etcétera.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "4. Reflexividad: sus pautas explicativas han de poder aplicarse a la sociología misma. (Bloor, 1976/1991: 4-5)",
+      "es_titulo": false,
+      "id": "u3_p21",
+      "indice": 21,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 513.84,
+      "inicio_s": 514.02,
+      "fin_s": 545.14,
+      "tiempo_fmt": "08:34",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "La sociología del conocimiento científico de los años 70 sufrió una rápida evolución. El estudio de los contenidos de la ciencia y su relación con ideas, preconcepciones y objetivos sociales típico de los análisis de la Escuela de Edimburgo pronto se mostró insatisfactorio al mantener una concepción demasiado estática e independiente tanto de la ciencia como de la sociedad, propiciando “reconstrucciones sociológicas” a menudo tan insatisfactorias como las “reconstrucciones racionales” a las que pretendía sustituir. Debían buscarse nuevos métodos para acceder al “contenido” de la ciencia que era ahora el foco de atención del trabajo sociológico. El estudio de la ciencia “inacabada”, en diferentes variedades, apareció como una metodología adecuada para este acceso. Analizar los episodios científicos antes de que se congelen en sus formulaciones de “libro de texto”, ocultando todas las contingencias de su desarrollo, se entendió como forma óptima de observar la dinámica de intereses desplegada en cada caso.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "4. Reflexividad: sus pautas explicativas han de poder aplicarse a la sociología misma. (Bloor, 1976/1991: 4-5)",
+      "es_titulo": false,
+      "id": "u3_p22",
+      "indice": 22,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 545.78,
+      "inicio_s": 545.14,
+      "fin_s": 603.34,
+      "tiempo_fmt": "09:05",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2.1.2. Constructivismo social.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.1.2. Constructivismo social",
+      "es_titulo": true,
+      "id": "u3_p23",
+      "indice": 23,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 601.88,
+      "inicio_s": 603.34,
+      "fin_s": 607.24,
+      "tiempo_fmt": "10:03",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Uno de estos nuevos métodos fue el propuesto en la Universidad de Bath, centrado en el estudio empírico de las controversias científicas como lugares en los que aparecen con claridad las confrontaciones entre intereses. El EPOR (Empirical Programme of Relativism - Programa Empírico del Relativismo), presentado por Harry Collins a principios de los 80, y desarrollado entre otros por Trevor Pinch, tiene lugar en tres etapas:",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.1.2. Constructivismo social",
+      "es_titulo": false,
+      "id": "u3_p24",
+      "indice": 24,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 606.72,
+      "inicio_s": 607.24,
+      "fin_s": 631.12,
+      "tiempo_fmt": "10:07",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "1. En la primera se muestra la flexibilidad interpretativa de los resultados experimentales, es decir, cómo los descubrimientos científicos son susceptibles de más de una interpretación.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.1.2. Constructivismo social",
+      "es_titulo": false,
+      "id": "u3_p25",
+      "indice": 25,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 629.72,
+      "inicio_s": 631.12,
+      "fin_s": 641.62,
+      "tiempo_fmt": "10:31",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2. En la segunda etapa, se desvelan los mecanismos sociales, retóricos, institucionales, etcétera, que limitan la flexibilidad interpretativa y favorecen el cierre de las controversias científicas al promover el consenso acerca de lo que es la \"verdad\" en cada caso particular.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.1.2. Constructivismo social",
+      "es_titulo": false,
+      "id": "u3_p26",
+      "indice": 26,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 640.93,
+      "inicio_s": 641.62,
+      "fin_s": 657.52,
+      "tiempo_fmt": "10:41",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "3. Por último, en la tercera, tales \"mecanismos de cierre\" de las controversias científicas se relacionan con el medio sociocultural y político más amplio.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.1.2. Constructivismo social",
+      "es_titulo": false,
+      "id": "u3_p27",
+      "indice": 27,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 657.34,
+      "inicio_s": 657.52,
+      "fin_s": 666.92,
+      "tiempo_fmt": "10:57",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "El EPOR constituye una de las mejores representaciones del enfoque en el estudio de la ciencia denominado \"constructivismo social\". Mientras la aproximación de la escuela de Edimburgo era claramente \"macrosocial\", explorando las conexiones causales entre el contenido del conocimiento y los \"factores sociales\" en sentido amplio, el EPOR desarrolla sus investigaciones desde una perspectiva “mesosocial\", desvelando las negociaciones entre científicos que desembocan en el fin de controversias científicas particulares. Algunos estudios de casos de esta orientación, como los casos de la detección de ondas gravitacionales y la fusión fría, se pueden encontrar en Collins y Pinch.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.1.2. Constructivismo social",
+      "es_titulo": false,
+      "id": "u3_p28",
+      "indice": 28,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 667.52,
+      "inicio_s": 666.92,
+      "fin_s": 704.68,
+      "tiempo_fmt": "11:06",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "Una interesante y fructífera extensión del EPOR es el programa SCOST (Social Construction of Science and Technology - Construcción Social de la Ciencia y la Tecnología) desarrollado desde mediados de los 80 por Wiebe Bijker y sus colaboradores. En el SCOST se trata de estudiar empíricamente los artefactos y sistemas tecnológicos del mismo modo que el EPOR trata de abordar los productos científicos, es decir, mostrando su flexibilidad interpretativa y analizando los mecanismos sociales mediante los que, en determinado contexto histórico y cultural, se cierra tal flexibilidad y se consolidan las formas concretas de tecnología. La metodología consiste en la identificación de actores relevantes para el desarrollo de una tecnología dada, y de los problemas que estos actores se plantean en relación con la misma. Diferentes actores asociarán significados y problemáticas distintas a la misma tecnología, de tal modo que la evolución de su definición, la priorización de problemas a resolver y la estabilización de determinadas soluciones para los mismos dependerán del reparto de fuerzas y las estrategias negociadoras de los conjuntos de actores. Ejemplos clásicos los encontramos en el estudio del origen de la bicicleta, la baquelita y la bombilla fluorescente. Con el SCOST, el estudio social de la ciencia y el estudio social de la tecnología, que habían transitado por caminos independientes, comienzan a “beneficiarse mutuamente”.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.1.2. Constructivismo social",
+      "es_titulo": false,
+      "id": "u3_p29",
+      "indice": 29,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 705.88,
+      "inicio_s": 704.68,
+      "fin_s": 784.18,
+      "tiempo_fmt": "11:44",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "2.2. De los estudios de laboratorio a la teoría del actor-red.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.2. De los estudios de laboratorio a la teoría del actor-red",
+      "es_titulo": true,
+      "id": "u3_p30",
+      "indice": 30,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 783.22,
+      "inicio_s": 784.18,
+      "fin_s": 789.12,
+      "tiempo_fmt": "13:04",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "Pero la nueva sociología del conocimiento científico desarrollada en Edimburgo y Bath es solo una de las direcciones de investigación de los estudios sociales. La revolución en los estudios sobre la ciencia había aparecido ligada a un imperativo claro: busquemos la explicación del contenido de la ciencia en su \"contexto social\". Una ideología política determinada, cierto interés económico o algún arraigado prejuicio eran el tipo de factores que se buscaban para explicar la génesis y legitimación de las teorías científicas. Para dar cuenta de la construcción de la naturaleza era necesario apelar a la sociedad.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.2. De los estudios de laboratorio a la teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p31",
+      "indice": 31,
+      "bloque_tts": 7,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 788.93,
+      "inicio_s": 789.12,
+      "fin_s": 823.82,
+      "tiempo_fmt": "13:09",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #7)"
+    },
+    {
+      "texto": "A partir de finales de los años 70 y principios de los 80, algunos autores, insatisfechos con los resultados obtenidos por esta línea de investigación, argumentan que el \"contexto social\" no tiene una fuerza explicativa real; y que, al contrario de lo que se defendía y practicaba en Edimburgo, no hace falta salir de la propia ciencia para dar cuenta de la construcción social de un hecho científico establecido. Estos nuevos enfoques son ya decididamente microsociales y tienen como objetivo, por una parte, el estudio de la práctica científica en los lugares mismos donde esta se realiza, los laboratorios; y, por otra, el análisis de los productos de tal práctica, entendidos como \"textos\" o \"inscripciones\". El contexto social, en sentido amplio, es sustituido por el contexto social del laboratorio.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.2. De los estudios de laboratorio a la teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p32",
+      "indice": 32,
+      "bloque_tts": 7,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 823.13,
+      "inicio_s": 823.82,
+      "fin_s": 869.74,
+      "tiempo_fmt": "13:43",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #7)"
+    },
+    {
+      "texto": "2.2.1. Estudios de laboratorio.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.2.1. Estudios de laboratorio",
+      "es_titulo": true,
+      "id": "u3_p33",
+      "indice": 33,
+      "bloque_tts": 7,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 868.76,
+      "inicio_s": 869.74,
+      "fin_s": 873.92,
+      "tiempo_fmt": "14:29",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #7)"
+    },
+    {
+      "texto": "Esta radicalización de los estudios sociales de la ciencia se desarrolla a partir de la influencia de la etnometodología del sociólogo Alfred Shutz. El análisis etnográfico de la ciencia, tal y como lo ensayaron Bruno Latour y Steve Woolgar (1979/1986) y Karin Knorr-Cetina, los libros más representativos de esta corriente, requiere que el estudioso de la ciencia se convierta en un antropólogo y entre en el laboratorio como entraría en una tribu primitiva totalmente alejada de su propia realidad social, e incluso física. Frente a la sociología practicada por la Escuela de Edimburgo, los etnometodólogos de la ciencia sostienen que no puede apelarse a intereses, fines y factores sociales en general para dar cuenta de nuestras teorías, porque ellos mismos son también producto, y no causa, de las mismas fuerzas que dan forma a las afirmaciones de conocimiento científico y, por tanto, a la \"realidad\". Los denominados estudios de laboratorio no tienen, por tanto, ninguna pretensión explicativa, sino tan solo la de describir, del modo más puro y desnudo posible, la actividad que científicos y tecnólogos desarrollan en sus laboratorios y de la que surge nuestra concepción del \"mundo real\", natural y social. El imperativo de la investigación consiste ahora en \"abrir la caja negra\" en la que se produce el \"conocimiento\" y relatar lo que hay dentro.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.2.1. Estudios de laboratorio",
+      "es_titulo": false,
+      "id": "u3_p34",
+      "indice": 34,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 873.74,
+      "inicio_s": 873.92,
+      "fin_s": 951.92,
+      "tiempo_fmt": "14:33",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "El laboratorio se convirtió en el lugar ideal para esta renovación de los estudios sobre ciencia, porque en el laboratorio parecía realmente posible \"seguir\" a los científicos en su trabajo. En el laboratorio es donde se produce el conocimiento mediante la interconexión de prácticas, equipamiento material y diversas técnicas de persuasión; en él se construyen el mundo natural y el mundo social. El libro La vida en el laboratorio es el resultado de la observación llevada a cabo por Bruno Latour de la vida y actividades diarias de los científicos de un laboratorio de neuroendocrinología, es decir, una caja negra cuyo input son toneladas de cerebro de cerdo (además de electricidad, lápices o sandwiches) y el output lo constituyen artículos especializados por los que se reciben recompensas. En su trabajo, los científicos codifican, registran, leen, escriben, discuten, deciden, corrigen, manipula.. En su presentación al exterior, simplemente descubren la realidad. Cuando el antropólogo de la ciencia describe sin prejuicios la compleja vida del laboratorio, desaparece la fe en la objetividad y neutralidad de la ciencia. Vista desde cerca, para estos autores, la ciencia no se diferencia mucho de la política o la literatura.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2.2.1. Estudios de laboratorio",
+      "es_titulo": false,
+      "id": "u3_p35",
+      "indice": 35,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 951.54,
+      "inicio_s": 951.92,
+      "fin_s": 1023.84,
+      "tiempo_fmt": "15:51",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #8)"
+    },
+    {
+      "texto": "2.2.2. Teoría del actor-red.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2.2.2. Teoría del actor-red",
+      "es_titulo": true,
+      "id": "u3_p36",
+      "indice": 36,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1023.65,
+      "inicio_s": 1023.84,
+      "fin_s": 1027.58,
+      "tiempo_fmt": "17:03",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "Los estudios de laboratorio, sobre la base de los puntos más provocadores del programa fuerte (simetría y reflexividad), se desarrollaron posteriormente en varias direcciones. Entre estas, la corriente más influyente es la teoría del actor-red (actornetwork theory)3 desarrollada por autores como Bruno Latour, Michel Callon, John Law, Madeleine Akrich, Susan Leigh Star o Vicky Singleton.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2.2.2. Teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p37",
+      "indice": 37,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1028.53,
+      "inicio_s": 1027.58,
+      "fin_s": 1049.76,
+      "tiempo_fmt": "17:07",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "La teoría del actor-red (ANT) es uno de los enfoques más novedosos y de más éxito en los estudios sobre ciencia y tecnología desarrollados en el último cuarto del siglo XX. Como punto de partida, denuncian que las prácticas de los sociólogos del conocimiento científico, lejos de adecuarse al principio de la simetría, son profundamente asimétricas. No solo los sociólogos \"tipo Edimburgo\" tratan de forma asimétrica la naturaleza y la sociedad, suponiendo a la última como factor causal de la primera, sino que también tratan asimétricamente a los \"actores\" humanos y no humanos del escenario científico-tecnológico. Todas las dicotomías (naturaleza/sociedad, sujeto/objeto, humano/no humano) son aquí suprimidas en un intento de superación de la ideología de la modernidad. La tecnociencia se define como una red cuyos nodos están formados tanto por actores de carne y hueso como por actores no humanos (instrumentos, baterías, chips o cualquier otro componente tecnológico u objeto físico). A partir de ahí, exploran las consecuencias de esta definición dando cuenta de cómo están formadas y cómo se sostienen tales redes. Según este enfoque, tanto los desarrollos científicos como los tecnológicos pueden ser analizados en términos de luchas entre diferentes actores para imponer su versión del problema a resolver. Los actores humanos tienen, por consiguiente, que atender al 3 “Actor-network theory” (ANT) se ha traducido tanto como “teoría de la red de actores” como por “teoría del actor-red”. La expresión inglesa permite ambas versiones en castellano, mostrando así la complejidad misma de la idea que pretende captar la teoría, aunque “teoría del actor-red capta mejor el sentido original. “Un ‘actor-red’ es simultáneamente un actor cuya actividad es crear redes de elementos heterogéneos y una red que es capaz de redefinir y transformar aquello de lo que está conformada”. No se trata del establecimiento de redes entre actores predeterminados, sino que ambos, actores y redes, se conforman mutuamente en procesos simultáneos en los que el actor mismo funciona como red.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2.2.2. Teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p38",
+      "indice": 38,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1051.97,
+      "inicio_s": 1049.76,
+      "fin_s": 1170.36,
+      "tiempo_fmt": "17:29",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "comportamiento tanto de otros actores humanos como de actores no humanos.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2.2.2. Teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p39",
+      "indice": 39,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1170.09,
+      "inicio_s": 1170.36,
+      "fin_s": 1175.24,
+      "tiempo_fmt": "19:30",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "Un intento de reunir las notas características de la teoría del actor-red, al menos en su versión más ortodoxa de los años noventa, debería recoger las siguientes:",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2.2.2. Teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p40",
+      "indice": 40,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1175.06,
+      "inicio_s": 1175.24,
+      "fin_s": 1185.14,
+      "tiempo_fmt": "19:35",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #10)"
+    },
+    {
+      "texto": "» ANT no se trata de una teoría explicativa, sino descriptiva;",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2.2.2. Teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p41",
+      "indice": 41,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1184.43,
+      "inicio_s": 1185.14,
+      "fin_s": 1189.44,
+      "tiempo_fmt": "19:45",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #10)"
+    },
+    {
+      "texto": "» el mundo natural y social son el producto de redes de relaciones entre actores;",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2.2.2. Teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p42",
+      "indice": 42,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1188.65,
+      "inicio_s": 1189.44,
+      "fin_s": 1194.5,
+      "tiempo_fmt": "19:49",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #10)"
+    },
+    {
+      "texto": "» estos actores son tanto humanos como no humanos;",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "2.2.2. Teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p43",
+      "indice": 43,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1193.53,
+      "inicio_s": 1194.5,
+      "fin_s": 1198.18,
+      "tiempo_fmt": "19:54",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #10)"
+    },
+    {
+      "texto": "Frente a la sociología tradicional, que Latour llama “sociología de lo social”, ANT es una “sociología de las asociaciones”, que cuenta historias sobre cómo se originan, evolucionan y terminan las relaciones entre actores. Dado que la teoría del actor-red está más interesada en los “cómos” que en los “porqués”, su fuerza radica sobre todo en su puesta en práctica a través de casos de estudio. Pasteur y su vacuna contra el ántrax, el fracaso del coche eléctrico en Francia o los intentos de acuicultura de la vieira en la Bahía de St. Brieuc son algunos de los casos originarios desarrollados por Latour y Callon en los años 80.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "2.2.2. Teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p44",
+      "indice": 44,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1196.94,
+      "inicio_s": 1198.18,
+      "fin_s": 1233.6,
+      "tiempo_fmt": "19:58",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #10)"
+    },
+    {
+      "texto": "De acuerdo con ANT, cuando los científicos añaden el adjetivo “social” a algún fenómeno, están designando un estado de cosas estabilizado. Por lo tanto, las explicaciones en términos de “factores sociales” de, por ejemplo, una teoría científica o un sistema tecnocientífico, no explican realmente nada, y más bien ocultan los procesos a través de los cuales los diferentes actores y sus asociaciones han logrado la estabilización de una red. ANT aborda esta tarea sin pretender que sea posible identificar factores explicativos y productos explicados. La sociedad no es la causa de la naturaleza sino que ambas, en palabras de Latour, se “coproducen” mutuamente. Su estrategia metodológica es la descripción de la dinámica de formación y estabilización de redes formadas por actores heterogéneos. Y es precisamente en la conceptualización y el tratamiento de los actores donde ANT introduce una de sus mayores novedades: un actor no es un individuo (o una colectividad de ellos). El actor se define más bien por los efectos de sus acciones, de tal manera que un actor es cualquier elemento con el poder de “actuar” sobre otros, ya sea un científico, un ingeniero, un político o un líder de un movimiento social, pero también una vieira, un barco, una bacteria, una rata de laboratorio, la bisagra de una puerta o un badén colocado en la carretera para que los coches aminoren su velocidad. Frente a las teorizaciones habituales en ciencias sociales, ANT se caracteriza por una radical indeterminación de los actores. Un actor puede ser individual o colectivo, humano o no humano, puede enrolar o dejarse enrolar y si algo no está previamente definido, son sus intenciones y sus intereses.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "2.2.2. Teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p45",
+      "indice": 45,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1233.43,
+      "inicio_s": 1233.6,
+      "fin_s": 1329.9,
+      "tiempo_fmt": "20:33",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "Mientras la negativa de los teóricos del actor-red a ofrecer una definición de actor ha recibido a menudo la acusación de relativismo, al abrir de este modo la noción de actor, ANT recupera de una forma muy enfática la materialidad perdida en otros enfoques recientes en sociología del conocimiento científico, y este es uno de los principales puntos de conflicto con ellos. Donde se apelaba a los intereses humanos para dar cuenta del modelado social de teorías y artefactos, los teóricos del actor-red narran de qué modo los diferentes actores (humanos y no humanos) van conformándose mutuamente, definiendo y redefiniendo sus intereses en la interacción a través de procesos de traducción, “enrolamiento” y movilización, y obteniendo como producto la estabilización, siempre precaria, de una red. De esta manera, ni siquiera los actores están predeterminados antes de que la red comience a funcionar (Callon, 1986, Law, 2007).",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "2.2.2. Teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p46",
+      "indice": 46,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1329.72,
+      "inicio_s": 1329.9,
+      "fin_s": 1383.24,
+      "tiempo_fmt": "22:09",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "El éxito de la teoría del actor-red en el mundo de los estudios sobre ciencia (e incluso trascendiendo este ámbito) no ha estado exento de críticas. Mientras que desde las posturas más racionalistas se trata de un enfoque excesivamente relativista, para muchos sociólogos del conocimiento la insistencia en el papel de los actores no humanos es una inaceptable concesión a las visiones más tradicionales. Y una crítica común defiende que ANT no solamente supone un retroceso desde el punto de vista epistemológico, sino también político: sin “sociedad” desde la que denunciar los sesgos y abusos de la ciencia y la tecnología, los análisis que produce la teoría del actor-red no tienen valor desde el punto de vista ético y político. La teoría del actor-red ha evolucionado en las dos últimas décadas de formas diversas que abordan algunas de las críticas recibidas y reconfiguran su alcance. Sus propios proponentes han participado en estos cambios y han observado las transformaciones promovidas por otros, y en ese camino, ANT ha preservado su denominación original, pero no para designar una teoría homogénea, sino más bien un enfoque, una sensibilidad, un conjunto de principios metodológicos compartidos.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "2.2.2. Teoría del actor-red",
+      "es_titulo": false,
+      "id": "u3_p47",
+      "indice": 47,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1383.26,
+      "inicio_s": 1383.24,
+      "fin_s": 1451.2,
+      "tiempo_fmt": "23:03",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "2.3. Instrumentos, prácticas y mundos sociales.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "2.3. Instrumentos, prácticas y mundos sociales",
+      "es_titulo": true,
+      "id": "u3_p48",
+      "indice": 48,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1450.24,
+      "inicio_s": 1451.2,
+      "fin_s": 1455.78,
+      "tiempo_fmt": "24:11",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "La teoría del actor-red marca dos tendencias importantes en el estudio de la ciencia y la tecnología a partir de los años 90. Por una parte, el desplazamiento del interés del analista desde los productos de la tecnociencia a las prácticas tecnocientíficas; y, por otra, el énfasis en los aspectos materiales que habían sido en general obviados por las corrientes de sociología del conocimiento científico de los años 70. Prácticas e instrumentos se colocan ahora en el centro de atención para comprender la naturaleza y desarrollo de las ciencias y las tecnologías.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "2.3. Instrumentos, prácticas y mundos sociales",
+      "es_titulo": false,
+      "id": "u3_p49",
+      "indice": 49,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1455.6,
+      "inicio_s": 1455.78,
+      "fin_s": 1486.9,
+      "tiempo_fmt": "24:15",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "Estas tendencias se encuentran tanto en la evolución desde lo que John Law ha denominado “la versión ortodoxa” de la teoría del actor-red como en otros enfoques afines. Por otra parte, sin embargo, coexisten con nuevas variedades de enfoques sociológicos representativos de lo que Latour denomina “sociología de lo social”.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "2.3. Instrumentos, prácticas y mundos sociales",
+      "es_titulo": false,
+      "id": "u3_p50",
+      "indice": 50,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1486.21,
+      "inicio_s": 1486.9,
+      "fin_s": 1504.76,
+      "tiempo_fmt": "24:46",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "2.3.1. Agencia material.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "2.3.1. Agencia material",
+      "es_titulo": true,
+      "id": "u3_p51",
+      "indice": 51,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1504.66,
+      "inicio_s": 1504.76,
+      "fin_s": 1508.58,
+      "tiempo_fmt": "25:04",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "Como ya hemos mencionado, uno de los aspectos más importantes de la teoría del actor-red es la recuperación de la “agencia material”. Mientras la naturaleza no parecía tener nada que decir en la resolución de las controversias según el EPOR, Latour y Callon insisten en que las negociaciones que científicos y tecnólogos llevan a cabo no se desarrollan únicamente con otros científicos, administradores de la ciencia, políticos o público en general, sino también con sus objetos de estudio (animados e inanimados) y sus instrumentos. Los científicos que acuden a la Bahía de St. Brieuc no 4 En los últimos años se han desarrollado intensivamente los estudios sobre “cultura material”, que investigan de qué modo la cultura material (tecnologías, artefactos, paisajes, “cosas”…) modela de forma activa la percepción que los humanos tenemos del mundo. La “agencia material”, en este sentido, se refiere entonces a la capacidad de la cultura material de transformar el modo en que la realidad se presenta a los seres humanos.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "2.3.1. Agencia material",
+      "es_titulo": false,
+      "id": "u3_p52",
+      "indice": 52,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1509.25,
+      "inicio_s": 1508.58,
+      "fin_s": 1565.4,
+      "tiempo_fmt": "25:08",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "necesitan únicamente enrolar a los pescadores, sino también a las vieras mismas para que su cultivo tenga éxito. “Un poco de constructivismo te lleva muy lejos del realismo, pero un constructivismo completo te devuelve a él”, señala Latour.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "2.3.1. Agencia material",
+      "es_titulo": false,
+      "id": "u3_p53",
+      "indice": 53,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1565.68,
+      "inicio_s": 1565.4,
+      "fin_s": 1579.98,
+      "tiempo_fmt": "26:05",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "Esta reintroducción de la agencia material, y el consiguiente desplazamiento de la “agencia humana” como elemento fundamental de análisis es también explícita en enfoques como el realismo pragmático de Andrew Pickering, interesado en enfatizar los aspectos temporales en la comprensión de la práctica científica. Pickering denomina a su enfoque “the mangle of practice” (el “rodillo” de la práctica), expresión con la que hace referencia a la dialéctica de resistencia y acomodación en la que están inmersos los diversos elementos materiales y humanos en el desarrollo de la ciencia y la tecnología. El trabajo de los científicos, según Pickering, consiste en lograr una delicada “sintonización” entre todos estos elementos en la resolución de problemas científicos y técnicos.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "2.3.1. Agencia material",
+      "es_titulo": false,
+      "id": "u3_p54",
+      "indice": 54,
+      "bloque_tts": 14,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1579.8,
+      "inicio_s": 1579.98,
+      "fin_s": 1621.96,
+      "tiempo_fmt": "26:19",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #14)"
+    },
+    {
+      "texto": "En el campo de la tecnología, el enfoque sistémico de Thomas P. Hughes presenta algunas similitudes con estas aproximaciones para el estudio de la ciencia, ya que entiende las tecnologías como sistemas (“tejidos sin costuras”) compuestos de elementos heterogéneos en interacción: artefactos físicos (turbogeneradores, transformadores, sistemas de energía..), organizaciones (empresas de fabricación, compañías proveedoras, bancos), elementos científicos (artículos, libros, programas de investigación..), legislativos (leyes regulativas.), recursos naturales (minas de carbón, presas, molinos de viento..). La innovación responde tanto al “empuje tecnológico” (lo que es técnicamente viable) como al “tirón del mercado” (lo que la sociedad demanda), y para su desarrollo se requiere la actuación de constructores de sistemas: gestores con habilidad holística para coordinar actividades de innovación y resolver problemas organizativos, encontrar recursos de financiación o responder a los cuestionamientos políticos. En el retrato de Hughes, por ejemplo, Thomas A. Edison es mucho más que un inventor, es el constructor de un sistema, la electricidad, esfuerzo que requería un extraordinario poder de conceptualización, organización y resolución de problemas. Edison combina ciencia, tecnología, economía y sociedad; y consigue reunir los intereses financieros, políticos y sociales necesarios para el buen fin de su empeño.5 Esta reconsideración de las prácticas y los elementos materiales está también presente en otros enfoques de autores de los campos de la filosofía y la historia de la ciencia como Ian Hacking, Allan Franklin o Peter Galison, aunque difieran en el peso relativo que otorgan a la agencia humana y material.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "2.3.1. Agencia material",
+      "es_titulo": false,
+      "id": "u3_p55",
+      "indice": 55,
+      "bloque_tts": 14,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1620.9,
+      "inicio_s": 1621.96,
+      "fin_s": 1720.56,
+      "tiempo_fmt": "27:01",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #14)"
+    },
+    {
+      "texto": "2.3.2. Enfoques sobre la práctica.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "2.3.2. Enfoques sobre la práctica",
+      "es_titulo": true,
+      "id": "u3_p56",
+      "indice": 56,
+      "bloque_tts": 14,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1719.7,
+      "inicio_s": 1720.56,
+      "fin_s": 1724.72,
+      "tiempo_fmt": "28:40",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #14)"
+    },
+    {
+      "texto": "Con la entrada del siglo XXI, diferentes autores comienzan a aplicar la teoría del actorred de forma heterodoxa manteniendo, sin embargo, los principios metodológicos básicos. En general, lo que John Law denomina la “diáspora” de ANT se deriva de una descripción cada vez más compleja de las redes estudiadas. La movilidad y ambivalencia de los actores, la pluralidad ontológica en los hechos construidos y, sobre todo, el énfasis en las prácticas como generadoras de realidad, marcan los últimos desarrollos de la teoría del actor-red.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "2.3.2. Enfoques sobre la práctica",
+      "es_titulo": false,
+      "id": "u3_p57",
+      "indice": 57,
+      "bloque_tts": 15,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1724.54,
+      "inicio_s": 1724.72,
+      "fin_s": 1755.46,
+      "tiempo_fmt": "28:44",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #15)"
+    },
+    {
+      "texto": "Desde los enfoques de la práctica, basados en el trabajo de teóricos como Pierre Bourdieu, Anthony Giddens o Michel Foucault, el análisis de la ciencia y la tecnología se centra en las prácticas en tanto actividades encarnadas y mediadas materialmente que dependen de significados y habilidades compartidos. Lo social es así entendido como un campo de prácticas, frente a los enfoques sociológicos tradicionales que atienden a estructuras, individuos o sistemas. Si bien las prácticas están ya en el centro de las versiones ortodoxas de ANT (Latour, por ejemplo, señalaba como norma metodológica básica la de seguir a los científicos y los tecnólogos en sus actividades cotidianas), en ciertos enfoques post-ANT, la diversidad de las prácticas identificadas en la ciencia y la tecnología adquiere una renovada trascendencia ontológica.",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "2.3.2. Enfoques sobre la práctica",
+      "es_titulo": false,
+      "id": "u3_p58",
+      "indice": 58,
+      "bloque_tts": 15,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1754.89,
+      "inicio_s": 1755.46,
+      "fin_s": 1800.78,
+      "tiempo_fmt": "29:15",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #15)"
+    },
+    {
+      "texto": "Anne Marie Mol, por ejemplo, ha descrito las actividades de diagnóstico y tratamiento de la arteriosclerosis, concluyendo que las prácticas en diferentes contextos: en la consulta de salud primaria, la sala de radiografía, la de ecografía o el quirófano, generan realidades diferentes de lo que es la enfermedad, cuya articulación es también una cuestión práctica. De algún modo, las prácticas producen múltiples redes y, por tanto, múltiples realidades. Del mismo modo, las ovejas de Cumbria durante la crisis de la fiebre aftosa de 2001 aparecen, según John Law y Anne Marie Mol, como “ovejas múltiples”, que “actúan” y “son actuadas” a través de diferentes tipos de prácticas que tienen lugar en granjas, pastos, laboratorios o despachos. La “oveja veterinaria”, que es diagnosticada en la explotación por el veterinario, no es la misma que cuenta en las estadísticas como “oveja epidemiológica”, ni esta es la misma que la “oveja económica” que puede tener más valor viva que muerta o la “oveja ganadera” que da significado a las colinas y las tradiciones de Cumbria. La pluralidad ontológica que este tipo de enfoques defiende muestra claramente la diversidad y heterogeneidad oculta bajo los conceptos y actores de la tecnociencia, y deja abierta la pregunta del qué es lo que los mantiene unidos.",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "2.3.2. Enfoques sobre la práctica",
+      "es_titulo": false,
+      "id": "u3_p59",
+      "indice": 59,
+      "bloque_tts": 16,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1800.6,
+      "inicio_s": 1800.78,
+      "fin_s": 1873.16,
+      "tiempo_fmt": "30:00",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #16)"
+    },
+    {
+      "texto": "Los enfoques de la práctica han sido también utilizados para dar cuenta de los modos múltiples en los que los usuarios se relacionan con los productos de la tecnociencia. Martin Hand y Elizabeth Shove, por ejemplo, ha analizado las diferentes formas de “vivir con un congelador”, conformadas por discursos, prácticas y competencias que, junto con los elementos materiales, hacen del uso del congelador un proceso creativo y activo por parte de los usuarios, y que no está totalmente definido en el momento del diseño. Los enfoques de la práctica interseccionan a menudo, en este tipo de trabajo, con la sociología del consumo.",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "2.3.2. Enfoques sobre la práctica",
+      "es_titulo": false,
+      "id": "u3_p60",
+      "indice": 60,
+      "bloque_tts": 16,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1872.66,
+      "inicio_s": 1873.16,
+      "fin_s": 1907.0,
+      "tiempo_fmt": "31:13",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #16)"
+    },
+    {
+      "texto": "2.3.3 Mundos sociales.",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "2.3.3 Mundos sociales",
+      "es_titulo": true,
+      "id": "u3_p61",
+      "indice": 61,
+      "bloque_tts": 16,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1906.35,
+      "inicio_s": 1907.0,
+      "fin_s": 1910.5,
+      "tiempo_fmt": "31:47",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #16)"
+    },
+    {
+      "texto": "Paralelamente a la generalización de las teorías que enfatizan los aspectos prácticos de la ciencia y la tecnología, se ha desarrollado también el enfoque de los “mundos sociales”, basado en el interaccionismo simbólico de George H. Mead. El centro lo ocupan ahora los significados compartidos entre grupos de actores (que podrían también entenderse como comunidades de prácticas), derivados de la interacción social, que son la base de la acción colectiva y dan lugar a universos de discurso. En los enfoques de los mundos sociales, las interacciones humanas vuelven a ocupar el centro del análisis, relegando el papel activo de lo no humano.",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "2.3.3 Mundos sociales",
+      "es_titulo": false,
+      "id": "u3_p62",
+      "indice": 62,
+      "bloque_tts": 16,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1910.23,
+      "inicio_s": 1910.5,
+      "fin_s": 1945.62,
+      "tiempo_fmt": "31:50",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #16)"
+    },
+    {
+      "texto": "A través de los análisis de los “mundos sociales” se dilucidan los diferentes tipos de tareas involucradas en construir y utilizar la ciencia, identificando significados e implicaciones materiales, compromisos y también prácticas. Un mundo social es un “paquete” que incluye teoría (presuposiciones ontológicas y epistemológicas) y métodos (prácticas específicas compartidas). El mundo social se desarrolla en determinados emplazamientos y una de las actividades principales es la del trazado de fronteras (que no excluyen negociaciones e intersecciones) y la legitimación. Varios mundos sociales pueden agruparse formando “arenas”.",
+      "pagina_inicio": 12,
+      "pagina_fin": 13,
+      "paginas": [
+        12,
+        13
+      ],
+      "seccion": "2.3.3 Mundos sociales",
+      "es_titulo": false,
+      "id": "u3_p63",
+      "indice": 63,
+      "bloque_tts": 17,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1945.44,
+      "inicio_s": 1945.62,
+      "fin_s": 1982.86,
+      "tiempo_fmt": "32:25",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #17)"
+    },
+    {
+      "texto": "El enfoque de los “mundos sociales” ha sido utilizado para abordar casos como los de la píldra RU486 (o píldora del día después), la cirugía fetal o la teoría del oncogén por autoras como Adele Clarke, Susan Leigh Star o Joan Fujimura.",
+      "pagina_inicio": 13,
+      "pagina_fin": 13,
+      "paginas": [
+        13
+      ],
+      "seccion": "2.3.3 Mundos sociales",
+      "es_titulo": false,
+      "id": "u3_p64",
+      "indice": 64,
+      "bloque_tts": 17,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1982.97,
+      "inicio_s": 1982.86,
+      "fin_s": 1998.08,
+      "tiempo_fmt": "33:02",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #17)"
+    },
+    {
+      "texto": "3. Los estudios de ciencia y tecnología en el siglo XXI.",
+      "pagina_inicio": 13,
+      "pagina_fin": 13,
+      "paginas": [
+        13
+      ],
+      "seccion": "3. Los estudios de ciencia y tecnología en el siglo XXI",
+      "es_titulo": true,
+      "id": "u3_p65",
+      "indice": 65,
+      "bloque_tts": 17,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1997.2,
+      "inicio_s": 1998.08,
+      "fin_s": 2002.76,
+      "tiempo_fmt": "33:18",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #17)"
+    },
+    {
+      "texto": "Hoy en día, bien entrado el siglo XXI, los estudios sobre ciencia y tecnología presentan una gran diversidad con varias notas comunes que, con énfasis diferentes dependiendo de las distintas corrientes, aparecen recurrentemente en los análisis contemporáneos. Uno de los argumentos que se repiten tiene que ver con la heterogeneidad de los fenómenos que se analizan. Frente a la “unidad de la ciencia” defendida y valorada en la concepción heredada, los trabajos recientes subrayan su profunda fragmentación: prácticas, métodos, intereses, actores, espacios, contextos, estilos cognitivos, culturas epistémicas… Dar cuenta de cómo se introduce orden en la heterogeneidad conduce el interés hacia los mecanismos por medio de los cuales diferentes prácticas, teorías o artefactos se legitiman, consolidan y mantienen. Por ejemplo, cómo adquieren significado conceptos como objetividad, racionalidad o eficacia; cómo se decide qué actividades son “científicas” y cuáles quedan fuera o cómo se construyen la credibilidad y la autoridad son preguntas que abordan los procesos de estabilización en las relaciones entre la ciencia, la tecnología y la sociedad. A la naturaleza fragmentaria de la ciencia y la tecnología se añade su carácter híbrido: sus fronteras son difusas, y analizar cómo se administran los territorios compartidos ha ido adquiriendo interés creciente. Las investigaciones sobre “objetos fronterizos”, “trabajo fronterizo” u “organizaciones fronterizas” exploran las negociaciones en los límites y en las intersecciones entre mundos regidos por normas distintas.",
+      "pagina_inicio": 13,
+      "pagina_fin": 13,
+      "paginas": [
+        13
+      ],
+      "seccion": "3. Los estudios de ciencia y tecnología en el siglo XXI",
+      "es_titulo": false,
+      "id": "u3_p66",
+      "indice": 66,
+      "bloque_tts": 17,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 2002.0,
+      "inicio_s": 2002.76,
+      "fin_s": 2091.9,
+      "tiempo_fmt": "33:22",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #17)"
+    },
+    {
+      "texto": "Algunas de estas investigaciones, al indagar acerca de las hibridaciones entre ciencia y política, o entre ciencia, política y ciudadanía, abordan cuestiones que son también de relevancia en la rama CTS más preocupada por los efectos sociales del desarrollo científico-tecnológico (que veremos en la siguiente unidad), como el papel de la ciencia y la tecnología contemporáneas en la política y la economía o los temas de “comprensión pública de la ciencia”. El estudio de la cultura y las prácticas de la ciencia y la tecnología, de su producción y mantenimiento, transita así hacia el estudio de lo que significa habitar la cultura tecnocientífica.",
+      "pagina_inicio": 13,
+      "pagina_fin": 13,
+      "paginas": [
+        13
+      ],
+      "seccion": "3. Los estudios de ciencia y tecnología en el siglo XXI",
+      "es_titulo": false,
+      "id": "u3_p67",
+      "indice": 67,
+      "bloque_tts": 18,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 2091.72,
+      "inicio_s": 2091.9,
+      "fin_s": 2127.16,
+      "tiempo_fmt": "34:51",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "Fin del audiolibro de la unidad: TEMA 2. Unidad 3. Enfoques contemporáneos en el estudio de la ciencia y la. tecnología. El modelado social de la ciencia y la tecnología.",
+      "pagina_inicio": 13,
+      "pagina_fin": 13,
+      "paginas": [
+        13
+      ],
+      "seccion": "Cierre de la unidad",
+      "es_titulo": true,
+      "id": "u3_p68",
+      "indice": 68,
+      "bloque_tts": 18,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 2128.55,
+      "inicio_s": 2127.16,
+      "fin_s": 2141.45,
+      "tiempo_fmt": "35:27",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #18)"
+    }
+  ],
+  "evaluacion": {
+    "orales": [
+      {
+        "id": "u3_o1",
+        "pregunta": "Explica los cuatro principios del Programa Fuerte de Edimburgo y cómo evoluciona el estudio social hacia el constructivismo (EPOR/SCOST) y la Teoría del Actor-Red (ANT).",
+        "pagina": 5,
+        "paginas_ref": "Páginas 4 a 9",
+        "seccion": "2.1. Programa Fuerte y Constructivismo y 2.2. Teoría del Actor-Red",
+        "ideas_rubrica": [
+          {
+            "id": "u3_o1_i1",
+            "titulo": "Los 4 principios del Programa Fuerte de David Bloor (págs. 4–5)",
+            "detalle": "Enunciar causalidad, imparcialidad, simetría (explicar con los mismos tipos de causas tanto las creencias verdaderas como las falsas) y reflexividad.",
+            "pagina": 5,
+            "pistas": [
+              "programa fuerte",
+              "bloor",
+              "edimburgo",
+              "causalidad",
+              "imparcialidad",
+              "simetria",
+              "reflexividad",
+              "verdaderas",
+              "falsas"
+            ]
+          },
+          {
+            "id": "u3_o1_i2",
+            "titulo": "EPOR (Collins) y SCOST/SCOT (Bijker, págs. 5–6): flexibilidad interpretativa y mecanismos de cierre",
+            "detalle": "Explicar cómo el estudio mesosocial de las controversias científicas (EPOR) y de los artefactos tecnológicos como la bicicleta (SCOST) muestra la flexibilidad interpretativa entre actores relevantes y su posterior cierre.",
+            "pagina": 6,
+            "pistas": [
+              "epor",
+              "collins",
+              "scost",
+              "scot",
+              "bijker",
+              "flexibilidad interpretativa",
+              "cierre",
+              "controversia",
+              "bicicleta"
+            ]
+          },
+          {
+            "id": "u3_o1_i3",
+            "titulo": "Teoría del Actor-Red (Latour, Callon, Law, págs. 7–9): actores humanos y no humanos y coproducción",
+            "detalle": "Señalar que ANT supera la asimetría naturaleza/sociedad tratando como actores (actantes) tanto a humanos como a no humanos (vieiras, bacterias, instrumentos) que se enrolan en redes sociotécnicas.",
+            "pagina": 7,
+            "pistas": [
+              "actor-red",
+              "ant",
+              "latour",
+              "callon",
+              "no humanos",
+              "vieiras",
+              "coproduccion",
+              "enrolamiento",
+              "traduccion"
+            ]
+          }
+        ],
+        "respuesta_modelo": "El Programa Fuerte de la Escuela de Edimburgo (Barnes y Bloor, págs. 4–5) postula cuatro principios —causalidad, imparcialidad, simetría y reflexividad— para explicar sociológicamente tanto las teorías verdaderas como las falsas. El constructivismo mesosocial del EPOR (Collins, págs. 5–6) y del SCOST (Bijker, pág. 6) analiza las controversias y los artefactos (como la bicicleta) mostrando su flexibilidad interpretativa y los mecanismos sociales de cierre. Finalmente, la Teoría del Actor-Red (Latour, Callon y Law, págs. 7–9) suprime las dicotomías naturaleza/sociedad y humano/no-humano, describiendo cómo actores heterogéneos se coproducen y enrolan en redes sociotécnicas."
+      }
+    ],
+    "test": [
+      {
+        "pregunta": "¿Qué exige el 'principio de simetría' formulado por David Bloor en el Programa Fuerte (Unidad 3, pág. 5)?",
+        "opciones": [
+          "Explicar las teorías verdaderas por la lógica y reservar la sociología solo para los errores.",
+          "Utilizar los mismos tipos de causas sociológicas para explicar tanto las creencias consideradas verdaderas como las consideradas falsas.",
+          "Suprimir el trabajo experimental en los laboratorios."
+        ],
+        "correcta": 1,
+        "pagina": 5,
+        "explicacion": "En la página 5 se cita literalmente a Bloor: 'Simetría: ha de ser simétrica en su estilo de explicación. Los mismos tipos de causa han de explicar, digamos, las creencias falsas y las verdaderas'."
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+================================================================================
+SISTEMA DE ESTUDIO MUECTI (V3 AUDITADA) · PAQUETE PORTÁTIL PARA COMPAÑEROS
+Asignatura: Nuevas Perspectivas de la Ciencia, la Tecnología y la Innovación
+================================================================================
+
+1. CÓMO ABRIR Y USAR ESTE PAQUETE EN CUALQUIER COMPUTADOR (SIN INSTALACIÓN)
+--------------------------------------------------------------------------------
+- Este paquete es 100% portátil y utiliza rutas relativas.
+- Para compartirlo con compañeros (por memoria USB, Google Drive, OneDrive o ZIP),
+  asegúrate de mantener en la MISMA CARPETA los siguientes archivos:
+    * Plataforma_Estudio_MUECTI.html (Aplicación principal)
+    * datos_unidades.js              (Base de datos sincronizada de las 6 unidades)
+    * Los 6 archivos de audio .mp3   (Unidad 1 a Unidad 6)
+    * Los 6 documentos originales .pdf (Unidad 1 a Unidad 6)
+    * (Opcional) Los 6 Guiones .txt y los 6 Mapas .json
+
+- Para empezar a estudiar:
+  Haz DOBLE CLIC sobre el archivo "Plataforma_Estudio_MUECTI.html" para abrirlo
+  en tu navegador web (se recomienda Microsoft Edge o Google Chrome).
+  No necesitas instalar Python ni levantar ningún servidor local: funciona
+  directamente como archivo local (file:///).
+
+
+2. QUÉ FUNCIONES TRABAJAN 100% SIN CONEXIÓN A INTERNET (OFFLINE)
+--------------------------------------------------------------------------------
+- Reproductor de estudio de los 6 audiolibros MP3 y control de velocidad (0.8x a 2.0x).
+- Guion sincronizado párrafo por párrafo con:
+    * 18 puntos verificados escuchando el MP3 (comienzo, mitad y final de cada unidad).
+    * Botón "⏱️ Ajustar tiempo" en cada párrafo para calibrar manualmente cualquier segundo.
+- Salto directo desde cada párrafo o marcador a la página exacta del PDF (#page=N).
+- Creación, edición manual y borrado de Marcadores con notas personales.
+- Profesor Virtual (escribiendo preguntas con tus propias palabras o usando las sugerencias):
+    * Distingue entre "📘 Síntesis preparada del apartado" y "📄 Fragmentos textuales del PDF".
+    * Reconoce honestamente cuando el PDF no contiene respuesta para una consulta.
+- Evaluación Oral por Ideas (escribiendo tu respuesta) y Cuestionario Tipo Test.
+- Calendario Sencillo de Repasos (7 días) y Modo Caminata con fragmentos MP3 (~48 s).
+- Exportación e Importación de copias de seguridad (.json) con tus marcadores y repasos.
+
+
+3. QUÉ FUNCIONES DEPENDEN DEL NAVEGADOR O REQUIEREN CONEXIÓN A INTERNET
+--------------------------------------------------------------------------------
+- 🎤 Dictado por voz (Botones "Preguntar por Voz" / "Dictar Respuesta por Voz"):
+    * Navegadores compatibles: Requiere Google Chrome o Microsoft Edge (navegadores
+      basados en Chromium que implementan Web Speech API SpeechRecognition).
+      No está disponible en Mozilla Firefox estándar.
+    * Conexión a internet: SÍ requiere conexión a internet activa, ya que el
+      navegador envía el audio del micrófono al motor de reconocimiento en la nube
+      del fabricante del navegador.
+    * Permiso en archivo local (file:///): Al abrir el HTML con doble clic, Chrome o
+      Edge solicitarán permiso para usar el micrófono cada vez que inicies sesión.
+    * Alternativa offline: Siempre puedes escribir tus preguntas y respuestas en los
+      cuadros de texto sin necesidad de micrófono ni internet.
+
+- 🔊 Voz sintética auxiliar (Botones "Escuchar síntesis" / "Escuchar pregunta"):
+    * Conexión a internet: NO requiere internet si tu sistema operativo (Windows/macOS)
+      tiene instalada una voz local en español (speechSynthesis).
+    * Nota: El timbre de esta voz auxiliar depende de las voces instaladas en cada
+      computador. Los 6 audiolibros principales (.mp3) están pregrabados y suenan
+      exactamente igual en todos los equipos y sin internet.
+
+================================================================================

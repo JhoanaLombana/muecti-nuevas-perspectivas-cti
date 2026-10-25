@@ -1,0 +1,255 @@
+Audiolibro de estudio. Asignatura: Nuevas perspectivas en los estudios sobre ciencia, tecnología e innovación. TEMA 2. Unidad 4. Enfoques contemporáneos en el estudio de la ciencia y la. tecnología. El modelado científico-tecnológico de la sociedad.
+
+1. El modelado científico-tecnológico de la sociedad.
+
+Los últimos enfoques mencionados en la unidad anterior ya no se ocupaban, en sentido estricto, del “moldeado social de la ciencia y la tecnología”, puesto que asumen que sociedad, ciencia y tecnología se moldean mutuamente, se coproducen, en expresión de Latour. No obstante, es posible diferenciar un conjunto de enfoques de origen y naturaleza diversa, que se centran fundamentalmente en los efectos sociales del desarrollo científico-tecnológico prestando una menor y desigual atención al carácter contingente y contextual del mismo. Son los enfoques CTS cuyo foco de análisis es la huella de la ciencia y la tecnología en la sociedad, o el modelado científico-tecnológico de las sociedades.
+
+Mientras la tradición académica aborda fundamentalmente la investigación acerca de cómo se produce la ciencia a través de casos de estudio empíricos y enfoques teóricos desarrollados en interacción con los mismos, la rama de CTS originada en la preocupación por las consecuencias sociales del desarrollo científico-tecnológico, ha mantenido una perspectiva global y macro, ocupándose fundamentalmente de la conformación de las modernas “sociedades del conocimiento” o “culturas tecnocientíficas”, y su gobernanza y control. La historia de CTS desde este punto de vista no parte de Kuhn, sino de los movimientos de ecologistas y consumidores de los años 60 y 70. Las preocupaciones iniciales se centraron en cuestiones como la de la tecnología al servicio de la industria armamentística (inquietud derivada del rechazo popular de la bomba atómica y la guerra del Vietnam), la proliferación de la energía nuclear, o los riesgos de pesticidas químicos como el DDT. Como veremos, sin embargo, también este tipo de enfoques se desarrollan hacia posturas en las que se evidencia el modelado mutuo de la ciencia, la tecnología y la sociedad.
+
+La tecnología se trata en principio típicamente como producto y se aborda desde una perspectiva estrechamente relacionada con la filosofía y la teoría política, destacando las profundas implicaciones políticas, educativas y sociales de la tecnología en su contexto social. CTS como “movimiento” declara entre sus influencias las de Jacques Ellul y Lewis Mumford, y entre sus temas más importantes aquellos ligados a las discusiones sobre la autonomía de la tecnología y el determinismo tecnológico, la historia, la filosofía y la ética de la ciencia y la tecnología. Las ramas más prácticas de CTS se caracterizan también por el interés en las relaciones entre ciencia y política en varias vertientes: el establecimiento de políticas científicas en los estados, la evaluación de tecnologías, el control social, la participación del público no experto, y la renovación educativa. Algunas de estas cuestiones se trataron ya en unidades anteriores y en la asignatura 1. Otras, las relacionadas con la política científica y la implicación ciudadana, se tratarán posteriormente (y de forma detallada en el módulo optativo de la especialización en Políticas y participación ciudadana en ciencia y tecnología). Nos detendremos por tanto aquí algunos temas y enfoques que fundamentan estas discusiones.
+
+1 Autoría: Marta I. González García y J.A. López Cerezo.
+
+2. Breve cronología CTS.
+
+De acuerdo con Carl Mitcham, es posible identificar tres periodos en la historia social del movimiento CTS en los países occidentales y especialmente en Estados Unidos:
+
+1. Optimismo. El primero, desde el fin de la Segunda Guerra Mundial hasta 1955 (con el manifiesto de Russell y Einstein sobre la responsabilidad social de la ciencia), se trata de una década optimista de demostración del poder de la ciencia y la tecnología, de firme convicción en el modelo unidireccional de progreso y de apoyo público incondicional a la ciencia-tecnología 2. Alerta. En el segundo periodo (desde el lanzamiento del Sputnik y el accidente de la central nuclear de Windscale en 1957 hasta el cenit del movimiento contracultural y las revueltas contra la guerra de Vietnam), comienzan a salir a la luz pública los primeros grandes desastres producidos por una tecnología fuera de control. Los movimientos sociales y políticos de lucha contra el sistema hacen de la tecnología moderna y del estado tecnocrático el blanco de su lucha.
+
+3. Reacción. El tercer periodo, desde 1969 en adelante, describe la consolidación educativa y administrativa del movimiento CTS como respuesta académica, educativa y política a la sensibilización social sobre los problemas relacionados con la tecnología y el ambiente. Es el momento de la revisión y corrección del modelo unidireccional de progreso como base para el diseño de la política científico-tecnológica.
+
+El siguiente resumen cronológico de hitos relacionados con el desarrollo científicotecnológico (centrada especialmente en la segunda mitad del siglo XX) puede ilustrar esta evolución (basado en Mitcham, 1984 y González García et al., 1995):
+
+1945 Primera explosión atómica de prueba en Estados Unidos (16 de julio, Nuevo México.
+
+Informe de Vannevar Bush: Science - The Endless Frontier.
+
+Explosiones atómicas de Hiroshima (6 de agosto) y Nagasaki (9 de agosto).
+
+1946 Primer ordenador electrónico (ENIAC).
+
+1949 La URSS prueba su primera bomba atómica.
+
+1950 Primer trasplante de riñón; al que siguen otros órganos.
+
+1951 Primera explosión de prueba de la bomba de hidrógeno en Estados Unidos, a la que seguirá la URSS.
+
+Crecimiento notable del presupuesto investigación y desarrollo del Departamento de Defensa en Estados Unidos 1953 Descubrimiento de la estructura del ADN, base del desarrollo posterior de la ingeniería genética.
+
+1954 Primer submarino nuclear: el USS Nautilus.
+
+1955 Producción comercial de electricidad por una central nuclear.
+
+Primera píldora anticonceptiva.
+
+Manifiesto de B. Russell y A. Einstein: Pugwash Conferences.
+
+1957 Lanzamiento del Sputnik I, primer satélite artificial alrededor de la tierra.
+
+Accidente del reactor nuclear de Windscale, Reino Unido. Explosión del depósito nuclear Kyshtym, en los Urales.
+
+1958 Creación de la NASA.
+
+1959 Conferencia Rede de C.P. Snow, en la que denuncia el abismo ente la cultura humanística y la cultura científica.
+
+60s Movimientos contraculturales y pro tecnología alternativa.
+
+1960 Invención del láser.
+
+1961 Yuri Gagarin se convierte en el primer humano en el espacio.
+
+Prohibición de la talidomida.
+
+1962 El Marine 2 se convierte en la primera nave espacial en explorar otro planeta (Venus).
+
+Publicación de La primavera silenciosa, de Rachel Carson.
+
+1963 Tratado de limitación de pruebas nucleares.
+
+Se hunde el submarino nuclear USS Thesher, seguido por otros.
+
+1964 IBM patrocina el Program on Technology and Society de la Universidad de Harvard. 1966 Se estrella un B-52 con cuatro bombas de hidrógeno cerca de Palomares (Almería, España).
+
+Movimiento de oposición a la propuesta de crear un banco de datos nacional en Estados Unidos 1967 Primer gran vertido accidental de petróleo (Torry Canyon, sur de Inglaterra).
+
+1968 El Papa Pablo VI hace público el rechazo a la contracepción artificial en Humanae vitae.
+
+Grandes revueltas en Estados Unidos contra la guerra de Vietnam y el uso del napalm. Mayo del 68.
+
+1969 Neil Armstrong pone su pie en la Luna.
+
+Se funda Greenpeace.
+
+Creación de la EPA (Environmental Protection Agency).
+
+Primeros programas STS (Science, Tecnology and Society) en las universidades del Estado de Pensilvania y Cornell (Estados Unidos).
+
+1970 Se cancela la financiación del Concorde en Estados Unidos.
+
+1971 Fundación del Instituto de Ética Kennedy en la Universidad de Georgetown.
+
+1972 Tres ingenieros que trabajan en el proyecto de transporte rápido de la bahía de San Francisco (BART) son despedidos por criticar su seguridad. Siete meses después se produce un accidente.
+
+1972 La EPA prohíbe el uso del DDT.
+
+El Congreso de Estados Unidos crea la OTA (Office of Technology Assessment). El Club de Roma publica The Limits of Growth.
+
+1973 Primer organismo producido por ingeniería genética.
+
+Crisis del petróleo.
+
+1974 Moratoria sobre ingeniería genética tras la conferencia de Asilomar (California).
+
+Se estrella un DC-10 a las afueras de París.
+
+1976 Tres ingenieros de General Electric abandonan la compañía en protesta por los peligros de la energía nuclear.
+
+1978 El satélite soviético Cosmos 954, con reactor nuclear incluido, se desintegra sobre el norte de Canadá.
+
+Primera niña probeta: Louise Brown.
+
+Los tres ingenieros despedidos de BART reciben el I Premio IEEE por “servicios destacados al interés público”.
+
+1979 Fusión parcial del reactor nuclear en Three Mile Island.
+
+1981 Fundación de Earth First!
+
+1982 Primer corazón artificial.
+
+Autorización de la venta de insulina producida por ingeniería genética en Estados Unidos y el Reino Unido.
+
+1983 La National Science Teachers Association (NSTA) introduce la enseñanza de las ciencias con orientación CTS en educación secundaria.
+
+1985 Científicos británicos denuncian la constante reducción de la capa de ozono sobre la Antártida desde 1979.
+
+1986 Explosión de la nave espacial Challenger y muerte de los siete tripulantes.
+
+Accidente de Chernóbil (Ucrania). Gigantesco vertido químico en el Rin.
+
+1987 Protocolo de Montreal, firmado por 24 países, para restringir la producción de CFC y detener la destrucción de la capa de ozono.
+
+El Informe Brundtland (Our Common Future) de la Comisión de las Naciones Unidas sobre Medio Ambiente y Desarrollo acuña el término “desarrollo sostenible”.
+
+La Oficina de Patentes norteamericana concede el derecho a patentar animales domésticos (producidos por ingeniería genética), aunque prohíbe patentar seres humanos.
+
+1989 Caída del muro de Berlín.
+
+Primera patente de un ratón transgénico.
+
+1990 Se pone en marcha a nivel internacional el Proyecto Genoma Humano.
+
+Creación de la World Wide Web.
+
+1992 Cumbre de la Tierra en Río.
+
+1993 Se detiene en Estados Unidos la financiación del ambicioso acelerador de partículas que iba a construirse en Texas.
+
+1995 Primer encuentro en el espacio entre la estación espacial rusa Mir y el transbordador norteamericano Discovery.
+
+Comienza la comercialización de organismos genéticamente modificados.
+
+1997 Protocolo de Kioto.
+
+1998 Dolly Parton da nombre a una famosa oveja clónica.
+
+Ensamblados los primeros módulos de la estación espacial internacional.
+
+Normativa de la Comisión Europea sobre liberación y etiquetado de organismos genéticamente manipulados.
+
+2000 Enviados los primeros astronautas a la estación espacial internacional.
+
+2001 Dennis Tito se convierte en el primer turista espacial en su vista a la estación espacial internacional.
+
+2002 Hundimiento del petrolero Prestige frente a las costas de Galicia.
+
+2003 Completado el Proyecto Genoma Humano.
+
+Explosión de la nave espacial Columbia.
+
+2004 Marck Zuckerberg crea Facebook.
+
+Descubrimiento del grafeno.
+
+2005 El protocolo de Kioto entra en vigor.
+
+Disponibilidad comercial de la tecnología GPS.
+
+Tres antiguos empleados de Paypal fundan Youtube.
+
+2006 La FDA aprueba la polémica vacuna contra el virus del papiloma humano para prevenir el cáncer de útero.
+
+Jarck Dorsey lanza al mundo el primer tweet.
+
+2007 Los científicos del IPCC concluyen que el cambio climático es responsabilidad humana.
+
+2009 Crisis mundial por la epidemia de gripe A (H1N).
+
+2011 Accidente en la central nuclear de Fukushima.
+
+2012 El CERN anuncia la observación de una partícula consistente con el bosón de Higgs.
+
+2016 Anuncio de la detección de ondas gravitacionales.
+
+3. Crítica política a la ciencia y la tecnología.
+
+La guerra del Vietnam, los problemas ecológicos, los usos sexistas o racistas de algunas teorías científicas y los riesgos farmacológicos fueron algunos de los factores que promovieron, desde los años 60 y 70 del pasado siglo XX, la crítica de desarrollos científico-tecnológicos por parte de colectivos ecologistas, pacifistas, feministas o marxistas.
+
+Algunos científicos también se aliaron en asociaciones como Science for the People para oponerse a instancias de la ciencia que entendían al servicio de injusticias o desigualdades, como las duras críticas de R. Lewontin, Hilary y Steve Rose o S. J. Gould a la sociobiología y enfoques derivados que trataban de dar cuenta de los comportamientos sociales recurriendo al determinismo biológico.
+
+Las críticas feministas a algunos aspectos o variedades de las tecnologías reproductivas o las ecologistas a los riesgos de prácticas como el fracking son algunos ejemplos más recientes de la vigencia de este tipo de identificación y denuncia de efectos negativos de la ciencia y la tecnología. En algunos casos, únicamente se critican usos indebidos que contribuyen a la degradación del ambiente, la destrucción causada por la guerra, la naturalización de la inferioridad de las mujeres, la perpetuación de las desigualdades de clase, o cualquier otro riesgo o prejuicio social, manteniendo una imagen tradicional de la ciencia y la tecnología como instrumentos neutrales. No obstante, algunos de estos analistas han desarrollado también críticas globales a la ciencia y la tecnología como armas de dominación y control o determinantes de nuestras formas de vida, defendiendo transformaciones en los objetivos de investigación, la estructura organizativa de la ciencia, el papel de los no expertos o la idea misma de objetividad.
+
+La imagen de Jacques Ellul de una tecnología autónoma, convertida en un fin en sí misma, es retomada por uno de los analistas de la tecnología más influyentes de nuestros días, Langdon Winner. En Tecnología autónoma, Winner discute con Ellul, reconociendo la deuda con su obra, pero tomando postura de forma diferente respecto a sus consecuencias deterministas. Sin embargo, también Winner es crítico con nuestra aceptación automática y abandono a la tecnología. En sus obras, describe este abandono como “sonambulismo tecnológico”. Caminamos dormidos, afirma, por los procesos de reconstrucción tecnológica de nuestra existencia. En el conocido ensayo que abre La ballena y el reactor, Winner se pregunta si los artefactos tecnológicos tienen política. La respuesta del autor es afirmativa, las tecnologías tienen política en varios sentidos. En uno de ellos, las tecnologías pueden usarse para fines políticos, como un diseño urbanístico que favorezca la segregación de clases o razas, por ejemplo. Esto es lo que habría ocurrido, de acuerdo con Winner, cuando Robert Moses diseñó los puentes de Long Island deliberadamente bajos con el fin de que no permitieran el paso de autobuses, limitando por tanto el acceso a la zona a aquellas personas que no pudieran desplazarse en automóvil. Pero hay también tecnologías que pueden ser inherentemente políticas, en el sentido de que transforman los roles sociales y nos colocan en relaciones específicas de poder (al modo en el que lo hace, en su ejemplo preferido, basar la provisión energética de un país en la energía nuclear, ya que requiere centralización y autoritarismo). La crítica de Winner, no obstante, va más allá de los casos particulares para, basándose en la tesis del determinismo tecnológico, oponerse al orden social en el que somos “sonámbulos tecnológicos”.
+
+Dorothy Nelkin (por ejemplo, 1979, 1984; Nelkin y Tancredi, 1994; Jasper y Nelkin, 1991) ha desarrollado también en su trabajo una crítica de carácter ético y político a diversos aspectos de la ciencia y la tecnología, centrándose en temas relacionados con la comunicación y percepción pública de la ciencia, la bioética (ingeniería genética, diagnóstico prenatal, derechos de los animales..), las controversias sociales sobre ciencia y tecnología, o el papel del asesoramiento experto en política y en los tribunales. En su trabajo, Nelkin ha analizado los conflictos entre valores que están a la base de las polémicas, y propone la apertura y discusión social de los mismos. En la misma línea de trabajo de crítica política, podemos citar a Ruth Hubbard (por ejemplo, 1993), también preocupada por cuestiones de bioética, o a Sheila Jasanoff, interesada en los procesos de toma de decisiones tecnocientíficas.
+
+4. Enfoques filosóficos.
+
+Dentro del marco de la filosofía, una parte importante de las reflexiones actuales sobre la tecnología recibe la influencia de corrientes filosóficas como la fenomenología, el existencialismo, la teoría crítica o el pragmatismo. La herencia de Dewey, Ellul, Heidegger, Ortega o Marcuse se utiliza para dar cuenta de la interferencia de la tecnología en las relaciones del ser humano con la naturaleza. No obstante, la filosofía de la tecnología sufre una importante transformación a partir de los años 80 del pasado siglo XX que algunos autores describen como un “giro empírico”. Mientras que la filosofía de la tecnología más clásica abordaba la tecnología como fenómeno en general, las nuevas investigaciones bajo el giro empírico se ocupan de tecnologías específicas, comprendiendo la tecnología como un producto contingente de un amplio y heterogéneo abanico de factores que incluyen aspectos sociales. Esta perspectiva centrada en casos de estudio particulares permite evitar posiciones deterministas generales sobre la tecnología, así como tanto la tecnofilia como la tecnofobia indiscriminadas. En el giro empírico, además, se encuentran un buen número de tradiciones y enfoques de la disciplina y se producen también intersecciones con otros campos de investigación como los estudios sobre ciencia, proporcionando un ámbito idóneo para explorar esas fertilizaciones cruzadas.
+
+Don Ihde analiza el modo en el que el mundo se nos presenta a través de artefactos tecnológicos, y cómo nuestra experiencia y nuestra imagen es transformada por estas mediaciones. El estudio de la tecnología es para Ihde el desarrollo de una fenomenología de la relación humano-máquina-mundo. En su análisis de tecnologías concretas, Ihde muestra las formas de experiencia del mundo que posibilitan las tecnologías. Es este un movimiento hacia una filosofía de la tecnología de carácter empírico, frente la posición clásica heideggeriana donde la tecnología moderna aparecía como la forma (única) de desvelamiento propia de nuestro mundo contemporáneo. En el plano corporal, Ihde identifica tres modos de relación entre sujetos humanos, tecnología y mundo. En la mediación, la tecnología media en la percepción del mundo, bien incorporándose al propio cuerpo (como unas gafas o un bastón) o posibilitando lecturas o interpretaciones del mismo (como un termómetro, por ejemplo). En la alteridad, el sujeto establece relación con el propio artefacto tecnológico (como la que se establece con un ordenador, un coche o un robot). Por último, en las relaciones de trasfondo, los artefactos tecnológicos funcionan como el contexto de nuestra experiencia, modelándola (como el contexto conformado por un sistema de calefacción o de red wifi). Al ocuparse de la relación entre la tecnología y la sociedad, en un sentido más general, la postura postfenomenológica de Ihde rechaza tanto el sustantivismo (la postura según la cual la tecnología es un factor independiente que ejerce influencia sobre la sociedad) como el instrumentalismo (la idea de que la tecnología es un mero instrumento neutral para el uso humano). Para Ihde, ambas posiciones asumen una idea de “tecnología en sí misma” que rechaza en favor de su propuesta de la consideración del par activo y relacional humanotecnología. En este sentido, la tecnología es multiestable (abierta a interpretaciones y usos distintos a aquellos para los que es diseñada) e intencional (nos dirige hacia determinados usos, tiene política o guiones). Aunque ambas caracterizaciones podrían aparecer en tensión, esta no es tal, ya que, si bien la tecnología es multiestable, su “intencionalidad” aflora al elegir un tipo de relación con ella y con el mundo a través de la misma.
+
+Andrew Feenberg ejemplifica en su propia trayectoria el tránsito entre una reflexión sobre la tecnología clásica en el contexto de la teoría crítica y el giro empírico posterior. Si bien en sus primeros trabajos sobre la tecnología, mantuvo tesis generales sobre el carácter capitalista de la tecnología contemporánea y la propuesta de una tecnología socialista (en línea con la crítica a la racionalidad científico-tecnológica como forma de ideología de autores como Marcuse o Habermas), en sus escritos posteriores se aleja de las posturas tecnopesimistas y unidimensionales, entrando en diálogo con los análisis constructivistas y mostrando el modo en el que los valores sociales se incorporan en las tecnologías y la ambivalencia de las mismas. Por su parte, Paul Durbin y Larry Hickman siguen a John Dewey para proponer una llamada al activismo social en el primer caso, y una tecnología más comprehensiva y libre de intereses particulares o sesgos ideológicos en el segundo.
+
+Un autor a destacar, difícilmente clasificable, es Ivan Illich. Su obra, muy relacionada con los movimientos de crítica social de los años 60 y 70, aborda muchos de los aspectos estructurales que definen y determinan nuestra cultura occidental: la educación, la medicina, el género, las relaciones de producción, el sistema de transportes, etcétera. Todos ellos son “tecnologías sociales” que cumplen el papel de adaptar los individuos al sistema. En La Convivencialidad sostiene que las tecnologías pasan por dos umbrales de mutación: al traspasar el primero se convierten en productivas, pero la traspasar el segundo se vuelven disfuncionales al transformarse en fines en sí mismas. Por ejemplo, la televisión nos permite estar informados, pero su omnipresencia y su abuso crea dependencia y mutila la capacidad crítica de los individuos. Illich propone tecnologías para la convivencialidad que sean libremente elegidas, permitan la expresión activa de la vida personal y no estén monopolizadas por ninguna élite profesional. Las tecnologías para la convivencialidad serían herramientas potenciadoras de la creatividad, la autonomía y la libertad individual.
+
+Otro grupo de autores relevantes proviene de la tradición analítica en filosofía y han aplicado también sus análisis a la ciencia y la tecnología. Kristin Shrader-Frechette (por ejemplo, 1985, 1985b, 1989) ha trabajado en evaluación de tecnologías, democratización de la política tecnológica, percepción y gestión del riesgo, etcétera., siempre encuadrando sus análisis en el debate sobre la racionalidad. Para Shrader-Frechette, el problema de la racionalidad en la evaluación de riesgos (o en la evaluación de tecnologías en general) es paralelo al problema de la racionalidad científica. En este sentido, defiende un “naturalismo jerárquico”, intermedio entre los enfoques racionalistas tradicionales y los naturalismos más radicales, en el que la objetividad científica está garantizada por el consenso y la revisión crítica de la comunidad de científicos, aunque defendiendo la existencia de al menos un criterio universal de elección interteórica (el poder explicativo demostrado en la capacidad predictiva). Shrader-Frechette introduce además los valores éticos dentro de la racionalidad científico-tecnológica, lo que le permite defender la creación de mecanismos democráticos de participación pública en evaluación y política tecnológica.
+
+La intersección entre la filosofía de la ciencia y la ética está también presente en el trabajo de Evandro Agazzi, que defiende la reglamentación ética y jurídica de la actividad científica basándose en la pluralidad de valores y fines presentes en ella, así como la relevancia de la ciencia para la propia ética. Nicholas Rescher por su parte analiza la relación entre ciencia y valores, interesándose por los límites cognitivos y éticos de la ciencia en cuanto a capacidad y actividad humana.
+
+Con enfoques más epistemológicos que éticos, y fundamentalmente preocupados por la génesis y justificación del conocimiento, más que por sus efectos sociales, podemos también señalar los naturalismos contextuales de Helen Longino y Miriam Solomon, en los que, con diferentes matices, se reconoce la profunda contextualización de la ciencia sin renunciar a la objetividad y la normatividad epistémica. La postulación de un sujeto social para la ciencia (frente al sujeto individual de la epistemología tradicional) evita la amenaza relativista, al quedar neutralizados los sesgos particulares en la confrontación social de las diferentes perspectivas.
+
+Otro enfoque naturalista es el de Steve Fuller, que defiende en su “epistemología social” una reorientación de los análisis sociológicos de la tradición académica con el fin de recuperar la dimensión normativa. La normatividad propuesta por Fuller no se trata solamente de averiguar (al modo naturalista) cómo debería proceder la investigación, sino también de articular los medios (en el ámbito de la gestión política) para la instanciación de las normas propuestas.
+
+Algunos de estos enfoques defienden, como colofón de sus análisis acerca de las indeterminaciones epistemológicas y las dimensiones éticas de los fenómenos científico-tecnológicos, así como de sus efectos sociales, la apertura de los procesos de decisiones al público no experto, en definitiva, la democratización de la ciencia y la tecnología. En este sentido, indican como uno de los campos de investigación prioritarios de CTS el de las políticas de ciencia y tecnología.
+
+5. Ética de la tecnología.
+
+Una buena parte de las discusiones de las que hablamos previamente se desarrollan en el contexto de la ética de la tecnología. Entre la diversidad que caracteriza la ética de la tecnología contemporánea se pueden distinguir tres tipos de ramas con un desarrollo independiente: los enfoques culturales y políticos (muy diversos en sí mismos y en los que ubicaríamos las reflexiones filosóficas de los apartados anteriores), la ética ingenieril y las éticas específicas.
+
+La ética ingenieril es un campo reciente de investigación y educación, que se generaliza en Estados Unidos en los años 80 del pasado siglo XX. Se trata de una ética profesional, que se ocupa de cuestiones relacionadas con los códigos éticos de la ingeniería, los conflictos de interés a los que se enfrentan los profesionales de la ingeniería en su trabajo, los valores de la profesión ingenieril (competencia, honestidad…), las alertas tempranas (whistle-blowing), etcétera. Mientras que la ética ingenieril es una ética profesional desarrollada fundamentalmente por los propios ingenieros, las éticas específicas son éticas aplicadas y tienen un importante desarrollo desde la ética filosófica. Las nuevas tecnologías, como las tecnologías de la información y las comunicaciones, la biotecnología, las nanotecnologías y las tecnologías convergentes son las que reciben mayor atención en la actualidad, en la medida en la que plantean cuestiones éticas novedosas en el contexto tecnológico como los temas de la privacidad, la propiedad intelectual, el patentado de seres vivos o el transhumanismo. La ética ambiental es otra rama de la ética en la que la reflexión sobre la tecnología desempeña un papel relevante. La necesidad de éticas específicas para determinadas tecnologías se ubica dentro de la discusión más general acerca de si las nuevas tecnologías plantean problemas éticos también novedosos, o se trata más bien de dilemas éticos clásicos en contextos tecnológicos distintos. Preguntas como la de si la propiedad del software debe estar protegida por la ley o la preocupación por la amenaza a la privacidad que suponen las grandes bases de datos se han interpretado por diferentes autores como cuestiones éticas específicas de los desarrollos tecnológicos que hacen posible y necesaria su formulación, mientras que en otras interpretaciones se trata de diferentes versiones de los viejos problemas de la propiedad o la privacidad.
+
+Aun cuando la tendencia general contemporánea al desarrollo de éticas específicas se corresponde con las aproximaciones más empíricas y orientadas a tecnologías concretas características de los enfoques actuales para el estudio de la tecnología, hay problemas éticos comunes relacionados con la tecnología, como los que identifican Fraassen et al. Algunos de ellos son los siguientes:
+
+Un tema muy debatido en la ética actual de la tecnología es el de la posibilidad de adscribir agencia moral a los artefactos o sistemas técnicos. Aunque una posición común en la reflexión tradicional sobre la tecnología había sido la de su neutralidad (defendida en la actualidad por autores como Joseph Pitt, 2000), los artefactos técnicos influyen sobre el comportamiento humano de forma difícilmente comprensible si los tomamos como instrumentos pasivos que se utilizan para objetivos moralmente adecuados o inadecuados. Además, la mayor parte de los filósofos de la tecnología estaría de acuerdo en que las tecnologías se diseñan para ejercer una función y ser utilizadas para determinados fines (pese a que puedan ser utilizadas para otros objetivos no previstos en su diseño). En estos sentidos, es difícil mantener la tesis de la neutralidad moral de la tecnología, aunque los modos en los que se argumenta su carga moral pueden ser muy diversos. En el “giro material” en la ética, como lo denominan Kroes y Verbeek, las tecnologías son “agentes” en el sentido de que pueden influir sobre sus usuarios, sobre cómo perciben el mundo o interaccionan. En algunos enfoques se defiende incluso la agencia moral de la tecnología afirmando que las tecnologías pueden actuar moralmente y ser, por tanto, responsables de sus consecuencias. Las cuestiones a debate giran alrededor de si el impacto moral de la tecnología (positivo o negativo) es debido a su uso por parte de los humanos o es más bien consecuencia del modo en el que la propia tecnología condiciona activamente la vida humana, “actuando”, por tanto, como agente moral. Atribuir agencia moral a los artefactos es un movimiento arriesgado, y requiere repensar las nociones de agencia y de moralidad. Una opción sería la adoptada por ejemplo por Bruno Latour y la teoría del actor-red, que vimos en la unidad anterior: la de desconectar la agencia de la intencionalidad. Otros autores como Verbeek defenderán que la agencia moral es un fenómeno híbrido en el que los elementos humanos y no humanos actúan de forma articulada. Desde este punto de vista, la intencionalidad y la agencia son el resultado de las complejas conexiones entre humanos y artefactos. Otras posturas evitan la adscripción de agencia moral a los artefactos argumentando que son susceptibles de evaluación moral en la medida en que incorporan valores en su diseño. En este sentido, la agencia humana sería de algún modo constitutiva de los artefactos técnicos, ya que los valores y fines “inscritos” en la construcción de los artefactos son parte consustancial de ellos. La afirmación de que la tecnología tiene agencia moral sería entonces una forma osada y confusa de afirmar, simplemente, que la tecnología es moralmente relevante, de tal modo que la defensa de la carga valorativa de la tecnología no tendría necesariamente que ir unida a la más problemática defensa de su agencia moral.
+
+Otro de los temas recurrentes relacionados con la ética de la tecnología surge al centrarse, no en el uso de las tecnologías, sino en su producción. La atención creciente de la filosofía de la tecnología a las cuestiones del diseño también se refleja en la atención creciente de la ética a la incorporación de valores en el diseño. El planteamiento de cuestiones éticas relacionadas con el diseño de las tecnologías está asimismo en consonancia con los enfoques en estudios sociales que muestran la maleabilidad de las tecnologías durante su proceso de construcción. El diseño sensible a los valores en informática, el diseño para la sostenibilidad, el diseño inclusivo o el diseño afectivo son algunas áreas de la ingeniería en las que se emprende la tarea de implementar valores éticos en la construcción de tecnologías. La incorporación de valores éticos en el diseño de tecnologías puede suscitar problemas de conflicto con otros valores (eficacia, economía, seguridad, etcétera.) que requieren también un abordaje desde el punto de vista moral. Por otra parte, la cuestión de los valores éticos en el diseño de tecnologías se articula con un área de investigación y práctica de creciente actualidad: la innovación responsable, que a su vez suscita planteamientos relacionados con el trabajo sobre gobernanza y participación social.
+
+Muy relacionada con el tema de la agencia moral se encuentra la cuestión de la adscripción de responsabilidad. Se trata de un asunto de especial importancia en el ámbito de la ética ingenieril, donde se discute en relación con los códigos éticos de la profesión y con las situaciones habituales en la práctica de la ingeniería donde los fallos o los accidentes suceden en sistemas complejos desde el punto de vista de su organización tanto material como social. Los desastres tecnológicos (centrales nucleares, accidentes aéreos o navales, etc…) parecen ser el resultado de complejas coincidencias imposibles de predecir por las personas involucradas, lo que en ética ha venido de denominarse “el problema de las muchas manos” (“the problem of many hands”) y en sociología de la tecnología “accidentes normales”. Esta complejidad da lugar a desastres que suceden en circunstancias en las que no es identificable un agente intencional, no hay una acción voluntaria que haya ocasionado el accidente, o las consecuencias no eran conocidas de antemano. En estas condiciones, la atribución de responsabilidad resulta problemática, como ya se ha señalado en la primera unidad de esta asignatura.
+
+6. Autonomía y determinismo tecnológico.
+
+La transición reciente entre una filosofía de la tecnología clásica, que entendía el fenómeno tecnológico como un todo problemático con consecuencias sociales negativas y una filosofía de la tecnología contemporánea, de carácter más empírico y centrada en las particularidades de los casos concretos de interacciones tecnologíasociedad, puede verse claramente en la discusión sobre uno de los temas más recurrentes de la reflexión sobre la tecnología: el de la autonomía y el determinismo tecnológico.
+
+El tema de la autonomía de la tecnología y el determinismo tecnológico es uno de los temas clásicos del “movimiento” CTS que apunta hacia los efectos perniciosos de un crecimiento tecnológico descontrolado sobre sociedades sometidas. Según la mencionada metáfora de Langdon Winner, las tecnologías tienen el poder de transformar nuestros modos de vida y de hacernos caminar sonámbulos a través de los procesos de reconstrucción tecnológica de nuestras existencias. Las tecnologías tienen génesis ligadas a contingencias humanas, sin embargo, en cierto momento alcanzan un punto de no retorno y su desarrollo se convierte en autónomo respecto a sus creadores (síndrome de Frankenstein), de tal modo que esclavizan y someten los destinos humanos. Los caos producidos por caídas de los sistemas de electricidad en diversas ciudades, la capacidad de una inusitada afluencia de tráfico para colapsar una ciudad y causar víctimas, o las transformaciones radicales que las nuevas tecnologías de la información y las comunicaciones están introduciendo en las vidas de usuarios, las relaciones internacionales y el comercio mundial son algunos ejemplos de cómo los destinos humanos están de algún modo irreversiblemente guiados por desarrollos tecnológicos que han terminado por imponerse a expectativas, deseos y voluntades.
+
+Esta interpretación de las relaciones entre tecnología y sociedad, sin embargo, es cuestionada por los enfoques “académicos” de CTS, que subrayan que la ciencia y la tecnología son actividades sociales, y rechazan la idea del determinismo tecnológico sustituyéndolo en algunas versiones por alguna forma de “determinismo social”, especialmente en las corrientes constructivistas. El “determinismo social” tiene la ventaja de que, al defender las posibilidades de incidir sobre el desarrollo tecnológico y, por tanto, sobre sus efectos en nuestras formas de vida, permite una vía de escape de las interpretaciones más pesimistas de la idea del “determinismo tecnológico”. Como productos humanos que son, las tecnologías, incluso aquellas que en apariencia son más autónomas, están de hecho dirigidas y guiadas por factores rastreables en intereses, voluntades o eventualidades humanas. Sacar estos factores a la luz, haciéndolos explícitos, se entiende como la estrategia más efectiva para poder incidir sobre su control.
+
+Langdon Winner, sin embargo, señala la ironía que supone el hecho de que, mientras en el mundo académico han triunfado las nociones de “construcción social” o “modelado social” de las tecnologías, el mundo “ahí afuera” sufre más que nunca las consecuencias de su “modelado tecnológico” y determinación tecnológica. Quizá el ejemplo más evidente sea el del desarrollo de la informática: “la tecnología acelera rápidamente y hay que estar al día” son las palabras de S. Brand en la revista Wired. Y esto lo saben bien los millones de usuarios de ordenadores y teléfonos móviles inteligentes que se las ven y se las desean para no perder el tren de esta rápida aceleración. Economistas, políticos y teóricos de las TIC señalan el desarrollo de estas tecnologías como el evento que marcará el futuro de la humanidad en el nuevo milenio: transformaciones que afectarán desde la vida íntima a las relaciones internacionales. Para Winner, la literatura académica sobre elección, democratización y construcción social de la tecnología es voluntarista e ingenua, hecha de espaldas a una cruda realidad en la que las opciones disponibles son realmente escasas.
+
+Otros autores, como Lars Fuglsang han buscado un camino intermedio diferenciando entre estadios del desarrollo de una tecnología. Al principio, la tecnología será flexible y susceptible de control y “modelado social”. Pero a partir de cierto punto, adquirirá “momentum” y vida propia, haciéndose cada vez más complicado incidir sobre su desarrollo y derivando en la fase de “difusión” en algún tipo de “determinismo tecnológico” más o menos fuerte. No hay que olvidar, no obstante, que el “momentum” para Thomas Hughes no significa autonomía y, por tanto, determinismo. Las tecnologías logran para Hughes inercia, pero siguen sometidas a las fuerzas externas (como intereses invertidos) que sostienen su mantenimiento.
+
+Es similar la propuesta de Wiebe Bijker de reconciliar los enfoques constructivistas con la crítica social a las consecuencias indeseadas del desarrollo científico-técnico. Según Bijker, mostrar la flexibilidad interpretativa de los artefactos, es decir, argumentar su maleabilidad y contingencia, es crucial para fundamentar una “política de la tecnología”. Así y todo, los artefactos pueden ser más o menos pertinaces e inflexibles, dependiendo del punto de su desarrollo que consideremos y de nuestra posición como actores frente a ellos.
+
+Al buscar caminos intermedios entre las opciones a menudo enfrentadas de la autonomía y el determinismo, estas propuestas apuestan por la convergencia entre las dos tradiciones para el estudio social de la ciencia y la tecnología, una tendencia que ha ido ganando recientemente defensores y argumentos, y a la que se dedicará la siguiente unidad de esta asignatura.
+
+Fin del audiolibro de la unidad: TEMA 2. Unidad 4. Enfoques contemporáneos en el estudio de la ciencia y la. tecnología. El modelado científico-tecnológico de la sociedad.

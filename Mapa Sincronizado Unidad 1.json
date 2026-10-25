@@ -1,0 +1,1505 @@
+{
+  "numero": 1,
+  "nombre_base": "Unidad 1 - Sociedad del conocimiento y sociedad del riesgo",
+  "titulo_corto": "Sociedad del conocimiento y sociedad del riesgo",
+  "asignatura": "Nuevas perspectivas en los estudios sobre ciencia, tecnología e innovación",
+  "unidad_portada": "TEMA 2. Unidad 1: Sociedad del conocimiento y sociedad del riesgo",
+  "archivo_pdf": "Unidad 1 - Sociedad del conocimiento y sociedad del riesgo.pdf",
+  "archivo_mp3": "Unidad 1 - Sociedad del conocimiento y sociedad del riesgo.mp3",
+  "archivo_guion": "Guion Unidad 1 - Sociedad del conocimiento y sociedad del riesgo.txt",
+  "total_paginas_pdf": 15,
+  "total_palabras": 5420,
+  "duracion_estimada_s": 2019.82,
+  "tamano_mb": 11.56,
+  "bloques_tts_mp3": 17,
+  "puntos_verificados_audio": [
+    {
+      "unidad": 1,
+      "punto": "Comienzo",
+      "parrafo_idx": 1,
+      "seccion": "Introducción de la unidad",
+      "pagina_pdf": 3,
+      "segundo_esperado_s": 13.43,
+      "segundo_esperado_fmt": "00:13",
+      "segundo_real_s": 14.66,
+      "segundo_real_fmt": "00:14",
+      "diferencia_s": 1.23,
+      "frase_guion_pdf": "En esta primera unidad abordaremos el creciente papel de la ciencia, la tecnología y la innovación en las sociedade…",
+      "frase_escuchada_mp3": "En esta primera mirada volveremos el creciente papel de la ciencia, la tecnología y la innovación en las sociedades actuales a través de varios conceptos relacionados entre"
+    },
+    {
+      "unidad": 1,
+      "punto": "Mitad",
+      "parrafo_idx": 30,
+      "seccion": "3.1. Enfoque técnico",
+      "pagina_pdf": 8,
+      "segundo_esperado_s": 1144.28,
+      "segundo_esperado_fmt": "19:04",
+      "segundo_real_s": 1144.84,
+      "segundo_real_fmt": "19:04",
+      "diferencia_s": 0.56,
+      "frase_guion_pdf": "Por otro lado, no se ha conseguido desarrollar una medida unitaria (unidimensional y universal) y no problemática q…",
+      "frase_escuchada_mp3": "Por otro lado no se ha conseguido desarrollar una medida unitaria unidimensional y universal y no problemática que dé cuenta de los distintos tipos de daño puesto con"
+    },
+    {
+      "unidad": 1,
+      "punto": "Final",
+      "parrafo_idx": 58,
+      "seccion": "4. Reflexiones finales",
+      "pagina_pdf": 13,
+      "segundo_esperado_s": 1974.48,
+      "segundo_esperado_fmt": "32:54",
+      "segundo_real_s": 1975.22,
+      "segundo_real_fmt": "32:55",
+      "diferencia_s": 0.74,
+      "frase_guion_pdf": "La sociedad del riesgo es, por decirlo así, la mirada a las amenazas. Lo cual no quiere decir, desde luego, que sin…",
+      "frase_escuchada_mp3": "La sociedad del riesgo es por decirlo así la mirada las amenazas"
+    }
+  ],
+  "secciones": [
+    {
+      "titulo": "Portada e identificación",
+      "pagina": 1,
+      "inicio_s": 0.18,
+      "tiempo_fmt": "00:00",
+      "parrafo_idx": 0,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1. Sociedad de la información y sociedad del conocimiento",
+      "pagina": 3,
+      "inicio_s": 44.36,
+      "tiempo_fmt": "00:44",
+      "parrafo_idx": 2,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2. Sociedad del riesgo",
+      "pagina": 5,
+      "inicio_s": 506.54,
+      "tiempo_fmt": "08:26",
+      "parrafo_idx": 12,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "3. Investigación académica sobre el riesgo",
+      "pagina": 7,
+      "inicio_s": 904.26,
+      "tiempo_fmt": "15:04",
+      "parrafo_idx": 21,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "3.1. Enfoque técnico",
+      "pagina": 7,
+      "inicio_s": 992.56,
+      "tiempo_fmt": "16:32",
+      "parrafo_idx": 24,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "3.2. Enfoque psicológico",
+      "pagina": 9,
+      "inicio_s": 1236.32,
+      "tiempo_fmt": "20:36",
+      "parrafo_idx": 33,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "3.3. Enfoque sociológico",
+      "pagina": 11,
+      "inicio_s": 1597.94,
+      "tiempo_fmt": "26:37",
+      "parrafo_idx": 48,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "4. Reflexiones finales",
+      "pagina": 13,
+      "inicio_s": 1932.24,
+      "tiempo_fmt": "32:12",
+      "parrafo_idx": 56,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "Cierre de la unidad",
+      "pagina": 13,
+      "inicio_s": 2012.14,
+      "tiempo_fmt": "33:32",
+      "parrafo_idx": 59,
+      "precision_tiempo": "aproximado_acustico"
+    }
+  ],
+  "parrafos": [
+    {
+      "texto": "Audiolibro de estudio. Asignatura: Nuevas perspectivas en los estudios sobre ciencia, tecnología e innovación. TEMA 2. Unidad 1: Sociedad del conocimiento y sociedad del riesgo.",
+      "pagina_inicio": 1,
+      "pagina_fin": 1,
+      "paginas": [
+        1
+      ],
+      "seccion": "Portada e identificación",
+      "es_titulo": true,
+      "id": "u1_p0",
+      "indice": 0,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 0.0,
+      "inicio_s": 0.18,
+      "fin_s": 14.66,
+      "tiempo_fmt": "00:00",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "En esta primera unidad abordaremos el creciente papel de la ciencia, la tecnología y la innovación en las sociedades actuales a través de varios conceptos relacionados entre sí desarrollados para caracterizarlas. Sociedad del conocimiento y sociedad del riesgo aparecen como dos caras de una misma moneda, la que nos lleva desde una sociedad marcada en todos los niveles (economía, educación, salud, ocio…) por los avances e innovaciones tecnocientíficas a la preocupación por la responsabilidad y la distribución de los riesgos que genera.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "Introducción de la unidad",
+      "es_titulo": false,
+      "id": "u1_p1",
+      "indice": 1,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 13.43,
+      "inicio_s": 14.66,
+      "fin_s": 44.36,
+      "tiempo_fmt": "00:14",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "1. Sociedad de la información y sociedad del conocimiento.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Sociedad de la información y sociedad del conocimiento",
+      "es_titulo": true,
+      "id": "u1_p2",
+      "indice": 2,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 43.82,
+      "inicio_s": 44.36,
+      "fin_s": 48.34,
+      "tiempo_fmt": "00:44",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "La idea de que la ciencia y la tecnología tienen un papel cada vez más relevante en el mundo contemporáneo es ya un lugar común. Si pensamos en cuáles son las grandes diferencias entre nuestras vidas y las de las generaciones que nos precedieron, muchas de ellas están relacionadas con desarrollos e innovaciones científico-tecnológicas: los grandes avances en biomedicina, la radical revolución de las comunicaciones y la transmisión de información, la industria audiovisual del entretenimiento, la aceleración de los transportes… Del mismo modo, nuestras ideas acerca del futuro aparecen ineludiblemente ligadas a la ciencia, la tecnología y la innovación, como muestra la abundante producción de ciencia-ficción en la literatura, el cine, las series o los videojuegos. Todos los futuros imaginados, utópicos o distópicos, están mediados por las transformaciones que la ciencia y la tecnología introducen en la vida cotidiana y en el contexto político y económico global. La propia posibilidad de un contexto político y económico a escala global, como una de las notas características del mundo presente, está atravesada por las tecnologías que lo hacen posible.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Sociedad de la información y sociedad del conocimiento",
+      "es_titulo": false,
+      "id": "u1_p3",
+      "indice": 3,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 48.89,
+      "inicio_s": 48.34,
+      "fin_s": 114.08,
+      "tiempo_fmt": "00:48",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "Sociedad globalizada, sociedad de la información, sociedad del conocimiento… son todas ellas etiquetas que se han utilizado para describir un mundo conectado y virtualizado, el mundo en el que la ciencia y la tecnología han hecho posible, por ejemplo, organizar un máster interuniversitario como este, en el que alumnado y profesorado no necesitan estar en el mismo lugar físico y al mismo tiempo. No obstante, la sociedad de la información y del conocimiento surge bastantes años antes de que la educación virtual fuera una realidad.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Sociedad de la información y sociedad del conocimiento",
+      "es_titulo": false,
+      "id": "u1_p4",
+      "indice": 4,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 113.12,
+      "inicio_s": 114.08,
+      "fin_s": 143.16,
+      "tiempo_fmt": "01:54",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "Uno de los primeros usos de la frase \"sociedad del conocimiento\" se debe a Daniel Bell en su libro clásico de 1973 dedicado a la \"sociedad postindustrial\", aunque hay usos anteriores en los años 60 por parte de autores como Robert Lane o el propio Bell. En su obra de 1973, Bell afirmaba que la sociedad actual (su sociedad postindustrial) podía ser también entendida como una sociedad del conocimiento debido a dos motivos. El primero era el creciente papel de la ciencia y la tecnología en los procesos de innovación; el segundo, el peso cada vez mayor del conocimiento en la sociedad general (medido por una mayor proporción en el PIB y la tasa de empleo).",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Sociedad de la información y sociedad del conocimiento",
+      "es_titulo": false,
+      "id": "u1_p5",
+      "indice": 5,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 142.97,
+      "inicio_s": 143.16,
+      "fin_s": 182.4,
+      "tiempo_fmt": "02:23",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "Bell resumía su argumento del modo siguiente: “En este libro afirmo que la fuente más importante de cambio estructural en la sociedad - el cambio en los modos de innovación, en la relación de la ciencia con la tecnología y en la política pública - lo constituye el cambio en el carácter del conocimiento: el crecimiento exponencial y la especialización de la ciencia, el surgimiento de una nueva tecnología intelectual, la creación de una investigación sistemática a través de inversiones para la investigación y el desarrollo, y, como meollo de todo lo anterior, la codificación del conocimiento teórico”.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Sociedad de la información y sociedad del conocimiento",
+      "es_titulo": false,
+      "id": "u1_p6",
+      "indice": 6,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 181.35,
+      "inicio_s": 182.4,
+      "fin_s": 215.72,
+      "tiempo_fmt": "03:02",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "En un sentido análogo se manifiestan otros muchos autores posteriores, realizando una lectura amplia de la frase “sociedad del conocimiento” para hacer referencia al papel central del conocimiento en nuestra sociedad como fundamento de la economía y de la organización social. Una comprensión más restringida de la sociedad del conocimiento es la que vincula esta al impacto social, económico y político de las tecnologías de la información y la comunicación, aunque parece más apropiado reservar para este tema la frase “sociedad de la información”.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Sociedad de la información y sociedad del conocimiento",
+      "es_titulo": false,
+      "id": "u1_p7",
+      "indice": 7,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 215.08,
+      "inicio_s": 215.72,
+      "fin_s": 246.2,
+      "tiempo_fmt": "03:35",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "Manuel Castells, en su influyente trilogía, distingue entre “sociedad de la información” y “sociedad informacional”. Una sociedad de la información es aquella en la que la información tiene un papel importante en la sociedad. En este sentido, todas las sociedades han sido sociedades de la información. Sin embargo, una sociedad informacional es para Castells aquella en la que la generación, procesamiento y transmisión de la información, posibilitados por las nuevas tecnologías, son las fuentes fundamentales de la productividad y el poder. Precisamente el núcleo fundamental de esa sociedad informacional es lo que Castells llama la “sociedad red”, haciendo referencia a la lógica de interconexión de la estructura básica de la sociedad informacional. Al igual que el significado de la sociedad del conocimiento va más allá del de la sociedad de la información (o sociedad informacional), Castells apunta que la sociedad red no agota el significado de la sociedad informacional. Con todo, dado que Castells no limita las nuevas tecnologías de su sociedad informacional a las tecnologías de la información habituales (microelectrónica, informática y telecomunicaciones), sino que incluye también explícitamente a la ingeniería genética y sus desarrollos en el ámbito de la tecnología de la información, y dada también la acepción amplia que asume para el término “información” (que entiende como transmisión del conocimiento), su sociedad informacional está mucho más próxima a la sociedad del conocimiento de autores como Ulrich Beck o Nico Stehr.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Sociedad de la información y sociedad del conocimiento",
+      "es_titulo": false,
+      "id": "u1_p8",
+      "indice": 8,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 246.02,
+      "inicio_s": 246.2,
+      "fin_s": 332.0,
+      "tiempo_fmt": "04:06",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "Del mismo modo que todas las sociedades son, en un sentido amplio, sociedades de la información, también lo son del conocimiento. En sociedades del pasado, como el Israel bíblico o el Antiguo Egipto, el conocimiento religioso, astronómico o agrícola desempeñaba el papel de principio organizador y base de la autoridad. El conocimiento de algún tipo siempre ha desempeñado un papel importante en la organización social. Pero lo que singulariza la sociedad actual es su dependencia del conocimiento científico y tecnológico. Quizá la nota más destacada de la sociedad del conocimiento sea la relativa a los cambios producidos en la economía. En términos económicos, podríamos decir que el conocimiento es hoy la fuente crucial de valor añadido en la producción de bienes y servicios, particularmente en los países desarrollados, aunque también crecientemente a nivel global debido a las redes transnacionales del comercio y la comunicación. Algunas consecuencias del modo en el que el conocimiento ha revolucionado la economía son bien conocidas. Un ejemplo destacado es el mantenimiento o mejora de la calidad a un menor coste; como se muestra, entre otras cosas, por primero, la rápida obsolescencia de los bienes y servicios intensivos en conocimiento (ejemplos: material informático, asesoramiento especializado, etcétera.), y segundo, la “desmaterialización” de la producción por el incremento de la eficiencia de máquinas o por mejoras organizativas. Este último rasgo es especialmente llamativo, pues el avance tecnológico hace que cada vez necesitemos menos materiales o menos energía para obtener los mismos o mejores resultados (ejemplos: teléfonos móviles, productos de vidrio, mejora genética de cosechas, etcétera.).",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1. Sociedad de la información y sociedad del conocimiento",
+      "es_titulo": false,
+      "id": "u1_p9",
+      "indice": 9,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 331.82,
+      "inicio_s": 332.0,
+      "fin_s": 429.82,
+      "tiempo_fmt": "05:32",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "El conocimiento emerge así como fuerza productiva, generando incluso un nuevo ámbito de producción: la producción de conocimiento, y planteando nuevas formas de desigualdad con respecto a su apropiación social (una desigualdad que se retroalimenta en un efecto sinérgico con la más tradicional desigualdad en la distribución de los bienes).",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1. Sociedad de la información y sociedad del conocimiento",
+      "es_titulo": false,
+      "id": "u1_p10",
+      "indice": 10,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 429.25,
+      "inicio_s": 429.82,
+      "fin_s": 448.52,
+      "tiempo_fmt": "07:09",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Pero esta importancia económica no puede hacernos olvidar el valor que el conocimiento ha adquirido también en el ordenamiento de la vida social, en los ámbitos de la experiencia y del poder. Los grupos y papeles sociales están hoy mediados por el conocimiento, al igual que las relaciones entre los individuos y, de un modo creciente, los modos del ejercicio del poder. El conocimiento científico ha desplazado en gran medida otras formas de conocimiento y ha penetrado todas las esferas de la vida en la sociedad actual; a nivel político con la creciente institucionalización del asesoramiento especializado en la práctica del poder, y a nivel de la experiencia con su gran importancia en las interacciones individuales y la búsqueda de la satisfacción de las necesidades. Por ejemplo, algo análogo a lo que sucede con la productividad ocurre con otro de los pilares de la sociabilidad: la interacción. Al igual que la introducción de nuevas tecnologías induce una desmaterialización de la producción, el desarrollo de las TIC induce una “despersonalización” de la interacción.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1. Sociedad de la información y sociedad del conocimiento",
+      "es_titulo": false,
+      "id": "u1_p11",
+      "indice": 11,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 448.34,
+      "inicio_s": 448.52,
+      "fin_s": 506.54,
+      "tiempo_fmt": "07:28",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2. Sociedad del riesgo.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2. Sociedad del riesgo",
+      "es_titulo": true,
+      "id": "u1_p12",
+      "indice": 12,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 507.38,
+      "inicio_s": 506.54,
+      "fin_s": 509.28,
+      "tiempo_fmt": "08:26",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Mientras la literatura sobre la sociedad del conocimiento ha ido multiplicándose, se ha desarrollado en paralelo otra forma de mirar al mundo actual profundamente transformado por el conocimiento científico y la innovación tecnológica. Es la sugerida por el sociólogo alemán Ulrich Beck. En su libro de 1986, La sociedad del riesgo, Beck sostenía que nos encaminamos hacia una nueva modernidad en la que la tecnología actual ha creado nuevas formas de riesgo e impone una peligrosidad cualitativamente distinta a la del pasado. Al hablar de la sociedad del riesgo se hace referencia a una doble experiencia en la sociedad industrializada contemporánea.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2. Sociedad del riesgo",
+      "es_titulo": false,
+      "id": "u1_p13",
+      "indice": 13,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 510.59,
+      "inicio_s": 509.28,
+      "fin_s": 547.2,
+      "tiempo_fmt": "08:29",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Por un lado, la posibilidad, mayor cada día, de que se produzcan daños que afecten a una buena parte de la humanidad. Se trata de daños que, bien como catástrofes repentinas (por ejemplo el accidente de Chernobil) o bien como catástrofes larvadas (por ejemplo el cambio climático), están asociados a la universalización de la tecnología y sus consecuencias negativas por la abolición de barreras nacionales, de clase social o generacionales. A este respecto, por ejemplo, el cambio climático, las catástrofes nucleares, las epidemias o los derramamientos de petróleo no respetan fronteras entre países, entre ricos y pobres, entre padres e hijos, o incluso en ocasiones entre especies de seres vivos. Según Beck, el eje que ahora estructura la sociedad occidental desarrollada ya no es la clásica distribución de bienes sino más bien la distribución de males. Es la distribución del riego, más que de la riqueza, lo que moviliza hoy a numerosos colectivos sociales.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2. Sociedad del riesgo",
+      "es_titulo": false,
+      "id": "u1_p14",
+      "indice": 14,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 547.01,
+      "inicio_s": 547.2,
+      "fin_s": 602.42,
+      "tiempo_fmt": "09:07",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "Por otro lado, la sociedad del riesgo consiste en la presencia, cada vez mayor, de decisiones arriesgadas dentro de la conducta cotidiana. Vivimos en una sociedad crecientemente tecnificada, respecto a los procesos de producción, el funcionamiento de sus instituciones, y la vida diaria en la que tiene lugar la conducta individual. Los distintos ámbitos de acción, antes regulados por una tradición vinculante, ahora constituyen problemas de decisión y atribución de responsabilidad: en el diseño de dietas y la compra del supermercado, la crianza de los niños, la conducción de automóviles, el consumo de energía, el uso de los sistemas de salud y tecnologías médicas, etcétera. \"La sociedad del riesgo - dice Beck - comienza donde termina la tradición, cuando, en todas las esferas de la vida, ya no podemos dar por supuestas las certidumbres tradicionales. Cuanto menos podemos confiar en las seguridades tradicionales, más riesgos debemos negociar\". En un contexto de creciente individualización, el lenguaje del riesgo y la incertidumbre se transforma en moneda de cambio.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2. Sociedad del riesgo",
+      "es_titulo": false,
+      "id": "u1_p15",
+      "indice": 15,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 602.94,
+      "inicio_s": 602.42,
+      "fin_s": 665.74,
+      "tiempo_fmt": "10:02",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "De este modo, con la aparición de los grandes sistemas tecnológicos, con la universalización y extensión de la tecnología a todos los ámbitos de la vida, nace también para la sociedad un potencial de riesgo y catástrofe desconocido hasta ahora: desconocido por su magnitud (por ejemplo, una catástrofe atómica) y por su alcance (al afectar a la conducta individual). Como resultado, la noción de riesgo está hoy en el centro de las agendas políticas y las polémicas públicas, constituyendo un tema principal en el desarrollo del conocimiento especializado.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2. Sociedad del riesgo",
+      "es_titulo": false,
+      "id": "u1_p16",
+      "indice": 16,
+      "bloque_tts": 7,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 665.57,
+      "inicio_s": 665.74,
+      "fin_s": 696.48,
+      "tiempo_fmt": "11:05",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #7)"
+    },
+    {
+      "texto": "Habitar una sociedad del riesgo no significa simplemente tener que afrontar más o mayores peligros que en el pasado, sino hacer frente a una peligrosidad cualitativamente distinta. Muchos de los daños que en el pasado se atribuían a la naturaleza, al destino o a voluntades sobrenaturales, y eran vistos así como peligros inevitables, hoy son habitualmente imputados a acciones y decisiones humanas, y, por tanto, se les otorga la forma de riesgos. De este modo, hablar de riesgos no solo es hablar de daños potenciales para la salud sino también imputar responsabilidad a algún agente social por acción o por omisión de la acción. Juzgar, además, que un riesgo es inaceptable no es estimar que su ocurrencia es demasiado probable (la dimensión principal del llamado “riesgo objetivo”), aunque esto sea tenido en cuenta, sino sobre todo considerar que la exposición es involuntaria, que sus potenciales consecuencias son inasumibles, que está injustamente distribuido, que no es adecuadamente compensado, etcétera.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2. Sociedad del riesgo",
+      "es_titulo": false,
+      "id": "u1_p17",
+      "indice": 17,
+      "bloque_tts": 7,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 697.18,
+      "inicio_s": 696.48,
+      "fin_s": 754.5,
+      "tiempo_fmt": "11:36",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #7)"
+    },
+    {
+      "texto": "Esta es la razón que explica la aparente paradoja de que a mayor nivel de vida, mayor atención sanitaria y mayor longevidad en una sociedad, un mayor número de riesgos alcanzan visibilidad pública y causan alarma entre la población. La cuestión clave es que cuanto mayor es el conocimiento y los medios técnicos disponibles, tantos más daños potenciales son identificados como riesgos y más graves son las atribuciones de responsabilidad por acción o por inacción. Por ello, hablar de alarmismos y psicosis injustificadas –una frecuente reacción institucional desde las primeras protestas públicas contra la energía nuclear– es cometer el error de asimilar los riesgos a peligros inevitables. La omnipresencia del riesgo en sociedades democráticas afluentes, con un alto desarrollo científico-tecnológico y una creciente movilización ciudadana, es precisamente lo que cabe esperar de la personalización del peligro que supone el riesgo.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2. Sociedad del riesgo",
+      "es_titulo": false,
+      "id": "u1_p18",
+      "indice": 18,
+      "bloque_tts": 7,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 754.6,
+      "inicio_s": 754.5,
+      "fin_s": 806.68,
+      "tiempo_fmt": "12:34",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #7)"
+    },
+    {
+      "texto": "De aquí que el riesgo sea hoy utilizado con frecuencia como banderín de enganche para la movilización social - algo perfectamente legítimo en una sociedad democrática. Si se percibe que la salud debe ser protegida ante posibles daños, no es solo porque un cálculo técnico haya señalado una probabilidad inaceptable de fatalidad frente a hipotéticos beneficios, sino especialmente porque se considera que determinados agentes sociales han sobrepasado sus límites de intervención en la búsqueda de un beneficio propio. De hecho, nuestra exposición a muchos de los riesgos del mundo actual es una exposición deliberadamente provocada, o que no ha sido conscientemente prevenida, por algún agente social con el fin de obtener algún beneficio. Por eso precisamente son vividos como riesgos y no son concebidos como peligros inevitables. No es entonces una sorpresa que la problemática del riesgo sea hoy materia habitual de polémica pública y esté en el centro de las agendas políticas.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2. Sociedad del riesgo",
+      "es_titulo": false,
+      "id": "u1_p19",
+      "indice": 19,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 806.5,
+      "inicio_s": 806.68,
+      "fin_s": 861.36,
+      "tiempo_fmt": "13:26",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #8)"
+    },
+    {
+      "texto": "No es fácil, sin embargo, caracterizar la noción de riesgo. En su habitual definición informal, el riesgo hace referencia a eventos posibles aunque inciertos, que pueden producir daños. Las definiciones cambian no obstante dependiendo de la disciplina y del enfoque que se adopte. Hoy día una gran cantidad de especialidades académicas se interesan por la noción de riesgo: toxicología, epidemiología, economía, sociología, ingeniería, psicología, derecho, etcétera. Esta explosión académica da también una idea de la importancia que ha adquirido la noción en la sociedad actual - una importancia que testimonia asimismo la actual extensión de la regulación legal a todas las situaciones generadoras de riesgo.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2. Sociedad del riesgo",
+      "es_titulo": false,
+      "id": "u1_p20",
+      "indice": 20,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 860.78,
+      "inicio_s": 861.36,
+      "fin_s": 904.26,
+      "tiempo_fmt": "14:21",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #8)"
+    },
+    {
+      "texto": "3. Investigación académica sobre el riesgo.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3. Investigación académica sobre el riesgo",
+      "es_titulo": true,
+      "id": "u1_p21",
+      "indice": 21,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 903.38,
+      "inicio_s": 904.26,
+      "fin_s": 907.96,
+      "tiempo_fmt": "15:04",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #8)"
+    },
+    {
+      "texto": "El llamado \"análisis de riesgo\" (risk analysis) o \"evaluación de riesgo\" (risk assessment) procede del desarrollo civil de la energía nuclear en los años 60 y 70. Lo que anteriormente constituía un sector de investigación restringido, vinculado académicamente a la teoría de la decisión y la economía teórica, aunque sin gran interés público y utilizado solo en ámbitos del comercio y la administración, recibe desde los años 60 un impulso sin precedentes que se traduce en la publicación de numerosas revistas, organización de sociedades profesionales, celebración de congresos, desarrollo de cursos especializados, etcétera., y acaba constituyéndose en un importante campo multidisciplinar de investigación con un gran interés público, un campo que incluye los estudios más diversos sobre diferentes aspectos relativos a la seguridad de las tecnologías modernas.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3. Investigación académica sobre el riesgo",
+      "es_titulo": false,
+      "id": "u1_p22",
+      "indice": 22,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 907.78,
+      "inicio_s": 907.96,
+      "fin_s": 957.62,
+      "tiempo_fmt": "15:07",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "No obstante, uno de los pocos acuerdos resultantes de este esfuerzo académico de las últimas décadas es que, paradójicamente, no se ha conseguido establecer en la investigación un concepto o definición unitaria de riesgo, y aún menos establecer una teoría coherente que pueda estructurar este campo de trabajo e interconectar los múltiples resultados de investigación en la problemática del riesgo. Podemos, siguiendo una pauta habitual, dividir este campo en tres grandes orientaciones actuales, dependiendo de que respondan a uno u otro interés disciplinar: un enfoque técnico o ingenieril, un enfoque psicológico y un enfoque sociológico.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3. Investigación académica sobre el riesgo",
+      "es_titulo": false,
+      "id": "u1_p23",
+      "indice": 23,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 956.89,
+      "inicio_s": 957.62,
+      "fin_s": 992.56,
+      "tiempo_fmt": "15:57",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "3.1. Enfoque técnico.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3.1. Enfoque técnico",
+      "es_titulo": true,
+      "id": "u1_p24",
+      "indice": 24,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 992.68,
+      "inicio_s": 992.56,
+      "fin_s": 995.56,
+      "tiempo_fmt": "16:32",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "Es la orientación predominante en los orígenes de la investigación sobre el riesgo, y todavía hoy en buena parte de la empresa privada y la administración pública. Se presupone que el riesgo es una propiedad objetiva de sucesos y actividades, con probabilidades concretas dadas (aunque no siempre estimables con precisión) que dependen de cómo sea el mundo. El objetivo operativo de este enfoque es desarrollar una medida universalmente válida para el riesgo con ayuda de la cual puedan establecerse comparaciones entre distintas clases de riesgo. Se asume que, realizando tal cosa, se conseguirá obtener un criterio racional de aceptabilidad de los distintos riesgos de acuerdo con su probabilidad y sus consecuencias.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3.1. Enfoque técnico",
+      "es_titulo": false,
+      "id": "u1_p25",
+      "indice": 25,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 996.52,
+      "inicio_s": 995.56,
+      "fin_s": 1035.62,
+      "tiempo_fmt": "16:35",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "Estas consideraciones se traducen en una fórmula tomada del ámbito comercial (compañías aseguradoras) y la literatura de teoría de la decisión: el riesgo es igual al producto de la probabilidad y de la magnitud del daño. Es la fórmula que define el llamado \"riesgo objetivo\" en la actividad de estimación de riesgos. R es igual a P por M.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3.1. Enfoque técnico",
+      "es_titulo": false,
+      "id": "u1_p26",
+      "indice": 26,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1036.25,
+      "inicio_s": 1035.62,
+      "fin_s": 1056.28,
+      "tiempo_fmt": "17:15",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "Como es obvio, la fórmula es utilizable siempre que pueda determinarse la probabilidad del acontecimiento que produce el daño y la magnitud de este de acuerdo con una medida cuantitativa. Esta es una limitación muy seria y bien conocida: tanto al tratar de estimar la probabilidad como, asimismo, al intentar determinar cuantitativamente la magnitud del daño.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3.1. Enfoque técnico",
+      "es_titulo": false,
+      "id": "u1_p27",
+      "indice": 27,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1056.1,
+      "inicio_s": 1056.28,
+      "fin_s": 1076.62,
+      "tiempo_fmt": "17:36",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #10)"
+    },
+    {
+      "texto": "Por un lado, al determinar las probabilidades se llega con frecuencia a los límites de lo que puede objetivamente conocerse, como lo demuestra la estimación del riesgo de una sustancia presuntamente cancerígena o el riesgo de fusión de un reactor nuclear. Si se dispone de muestras evaluables, pueden estimarse probabilidades recurriendo a la extrapolación estadística, por ejemplo en bioensayos animales o al calcular la probabilidad general de fallo de sistemas desde probabilidades individuales de fallo de componentes. El procedimiento básico es extraer conclusiones respecto a un conjunto a partir de una muestra disponible del mismo.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3.1. Enfoque técnico",
+      "es_titulo": false,
+      "id": "u1_p28",
+      "indice": 28,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1076.7,
+      "inicio_s": 1076.62,
+      "fin_s": 1112.16,
+      "tiempo_fmt": "17:56",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #10)"
+    },
+    {
+      "texto": "Ahora bien, cuando no se dispone de muestras evaluables o casos empíricos suficientes ha de recurrirse a procedimientos como el método Delphi (probabilidades indicadas como plausibles por especialistas), resignándonos entonces a unas probabilidades hipotéticas en las que la escasa información disponible no tiene un papel más importante que las expectativas y deseos del experto que estima el riesgo. De hecho, tras los primeros accidentes nucleares en Estados Unidos, y más aún después de Chernobil, pocos colectivos sociales son ya apaciguados por las cifras del cálculo técnico del riesgo.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3.1. Enfoque técnico",
+      "es_titulo": false,
+      "id": "u1_p29",
+      "indice": 29,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1111.73,
+      "inicio_s": 1112.16,
+      "fin_s": 1144.84,
+      "tiempo_fmt": "18:32",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #10)"
+    },
+    {
+      "texto": "Por otro lado, no se ha conseguido desarrollar una medida unitaria (unidimensional y universal) y no problemática que dé cuenta de los distintos tipos de daño, pues su conversión en unidades monetarias u otro tipo de unidad económica produce resultados arbitrarios muy discutidos. La extraordinaria diversidad de los tipos de daño (físico, psicológico, económico, ambiental, etcétera.) y puntos de vista sobre el daño, incluso centrándonos en algo tan concreto como la muerte física, hace inviable la utilización de una escala unidimensional. Por ejemplo cuando hay una posible pérdida de vidas humanas producida por un accidente tecnológico, por poco probable que este sea, el riesgo será vivido como algo inaceptable por los afectados pues para ellos la magnitud del daño es infinita.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3.1. Enfoque técnico",
+      "es_titulo": false,
+      "id": "u1_p30",
+      "indice": 30,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1144.28,
+      "inicio_s": 1144.84,
+      "fin_s": 1188.92,
+      "tiempo_fmt": "19:04",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "Con todo, el concepto de daño ha sido objeto de análisis en publicaciones especializadas dentro de teoría de la decisión. Se presupone que el daño y la utilidad pueden medirse en una escala de preferencias unidimensional, para considerar entonces el riesgo como un valor esperado del que forman parte la utilidad y el daño con signos distintos. Obviamente, el problema sigue siendo la irrealidad del supuesto introducido: la imposibilidad de utilizar una misma escala para cuantificar las distintas visiones sobre la utilidad y el daño.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3.1. Enfoque técnico",
+      "es_titulo": false,
+      "id": "u1_p31",
+      "indice": 31,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1188.74,
+      "inicio_s": 1188.92,
+      "fin_s": 1218.7,
+      "tiempo_fmt": "19:48",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "La disonancia entre las estimaciones técnicas del riesgo y la percepción pública del mismo, señaladas originalmente por Chauncey Starr en la revista Science, ha dado lugar a la subdisciplina de percepción del riesgo, o la aproximación al estudio del riesgo desde un enfoque psicológico, del que hablaremos a continuación.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "3.1. Enfoque técnico",
+      "es_titulo": false,
+      "id": "u1_p32",
+      "indice": 32,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1218.88,
+      "inicio_s": 1218.7,
+      "fin_s": 1236.32,
+      "tiempo_fmt": "20:18",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "3.2. Enfoque psicológico.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": true,
+      "id": "u1_p33",
+      "indice": 33,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1236.94,
+      "inicio_s": 1236.32,
+      "fin_s": 1239.54,
+      "tiempo_fmt": "20:36",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "La visión tradicional del problema de las actitudes públicas negativas sobre riesgos tecnológicos, dentro del enfoque técnico, es de una gran simpleza. Se presupone que el público está constituido por individuos aislados que se comportan de forma natural como ingenieros. Desean conocer los hechos y cuando estos son presentados con claridad quedan convencidos de la inocuidad de las propuestas. Hay que informar acerca de cuáles son los riesgos reales de tomar un avión o vivir en las cercanías de una central nuclear. El mensaje es que la información compensará la debilidad cognitiva de los legos, y la comprensión acabará con el miedo irracional. Esta es la posición clásica de numerosos organismos públicos relacionados con la energía atómica.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p34",
+      "indice": 34,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1241.06,
+      "inicio_s": 1239.54,
+      "fin_s": 1283.12,
+      "tiempo_fmt": "20:39",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "Una aproximación algo más sofisticada al problema de la percepción pública del riesgo señala el segundo gran campo de investigación científica: el de la psicología, con una prolífica literatura y diversas corrientes desde mediados de los años 70. Este enfoque toma como punto de partida la discrepancia entre lo que técnicamente es estimado como un riesgo aceptable y lo que el público está realmente dispuesto a aceptar. En general, aunque suele reconocerse la realidad objetiva del riesgo (en los términos del enfoque técnico), aquí el riesgo es entendido básicamente en términos de representación cognitiva, como un estado mental de agentes individuales (\"riesgo percibido\"), con probabilidades subjetivas y grados de aceptabilidad (determinables, por ejemplo, a través de escalas de preferencias, y sistematizables a través de técnicas de factorización) que dependen de una serie de variables contextuales vinculadas a estados de creencia o disposiciones comportamentales del agente.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p35",
+      "indice": 35,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1282.94,
+      "inicio_s": 1283.12,
+      "fin_s": 1337.8,
+      "tiempo_fmt": "21:23",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "Esta línea de investigación se ha ocupado particularmente de estudiar las variables que influyen individualmente sobre la percepción y valoración del riesgo, tratando de entender la forma en que las personas evalúan el riesgo en situaciones particulares. Esto es lo que se conoce también como \"riesgo subjetivo\"; un tipo de riesgo que, de acuerdo en general con este enfoque, puede dar lugar a decisiones irracionales sobre aceptabilidad. Aunque, en un sentido estricto, solamente podríamos hablar de riesgo subjetivo cuando se dispone de datos suficientes para una estadística sólida que permita un cálculo de probabilidades concluyente. Sin dichos datos, debería recurrirse a la estimación subjetiva de expertos, y la distinción entre riesgo objetivo y subjetivo quedaría reducida a la diferencia entre dos fuentes de riesgo subjetivo (la de los expertos y la de los profanos).",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p36",
+      "indice": 36,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1336.86,
+      "inicio_s": 1337.8,
+      "fin_s": 1385.9,
+      "tiempo_fmt": "22:17",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "El riesgo, en cualquier caso, es aquí entendido de un modo multidimensional, evitando el reduccionismo técnico habitual que lo hace sinónimo de fatalidad anual esperada. En este sentido, algunos autores como Slovic hablan incluso de la \"personalidad del peligro\": una cualidad subjetiva que está a la base del juicio popular sobre daños potenciales y depende de variables como el potencial catastrófico, la familiaridad, la capacidad de control, la equidad, la confianza en la administración o los gestores de la fuente del riesgo, la amenaza a generaciones futuras o la voluntariedad de la exposición.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p37",
+      "indice": 37,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1384.83,
+      "inicio_s": 1385.9,
+      "fin_s": 1418.34,
+      "tiempo_fmt": "23:05",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "Algunos resultados interesantes de la investigación psicológica sobre el riesgo son los siguientes:",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p38",
+      "indice": 38,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1418.25,
+      "inicio_s": 1418.34,
+      "fin_s": 1424.42,
+      "tiempo_fmt": "23:38",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "• Voluntariedad. Los riesgos voluntarios son mejor aceptados que los involuntarios procedentes del exterior. Algunos ejemplos: motos de gran cilindrada versus frente a contaminación industrial; consumo de hamburguesas frente a uso comercial de organismos genéticamente modificados.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p39",
+      "indice": 39,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1424.23,
+      "inicio_s": 1424.42,
+      "fin_s": 1441.82,
+      "tiempo_fmt": "23:44",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "• Control. Los riesgos que el afectado puede controlar se aceptan mejor que aquellos que no puede controlar. Un ejemplo: se perciben más intensamente los riesgos asociados a los aviones que los riesgos asociados a los automóviles (estadísticamente más elevados).",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p40",
+      "indice": 40,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1441.79,
+      "inicio_s": 1441.82,
+      "fin_s": 1458.14,
+      "tiempo_fmt": "24:01",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "• Familiaridad. Los riesgos de las nuevas tecnologías se consideran mayores y se aceptan peor que los riesgos asociados a tecnologías familiares. Ejemplo: minería frente a centrales nucleares.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p41",
+      "indice": 41,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1458.15,
+      "inicio_s": 1458.14,
+      "fin_s": 1471.32,
+      "tiempo_fmt": "24:18",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "• Proximidad en el tiempo. Los riesgos donde los daños aparecen con un cierto retraso en el tiempo se aceptan mejor (es decir, se perciben como menores) que los riesgos que implican daños inmediatos. Ejemplo: consumo de tabaco frente a conducción de automóviles.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p42",
+      "indice": 42,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1470.66,
+      "inicio_s": 1471.32,
+      "fin_s": 1487.5,
+      "tiempo_fmt": "24:31",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "• Proximidad en el espacio. Los riesgos generados por actividades cercanas espacialmente, frente a los producidos por actividades más remotas, tienden a ser percibidos con más intensidad. Es lo que se conoce como síndrome NIMBY (Not in my backyard - No en mi patio trasero).",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p43",
+      "indice": 43,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1486.92,
+      "inicio_s": 1487.5,
+      "fin_s": 1504.64,
+      "tiempo_fmt": "24:47",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "• Compensabilidad. Los riesgos donde el daño resulta potencialmente reparable o compensable (por ejemplo en el caso de los daños materiales), se aceptan más fácilmente que si se trata de riesgos con daños irreparables.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p44",
+      "indice": 44,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1503.37,
+      "inicio_s": 1504.64,
+      "fin_s": 1517.42,
+      "tiempo_fmt": "25:04",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "• Potencial catastrófico. Los riesgos donde los daños pueden ser de gran escala y aparecer simultáneamente se perciben como mayores que aquellos donde aparecen espaciados a lo largo de un mayor período temporal. Ejemplo: accidentes aéreos frente a accidentes de automóvil.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p45",
+      "indice": 45,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1516.55,
+      "inicio_s": 1517.42,
+      "fin_s": 1534.04,
+      "tiempo_fmt": "25:17",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "Starr y Whipple proporcionan un ejemplo de algunos de los puntos anteriores, ilustrando además el concepto de umbral de catástrofe: “.. mucha gente tiene un mayor temor a viajar en avión que a viajar en coche, a pesar de que el avión es más seguro. La explicación de esto reside en el grado de control individual sobre el riesgo, la probabilidad condicional de supervivencia en un accidente dado, y la naturaleza catastrófica de los accidentes aéreos.”",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p46",
+      "indice": 46,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1533.06,
+      "inicio_s": 1534.04,
+      "fin_s": 1560.02,
+      "tiempo_fmt": "25:34",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "En general, estos estudios destacan que, a la hora de valorar y aceptar riesgos, existe una tendencia a tomar en consideración fundamentalmente la magnitud del daño y a menospreciar la probabilidad de este, es decir, no se presupone un mismo peso para ambos componentes del riesgo. Ello, por supuesto, limitando el análisis psicológico a los términos del enfoque técnico. Nótese, por último, que el enfoque psicológico clásico no es antagónico del enfoque técnico pues más bien lo complementa en una visión tecnocrática del riesgo: permite explicar la discrepancia ciencia-sociedad en la evaluación y aceptación del riesgo en términos de debilidad cognitiva y factores individuales.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "3.2. Enfoque psicológico",
+      "es_titulo": false,
+      "id": "u1_p47",
+      "indice": 47,
+      "bloque_tts": 14,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1559.83,
+      "inicio_s": 1560.02,
+      "fin_s": 1597.94,
+      "tiempo_fmt": "26:00",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #14)"
+    },
+    {
+      "texto": "3.3. Enfoque sociológico.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "3.3. Enfoque sociológico",
+      "es_titulo": true,
+      "id": "u1_p48",
+      "indice": 48,
+      "bloque_tts": 14,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1597.64,
+      "inicio_s": 1597.94,
+      "fin_s": 1601.26,
+      "tiempo_fmt": "26:37",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #14)"
+    },
+    {
+      "texto": "En las antípodas del enfoque técnico encontramos el sociológico que, en sentido estricto, engloba una familia de corrientes. En general, en este enfoque los riesgos no son vistos ni como propiedades objetivas que dependen de cómo sea físicamente el mundo ni como propiedades subjetivas que dependen de cómo sean cognitivamente los individuos. Los riesgos son construcciones sociales que dependen de factores socioculturales vinculados a estructuras sociales dadas. Construcciones que, en un sentido amplio, intentan recoger la variedad de puntos de vista incluidos en este enfoque, desde la realidad subjetiva a la realidad objetiva y sus diversas posiciones intermedias (conocimiento, explicaciones, objetos, fenómenos, orden conceptual, etcétera.). No se trata de construcciones gratuitas, aunque sí convencionales, pues son entidades funcionales dentro de tales estructuras: permiten la distribución culpa y responsabilidad, son utilizados como reclamo para la movilización social, permiten la adaptación de la conducta individual a pautas colectivas marcadas por la opinión pública, etcétera.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "3.3. Enfoque sociológico",
+      "es_titulo": false,
+      "id": "u1_p49",
+      "indice": 49,
+      "bloque_tts": 14,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1601.71,
+      "inicio_s": 1601.26,
+      "fin_s": 1663.36,
+      "tiempo_fmt": "26:41",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #14)"
+    },
+    {
+      "texto": "A diferencia de la investigación psicológica, en este marco de trabajo no se contempla la aceptación o no de riesgos tecnológicos como resultado de una decisión individual subjetiva. El enfoque es contextualizado: se centra en el estudio de los factores que hacen que determinados puntos de vista respecto a riesgos resulten dominantes en grupos sociales dados, o bien que se produzcan polarizaciones y enfrentamientos respecto a la distribución del riesgo. En este sentido, la correlación de la distribución de las opiniones y actitudes públicas con factores socioculturales sirve de base para realizar un análisis de los conflictos y potenciales de conflicto respecto a estructuras sociales dadas.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "3.3. Enfoque sociológico",
+      "es_titulo": false,
+      "id": "u1_p50",
+      "indice": 50,
+      "bloque_tts": 14,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1663.83,
+      "inicio_s": 1663.36,
+      "fin_s": 1701.66,
+      "tiempo_fmt": "27:43",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #14)"
+    },
+    {
+      "texto": "En el ámbito de la gestión política del riesgo, al menos, el enfoque sociológico parece más apropiado que el psicológico porque no presupone una experiencia directa del individuo con respecto al riesgo y, en el tema de la aceptabilidad del riesgo, hace habitualmente del conflicto y los procesos sociales el centro de su investigación. Uno de sus principales resultados a este respecto es que las actitudes del público frente al riesgo no se expresan frecuentemente a través de una distribución uniforme (donde se encontrarían representados todos los puntos de vista posibles al respecto), sino que tienden a presentar una distribución con unos pocos vértices. Este hecho refleja la importancia de los procesos sociales de comunicación: la mayoría de riesgos no pueden ser percibidos directamente por la ciudadanía, sino que llegan a través de la ciencia, el gobierno, las ONG o los medios de comunicación. Por tanto, en la valoración de riesgos y aceptación de tecnologías, no pesan demasiado los factores de carácter individual sino que la aceptación depende más bien de cosas tales como valores sociales, confianza en las instituciones o transformación de la información en los medios.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "3.3. Enfoque sociológico",
+      "es_titulo": false,
+      "id": "u1_p51",
+      "indice": 51,
+      "bloque_tts": 15,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1701.48,
+      "inicio_s": 1701.66,
+      "fin_s": 1766.76,
+      "tiempo_fmt": "28:21",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #15)"
+    },
+    {
+      "texto": "En este sentido han trabajado antropólogos de la cultura como M. Douglas y A. Wildavsky. La tesis principal en este enfoque es que la noción de riesgo no se basa en evidencia empírica o en razones prácticas, sino que está construida culturalmente, de modo que, en cada contexto social, se destacan unos riesgos y se ignoran otros. Existe así una cultura del riesgo asociada a la posición social de los actores, haciendo que los peligros sean siempre identificados como tales, comunicados y gestionados a través de un filtro cultural. En un ejemplo de Douglas: \"El umbral de aceptabilidad del riesgo en el puesto de trabajo es más bajo cuando los trabajadores se consideran explotados. La conciencia de riesgos médicos se incrementa si la profesión médica es sospechosa de cometer actos de negligencia\".",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "3.3. Enfoque sociológico",
+      "es_titulo": false,
+      "id": "u1_p52",
+      "indice": 52,
+      "bloque_tts": 15,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1766.24,
+      "inicio_s": 1766.76,
+      "fin_s": 1812.36,
+      "tiempo_fmt": "29:26",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #15)"
+    },
+    {
+      "texto": "Desde esta perspectiva, no existe un punto de vista privilegiado para identificar y valorar riesgos. En este sentido, Douglas (1985) critica la frecuente acepción de la discrepancia entre riesgo objetivo y subjetivo (\"probabilidad matemática\" versus \"probabilidad psicológica\") como una cuestión de debilidad cognitiva. Los individuos, se nos dice, no realizan coherentemente las elecciones que maximizarán sus ganancias esperadas o minimizarán sus pérdidas esperadas de acuerdo con la teoría de la decisión. Pero, insiste Douglas, no se trata de una irracionalidad caprichosa. Una cosa son las situaciones de laboratorio y otras las del mundo real: en este disponemos de un conocimiento limitado y contextualizado (por nuestra experiencia social) sobre la correlación entre probabilidades y resultados. Es un conocimiento que depende de particulares compromisos con tipos de organización social y pautas dadas de experiencia e interpretación del mundo. Lo cual no quiere decir que, desde este punto de vista, los peligros no sean reales o no puedan causarnos daño; solo que están siempre mediatizados por filtros culturales.",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "3.3. Enfoque sociológico",
+      "es_titulo": false,
+      "id": "u1_p53",
+      "indice": 53,
+      "bloque_tts": 16,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1812.19,
+      "inicio_s": 1812.36,
+      "fin_s": 1878.36,
+      "tiempo_fmt": "30:12",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #16)"
+    },
+    {
+      "texto": "De este modo, la aceptación de riesgos (en el caso, por ejemplo, de una central nuclear) no es una situación simple donde un agente racional, libre de todo condicionante cultural, realiza una elección probabilística de determinado peligro potencial para conseguir un beneficio dado. Podemos así concluir, con Douglas, que el problema de determinar los niveles aceptables de riesgo, sea natural o tecnológico, es una cuestión moral y política pues forma parte del problema de determinar los niveles aceptables de vida y de los niveles aceptables de moralidad y justicia social.",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "3.3. Enfoque sociológico",
+      "es_titulo": false,
+      "id": "u1_p54",
+      "indice": 54,
+      "bloque_tts": 16,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1877.13,
+      "inicio_s": 1878.36,
+      "fin_s": 1910.66,
+      "tiempo_fmt": "31:18",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #16)"
+    },
+    {
+      "texto": "Sin necesidad de llegar al constructivismo extremo de la antropología cultural, sí es cierto que reconocer la dependencia contextual de cualquier percepción y decisión sobre riesgos es también, como apuntan S. Jasanoff y D. Nelkin, renunciar a la búsqueda de una medida universal del riesgo para una percepción no distorsionada y un cálculo racional, ya se fundamente técnica o psicológicamente.",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "3.3. Enfoque sociológico",
+      "es_titulo": false,
+      "id": "u1_p55",
+      "indice": 55,
+      "bloque_tts": 16,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1909.17,
+      "inicio_s": 1910.66,
+      "fin_s": 1932.24,
+      "tiempo_fmt": "31:50",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #16)"
+    },
+    {
+      "texto": "4. Reflexiones finales.",
+      "pagina_inicio": 13,
+      "pagina_fin": 13,
+      "paginas": [
+        13
+      ],
+      "seccion": "4. Reflexiones finales",
+      "es_titulo": true,
+      "id": "u1_p56",
+      "indice": 56,
+      "bloque_tts": 16,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1931.7,
+      "inicio_s": 1932.24,
+      "fin_s": 1935.14,
+      "tiempo_fmt": "32:12",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #16)"
+    },
+    {
+      "texto": "Hay una obvia relación entre la sociedad del conocimiento y la sociedad del riesgo. La sociedad del conocimiento es también una sociedad del riesgo, son anverso y reverso de una misma realidad. Las nuevas formas de peligrosidad asociadas al mundo desarrollado actual, con amenazas potencialmente catastróficas que sobrepasan la frontera entre países y generaciones, y con decisiones arriesgadas afectando a la conducta individual del consumidor, son amenazas impuestas en gran medida por el desarrollo tecnológico. Además, irónicamente, son amenazas puestas de manifiesto por el propio conocimiento científico. La ciencia las genera y la ciencia las denuncia en la sociedad del conocimiento.",
+      "pagina_inicio": 13,
+      "pagina_fin": 13,
+      "paginas": [
+        13
+      ],
+      "seccion": "4. Reflexiones finales",
+      "es_titulo": false,
+      "id": "u1_p57",
+      "indice": 57,
+      "bloque_tts": 17,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1934.95,
+      "inicio_s": 1935.14,
+      "fin_s": 1975.22,
+      "tiempo_fmt": "32:15",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #17)"
+    },
+    {
+      "texto": "La sociedad del riesgo es, por decirlo así, la mirada a las amenazas. Lo cual no quiere decir, desde luego, que sin conocimiento estemos mejor: el mal de las vacas locas, por ejemplo, no había llegado a España antes del 2001 simplemente porque no se había realizado una campaña seria de detección de la enfermedad. De hecho, la ciencia que se ocupa del estudio del riesgo muestra unas características interesantes que la hacen, en cierto sentido, representativa del tipo de conocimiento científico que debemos tener en cuenta cuando hablamos de sociedad del conocimiento. Qué tipo de ciencia es esa es lo que abordaremos en la siguiente unidad.",
+      "pagina_inicio": 13,
+      "pagina_fin": 13,
+      "paginas": [
+        13
+      ],
+      "seccion": "4. Reflexiones finales",
+      "es_titulo": false,
+      "id": "u1_p58",
+      "indice": 58,
+      "bloque_tts": 17,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1974.48,
+      "inicio_s": 1975.22,
+      "fin_s": 2012.14,
+      "tiempo_fmt": "32:55",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "Fin del audiolibro de la unidad: TEMA 2. Unidad 1: Sociedad del conocimiento y sociedad del riesgo.",
+      "pagina_inicio": 13,
+      "pagina_fin": 13,
+      "paginas": [
+        13
+      ],
+      "seccion": "Cierre de la unidad",
+      "es_titulo": true,
+      "id": "u1_p59",
+      "indice": 59,
+      "bloque_tts": 17,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 2011.95,
+      "inicio_s": 2012.14,
+      "fin_s": 2019.82,
+      "tiempo_fmt": "33:32",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #17)"
+    }
+  ],
+  "evaluacion": {
+    "orales": [
+      {
+        "id": "u1_o1",
+        "pregunta": "¿Por qué afirma la Unidad 1 que la 'sociedad del conocimiento' y la 'sociedad del riesgo' son dos caras de una misma moneda, y cómo distingue Ulrich Beck entre peligro y riesgo?",
+        "pagina": 5,
+        "paginas_ref": "Páginas 3 a 7 y 13",
+        "seccion": "1. Sociedad del conocimiento y 2. Sociedad del riesgo",
+        "ideas_rubrica": [
+          {
+            "id": "u1_o1_i1",
+            "titulo": "El conocimiento y la información como motor económico y social (Bell / Castells, págs. 3–5)",
+            "detalle": "Mencionar que la ciencia, la tecnología y el procesamiento de información son la fuente central de valor añadido, productividad, desmaterialización y sociedad red.",
+            "pagina": 4,
+            "pistas": [
+              "conocimiento",
+              "informacion",
+              "bell",
+              "castells",
+              "economia",
+              "productividad",
+              "valor",
+              "desmaterializacion",
+              "red"
+            ]
+          },
+          {
+            "id": "u1_o1_i2",
+            "titulo": "Doble cara: el mismo avance tecnocientífico genera nuevas amenazas y permite detectarlas (pág. 13)",
+            "detalle": "Explicar que los riesgos actuales son consecuencia del propio éxito industrial y tecnológico, y que es la misma ciencia la que permite identificarlos y denunciarlos.",
+            "pagina": 13,
+            "pistas": [
+              "moneda",
+              "anverso",
+              "reverso",
+              "consecuencia",
+              "genera",
+              "denuncia",
+              "detecta",
+              "amenazas",
+              "desarrollo"
+            ]
+          },
+          {
+            "id": "u1_o1_i3",
+            "titulo": "Alcance global (reparto de males) y fin de la tradición en Beck (págs. 5–6)",
+            "detalle": "Aludir a daños que cruzan fronteras/generaciones (paso del reparto de bienes al reparto de males) y a la destradicionalización de las decisiones cotidianas.",
+            "pagina": 6,
+            "pistas": [
+              "beck",
+              "global",
+              "fronteras",
+              "males",
+              "bienes",
+              "tradicion",
+              "cotidiana",
+              "chernobil",
+              "climatico"
+            ]
+          },
+          {
+            "id": "u1_o1_i4",
+            "titulo": "Diferencia entre peligro (natural/destino) y riesgo (decisión humana y responsabilidad, págs. 6–7)",
+            "detalle": "Distinguir que el peligro se veía como algo externo o inevitable, mientras el riesgo se vincula a decisiones humanas (por acción u omisión) y exige responsabilidad.",
+            "pagina": 6,
+            "pistas": [
+              "peligro",
+              "decision",
+              "responsabilidad",
+              "humana",
+              "accion",
+              "omision",
+              "inevitable",
+              "naturaleza",
+              "destino"
+            ]
+          }
+        ],
+        "respuesta_modelo": "En la Unidad 1 (págs. 3–7 y 13), sociedad del conocimiento y sociedad del riesgo son el anverso y reverso de una misma realidad: el crecimiento exponencial del conocimiento científico-tecnológico que impulsa la economía postindustrial e informacional (Bell, Castells) es el mismo que produce amenazas globales sin precedentes (Beck) y, a la vez, el que permite detectarlas. Además, Beck subraya el paso de los antiguos 'peligros' (atribuidos a la naturaleza o al destino como inevitables) a los 'riesgos', vinculados a decisiones humanas (por acción u omisión) que exigen responsabilidad y abren el conflicto por el reparto de males."
+      },
+      {
+        "id": "u1_o2",
+        "pregunta": "Compara cómo entienden y evalúan el riesgo el enfoque técnico, el enfoque psicológico y el enfoque sociológico, señalando las limitaciones de los dos primeros.",
+        "pagina": 8,
+        "paginas_ref": "Páginas 7 a 12",
+        "seccion": "3. Investigación académica sobre el riesgo",
+        "ideas_rubrica": [
+          {
+            "id": "u1_o2_i1",
+            "titulo": "Enfoque técnico: riesgo objetivo (R = P × M) y sus límites (págs. 8–9)",
+            "detalle": "Explicar que calcula el riesgo multiplicando probabilidad por magnitud del daño, pero choca con la falta de datos estadísticos en tecnologías nuevas (método Delphi) y la imposibilidad de reducir daños diversos a una sola escala monetaria.",
+            "pagina": 8,
+            "pistas": [
+              "tecnico",
+              "objetivo",
+              "probabilidad",
+              "magnitud",
+              "formula",
+              "delphi",
+              "escala",
+              "monetaria",
+              "datos"
+            ]
+          },
+          {
+            "id": "u1_o2_i2",
+            "titulo": "Enfoque psicológico: riesgo percibido y factores cualitativos (Slovic / Starr, págs. 9–11)",
+            "detalle": "Señalar que analiza la percepción subjetiva según voluntariedad, control individual, familiaridad, proximidad (NIMBY), compensabilidad y potencial catastrófico (avión vs. automóvil).",
+            "pagina": 10,
+            "pistas": [
+              "psicologico",
+              "percibido",
+              "subjetivo",
+              "slovic",
+              "starr",
+              "voluntari",
+              "control",
+              "familiar",
+              "catastrofico",
+              "nimby",
+              "avion",
+              "coche"
+            ]
+          },
+          {
+            "id": "u1_o2_i3",
+            "titulo": "Enfoque sociológico/cultural: construcción social y confianza institucional (Douglas, Wildavsky, págs. 11–12)",
+            "detalle": "Explicar que supera el individualismo psicológico mostrando que la aceptabilidad del riesgo depende de valores culturales, equidad distributiva y confianza en las instituciones.",
+            "pagina": 11,
+            "pistas": [
+              "sociologico",
+              "construccion social",
+              "cultural",
+              "douglas",
+              "wildavsky",
+              "confianza",
+              "instituciones",
+              "justicia",
+              "equidad"
+            ]
+          }
+        ],
+        "respuesta_modelo": "El enfoque técnico (págs. 8–9) define el riesgo objetivo como R = P × M, pero tropieza con la falta de series empíricas en tecnologías nuevas y la inviabilidad de reducir daños inconmensurables a una escala monetaria única. El enfoque psicológico (Starr, Slovic, págs. 9–11) estudia el riesgo percibido según variables como voluntariedad, control, familiaridad, cercanía (NIMBY) y potencial catastrófico, aunque mantiene un sesgo individualista. El enfoque sociológico y cultural (Douglas y Wildavsky, Jasanoff, págs. 11–12) comprende el riesgo como construcción social cuya aceptabilidad depende de la confianza en las instituciones, la equidad y los valores de cada grupo social."
+      }
+    ],
+    "test": [
+      {
+        "pregunta": "Según Manuel Castells (Unidad 1, pág. 4), ¿qué distingue específicamente a la 'sociedad informacional' frente a la noción general de 'sociedad de la información'?",
+        "opciones": [
+          "Que en la sociedad informacional desaparece por completo la industria manufacturera.",
+          "Que mientras la información ha sido relevante en todas las sociedades históricas, en la sociedad informacional la generación, procesamiento y transmisión tecnológica de información (incluyendo TIC e ingeniería genética) son las fuentes fundamentales de la productividad y el poder en una 'sociedad red'.",
+          "Que en la sociedad informacional las decisiones dejan de apoyarse en el conocimiento técnico."
+        ],
+        "correcta": 1,
+        "pagina": 4,
+        "explicacion": "En la página 4 se explica que para Castells toda sociedad ha usado información, pero en la sociedad informacional su generación, procesamiento y transmisión tecnológica constituyen la base directa de la productividad y el poder."
+      },
+      {
+        "pregunta": "¿Por qué según el enfoque psicológico del riesgo (Starr y Whipple, Slovic, Unidad 1, págs. 10–11) muchas personas temen más viajar en avión que en automóvil?",
+        "opciones": [
+          "Porque desconocen la existencia de las estadísticas de tráfico.",
+          "Por el menor grado de control individual percibido, el alto potencial catastrófico simultáneo y la baja probabilidad de supervivencia condicional en caso de accidente aéreo.",
+          "Porque el automóvil no genera ningún tipo de daño físico."
+        ],
+        "correcta": 1,
+        "pagina": 10,
+        "explicacion": "En las páginas 10 y 11 se explican el control individual percibido, el potencial catastrófico y la supervivencia condicional como factores determinantes del riesgo percibido."
+      }
+    ]
+  }
+}

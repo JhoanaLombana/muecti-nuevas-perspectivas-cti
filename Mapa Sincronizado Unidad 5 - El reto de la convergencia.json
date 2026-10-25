@@ -1,0 +1,1012 @@
+{
+  "numero": 5,
+  "nombre_base": "Unidad 5 - El reto de la convergencia",
+  "titulo_corto": "El reto de la convergencia",
+  "asignatura": "Nuevas perspectivas en los estudios sobre ciencia, tecnología e innovación",
+  "unidad_portada": "TEMA 2. Unidad 5. El reto de la convergencia",
+  "archivo_pdf": "Unidad 5 - El reto de la convergencia.pdf",
+  "archivo_mp3": "Unidad 5 - El reto de la convergencia.mp3",
+  "archivo_guion": "Guion Unidad 5 - El reto de la convergencia.txt",
+  "total_paginas_pdf": 14,
+  "total_palabras": 5215,
+  "duracion_estimada_s": 1907.02,
+  "tamano_mb": 10.91,
+  "bloques_tts_mp3": 17,
+  "puntos_verificados_audio": [
+    {
+      "unidad": 5,
+      "punto": "Comienzo",
+      "parrafo_idx": 2,
+      "seccion": "1. Tecno-optimistas y tecno-pesimistas",
+      "pagina_pdf": 3,
+      "segundo_esperado_s": 16.62,
+      "segundo_esperado_fmt": "00:16",
+      "segundo_real_s": 17.86,
+      "segundo_real_fmt": "00:17",
+      "diferencia_s": 1.24,
+      "frase_guion_pdf": "Hace 50 años, C.P. Snow denunciaba la separación creciente entre el mundo de los humanistas y el mundo de los cient…",
+      "frase_escuchada_mp3": "Hace 50 años contador público es no denunciaba la separación creciente entre el mundo de los humanistas y el mundo de los científicos"
+    },
+    {
+      "unidad": 5,
+      "punto": "Mitad",
+      "parrafo_idx": 21,
+      "seccion": "3. El reto de la convergencia",
+      "pagina_pdf": 7,
+      "segundo_esperado_s": 962.31,
+      "segundo_esperado_fmt": "16:02",
+      "segundo_real_s": 961.72,
+      "segundo_real_fmt": "16:01",
+      "diferencia_s": -0.59,
+      "frase_guion_pdf": "En los últimos años la convergencia entre ambas tradiciones ha ido avanzando. Por una parte, como hemos visto, los …",
+      "frase_escuchada_mp3": "En los últimos años la convergencia entre ambas tradiciones ha ido avanzando"
+    },
+    {
+      "unidad": 5,
+      "punto": "Final",
+      "parrafo_idx": 38,
+      "seccion": "4. Habitar la cultura tecnocientífica",
+      "pagina_pdf": 12,
+      "segundo_esperado_s": 1857.51,
+      "segundo_esperado_fmt": "30:57",
+      "segundo_real_s": 1856.82,
+      "segundo_real_fmt": "30:56",
+      "diferencia_s": -0.69,
+      "frase_guion_pdf": "La “cultura tecnocientífica”, desde los estudios sociales de la ciencia y la tecnología, es por tanto el resultado …",
+      "frase_escuchada_mp3": "La cultura y la científica desde los estudios sociales de la ciencia y la tecnología"
+    }
+  ],
+  "secciones": [
+    {
+      "titulo": "Portada e identificación",
+      "pagina": 1,
+      "inicio_s": 0.18,
+      "tiempo_fmt": "00:00",
+      "parrafo_idx": 0,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1. Tecno-optimistas y tecno-pesimistas",
+      "pagina": 3,
+      "inicio_s": 12.08,
+      "tiempo_fmt": "00:12",
+      "parrafo_idx": 1,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2. Winner vs Woolgar: dos tradiciones enfrentadas",
+      "pagina": 5,
+      "inicio_s": 506.3,
+      "tiempo_fmt": "08:26",
+      "parrafo_idx": 9,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "3. El reto de la convergencia",
+      "pagina": 7,
+      "inicio_s": 958.88,
+      "tiempo_fmt": "15:58",
+      "parrafo_idx": 20,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "3.1. Evaluación constructiva de tecnologías",
+      "pagina": 8,
+      "inicio_s": 1011.86,
+      "tiempo_fmt": "16:51",
+      "parrafo_idx": 23,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "3.2. La diáspora de la teoría del actor-red",
+      "pagina": 8,
+      "inicio_s": 1265.46,
+      "tiempo_fmt": "21:05",
+      "parrafo_idx": 25,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "3.3. Ciencia, tecnología y género",
+      "pagina": 9,
+      "inicio_s": 1486.66,
+      "tiempo_fmt": "24:46",
+      "parrafo_idx": 29,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "4. Habitar la cultura tecnocientífica",
+      "pagina": 11,
+      "inicio_s": 1673.08,
+      "tiempo_fmt": "27:53",
+      "parrafo_idx": 35,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "Cierre de la unidad",
+      "pagina": 12,
+      "inicio_s": 1899.52,
+      "tiempo_fmt": "31:39",
+      "parrafo_idx": 39,
+      "precision_tiempo": "aproximado_acustico"
+    }
+  ],
+  "parrafos": [
+    {
+      "texto": "Audiolibro de estudio. Asignatura: Nuevas perspectivas en los estudios sobre ciencia, tecnología e innovación. TEMA 2. Unidad 5. El reto de la convergencia.",
+      "pagina_inicio": 1,
+      "pagina_fin": 1,
+      "paginas": [
+        1
+      ],
+      "seccion": "Portada e identificación",
+      "es_titulo": true,
+      "id": "u5_p0",
+      "indice": 0,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 0.0,
+      "inicio_s": 0.18,
+      "fin_s": 12.08,
+      "tiempo_fmt": "00:00",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "1. Tecno-optimistas y tecno-pesimistas.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Tecno-optimistas y tecno-pesimistas",
+      "es_titulo": true,
+      "id": "u5_p1",
+      "indice": 1,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 12.55,
+      "inicio_s": 12.08,
+      "fin_s": 17.86,
+      "tiempo_fmt": "00:12",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "Hace 50 años, C.P. Snow denunciaba la separación creciente entre el mundo de los humanistas y el mundo de los científicos. Snow, científico y novelista, era perfectamente consciente, desde su posición privilegiada a caballo entre los dos ámbitos, del desconocimiento y el desprecio con el que unos y otros se relacionaban. Los humanistas, monopolizadores de la “cultura”, tomaban a los científicos como irresponsables fanfarrones. Los científicos, por su parte, acusaban a los humanistas de pesimistas inútiles. Una división curiosa, puesto que hace más de cuatro siglos hubiera sido impensable entender la ciencia separada del humanismo, ya que ambas constituían un único afán intelectual: el de la comprensión del mundo. Snow culpaba de esta oposición antinatural a la educación, cada vez más especializada, que convertía lo que era un solo empeño en dos edificios cuya construcción conjunta acababa resultando imposible.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Tecno-optimistas y tecno-pesimistas",
+      "es_titulo": false,
+      "id": "u5_p2",
+      "indice": 2,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 16.62,
+      "inicio_s": 17.86,
+      "fin_s": 72.8,
+      "tiempo_fmt": "00:17",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "Ya de lleno en el siglo XXI, el diagnóstico de Snow sigue tan vigente como entonces. Las “ciencias” y las “letras” constituyen a menudo vocaciones separadas y sin intersección, y la especialización creciente, junto al impresionante crecimiento del conocimiento en todos los campos, convierte en hercúlea la tarea de estar al tanto, si quiera someramente, de mundos que no son el nuestro. Al mismo tiempo, el mestizaje entre las dos culturas es hoy en día también una tarea más urgente, si cabe, de lo que lo ha sido en cualquier otro momento de la historia. Mientras la ciencia y el humanismo se desarrollan con frecuencia una a espaldas del otro, los problemas acuciantes de nuestro mundo requieren la participación conjunta de científicos y humanistas para su resolución.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Tecno-optimistas y tecno-pesimistas",
+      "es_titulo": false,
+      "id": "u5_p3",
+      "indice": 3,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 71.95,
+      "inicio_s": 72.8,
+      "fin_s": 116.18,
+      "tiempo_fmt": "01:12",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "A menudo ocurre también que a ambos lados de la persistente pero difusa frontera que separa las dos culturas florecen actitudes opuestas respecto a la importancia que la ciencia y la tecnología tienen para nuestras sociedades contemporáneas. La actitud del científico, o del tecnocientífico, suele ser la del optimismo triunfante: la ciencia y la tecnología son las tablas de salvación de la humanidad. Ya sea el hambre en el mundo, los problemas ambientales, las enfermedades, los riesgos tecnológicos o la pobreza, son todos ellos asuntos para los que debemos buscar respuestas en la ciencia y la tecnología. La ciencia y la tecnología representan el progreso, y gracias a ellas tenemos técnicas médicas más avanzadas, comunicaciones más inmediatas y sofisticadas, medios de transporte más rápidos y seguros, métodos más baratos de producir alimentos o políticas económicas más justas. Por otra parte, el humanista sucumbe a veces a la tentación tecno-pesimista, argumentando que la ciencia y la tecnología han creado desigualdades y catástrofes, y están poniendo en peligro el futuro de nuestro mundo y la especie humana. Por supuesto, ni todos los científicos son “tecno-optimistas” excesivos ni todos los humanistas son “tecno-pesimistas” insalvables.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Tecno-optimistas y tecno-pesimistas",
+      "es_titulo": false,
+      "id": "u5_p4",
+      "indice": 4,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 115.99,
+      "inicio_s": 116.18,
+      "fin_s": 187.74,
+      "tiempo_fmt": "01:56",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "La actitud “tecno-optimista” puede rastrearse hasta siglos XVI y XVII, al calor de las nuevas promesas traídas por la revolución científica. La nueva Atlántida de Francis Bacon es uno de los ejemplos más representativos de este nuevo espíritu. En la Casa de Salomón, los científicos trabajan para beneficio de la humanidad, no solamente ideando formas perfectas de gobierno, sino también dominando las fuerzas de la naturaleza. Este optimismo se reproduce de manera especialmente significativa, como hemos visto, al finalizar la Segunda Guerra Mundial, cuando Vannevar Bush redacta su informe “Ciencia, la frontera inalcanzable”, donde la metáfora utilizada, la de la conquista del oeste, apunta en esta ocasión a una frontera a la que nunca se llega. Mientras el avance hacia el oeste en la colonización del territorio de los actuales Estados Unidos tenía como meta natural el océano Pacífico, el avance de la ciencia no tiene fin, diría Bush. La utopía conductista de B.F. Skinner, Walden Dos, podría considerarse otra de estas muestras de tecno-optimismo triunfal, un mundo feliz en este caso logrado gracias a los principios del condicionamiento operante aplicados por expertos psicólogos encargados del gobierno y la organización social.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1. Tecno-optimistas y tecno-pesimistas",
+      "es_titulo": false,
+      "id": "u5_p5",
+      "indice": 5,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 187.6,
+      "inicio_s": 187.74,
+      "fin_s": 260.08,
+      "tiempo_fmt": "03:07",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "La tecnofobia tiene también una larga historia. Pese a las realidades y promesas de la ciencia y la tecnología en relación con la mejora de las condiciones de vida, su acelerado desarrollo ha traído también algunos riesgos a menudo imprevisibles. Algunos sectores de la humanidad, además, han sentido estos peligros como promesas, no de utópicos mundos felices, sino de auténticas pesadillas. Los luditas en el siglo XIX destruían la maquinaria textil temiendo que la mecanización de la producción trajera consigo la deshumanización y la pérdida de puestos de trabajo. Intelectuales como Ortega o Heidegger también criticaron la deshumanización implicada por la tecnología. En los años 60 y 70, grupos sociales de ciudadanos y científicos denunciaron los riesgos de la ciencia y la tecnología para el medio ambiente (movimiento ecologista), la paz en el mundo (lucha contra la carrera de armamentos) o la igualdad entre los seres humanos (crítica a los determinismos biológicos). Luditas de finales del siglo XX, como el famoso terrorista Unabomber, conciben la creciente tecnologización de nuestro mundo como un elemento indeseable para la humanidad. Y, en la actualidad, desde Jeremy Rifkin a Jürgen Habermas, por ejemplo, pensadores de corrientes y enfoques diversos critican los potenciales peligros del desarrollo de la emergente tecnociencia biotecnológica: sus riesgos sociales y sus peligros morales.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1. Tecno-optimistas y tecno-pesimistas",
+      "es_titulo": false,
+      "id": "u5_p6",
+      "indice": 6,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 259.9,
+      "inicio_s": 260.08,
+      "fin_s": 340.7,
+      "tiempo_fmt": "04:20",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "A un lado de la barrera que separa estos otros dos mundos, el de los tecnófilos radicales del de los tecnófobos extremos, la ciencia y la tecnología se conciben como benefactoras, al otro como perversas. Ambas tesis opuestas, sin embargo, coinciden en un punto central en el que consiste también su principal debilidad. Al pensar sobre la ciencia y la tecnología desde el punto de vista de sus efectos sobre las sociedades y las vidas humanas, asumen implícita o explícitamente la tesis de la autonomía de la tecnología y, asociada a ella, la del determinismo tecnológico. Es decir, tanto si pensamos que la tecnociencia es la solución como si pensamos que es el problema, estamos pasando por alto el hecho de que es un producto humano, y otorgándole una autonomía con respecto a sus creadores que es la que produce consecuencias incontrolables sobre nuestras formas de vida. Ciertamente, es a menudo claramente imprevisible conocer de antemano cuáles serán las consecuencias de las investigaciones básicas. Los pioneros de la investigación sobre campos electromagnéticos en el siglo XIX, por ejemplo, poco podrían prever que uno de sus frutos tecnológicos, la televisión, se iba a convertir en un elemento clave de la cultura a finales del siglo XX. Por otra parte, sin embargo, la mayor parte de la investigación que se hace hoy en día es “investigación estratégica”, esto es, investigación estratégicamente dirigida hacia algún objetivo concreto o el desarrollo de determinada tecnología. Las diferencias en distribución de recursos entre distintas áreas de la tecnociencia y los cambios que esta distribución sufre al hilo de la historia constituyen un claro ejemplo de la canalización social de los procesos tecnocientíficos, y un argumento en contra de unas tesis fuertes de la autonomía de la tecnología y el determinismo tecnológico.",
+      "pagina_inicio": 4,
+      "pagina_fin": 4,
+      "paginas": [
+        4
+      ],
+      "seccion": "1. Tecno-optimistas y tecno-pesimistas",
+      "es_titulo": false,
+      "id": "u5_p7",
+      "indice": 7,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 340.51,
+      "inicio_s": 340.7,
+      "fin_s": 443.16,
+      "tiempo_fmt": "05:40",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "La tecnociencia, por tanto, tiene consecuencias sobre las vidas humanas, pero una cara igualmente importante de la relación entre la ciencia, la tecnología y la sociedad es el modelado social que tiene lugar durante sus procesos de construcción, como vimos en la Unidad 4. En la medida en que atendamos a estos procesos, así como a los intereses y eventualidades que contribuyen a que adopten las formas que damos por supuestas, estaremos reuniendo argumentos que nos proporcionen una imagen de la ciencia y la tecnología más ajustada y más realista. En esa nueva imagen, las bondades o maldades achacables a la tecnociencia no lo son de forma natural o inherente, sino a través de las fuerzas, intereses y valores que hayan desencadenado determinadas preguntas, ciertos desarrollos tecnológicos o algunas aplicaciones de los mismos. Puesta en paréntesis la tesis del determinismo tecnológico, encontramos puntos de encuentro tanto entre el optimismo y el pesimismo como entre las dos tradiciones en los estudios CTS, y podemos reflexionar sobre la gestión del desarrollo de la ciencia y la tecnología y sus consecuencias sociales.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "1. Tecno-optimistas y tecno-pesimistas",
+      "es_titulo": false,
+      "id": "u5_p8",
+      "indice": 8,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 442.97,
+      "inicio_s": 443.16,
+      "fin_s": 506.3,
+      "tiempo_fmt": "07:23",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "2. Winner vs Woolgar: dos tradiciones enfrentadas.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2. Winner vs Woolgar: dos tradiciones enfrentadas",
+      "es_titulo": true,
+      "id": "u5_p9",
+      "indice": 9,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 505.56,
+      "inicio_s": 506.3,
+      "fin_s": 510.96,
+      "tiempo_fmt": "08:26",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Entre las dos ramas de los estudios sobre ciencia y tecnología, una académica, centrada en los condicionantes sociales de la ciencia y la tecnología, y otra activista, ocupada en la evaluación de los efectos de la ciencia y la tecnología, no ha habido siempre un buen entendimiento. El interés en la descripción rigurosa de las prácticas de la ciencia y la tecnología de una parte choca a menudo con el objetivo evaluativo de la otra.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2. Winner vs Woolgar: dos tradiciones enfrentadas",
+      "es_titulo": false,
+      "id": "u5_p10",
+      "indice": 10,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 510.58,
+      "inicio_s": 510.96,
+      "fin_s": 535.62,
+      "tiempo_fmt": "08:30",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "La acusación fundamental desde la “rama activista” de CTS es la de la esterilidad, e incluso el peligro de conservadurismo de la teoría del actor-red y enfoques afines. Desestimar la apelación a la sociedad en explicaciones causales del cambio científico podría convertir esta clase de estudios sociales en un ejercicio académico de salón tan insatisfactorio como las concepciones filosóficas clásicas que pretenden sustituir. La idea de que la tecnociencia y la política son indistinguibles podría tener incluso peligrosas consecuencias prácticas, porque si la tecnociencia (y por tanto también la política) es una \"guerra de papel\" y de palabras, quien posee la verdad será aquel que consiga reunir el suficiente poder para convencer al contrario de que tiene razón. Al abrir la caja negra de la ciencia, Langdon Winner auguraba la posibilidad de encontrarla vacía y, como añadirían Collins y Yearley, encontrarnos a nosotros mismos impotentes.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2. Winner vs Woolgar: dos tradiciones enfrentadas",
+      "es_titulo": false,
+      "id": "u5_p11",
+      "indice": 11,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 535.09,
+      "inicio_s": 535.62,
+      "fin_s": 588.52,
+      "tiempo_fmt": "08:55",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "El debate entre Steve Woolgar y Langdon Winner nos sirve para ilustrar de un modo más claro los términos de la polémica entre las tradiciones académica y activista en CTS que repasamos en las unidades previas. La aplicación a la tecnología de las estrategias del constructivismo social desarrolladas para el análisis de la ciencia habría tenido para Winner consecuencias indeseables, al desviar la atención de los aspectos realmente relevantes de la influencia de la tecnología sobre la sociedad. Esta denuncia de Winner puede entenderse en términos generales como una crítica a todo el programa de la construcción social de la ciencia y la tecnología (SCOT). En particular, Winner denuncia cuatro puntos clave en los que sus objetivos se separan de los de los constructivistas.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2. Winner vs Woolgar: dos tradiciones enfrentadas",
+      "es_titulo": false,
+      "id": "u5_p12",
+      "indice": 12,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 588.34,
+      "inicio_s": 588.52,
+      "fin_s": 631.02,
+      "tiempo_fmt": "09:48",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "En primer lugar, Winner critica el desinterés de la sociología del conocimiento por los efectos de las elecciones tecnológicas (y científicas) sobre la sociedad, precisamente el punto central de sus propios análisis. La aplicación a la tecnología del programa de investigación de la sociología del conocimiento científico, interesado en explorar los orígenes del conocimiento, habría tenido como resultado que también en el caso del fenómeno tecnológico el foco se sitúe en los orígenes y dinámica de la innovación tecnológica.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2. Winner vs Woolgar: dos tradiciones enfrentadas",
+      "es_titulo": false,
+      "id": "u5_p13",
+      "indice": 13,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 629.95,
+      "inicio_s": 631.02,
+      "fin_s": 660.14,
+      "tiempo_fmt": "10:31",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "Otra de las debilidades que Winner señala en los análisis de los constructivistas sociales es la estrategia metodológica consistente en la identificación de los grupos sociales relevantes que participan en el proceso de definición de los problemas tecnológicos, la búsqueda y estabilización de soluciones, etcétera. El problema es, precisamente, que se dejan de lado los grupos no relevantes, es decir, aquellos que no tienen la oportunidad de participar en la construcción de conocimiento o artefactos tecnológicos, profundizando en su invisibilización.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2. Winner vs Woolgar: dos tradiciones enfrentadas",
+      "es_titulo": false,
+      "id": "u5_p14",
+      "indice": 14,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 659.04,
+      "inicio_s": 660.14,
+      "fin_s": 689.72,
+      "tiempo_fmt": "11:00",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "Un tercer problema lo constituye su estrechez de miras a la hora de considerar los factores que influyen sobre la dinámica del cambio tecnológico. Winner critica a los constructivistas por centrarse únicamente en las necesidades inmediatas, intereses, problemas y soluciones de grupos específicos, sin tener en cuenta los factores culturales, intelectuales o económicos de mayor alcance que actúan sobre la tecnología mediante su influencia sobre las estructuras sociales en sentido amplio (el programa fallido de la macrosociología del conocimiento científico de la Escuela de Edimburgo).",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2. Winner vs Woolgar: dos tradiciones enfrentadas",
+      "es_titulo": false,
+      "id": "u5_p15",
+      "indice": 15,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 689.66,
+      "inicio_s": 689.72,
+      "fin_s": 721.98,
+      "tiempo_fmt": "11:29",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "La última crítica se refiere al relativismo de los análisis constructivistas, propiciado por el supuesto de la flexibilidad interpretativa de los artefactos tecnológicos, afirmaciones de conocimiento o datos. Según Winner, el relativismo confiere un carácter ideológicamente conservador al constructivismo, ya que impide emitir juicios de valoración de los desarrollos tecnocientíficos. De este modo, si todas las posibles interpretaciones de un artefacto o una teoría científica son igualmente válidas, no disponemos de ningún criterio para oponernos a las desigualdades e injusticias que la ciencia y la tecnología puedan promover, lo que equivale a contribuir al mantenimiento del statu quo.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2. Winner vs Woolgar: dos tradiciones enfrentadas",
+      "es_titulo": false,
+      "id": "u5_p16",
+      "indice": 16,
+      "bloque_tts": 7,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 721.8,
+      "inicio_s": 721.98,
+      "fin_s": 761.04,
+      "tiempo_fmt": "12:01",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #7)"
+    },
+    {
+      "texto": "Así pues, Winner considera que si bien es importante analizar cómo se construyen la ciencia y la tecnología, es más relevante explorar qué podemos hacer para favorecer la democratización de los proyectos y sistemas científico-tecnológicos; Woolgar, por su parte, recela ante cualquier postura que vaya más allá del plano descriptivo para pretender erigirse en juez moral. Para Winner, el relativismo epistémico y el relativismo moral van de la mano componiendo una actitud perversa, mientras que para Woolgar, las adscripciones de privilegio epistémico y moral resultan sospechosas.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2. Winner vs Woolgar: dos tradiciones enfrentadas",
+      "es_titulo": false,
+      "id": "u5_p17",
+      "indice": 17,
+      "bloque_tts": 7,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 760.92,
+      "inicio_s": 761.04,
+      "fin_s": 793.22,
+      "tiempo_fmt": "12:41",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #7)"
+    },
+    {
+      "texto": "En esta polémica encontramos la intersección entre dos problemas y sus diferentes soluciones. Uno de ellos se refiere a los objetivos de CTS, donde las opciones van desde la mera descripción de los procesos de conformación de la ciencia y la tecnología hasta objetivos sociopolíticos concretos. En el otro problema se enfrentan distintas concepciones del conocimiento científico y la posibilidad de privilegio epistémico. Cuando el análisis de la ciencia y la tecnología entendido como independiente de cualquier objetivo sociopolítico se combina con la posibilidad de acceso a la realidad no contaminada por la situación del analista, se suscitan las críticas desde las posiciones epistemológicas tradicionales. El objetivo descriptivo, en combinación con una postura en la que se cuestione la posibilidad de privilegio epistémico, resulta en relativismos radicales, como los defendidos en algunos momentos por Woolgar o Latour. Sin embargo, cuando el análisis de la ciencia y la tecnología se entiende ligado a determinados objetivos sociopolíticos, la negación de la posibilidad de privilegio epistémico supone un importante obstáculo para la consecución de los mismos, de ahí la resistencia de Langdon Winner a seguir el camino marcado por los constructivistas.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2. Winner vs Woolgar: dos tradiciones enfrentadas",
+      "es_titulo": false,
+      "id": "u5_p18",
+      "indice": 18,
+      "bloque_tts": 7,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 793.57,
+      "inicio_s": 793.22,
+      "fin_s": 863.22,
+      "tiempo_fmt": "13:13",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #7)"
+    },
+    {
+      "texto": "No obstante, muchos autores exploran caminos intermedios. En su conferencia plenaria al ser nombrado Presidente de la Society for Social Studies of Science en 2001, Wiebe E. Bijker, por ejemplo, hace una defensa clara y rotunda del “compromiso” del investigador CTS. Apelando a la trascendencia de la cultura tecnológica actual, Bijker reclama el papel de CTS en la democratización de esta cultura y la necesidad de que los investigadores CTS asuman el rol de “intelectuales públicos”. No es de ningún modo casual que Bijker se haya iniciado en el movimiento holandés sobre ciencia y sociedad a mediados de los años 70, un movimiento centrado en la proliferación nuclear, los riesgos de terrorismo biológico y nuclear.., es decir, en los peligros para las sociedades de una ciencia y tecnología descontroladas. Bijker, sin embargo, al contrario que Langdon Winner y otros representantes del sector comprometido de CTS sobre todo en Estados Unidos, encuentra claramente fructíferos los desarrollos en sociología del conocimiento científico desarrollados a partir del Programa Fuerte de Edimburgo, pese a sus críticas al “agnosticismo” que la agenda de investigación en estudios sobre ciencia manifiesta respecto a cuestiones políticas y sociales relacionadas con las implicaciones de sus hallazgos acerca de la naturaleza de la empresa tecnocientífica y de la cultura tecnocientífica. La idea de los investigadores en CTS como “intelectuales del nuevo milenio” de Bijker combina de forma que reconoce difícil el trabajo académico serio con su función de “ingenieros sociales” en temas como la ciencia y la tecnología para el desarrollo, la democratización o la sostenibilidad de las sociedades.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "2. Winner vs Woolgar: dos tradiciones enfrentadas",
+      "es_titulo": false,
+      "id": "u5_p19",
+      "indice": 19,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 863.04,
+      "inicio_s": 863.22,
+      "fin_s": 958.88,
+      "tiempo_fmt": "14:23",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #8)"
+    },
+    {
+      "texto": "3. El reto de la convergencia.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3. El reto de la convergencia",
+      "es_titulo": true,
+      "id": "u5_p20",
+      "indice": 20,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 958.75,
+      "inicio_s": 958.88,
+      "fin_s": 961.72,
+      "tiempo_fmt": "15:58",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #8)"
+    },
+    {
+      "texto": "En los últimos años la convergencia entre ambas tradiciones ha ido avanzando. Por una parte, como hemos visto, los enfoques de la rama académica han derivado hacia posturas en las que ciencia, tecnología y sociedad evolucionan conjuntamente en procesos de coproducción, ajuste o sintonización mutua. Además, parte de esta evolución ha sido propiciada por autores preocupados por la incapacidad de los enfoques originarios para la visibilización y la denuncia. De este modo, por ejemplo, Susan Leigh Star contribuyó a la evolución de la teoría del actor-red al señalar cómo la norma metodológica de seguir a los actores relevantes podía ocultar a otros actores silenciados o discursivamente presentes pero con escasa capacidad de acción sobre la red.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3. El reto de la convergencia",
+      "es_titulo": false,
+      "id": "u5_p21",
+      "indice": 21,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 962.31,
+      "inicio_s": 961.72,
+      "fin_s": 1004.46,
+      "tiempo_fmt": "16:01",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "En este apartado expondremos algunos ejemplos de enfoques que ponen en práctica la convergencia entre las dos tradiciones CTS.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3. El reto de la convergencia",
+      "es_titulo": false,
+      "id": "u5_p22",
+      "indice": 22,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1004.28,
+      "inicio_s": 1004.46,
+      "fin_s": 1011.86,
+      "tiempo_fmt": "16:44",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "3.1. Evaluación constructiva de tecnologías.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3.1. Evaluación constructiva de tecnologías",
+      "es_titulo": true,
+      "id": "u5_p23",
+      "indice": 23,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1011.4,
+      "inicio_s": 1011.86,
+      "fin_s": 1016.4,
+      "tiempo_fmt": "16:51",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "A finales de los 60 y principios de los 70 se abre una nueva época de responsabilidad social de la ciencia. Las agendas de la ciencia y la tecnología recogen algunas de las preocupaciones que habían venido gestándose en la sociedad civil y la academia en los últimos años, y se produce una reducción del crecimiento continuado de la macrociencia de los años anteriores. La financiación gubernamental cae en picado entre mediados de los años 60 y mediados de los años 70, coincidiendo con el fracaso en la guerra de Vietnam y el clima general de desconfianza social hacia la ciencia. Los conceptos de “relevancia social” y “orientación” hacen su aparición mostrando los cambios radicales en el enfoque de la política científica en esta década. Algunos autores han caracterizado la década de los 70 como de “repolitización” de la ciencia, aunque siempre en el marco de una doctrina tecnocrática “con sensibilidad social”. La crisis del petróleo en 1973 generó amplios debates sobre energías e impulsó el desarrollo del movimiento en pro de una “tecnología alternativa”. El progreso de la investigación en ingeniería genética y nuevas tecnologías de la información y las comunicaciones contribuyeron también a profundizar en la necesidad de institucionalizar la evaluación de tecnologías. Una de las implicaciones más importantes de este conjunto de circunstancias fue la de la creación de multitud de agencias de diverso cuño para la evaluación de tecnologías y sus impactos, especialmente agencias o departamentos de evaluación ambiental, que proliferaron en los países industrializados. También aparecen agencias generales de evaluación de tecnologías, como la OTA (Oficina de Evaluación de Tecnologías) del Congreso de los Estados Unidos (fundada en 1972 y desaparecida en 1995) a la que seguirían organismos similares en Francia, Dinamarca, Países Bajos, Alemania y el Reino Unido. No hay que olvidar, no obstante, que iniciativas como la de la OTA estadounidense aparecieron y funcionaron en un contexto en el que la neutralidad del conocimiento experto era dada por supuesta, y su función era la de proporcionar asesoramiento técnico a los políticos. Se trataba fundamentalmente de evaluaciones de tipo economicista, de impactos ex post, y que a menudo se utilizaron como instrumentos de legitimación política Sin embargo, la práctica de la evaluación de tecnologías sufre importantes transformaciones desde sus inicios en los años 70 al hilo de los cambios en la sociedad y la producción de conocimiento. Un ejemplo de estos cambios, y de cómo el estudio académico de la ciencia y la tecnología se complementa con el ámbito de la política científica lo constituye la “evaluación constructiva de tecnologías”. Siguiendo la recomendación de algunos enfoques en sociología e historia de la ciencia y la tecnología que toman como norma metodológica atender a los procesos más que a los productos ya terminados para averiguar por qué se han tomado determinadas decisiones o aceptado ciertas teorías, o por qué ha tenido éxito determinada variación de una tecnología, se ha intentado también cambiar el énfasis en evaluación de tecnologías desde una evaluación de productos ya terminados a una evaluación de sus procesos de construcción, dando al mismo tiempo entrada en este seguimiento a actores sociales tradicionalmente excluidos, como el público no experto implicado. El resultado ha sido una evaluación de tecnologías más eficaz y más respetuosa con los diferentes actores, en la que no se trata simplemente de evaluar impactos a posteriori sino de contribuir a la programación de tecnologías emergentes. Frente a la tesis del determinismo tecnológico, la idea que respalda la evaluación constructiva de tecnologías es que es posible controlar en cierta medida el ritmo y dirección del desarrollo tecnológico actuando sobre tecnologías no atrincheradas. Lejos de ser una mera idea teórica, la evaluación constructiva de tecnologías se ha practicado de forma prometedora sobre todo en los Países Bajos, donde a través de la NOTA (Agencia Neerlandesa de Evaluación de Tecnologías) se ha aplicado a proyectos sobre tecnologías limpias, telecomunicaciones, transporte, biotecnologías, etcétera.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3.1. Evaluación constructiva de tecnologías",
+      "es_titulo": false,
+      "id": "u5_p24",
+      "indice": 24,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1016.23,
+      "inicio_s": 1016.4,
+      "fin_s": 1265.46,
+      "tiempo_fmt": "16:56",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #10)"
+    },
+    {
+      "texto": "3.2. La diáspora de la teoría del actor-red.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3.2. La diáspora de la teoría del actor-red",
+      "es_titulo": true,
+      "id": "u5_p25",
+      "indice": 25,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1265.55,
+      "inicio_s": 1265.46,
+      "fin_s": 1270.14,
+      "tiempo_fmt": "21:05",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "La teoría del actor-red, pese a que ha sido uno de los desarrollos académicos más criticados desde las posturas “activistas”, ha mostrado también fructíferas potencialidades en el ámbito político, bien por parte de autores formados en la propia teoría, pero críticos con ella, bien en los desarrollos más recientes de sus propios fundadores, como Bruno Latour y Michel Callon.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3.2. La diáspora de la teoría del actor-red",
+      "es_titulo": false,
+      "id": "u5_p26",
+      "indice": 26,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1267.78,
+      "inicio_s": 1270.14,
+      "fin_s": 1277.62,
+      "tiempo_fmt": "21:10",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "Bruno Latour, que ha sido el principal objeto de crítica por las posibles consecuencias relativistas de su enfoque descriptivo, ha reflexionado en sus trabajos sobre las implicaciones políticas de la teoría del actor-red. En We have never been modern introduce ya la discusión sobre “el parlamento de las cosas” que desarrollará más adelante fundamentalmente en Politics of Nature, tratando de deshacer la diferencia entre la representación política y la representación científica. Los constructos del conocimiento, argumenta Latour, constituyen una mezcla de política, ciencia, tecnología y naturaleza, son “híbridos”, como “el calentamiento global”, “el agujero de la capa de ozono”, “los alimentos biológicos” o la “crisis económica”. Al difuminarse de este modo las fronteras entre las humanidades, las ciencias naturales y las ciencias sociales, se requieren nuevas formas de entender el papel de la ciencia en la sociedad. Mientras que “representar” significó siempre cosas muy distintas en el ámbito de la ciencia y el de la política, Latour propone que la renuncia a entender la verdad científica como representación fiel de los hechos se complemente con la instauración en este nuevo parlamento de una representación política de la cosas. Los no humanos tienen derecho a ser representados por sus portavoces, lo mismo que los humanos, en una representación que sea lo más fiel posible a su complejidad y a sus inherentes incertidumbres. El “parlamento de las cosas” reivindica el papel de la negociación y los acuerdos parciales y revisables sobre lo que es real y sobre cómo humanos y no humanos podemos vivir juntos.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "3.2. La diáspora de la teoría del actor-red",
+      "es_titulo": false,
+      "id": "u5_p27",
+      "indice": 27,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1277.45,
+      "inicio_s": 1277.62,
+      "fin_s": 1367.26,
+      "tiempo_fmt": "21:17",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "Michel Callon, sin embargo, se ha interesado fundamentalmente en la representación y el papel de los actores humanos no expertos en los problemas de la tecnociencia en nuestros días. Callon y Rabeharisoa utilizan la expresión “investigación en libertad” o “investigación silvestre” (research in the wild) para distinguir la investigación llevada a cabo en los laboratorios o lugares acreditados por sujetos expertos de la investigación de aquella que realizan grupos de ciudadanos sensibilizados o implicados. La investigación en libertad puede producir problematizaciones que luego se extenderán en la investigación ordinaria o aplicaciones novedosas de esta. La incorporación de otros actores en procesos de aprendizaje social en los que expertos y grupos de la sociedad civil cooperan en la investigación tiene como resultado, según Callon, que la investigación y la innovación se transfieran de forma más natural a la sociedad. Rabeharisoa y Callon han analizado en profundidad estas formas de cooperación en el caso de las asociaciones de pacientes, tomando a la Asociación Francesa contra las Miopatías (AFM) como ejemplo del modo en el que la asociación produce conocimientos sobre la experiencia de sus asociados que al confrontarse con el conocimiento experto conllevan un aprendizaje mutuo entre ambos ámbitos. Otra novedad que presenta el modo de actuar de la AFM no es solo la colaboración entre expertos y legos en la producción de conocimiento, sino también la creación de infraestructuras que formalizan la interdependencia entre grupos diversos de actores. Callon ha denominado “democracia técnica” a esta colaboración entre científicos y legos en la construcción del conocimiento, que tiene en los “foros híbridos” una de sus herramientas principales. Frente al “parlamento de las cosas” de Latour, en los “foros híbridos” se sientan actores humanos, expertos y legos, para deliberar conjuntamente y tomar decisiones en casos de incertidumbre o conflictos sobre el resultado de alguna acción tecnocientífica, entrando así la teoría del actor-red en diálogo con toda la investigación sobre participación pública en ciencia y tecnología que se ha desarrollado desde diferentes disciplinas y enfoques.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "3.2. La diáspora de la teoría del actor-red",
+      "es_titulo": false,
+      "id": "u5_p28",
+      "indice": 28,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1367.09,
+      "inicio_s": 1367.26,
+      "fin_s": 1486.66,
+      "tiempo_fmt": "22:47",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "3.3. Ciencia, tecnología y género.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "3.3. Ciencia, tecnología y género",
+      "es_titulo": true,
+      "id": "u5_p29",
+      "indice": 29,
+      "bloque_tts": 13,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1485.95,
+      "inicio_s": 1486.66,
+      "fin_s": 1490.76,
+      "tiempo_fmt": "24:46",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #13)"
+    },
+    {
+      "texto": "La difícil intersección entre la cuestión de la sociedad en la tecnociencia y la cuestión de la tecnociencia en la sociedad presenta un aspecto muy distinto cuando consideramos la diferente historia de los estudios feministas de la ciencia. En los análisis de género y ciencia encontramos un paso en cierto modo natural (aunque no simple) de “la cuestión de la mujer en la ciencia” a “la cuestión de la ciencia en el feminismo” (en palabras de Sandra Harding, 1986).",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "3.3. Ciencia, tecnología y género",
+      "es_titulo": false,
+      "id": "u5_p30",
+      "indice": 30,
+      "bloque_tts": 14,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1490.57,
+      "inicio_s": 1490.76,
+      "fin_s": 1516.36,
+      "tiempo_fmt": "24:50",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #14)"
+    },
+    {
+      "texto": "El origen del interés feminista por la ciencia está ligado a la segunda ola del movimiento feminista de los años 60 y 70. La inquietud surge en dos frentes distintos y complementarios. Por una parte, el de las propias mujeres en el mundo de la ciencia, que desarrollan una creciente conciencia de su diferencia. El otro frente es el de las militantes en diversos movimientos políticos y sociales que necesitaban incorporar el género como variable en sus análisis críticos de la cultura científico-tecnológica. Desde ambos frentes se realizó un importante trabajo de estudio empírico y reflexión teórica sobre la exclusión de las mujeres de la ciencia y sus consecuencias.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "3.3. Ciencia, tecnología y género",
+      "es_titulo": false,
+      "id": "u5_p31",
+      "indice": 31,
+      "bloque_tts": 14,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1517.46,
+      "inicio_s": 1516.36,
+      "fin_s": 1554.72,
+      "tiempo_fmt": "25:16",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #14)"
+    },
+    {
+      "texto": "La empresa tecnocientífica misma y sus teorías, discursos y artefactos han sido también objeto de análisis, identificando el modo en el que reflejan sesgos de género. En especial, este análisis se ha centrado en ciencias como la biología, la psicología, la antropología…; y en tecnologías con especial relevancia en las vidas de las mujeres como las tecnologías biomédicas, domésticas y, más recientemente, las tecnologías de la información y las comunicaciones. Estos análisis empíricos han dado lugar a diferentes posturas epistemológicas acerca de la relevancia del sexo del sujeto que conoce y actúa, y la naturaleza de nociones como la objetividad científica o la eficacia técnica.",
+      "pagina_inicio": 10,
+      "pagina_fin": 10,
+      "paginas": [
+        10
+      ],
+      "seccion": "3.3. Ciencia, tecnología y género",
+      "es_titulo": false,
+      "id": "u5_p32",
+      "indice": 32,
+      "bloque_tts": 14,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1555.05,
+      "inicio_s": 1554.72,
+      "fin_s": 1594.3,
+      "tiempo_fmt": "25:54",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #14)"
+    },
+    {
+      "texto": "La reflexión feminista sobre tecnologías como las reproductivas o las domésticas y su compleja ambivalencia respecto a sus efectos sobre las vidas de las mujeres son un ejemplo de la necesidad de atender a la multiplicidad de intereses en juego y van más allá de las guerras por alistar actores que dan cuenta de la producción de orden social y natural en enfoques como la versión ortodoxa de ANT.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "3.3. Ciencia, tecnología y género",
+      "es_titulo": false,
+      "id": "u5_p33",
+      "indice": 33,
+      "bloque_tts": 14,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1593.78,
+      "inicio_s": 1594.3,
+      "fin_s": 1614.56,
+      "tiempo_fmt": "26:34",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #14)"
+    },
+    {
+      "texto": "En estos análisis se produce un imprescindible entrelazamiento de las dos tradiciones CTS, ya que la responsabilidad de identificar y denunciar los modos en los que la ciencia y la tecnología incorporan sesgos de género hace irrenunciable la normatividad epistémica y política. Los enfoques feministas se enfrentan a los mismos debates desarrollados en las corrientes generales del estudio social de la ciencia, pero para ellos, reconocer que el conocimiento es situado no desemboca en la imposibilidad de fundamentar juicios epistémicos, y las detalladas reconstrucciones de los procesos por medio de los cuales llegamos a tener las teorías y artefactos que tenemos, junto con la identificación de los complejos de valores contextuales implicados, no se disocian de la preocupación por los efectos y consecuencias sociales de los mismos. Más bien se pone al servicio de proyectos con un marcado compromiso sociopolítico por corregir injusticias (epistémicas y políticas) y reconducir consecuentemente las direcciones y los productos de la investigación científico-tecnológica.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "3.3. Ciencia, tecnología y género",
+      "es_titulo": false,
+      "id": "u5_p34",
+      "indice": 34,
+      "bloque_tts": 15,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1614.38,
+      "inicio_s": 1614.56,
+      "fin_s": 1673.08,
+      "tiempo_fmt": "26:54",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #15)"
+    },
+    {
+      "texto": "4. Habitar la cultura tecnocientífica.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "4. Habitar la cultura tecnocientífica",
+      "es_titulo": true,
+      "id": "u5_p35",
+      "indice": 35,
+      "bloque_tts": 15,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1672.3,
+      "inicio_s": 1673.08,
+      "fin_s": 1676.56,
+      "tiempo_fmt": "27:53",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #15)"
+    },
+    {
+      "texto": "La historia de la rama “activista” de CTS parte de los movimientos sociales de los años 60 y 70, preocupados por los impactos de la ciencia y la tecnología. Desde entonces, la crítica de las consecuencias perjudiciales de la tecnociencia ha ido evolucionando hacia la propuesta de formas nuevas de gestión de la ciencia y la tecnología. El discurso sobre “impactos” ha dado lugar a la reflexión sobre el hecho de que vivimos en una cultura tecnocientífica. No se trata únicamente de que la ciencia y la tecnología tengan consecuencias sociales, sino de que no es posible entender nuestra vida independientemente de ellas. Entre los temas urgentes abordados por los análisis CTS desde esta perspectiva se encuentran los relacionados con la evaluación de tecnologías, el análisis de políticas científico-tecnológicas o la comprensión pública de la ciencia. Dado que comprender la cultura tecnocientífica es imprescindible para comprender los cambios sociales en marcha, la caracterización de nuestras sociedades como sociedades del conocimiento, del riesgo, de la información.., y la exploración de sus significados y sus implicaciones, es una parte importante de este trabajo. Estas perspectivas señalan caminos para analizar cuestiones como las condiciones de la innovación o los problemas de la gestión del riesgo, y plantean la implicación de la sociedad civil en el diseño y gestión de la tecnociencia. Conocer la cultura tecnocientífica es, entonces, especialmente relevante para proyectar estrategias habitarla, comunicarla y gobernarla.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "4. Habitar la cultura tecnocientífica",
+      "es_titulo": false,
+      "id": "u5_p36",
+      "indice": 36,
+      "bloque_tts": 16,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1676.38,
+      "inicio_s": 1676.56,
+      "fin_s": 1763.88,
+      "tiempo_fmt": "27:56",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #16)"
+    },
+    {
+      "texto": "En este tipo de análisis se refleja el cambio radical en la imagen de la ciencia y la tecnología que han promovido las ramas académicas de CTS. Una ciencia y una tecnología entendidas en aislamiento de su contexto implican modos de gestión y de relación con el público experto distintos a los de una tecnociencia híbrida que es proceso y producto social. La naturaleza social de la tecnociencia requiere nuevos marcos éticos y legales para el control de sus riesgos, así como una evaluación de tecnologías que no sea mera constatación “ex post” de perjuicios. Otra implicación importante es la de la necesidad de mejorar los mecanismos de comunicación entre expertos, políticos y la sociedad en una doble vertiente: de los expertos y políticos hacia la sociedad (educación, difusión, divulgación, comunicación..) y de la sociedad a los expertos y políticos (percepción, opinión, conocimiento, participación..). El “giro participativo” que, de acuerdo con Sheila Jasanoff, se ha generalizado en el campo CTS en los últimos años, y que Brian Wynne entiende más bien como la actualización del interés en la participación que ya había tenido lugar en los años 70, combina el argumento ético-político que defiende que los ciudadanos deben poder participar en las decisiones que les afectan con el argumento sustantivo de que la participación conducirá a decisiones mejores al sumar nuevas perspectivas, experiencias o hipótesis a las de los expertos, reflejando así el reconocimiento de la nueva imagen de la ciencia y la tecnología. El “giro participativo” es una de las manifestaciones de la transición del gobierno a la gobernanza que se tratará en la última unidad.",
+      "pagina_inicio": 11,
+      "pagina_fin": 11,
+      "paginas": [
+        11
+      ],
+      "seccion": "4. Habitar la cultura tecnocientífica",
+      "es_titulo": false,
+      "id": "u5_p37",
+      "indice": 37,
+      "bloque_tts": 17,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1763.71,
+      "inicio_s": 1763.88,
+      "fin_s": 1856.82,
+      "tiempo_fmt": "29:23",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #17)"
+    },
+    {
+      "texto": "La “cultura tecnocientífica”, desde los estudios sociales de la ciencia y la tecnología, es por tanto el resultado de prácticas y teorizaciones, de encuentros entre la agencia humana y la no humana, de intereses, saberes y puntos de vista de tipos diversos..; y tiene a su vez la capacidad de modelar formas de vida, de diseñar y dotar de significados el mundo que habitamos, de producir bienestar, desencadenar riesgos, crear y reducir desigualdades, proporcionar oportunidades o transformar los hábitats naturales. En el concepto y el fenómeno de la “cultura tecnocientífica”, la tradición “académica” de CTS que ha estudiado su modelado social se encuentra con la tradición “activista” que ha explorado sus efectos sociales.",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "4. Habitar la cultura tecnocientífica",
+      "es_titulo": false,
+      "id": "u5_p38",
+      "indice": 38,
+      "bloque_tts": 17,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1857.51,
+      "inicio_s": 1856.82,
+      "fin_s": 1899.52,
+      "tiempo_fmt": "30:56",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "Fin del audiolibro de la unidad: TEMA 2. Unidad 5. El reto de la convergencia.",
+      "pagina_inicio": 12,
+      "pagina_fin": 12,
+      "paginas": [
+        12
+      ],
+      "seccion": "Cierre de la unidad",
+      "es_titulo": true,
+      "id": "u5_p39",
+      "indice": 39,
+      "bloque_tts": 17,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1900.11,
+      "inicio_s": 1899.52,
+      "fin_s": 1907.02,
+      "tiempo_fmt": "31:39",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #17)"
+    }
+  ],
+  "evaluacion": {
+    "orales": [
+      {
+        "id": "u5_o1",
+        "pregunta": "Resume las cuatro críticas de Langdon Winner al constructivismo social ('abrir la caja negra y encontrarla vacía') y explica cómo se plasma la convergencia entre las dos tradiciones CTS (Evaluación Constructiva, Diáspora ANT y Estudios de Género).",
+        "pagina": 5,
+        "paginas_ref": "Páginas 5 a 11",
+        "seccion": "2. Winner vs Woolgar y 3. El reto de la convergencia",
+        "ideas_rubrica": [
+          {
+            "id": "u5_o1_i1",
+            "titulo": "Las 4 críticas de Winner a SCOT/Woolgar (págs. 5–6)",
+            "detalle": "1) Olvido de las consecuencias sociales; 2) invisibilización de los grupos no relevantes/excluidos; 3) estrechez de miras ante factores económicos y culturales macro; y 4) relativismo moral conservador.",
+            "pagina": 6,
+            "pistas": [
+              "caja negra",
+              "vacia",
+              "efectos",
+              "consecuencias",
+              "no relevantes",
+              "excluidos",
+              "estrechez",
+              "relativismo",
+              "conservador"
+            ]
+          },
+          {
+            "id": "u5_o1_i2",
+            "titulo": "Evaluación Constructiva de Tecnologías — ECT (pág. 8)",
+            "detalle": "Explicar el paso de evaluar productos ya terminados (ex post, como la OTA) a intervenir durante el proceso de diseño de tecnologías emergentes con participación pública (como la agencia NOTA en Países Bajos).",
+            "pagina": 8,
+            "pistas": [
+              "evaluacion constructiva",
+              "ota",
+              "nota",
+              "paises bajos",
+              "emergentes",
+              "proceso",
+              "diseno"
+            ]
+          },
+          {
+            "id": "u5_o1_i3",
+            "titulo": "Diáspora ANT (Parlamento de las cosas / Foros híbridos y AFM) y Estudios Feministas de Género (págs. 8–10)",
+            "detalle": "Mencionar el 'parlamento de las cosas' de Latour, la 'investigación en libertad' y 'foros híbridos' de Callon (asociación de pacientes AFM), y el conocimiento situado y compromiso político en los estudios de género (Sandra Harding).",
+            "pagina": 9,
+            "pistas": [
+              "parlamento",
+              "latour",
+              "callon",
+              "foros hibridos",
+              "investigacion en libertad",
+              "afm",
+              "pacientes",
+              "genero",
+              "feminis",
+              "harding"
+            ]
+          }
+        ],
+        "respuesta_modelo": "En las páginas 5–7 de la Unidad 5, Langdon Winner formula cuatro críticas al constructivismo social: ignora los efectos sociales de las tecnologías, excluye a los grupos 'no relevantes' sin voz, descuida las estructuras económicas/culturales profundas y cae en un relativismo moral conservador. En el apartado 3 (págs. 7–10) se exponen tres vías reales de convergencia entre la tradición académica y la activista: 1) la Evaluación Constructiva de Tecnologías (ECT, pág. 8), que abre el diseño de tecnologías emergentes al público; 2) la diáspora política de ANT (págs. 8–9), con el 'parlamento de las cosas' de Latour y los 'foros híbridos' e 'investigación en libertad' de Callon (como la asociación de pacientes AFM); y 3) los estudios feministas de ciencia, tecnología y género (Sandra Harding, págs. 9–10), que unen el análisis del conocimiento situado con la denuncia de sesgos e injusticias."
+      }
+    ],
+    "test": [
+      {
+        "pregunta": "¿Qué propone la 'Evaluación Constructiva de Tecnologías' (Unidad 5, Apartado 3.1, pág. 8) frente a las evaluaciones clásicas de impactos ex post?",
+        "opciones": [
+          "Esperar varias décadas después de comercializar una tecnología para medir sus daños.",
+          "Cambiar el énfasis desde la evaluación de productos ya terminados hacia la evaluación de sus procesos de construcción en tecnologías emergentes aún no atrincheradas, dando entrada al público no experto.",
+          "Dejar la evaluación exclusivamente en manos de los fabricantes privados."
+        ],
+        "correcta": 1,
+        "pagina": 8,
+        "explicacion": "En la página 8 se detalla cómo la Evaluación Constructiva de Tecnologías (practicada en los Países Bajos) interviene durante el diseño de tecnologías emergentes incorporando a actores sociales tradicionalmente excluidos."
+      }
+    ]
+  }
+}

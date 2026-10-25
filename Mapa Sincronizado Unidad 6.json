@@ -1,0 +1,657 @@
+{
+  "numero": 6,
+  "nombre_base": "Unidad 6 - Del gobierno a la gobernanza",
+  "titulo_corto": "Del gobierno a la gobernanza",
+  "asignatura": "Nuevas perspectivas en los estudios sobre ciencia, tecnología e innovación",
+  "unidad_portada": "TEMA 2. Unidad 6. Del gobierno a la gobernanza",
+  "archivo_pdf": "Unidad 6 - Del gobierno a la gobernanza.pdf",
+  "archivo_mp3": "Unidad 6 - Del gobierno a la gobernanza.mp3",
+  "archivo_guion": "Guion Unidad 6 - Del gobierno a la gobernanza.txt",
+  "total_paginas_pdf": 10,
+  "total_palabras": 3289,
+  "duracion_estimada_s": 1230.02,
+  "tamano_mb": 7.04,
+  "bloques_tts_mp3": 12,
+  "puntos_verificados_audio": [
+    {
+      "unidad": 6,
+      "punto": "Comienzo",
+      "parrafo_idx": 2,
+      "seccion": "1. Gobierno y conocimiento",
+      "pagina_pdf": 3,
+      "segundo_esperado_s": 16.06,
+      "segundo_esperado_fmt": "00:16",
+      "segundo_real_s": 14.6,
+      "segundo_real_fmt": "00:14",
+      "diferencia_s": -1.46,
+      "frase_guion_pdf": "A lo largo de la asignatura hemos visto cómo temas relacionados con la ciencia y la tecnología que afectan a las vi…",
+      "frase_escuchada_mp3": "A lo largo de la asignatura hemos visto como temas relacionados con la ciencia y la tecnología que afectan a las vidas cotidianas de todos los ciudadanos se han convertido en los últimos"
+    },
+    {
+      "unidad": 6,
+      "punto": "Mitad",
+      "parrafo_idx": 12,
+      "seccion": "2. La politización de la vida diaria y los efectos de segundo orden",
+      "pagina_pdf": 5,
+      "segundo_esperado_s": 607.85,
+      "segundo_esperado_fmt": "10:07",
+      "segundo_real_s": 608.02,
+      "segundo_real_fmt": "10:08",
+      "diferencia_s": 0.17,
+      "frase_guion_pdf": "Es importante tener en cuenta que la experiencia vital diaria de todas esas consecuencias de la industrialización s…",
+      "frase_escuchada_mp3": "Es importante tener en cuenta que la experiencia vital diaria de todas esas consecuencias de la industrialización se agudiza por el efecto de la congestión o sea"
+    },
+    {
+      "unidad": 6,
+      "punto": "Final",
+      "parrafo_idx": 22,
+      "seccion": "3. La gobernanza y sus encrucijadas",
+      "pagina_pdf": 9,
+      "segundo_esperado_s": 1203.1,
+      "segundo_esperado_fmt": "20:03",
+      "segundo_real_s": 1202.98,
+      "segundo_real_fmt": "20:02",
+      "diferencia_s": -0.12,
+      "frase_guion_pdf": "Los tres sentidos de la “democratización de la ciencia” que acabamos de señalar apuntan a distintas cuestiones que …",
+      "frase_escuchada_mp3": "Los tres estilos de la democratización de la ciencia que acabamos de señalar apuntan a distintas cuestiones que se abordarán en diferentes asignaturas y especialización en"
+    }
+  ],
+  "secciones": [
+    {
+      "titulo": "Portada e identificación",
+      "pagina": 1,
+      "inicio_s": 0.18,
+      "tiempo_fmt": "00:00",
+      "parrafo_idx": 0,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "1. Gobierno y conocimiento",
+      "pagina": 3,
+      "inicio_s": 12.04,
+      "tiempo_fmt": "00:12",
+      "parrafo_idx": 1,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "2. La politización de la vida diaria y los efectos de segundo orden",
+      "pagina": 3,
+      "inicio_s": 241.32,
+      "tiempo_fmt": "04:01",
+      "parrafo_idx": 7,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "3. La gobernanza y sus encrucijadas",
+      "pagina": 6,
+      "inicio_s": 786.64,
+      "tiempo_fmt": "13:06",
+      "parrafo_idx": 14,
+      "precision_tiempo": "aproximado_acustico"
+    },
+    {
+      "titulo": "Cierre de la unidad",
+      "pagina": 9,
+      "inicio_s": 1222.42,
+      "tiempo_fmt": "20:22",
+      "parrafo_idx": 23,
+      "precision_tiempo": "aproximado_acustico"
+    }
+  ],
+  "parrafos": [
+    {
+      "texto": "Audiolibro de estudio. Asignatura: Nuevas perspectivas en los estudios sobre ciencia, tecnología e innovación. TEMA 2. Unidad 6. Del gobierno a la gobernanza.",
+      "pagina_inicio": 1,
+      "pagina_fin": 1,
+      "paginas": [
+        1
+      ],
+      "seccion": "Portada e identificación",
+      "es_titulo": true,
+      "id": "u6_p0",
+      "indice": 0,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 0.0,
+      "inicio_s": 0.18,
+      "fin_s": 12.04,
+      "tiempo_fmt": "00:00",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "1. Gobierno y conocimiento.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Gobierno y conocimiento",
+      "es_titulo": true,
+      "id": "u6_p1",
+      "indice": 1,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 12.56,
+      "inicio_s": 12.04,
+      "fin_s": 14.6,
+      "tiempo_fmt": "00:12",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "A lo largo de la asignatura hemos visto cómo temas relacionados con la ciencia y la tecnología que afectan a las vidas cotidianas de todos los ciudadanos se han convertido en los últimos años en objeto destacado del debate académico, público y político. Los sistemas de regulación han de responder a ese debate introduciendo cambios profundos en los procesos de toma de decisiones. Impulsadas por estas transformaciones, las políticas públicas a nivel internacional relacionadas con la ciencia y la tecnología están actualmente en un proceso de transición desde sistemas de gobierno a sistemas de gobernanza.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Gobierno y conocimiento",
+      "es_titulo": false,
+      "id": "u6_p2",
+      "indice": 2,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 16.06,
+      "inicio_s": 14.6,
+      "fin_s": 50.38,
+      "tiempo_fmt": "00:14",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "Las transformaciones experimentadas por la ciencia y la tecnología desde mediados del siglo XX han ido ligadas a transformaciones paralelas en las sociedades. Algunas de las características determinantes de estos cambios sociales son los procesos de individualización y destradicionalización, la politización de temas que anteriormente tenían poca relevancia en los debates públicos (como la alimentación, la salud o la energía), así como el incremento de la preocupación de los ciudadanos por los problemas de segundo orden (los problemas generados por la propia industrialización). La conjunción de todos esos cambios con otros, como el agravamiento generalizado de los problemas ecológicos (acelerado cambio global, accidentes industriales, etcétera.), apuntan hacia un marco sociopolítico marcadamente distinto de aquel en el que surgieron los conceptos de «gobierno» y de «políticas públicas».",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Gobierno y conocimiento",
+      "es_titulo": false,
+      "id": "u6_p3",
+      "indice": 3,
+      "bloque_tts": 1,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 49.24,
+      "inicio_s": 50.38,
+      "fin_s": 100.16,
+      "tiempo_fmt": "00:50",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #1)"
+    },
+    {
+      "texto": "Foucault relaciona el nacimiento del concepto actual de «gobierno» (que hasta hoy día sigue teniendo en la gestión pública una influencia importante o incluso dominante) con los cambios sobrevenidos en los estados de la Europa de los siglos XVI y XVII. En el siglo XVI, los nuevos estados encontraron su propósito en conceptos como la creación de prosperidad colectiva o el mantenimiento de la salud colectiva. Así nacieron las políticas públicas, primero en la forma de la disciplina de Polizeiwissenschaft («ciencia de la policía»), un sistema (perfeccionado en Europa durante el periodo de reconstrucción después de la Guerra de los 100 Años) de supervisión e intervención centralizada en todos los aspectos del Estado, desde la industria y el transporte hasta la religión y la salud. Su objetivo, según Foucault, era incrementar la felicidad de los ciudadanos de manera tal que, al mismo tiempo, se incrementaba el poder del Estado.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Gobierno y conocimiento",
+      "es_titulo": false,
+      "id": "u6_p4",
+      "indice": 4,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 99.89,
+      "inicio_s": 100.16,
+      "fin_s": 151.42,
+      "tiempo_fmt": "01:40",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "En el siglo XVIII, en paralelo con el desarrollo científico-técnico y económico, los estados dejaron de considerar «el arte de gobernar» una cuestión parecida a la gestión de una familia, y la reformularon en términos puramente económicos. Al mismo tiempo, surgió con el liberalismo económico y político la idea de una separación entre las esferas del Estado y la economía. Aun así, las justificaciones del poder estatal que ya el Estado del siglo XVI asumió como suyas (prosperidad, salud colectiva, etcétera.), no solo no desaparecieron, sino que incluso vieron su importancia incrementada (especialmente a causa del crecimiento demográfico y la rápida urbanización, así como de todos los problemas que desencadenaron). El poder político y las nuevas ciencias (entre ellas las sociales y médicas) establecieron una relación de dependencia y beneficio mutuo. Con el fin de solucionar los nuevos problemas colectivos (relacionados con la salud de la población, la explosión urbanística, etcétera.), surgieron programas cuyos objetivos, métodos y discursos eran comunes a las esferas políticas y científicas. El poder político proporcionó propósito y marcos institucionales para el conocimiento científico.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Gobierno y conocimiento",
+      "es_titulo": false,
+      "id": "u6_p5",
+      "indice": 5,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 151.02,
+      "inicio_s": 151.42,
+      "fin_s": 220.78,
+      "tiempo_fmt": "02:31",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "Este, en cambio, proporcionó fundamentación racional para el gobierno: «Poder y conocimiento se convirtieron en condiciones de posibilidad mutuas. El gobierno y las ciencias se asocian mediante programas que son planes basados en el conocimiento para un mundo que se había vuelto comprensible y susceptible de ser gestionado de forma racional a través de discursos constructivos».",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "1. Gobierno y conocimiento",
+      "es_titulo": false,
+      "id": "u6_p6",
+      "indice": 6,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 219.49,
+      "inicio_s": 220.78,
+      "fin_s": 241.32,
+      "tiempo_fmt": "03:40",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "2. La politización de la vida diaria y los efectos de segundo orden.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "2. La politización de la vida diaria y los efectos de segundo orden",
+      "es_titulo": true,
+      "id": "u6_p7",
+      "indice": 7,
+      "bloque_tts": 2,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 240.69,
+      "inicio_s": 241.32,
+      "fin_s": 246.18,
+      "tiempo_fmt": "04:01",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #2)"
+    },
+    {
+      "texto": "Dentro de este ámbito de «gobierno» surgen entonces las políticas públicas para gestionar el desarrollo científico-tecnológico, que adoptan en la segunda mitad del siglo XX su forma moderna, con el “contrato social” que abre el periodo de la Guerra Fría. Pero, con la acelerada industrialización y «modernización reflexiva» de la sociedad, esta empieza a cambiar profundamente. Las formas de vida se individualizan y destradicionalizan, con consecuencias importantes tanto para la percepción social de la ciencia y la tecnología como para su gestión. Una de las principales consecuencias del proceso de individualización es que las biografías de las personas se vuelven electivas: los individuos se ven obligados a decidir (y potencialmente negociar) un número creciente de factores fundamentales de su vida (que antes hubieran sido encauzados o, incluso, predeterminados por la tradición o por la experiencia de pertenecer a determinados grupos sociales o regionales). Esa necesidad de tomar decisiones sin poder recurrir a modelos históricos o identidades tradicionales convierte las vidas de los ciudadanos de los países altamente industrializados en experimentales y reflexivas. Surge así la necesidad permanente de una gestión activa de la propia vida, en todos sus aspectos.",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "2. La politización de la vida diaria y los efectos de segundo orden",
+      "es_titulo": false,
+      "id": "u6_p8",
+      "indice": 8,
+      "bloque_tts": 3,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 246.0,
+      "inicio_s": 246.18,
+      "fin_s": 317.4,
+      "tiempo_fmt": "04:06",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #3)"
+    },
+    {
+      "texto": "La «gestión de la propia vida» implica que el individuo tiene que tomar decisiones respecto de los aspectos más sencillos de su vida diaria, como, por ejemplo, la alimentación o el consumo energético. Aún más, las personas se ven obligadas a tener que justificar esas elecciones suyas, no solo ante ellos mismos sino también ante los otros. De esa forma, muchos aspectos (en principio «triviales») de la vida empiezan a tener un carácter de riesgos individuales (o por lo menos, se perciben como tales). Este nuevo espacio de autoorganización y autocultura contribuye de forma decisiva a la dinámica política y social que surge en torno a los problemas ecológicos y los efectos sociopolíticos del desarrollo tecnológico, como, por ejemplo, la cuestión de la seguridad alimentaria. De hecho, Beck y Beck-Gernsheim argumentan que es precisamente esa autocultura (y la vigilancia que conlleva de los individuos contra todo tipo de amenazas percibidas para su libertad y prosperidad individual) y no la crisis ecológica lo que impulsa las nuevas dinámicas sociopolíticas. En otras palabras, los individuos se ven obligados a cuestionar sus hábitos de consumo de un modo general. Los usos alimentarios, por ejemplo, se transforman radicalmente. Mientras que antes eran dados por tradiciones, costumbres y pertenencia a una determinada cultura, ahora los alimentos, su procedencia, su composición, su confección o sus efectos dejan de ser algo «natural» y se convierten en temas de cuestionamiento, decisión y elección, antes incluso de la ocurrencia de ninguna «crisis alimentaria» (concepto que además no es nuevo sino que data, aunque de forma distinta, del siglo XIX: Draper y Green, 2002).",
+      "pagina_inicio": 3,
+      "pagina_fin": 3,
+      "paginas": [
+        3
+      ],
+      "seccion": "2. La politización de la vida diaria y los efectos de segundo orden",
+      "es_titulo": false,
+      "id": "u6_p9",
+      "indice": 9,
+      "bloque_tts": 4,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 317.21,
+      "inicio_s": 317.4,
+      "fin_s": 413.42,
+      "tiempo_fmt": "05:17",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #4)"
+    },
+    {
+      "texto": "Otras actividades, como el consumo energético, se vuelven también problemáticas: los riesgos relacionados con la contaminación, el cambio climático global y el agotamiento de las fuentes no renovables convierten en relevantes las decisiones de cada individuo respecto a sus medios de transporte y de uso de energía en el hogar. Junto con los cambios a nivel individual, se están redefiniendo también conceptos como el de la «salud» y, especialmente, el de la «responsabilidad para con uno mismo». Por varias razones, la salud del individuo no solo se vuelve cada vez más importante en la sociedad actual sino que, además, se convierte en tarea cada vez más individual. Surge así la idea de que es el mismo individuo, sin intervención de toda la colectividad, quien es responsable del mantenimiento e su buen estado de salud y quien se debe preocupar de evitar las posibles consecuencias negativas que su propio comportamiento «irresponsable» podría acarrear. Esa redefinición radical del concepto de salud, así como la creciente percepción de la responsabilidad (y obligación) personal para mantenerla, hace aumentar la importancia percibida de una alimentación «buena y saludable». De hecho, impulsa el (auto) cuestionamiento de todos los aspectos relacionados con la alimentación. Pero la individualización y destradicionalización de la sociedad está, a su vez, vinculada a otras transformaciones profundas. Entre ellas, destaca la creciente preocupación social por los «efectos de segundo orden», resultado de la propia industrialización.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2. La politización de la vida diaria y los efectos de segundo orden",
+      "es_titulo": false,
+      "id": "u6_p10",
+      "indice": 10,
+      "bloque_tts": 5,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 413.23,
+      "inicio_s": 413.42,
+      "fin_s": 499.98,
+      "tiempo_fmt": "06:53",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #5)"
+    },
+    {
+      "texto": "Autores como Giddens o Beck indican que una de las características de las sociedades altamente industrializadas es que un creciente número de sus preocupaciones (y ocupaciones) principales están directamente vinculadas a los «efectos secundarios» producidos por el mismo proceso de industrialización. En otras palabras, los cambios sociales –colectivos e individuales–, así como las implicaciones ecológicas y de (percepción de) peligros y riesgos, que la misma industrialización con lleva están marcando el espacio dentro del cual se mueven actualmente las experiencias, así como una parte creciente de la acción política de los ciudadanos.Ya no son, entonces, los «problemas de primer orden» los que marcan el desarrollo de las sociedades. Ni las limitaciones «impuestas por la naturaleza» (cuya superación fue uno de los impulsos del desarrollo tecnológico de los últimos siglos) ni conceptos como, por ejemplo, la «lucha de clases» (importante elemento caracterizador de las sociedades industriales del siglo XIX y XX), que estructuraron la sociedad y la experiencia individual en tiempos anteriores, dominan hoy día la actividad de las personas. En cambio, lo que más preocupa a los ciudadanos son los efectos directos sobre la colectividad y el individuo que los «éxitos» (relativos a los objetivos iniciales del «proyecto de la modernidad») de la misma industrialización provocan: accidentes industriales de gran impacto, riesgos e incertidumbres tecnológicas (y su percepción), acelerados cambios globales (especialmente medioambientales). La experiencia individual de los ciudadanos se ve además afectada por profundas transformaciones sociales que han ido de la mano de la actual sociedad industrial y de consumo: el cambio radical del papel de las mujeres en todos los ámbitos, las ya mencionadas individualización y destradicionalización de las formas de vida, los conflictos dentro de las comunidades expertas y profesionales sobre la tecnología y sus consecuencias, etcétera.",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2. La politización de la vida diaria y los efectos de segundo orden",
+      "es_titulo": false,
+      "id": "u6_p11",
+      "indice": 11,
+      "bloque_tts": 6,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 499.8,
+      "inicio_s": 499.98,
+      "fin_s": 608.02,
+      "tiempo_fmt": "08:19",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #6)"
+    },
+    {
+      "texto": "Es importante tener en cuenta que la experiencia vital diaria de todas esas consecuencias de la industrialización se agudiza por el efecto de la congestión, o sea, la deceleración involuntaria de muchos procesos sociotecnológicos a causa de sus propios «efectos secundarios». Beck llama a ese efecto “technical gridlock”: de la misma forma que la congestión de las calles causada por el número creciente de automóviles ralentiza (y, en caso extremo, bloquea) la circulación (aunque el automóvil en sí facilita la movilidad), se pueden observar efectos de «congestión» en muchos otros ámbitos tecnológicos. Destacan especialmente los efectos provocados por la incertidumbre y el riesgo (percibido). Así, la incertidumbre respecto a los efectos sobre la salud y el medio ambiente ralentiza actualmente el desarrollo de la tecnología de los alimentos transgénicos. Lo que complica la situación es el carácter de los problemas de segundo orden (como los problemas ambientales y los peligros para la salud), fundamentalmente distintos de los problemas de primer orden de la modernidad (limitaciones impuestas por la naturaleza, influencia de la tradición, etcétera.): «Los problemas de segundo orden son los problemas de la modernidad industrial [..] son resultado del sistema institucional creado por la misma modernidad industrial.».",
+      "pagina_inicio": 5,
+      "pagina_fin": 5,
+      "paginas": [
+        5
+      ],
+      "seccion": "2. La politización de la vida diaria y los efectos de segundo orden",
+      "es_titulo": false,
+      "id": "u6_p12",
+      "indice": 12,
+      "bloque_tts": 7,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 607.85,
+      "inicio_s": 608.02,
+      "fin_s": 681.8,
+      "tiempo_fmt": "10:08",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "Una consecuencia inmediata es que muchas de las instituciones creadas para resolver los problemas de primer orden (y también otras creadas posteriormente para resolver los de segundo orden) se están convirtiendo en instituciones creadoras de más problemas. De hecho, la erradicación de los «efectos secundarios» de la industrialización en las sociedades altamente industrializadas se ha convertido en prácticamente imposible. El sistema socioeconómico global se ve atrapado en una serie de paradojas fundamentales. Una de ellas es la paradójica situación de que la misma tecnología que hizo posible la creación del concepto de «seguridad» (uno de los motivos impulsores de la sociedad industrializada) ahora parezca amenazar esa misma seguridad. También esas paradojas, junto con los efectos de segundo orden, tienen que ser negadas y minimizadas, lo que a fin de cuentas resulta imposible. Su visibilidad, aunque parcial e indirecta, impulsa a muchos ciudadanos a la duda y la protesta, mientras hace incrementar la falta de confianza en las instituciones reguladoras. Como resultado de todos esas transformaciones, una parte importante de la acción política de los ciudadanos se está desplazando desde los mecanismos y foros de participación democráticos «tradicionales» (voto, militancia en partidos, parlamentos, etcétera.) hacia otras expresiones y lugares de participación: grupos de la sociedad civil, acción cívica relacionada con determinados temas bien circunscritos (por ejemplo, relacionados con el medio ambiente), decisiones de consumo como actos políticos, etcétera. Al mismo tiempo, esas transformaciones están impulsando la reformulación de los sistemas de regulación de la ciencia y la tecnología, que dejan de funcionar según las pautas del «gobierno» y de las «políticas públicas» y empiezan a asumir características de la «gobernanza».",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "2. La politización de la vida diaria y los efectos de segundo orden",
+      "es_titulo": false,
+      "id": "u6_p13",
+      "indice": 13,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 681.62,
+      "inicio_s": 681.8,
+      "fin_s": 786.64,
+      "tiempo_fmt": "11:21",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #8)"
+    },
+    {
+      "texto": "3. La gobernanza y sus encrucijadas.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "3. La gobernanza y sus encrucijadas",
+      "es_titulo": true,
+      "id": "u6_p14",
+      "indice": 14,
+      "bloque_tts": 8,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 786.09,
+      "inicio_s": 786.64,
+      "fin_s": 790.16,
+      "tiempo_fmt": "13:06",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #8)"
+    },
+    {
+      "texto": "Es en este contexto en el que se produce la transición entre los mecanismos de decisión propios del “gobierno” a los de la “gobernanza”. En la época de la modernización reflexiva asistimos a la centralidad decreciente del estado como actor político, al mismo tiempo que se politizan otras esferas de la sociedad. Esto significa una interacción en aumento entre estado, mercado y sociedad civil, y unos roles menos definidos para cada uno de ellos. El tipo de toma de decisiones característico de la gobernanza se puede describir como pluricéntrico, estructurado en complejas redes mediante las cuales se organizan las relaciones entre diversos actores relativamente autónomos pero, al mismo tiempo, altamente interdependientes. Las relaciones entre esos actores están sujetas a incertidumbres, en parte porque sus procesos de interrelación se caracterizan por la negociación, la cooperación, la concertación, la manipulación de la información y la formación de alianzas (en vez de basarse en coerción, comando y control). En otras palabras, lo importante para la toma de decisiones son los procesos de interacción entre actores heterogéneos, más que las estructuras formales o jerarquías de gobierno. Otros elementos importantes de los procesos de gobernanza son el carácter multinivel de muchas de las redes, que abarcan actores internacionales, supranacionales, nacionales, regionales y locales; el carácter multitipo de los actores (privados, públicos, semipúblicos y mixtos públicosprivados); problemas emergentes en relación con la responsabilidad, la rendición de cuentas (accountability), la legitimidad, la independencia, la confianza y la capacidad de respuesta (responsiveness); así como el surgimiento de nuevos contrapoderes.",
+      "pagina_inicio": 6,
+      "pagina_fin": 6,
+      "paginas": [
+        6
+      ],
+      "seccion": "3. La gobernanza y sus encrucijadas",
+      "es_titulo": false,
+      "id": "u6_p15",
+      "indice": 15,
+      "bloque_tts": 9,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 789.98,
+      "inicio_s": 790.16,
+      "fin_s": 889.22,
+      "tiempo_fmt": "13:10",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #9)"
+    },
+    {
+      "texto": "En este escenario, aumentan las prácticas de participación y deliberación entre un número creciente de actores en juego. En el ámbito de la ciencia y la tecnología, la idea de la “democratización” de las políticas es una de las consecuencias del paso del gobierno a la gobernanza. La crítica social de los movimientos de los años sesenta y setenta puso en tela de juicio tanto las decisiones políticas y económicas que no tenían en cuenta los efectos ambientales y sociales como la forma en que se tomaban esas decisiones, sin suficiente información ni participación de las personas afectadas. Las protestas locales, la presión de grupos de científicos, organizaciones de tipo diverso y la amplificación proporcionada por los medios de comunicación fueron factores importantes para la definición de los problemas y su gestión política. La gestión de los problemas medioabientales es un buen ejemplo. A partir de los años setenta comenzaron a adoptarse medidas para tratar de evaluar y prevenir el daño ecológico, institucionalizándose la política ambiental con la aparición de iniciativas legislativas, la creación de departamentos de medio ambiente, el establecimiento de “evaluaciones de impacto ambiental”.. Sin embargo, aunque la sociedad civil tuvo un papel importante a la hora de impulsar la aparición de políticas ambientales, en esta primera fase quedó fuera del desarrollo de las mismas, en el que participaron el estado, la industria y (algunos) expertos. A partir de los años noventa, no obstante, se tiende en general a considerar ilegítimas las políticas no participativas, y a ampliar los tipos de actores implicados. Sin embargo, esta participación del público afectado y de los cada vez más numerosos grupos ambientalistas resulta ser en gran medida reactiva, canalizada a través de la presentación de alegaciones a determinados proyectos u otro tipo de acciones de protesta (van Tatenhove y Leroy, 2003).",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3. La gobernanza y sus encrucijadas",
+      "es_titulo": false,
+      "id": "u6_p16",
+      "indice": 16,
+      "bloque_tts": 10,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 889.03,
+      "inicio_s": 889.22,
+      "fin_s": 995.34,
+      "tiempo_fmt": "14:49",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #10)"
+    },
+    {
+      "texto": "Pese a sus dificultades, conceptuales, metodológicas y prácticas, el paso del gobierno a la gobernanza característico de la “modernización tardía” y reflexiva de Beck, introduce nuevas formas de participación ligadas a un tipo de democracia deliberativa en las que se prima el razonamiento público, la consulta argumentativa y los procesos de aprendizaje colectivo en los que los participantes (políticos, ciudadanos..) están abiertos a reconsiderar sus puntos de vista y a llegar a un entendimiento común. La sociedad ya no puede concebirse como algo separado del estado que la gobierna, y surgen con fuerza zonas de hibridación entre los ámbitos antes separados del estado, el mercado y la sociedad civil. Los nuevos actores están ahora implicados en definir problemas y formular soluciones.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3. La gobernanza y sus encrucijadas",
+      "es_titulo": false,
+      "id": "u6_p17",
+      "indice": 17,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 995.16,
+      "inicio_s": 995.34,
+      "fin_s": 1041.12,
+      "tiempo_fmt": "16:35",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "La evolución política de nuestras sociedades ha dado lugar así a una intensificación de las sensibilidades sociales e institucionales respecto a la necesidad de rendir cuentas en todos los ámbitos de las políticas públicas y de atender las opiniones y actitudes sociales al respecto. Esta evolución, junto con la creciente importancia de los impactos sociales y naturales de la ciencia y la tecnología, ha producido que, en las últimas décadas, buena parte del mundo académico y numerosos gobiernos democráticos hayan sido receptivos frente a estos cambios, acumulándose en los últimos años numerosas propuestas y experiencias de participación pública en materia de ciencia y tecnología. La ciencia y la tecnología son hoy demasiado importantes - se reclama - como para que queden únicamente en manos de los científicos. Son cosa de todos.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3. La gobernanza y sus encrucijadas",
+      "es_titulo": false,
+      "id": "u6_p18",
+      "indice": 18,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1041.11,
+      "inicio_s": 1041.12,
+      "fin_s": 1088.26,
+      "tiempo_fmt": "17:21",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "Pero también se han escuchado voces discrepantes sobre las virtudes de la participación en un ámbito tan relevante y especializado como el de la ciencia y la tecnología. Precisamente por esa importancia actual de la ciencia y la tecnología – se replica - es hoy más pertinente que nunca asegurar su buen gobierno por parte de aquellos que realmente las conocen. Desde este otro punto de vista, lo que se necesita es el respaldo social a la ciencia y la difusión de la misma, no la democratización de su regulación.",
+      "pagina_inicio": 7,
+      "pagina_fin": 7,
+      "paginas": [
+        7
+      ],
+      "seccion": "3. La gobernanza y sus encrucijadas",
+      "es_titulo": false,
+      "id": "u6_p19",
+      "indice": 19,
+      "bloque_tts": 11,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1087.63,
+      "inicio_s": 1088.26,
+      "fin_s": 1116.6,
+      "tiempo_fmt": "18:08",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #11)"
+    },
+    {
+      "texto": "¿Cuáles son las encrucijadas de esa discusión? El Diccionario de la Real Academia (21ª edición) define \"encrucijada\" como el lugar donde se cruzan dos o más caminos, pero también como una situación difícil donde no se sabe qué conducta seguir. El tema de la democratización de la ciencia se acomoda a ambos significados. Por un lado hay varias formas de entender el desafío de la democratización, y, por otro, existe un debate acerca de cómo deberíamos hacer frente a ese reto en el marco de la sociedad actual, es decir, acerca del sentido predominante bajo el que deberíamos entenderlo.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3. La gobernanza y sus encrucijadas",
+      "es_titulo": false,
+      "id": "u6_p20",
+      "indice": 20,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": true,
+      "inicio_s_estimado_previo": 1116.38,
+      "inicio_s": 1116.6,
+      "fin_s": 1151.64,
+      "tiempo_fmt": "18:36",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "La llamada \"Declaración de Santo Domingo\", un documento preparatorio de la cumbre sobre la ciencia de Budapest, recoge las sensibilidades latinoamericanas sobre lo que debería ser un nuevo contrato social para la ciencia. En ese documento se distinguen tres formas de entender el desafío de la democratización de la ciencia. \"Democratización\", en un primer sentido, hace referencia a \"llevar la ciencia a los ciudadanos\", es decir, a la alfabetización científico-tecnológica. En un segundo sentido, \"democratización\" hace referencia a reorientar las políticas públicas de ciencia e innovación hacia la demanda y la pertinencia social, en línea con el concepto más reciente de una “innovación responsable”. Y por último, en un tercer sentido, \"democratización\" hace referencia a la apertura de las políticas en materia de ciencia, tecnología e innovación a las perspectivas y participación de la ciudadanía.",
+      "pagina_inicio": 8,
+      "pagina_fin": 8,
+      "paginas": [
+        8
+      ],
+      "seccion": "3. La gobernanza y sus encrucijadas",
+      "es_titulo": false,
+      "id": "u6_p21",
+      "indice": 21,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1150.14,
+      "inicio_s": 1151.64,
+      "fin_s": 1202.98,
+      "tiempo_fmt": "19:11",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    },
+    {
+      "texto": "Los tres sentidos de la “democratización de la ciencia” que acabamos de señalar apuntan a distintas cuestiones que se abordarán en diferentes asignaturas y especializaciones de este Máster y cuya actualidad está relacionada con las diferentes líneas de trabajo de los estudios sobre ciencia, tecnología e innovación contemporáneos que se han visto en este tema.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "3. La gobernanza y sus encrucijadas",
+      "es_titulo": false,
+      "id": "u6_p22",
+      "indice": 22,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1203.1,
+      "inicio_s": 1202.98,
+      "fin_s": 1222.42,
+      "tiempo_fmt": "20:02",
+      "precision_tiempo": "verificado_audio",
+      "nota_precision": "Segundo verificado mediante contraste acústico y reconocimiento de voz sobre el MP3"
+    },
+    {
+      "texto": "Fin del audiolibro de la unidad: TEMA 2. Unidad 6. Del gobierno a la gobernanza.",
+      "pagina_inicio": 9,
+      "pagina_fin": 9,
+      "paginas": [
+        9
+      ],
+      "seccion": "Cierre de la unidad",
+      "es_titulo": true,
+      "id": "u6_p23",
+      "indice": 23,
+      "bloque_tts": 12,
+      "es_inicio_bloque_tts": false,
+      "inicio_s_estimado_previo": 1223.01,
+      "inicio_s": 1222.42,
+      "fin_s": 1230.02,
+      "tiempo_fmt": "20:22",
+      "precision_tiempo": "aproximado_acustico",
+      "nota_precision": "Tiempo aproximado (alineado a pausa acústica en bloque TTS #12)"
+    }
+  ],
+  "evaluacion": {
+    "orales": [
+      {
+        "id": "u6_o1",
+        "pregunta": "Explica qué son la politización de la vida diaria y los 'efectos de segundo orden' (incluyendo el bloqueo por congestión), en qué consiste el paso del gobierno a la gobernanza y cuáles son los tres sentidos de la democratización de la ciencia según la Declaración de Santo Domingo.",
+        "pagina": 4,
+        "paginas_ref": "Páginas 3 a 9",
+        "seccion": "2. Efectos de segundo orden y 3. La gobernanza y sus encrucijadas",
+        "ideas_rubrica": [
+          {
+            "id": "u6_o1_i1",
+            "titulo": "Individualización, politización cotidiana y 'efectos de segundo orden' / congestión (págs. 3–6)",
+            "detalle": "Explicar que las decisiones diarias (alimentación, energía, salud) se vuelven reflexivas y que preocupan los problemas de segundo orden (creados por el propio éxito industrial) y el efecto de congestión (technical gridlock).",
+            "pagina": 5,
+            "pistas": [
+              "segundo orden",
+              "politizacion",
+              "individualizacion",
+              "alimentacion",
+              "salud",
+              "congestion",
+              "gridlock",
+              "industrializacion"
+            ]
+          },
+          {
+            "id": "u6_o1_i2",
+            "titulo": "Paso del Gobierno a la Gobernanza pluricéntrica y deliberativa (págs. 6–7)",
+            "detalle": "Contrastar el gobierno estatal jerárquico (comando y control) con la gobernanza en redes pluricéntricas, multinivel y multitipo basadas en negociación, cooperación, deliberación y rendición de cuentas.",
+            "pagina": 6,
+            "pistas": [
+              "gobierno",
+              "gobernanza",
+              "pluricentric",
+              "multinivel",
+              "deliberativa",
+              "negociacion",
+              "rendicion de cuentas",
+              "accountability"
+            ]
+          },
+          {
+            "id": "u6_o1_i3",
+            "titulo": "Los 3 sentidos de la democratización de la ciencia en la Declaración de Santo Domingo (págs. 8–9)",
+            "detalle": "1) Alfabetización científico-tecnológica (llevar la ciencia al ciudadano); 2) reorientar las políticas hacia la demanda y pertinencia social (innovación responsable); y 3) apertura a la participación activa ciudadana.",
+            "pagina": 8,
+            "pistas": [
+              "santo domingo",
+              "tres sentidos",
+              "alfabetizacion",
+              "demanda",
+              "pertinencia",
+              "innovacion responsable",
+              "participacion"
+            ]
+          }
+        ],
+        "respuesta_modelo": "En la Unidad 6 (págs. 3–6), la destradicionalización politiza la vida diaria (alimentación, energía, salud) y sitúa en el centro los 'efectos de segundo orden' —los riesgos producidos por el propio éxito de la modernidad industrial— junto al efecto de 'congestión' (technical gridlock). Esto impulsa la transición desde el 'gobierno' jerárquico estatal hacia la 'gobernanza' (págs. 6–7): redes pluricéntricas, multinivel y deliberativas entre Estado, mercado y sociedad civil. Finalmente, la Declaración de Santo Domingo (págs. 8–9) sintetiza el reto de la democratización de la ciencia en tres sentidos: 1) alfabetización científico-tecnológica; 2) orientación de la I+D a la demanda social (innovación responsable); y 3) apertura de las políticas públicas a la participación ciudadana."
+      }
+    ],
+    "test": [
+      {
+        "pregunta": "Según la Declaración de Santo Domingo citada al final de la Unidad 6 (págs. 8–9), ¿cuáles son los tres sentidos en que se entiende la 'democratización de la ciencia'?",
+        "opciones": [
+          "1) Privatizar los laboratorios, 2) eliminar las agencias reguladoras y 3) votar las leyes físicas en el parlamento.",
+          "1) Llevar la ciencia a los ciudadanos (alfabetización científico-tecnológica); 2) reorientar las políticas públicas hacia la demanda y pertinencia social (innovación responsable); y 3) abrir las políticas de ciencia, tecnología e innovación a las perspectivas y participación de la ciudadanía.",
+          "Reducir la enseñanza de las ciencias en la educación básica."
+        ],
+        "correcta": 1,
+        "pagina": 8,
+        "explicacion": "En las páginas 8 y 9 se recogen literalmente esos tres sentidos de la democratización de la ciencia formulados en la Declaración de Santo Domingo."
+      }
+    ]
+  }
+}
