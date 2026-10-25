@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0f172a" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <title>Sistema de Estudio MUECTI V3 · Auditoría Acústica (18 Puntos), Profesor Verificado, Seguridad XSS y Paquete Portátil</title>
+  <title>MUECTI · Estudiar con audio y PDF</title>
   <style>
     :root {
       --bg: #0f172a;
@@ -33,6 +33,7 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      margin-left: 214px;
     }
     header {
       background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
@@ -53,7 +54,9 @@
     }
     .brand h1 { font-size: 1.1rem; font-weight: 700; }
     .brand p { font-size: 0.78rem; color: var(--text-muted); }
-    .unit-selector-bar { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .unit-selector-bar { display: flex; align-items: center; gap: 6px; }
+    .unit-selector-bar label { font-size: 0.8rem; color: var(--text-muted); font-weight: 700; }
+    .unit-selector-bar select { max-width: min(48vw, 330px); background: var(--bg-panel); color: var(--text); border: 1px solid var(--primary); border-radius: 8px; padding: 8px; font: inherit; }
     .unit-pill {
       background: var(--bg-panel); color: var(--text-muted);
       border: 1px solid var(--border); padding: 6px 11px;
@@ -66,19 +69,20 @@
       border-color: var(--primary); box-shadow: 0 0 10px rgba(56, 189, 248, 0.35);
     }
     nav.tabs {
-      background: var(--bg-panel); border-bottom: 1px solid var(--border);
-      padding: 0 22px; display: flex; gap: 6px; overflow-x: auto;
+      background: var(--bg-panel); border-right: 1px solid var(--border);
+      position: fixed; inset: 0 auto 0 0; width: 214px; z-index: 110;
+      padding: 18px 10px; display: flex; flex-direction: column; gap: 7px; overflow-y: auto;
     }
     .tab-btn {
       background: transparent; color: var(--text-muted);
-      border: none; border-bottom: 3px solid transparent;
-      padding: 11px 15px; font-size: 0.88rem; font-weight: 600;
+      border: 1px solid transparent; border-left: 4px solid transparent; border-radius: 9px;
+      padding: 12px 10px; font-size: 0.88rem; font-weight: 600;
       cursor: pointer; display: flex; align-items: center; gap: 7px;
-      white-space: nowrap; transition: all 0.16s;
+      white-space: normal; text-align: left; width: 100%; transition: all 0.16s;
     }
     .tab-btn:hover { color: var(--text); background: rgba(255,255,255,0.03); }
     .tab-btn.active {
-      color: var(--primary); border-bottom-color: var(--primary);
+      color: var(--primary); border-left-color: var(--primary);
       background: rgba(56, 189, 248, 0.06);
     }
     .badge {
@@ -125,10 +129,12 @@
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
     .study-grid {
-      display: grid; grid-template-columns: 280px 1fr 370px;
+      display: grid; grid-template-columns: 230px minmax(0, 1fr);
       gap: 16px; align-items: start;
     }
-    .study-grid.with-pdf { grid-template-columns: 240px 1fr 540px; }
+    #panelDerecho { grid-column: 1 / -1; }
+    .study-grid.with-pdf { grid-template-columns: 220px minmax(0, 1fr) minmax(320px, 0.9fr); }
+    .study-grid.with-pdf #panelDerecho { grid-column: auto; }
     @media (max-width: 1180px) {
       .study-grid, .study-grid.with-pdf { grid-template-columns: 1fr; }
     }
@@ -225,8 +231,15 @@
     /* Profesor Virtual */
     .tutor-layout { display: grid; grid-template-columns: 1fr 370px; gap: 18px; }
     @media (max-width: 1024px) { .tutor-layout { grid-template-columns: 1fr; } }
+    #tab-profesor .tutor-layout > .panel-box:first-child { display: flex; flex-direction: column; }
+    #tab-profesor .tutor-layout > .panel-box:first-child > .panel-title { order: 1; }
+    #tab-profesor .teacher-tools { order: 2; }
+    #tab-profesor .input-row { order: 3; }
+    #tab-profesor .tutor-status { order: 4; }
+    #tab-profesor .chat-box { order: 5; }
+    #tab-profesor .teacher-note { order: 6; }
     .chat-box {
-      height: 56vh; overflow-y: auto; display: flex; flex-direction: column;
+      min-height: 180px; max-height: 48vh; overflow-y: auto; display: flex; flex-direction: column; position: relative;
       gap: 14px; padding: 14px; background: #131c31; border-radius: 10px;
       border: 1px solid var(--border); margin-bottom: 12px;
     }
@@ -339,6 +352,11 @@
     .teacher-tools { margin: 10px 0; }
     .teacher-note { color: var(--text-muted); font-size: 0.82rem; margin: 8px 0; }
     .teacher-note strong { color: var(--text); }
+    .tutor-status { margin: 10px 0; padding: 10px 12px; border-radius: 9px; background: var(--highlight-bg); border: 1px solid var(--highlight-border); font-size: 0.86rem; }
+    .reading-focus { background: #0b2538; border: 2px solid var(--primary); border-radius: 10px; padding: 12px; margin: 10px 0; max-height: 30vh; overflow-y: auto; scroll-margin-top: 180px; }
+    .reading-focus small { display: block; color: #bae6fd; margin-bottom: 6px; }
+    .spoken-segment { border-radius: 4px; padding: 1px 2px; }
+    .spoken-segment.current { background: #facc15; color: #172033; font-weight: 750; box-decoration-break: clone; }
     .mobile-pdf-note { display: none; }
     .mobile-reader-toggle, .pdf-follow { display: none; }
     .pdf-follow { background: #111c30; padding: 10px; border-radius: 10px; }
@@ -347,37 +365,34 @@
       border-radius: 10px; background: var(--highlight-bg); font-size: 0.95rem; }
     [hidden] { display: none !important; }
     @media (max-width: 700px) {
+      body { margin-left: 80px; }
       header { padding: 10px 12px; }
       .brand h1 { font-size: 0.98rem; }
       .brand p { display: none; }
-      .unit-selector-bar { width: 100%; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
-      .unit-pill { flex: none; }
+      .unit-selector-bar { width: 100%; }
+      .unit-selector-bar select { max-width: 100%; width: 100%; }
       nav.tabs {
-        position: fixed; inset: auto 0 0; z-index: 100; padding: 4px 4px calc(4px + env(safe-area-inset-bottom));
-        display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0;
-        overflow: visible; border-top: 1px solid var(--border); border-bottom: 0;
-        box-shadow: 0 -5px 18px rgba(0, 0, 0, 0.35);
+        width: 80px; padding: 8px 4px; gap: 5px;
       }
-      .tab-btn { min-width: 0; min-height: 54px; padding: 5px 2px; justify-content: center;
-        flex-direction: column; gap: 1px; white-space: normal; text-align: center; font-size: 0.68rem;
-        border-bottom: 0; border-top: 3px solid transparent; }
-      .tab-btn.active { border-top-color: var(--primary); }
+      .tab-btn { min-width: 0; min-height: 70px; padding: 6px 3px; justify-content: center;
+        text-align: center; font-size: 0.72rem; }
       .tab-label-full, .tab-btn .badge { display: none; }
       .tab-label-short { display: block; }
-      main { padding: 12px 12px calc(84px + env(safe-area-inset-bottom)); }
+      main { padding: 12px 8px 30px; min-width: 0; }
       .player-bar { padding: 8px 10px; gap: 7px; top: 0; }
-      .player-controls { width: 100%; display: grid; grid-template-columns: repeat(4, 1fr) auto; gap: 5px; }
+      .player-controls { width: 100%; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; }
       .player-controls .btn { min-height: 44px; justify-content: center; padding: 6px 4px; font-size: 0.74rem; }
-      .player-controls .speed-select { min-width: 54px; max-width: 74px; font-size: 0.75rem; }
+      .player-controls .speed-select { grid-column: 1 / -1; width: 100%; font-size: 0.75rem; }
       .player-timeline { width: 100%; min-width: 0; }
       .timeline-top { flex-wrap: wrap; font-size: 0.72rem; }
       #lblUnidadActual { width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
       #lblPrecisionViva { display: none; }
-      .live-pdf-indicator { width: 100%; padding: 4px 7px; gap: 6px; justify-content: space-between; }
+      .live-pdf-indicator { display: none; }
       .live-pdf-indicator .btn { min-height: 40px; padding: 6px 8px; }
       #lnkAbrirPdfVivo { display: none; }
       .study-grid { display: flex; flex-direction: column; }
       .study-grid > .panel-box { width: 100%; }
+      #panelDerecho { grid-column: auto; }
       .reader-panel { order: 0; }
       .study-grid > .index-panel { order: 1; }
       #panelDerecho { order: 2; }
@@ -393,6 +408,9 @@
       .teacher-tools > *, .walk-actions .btn { min-height: 44px; }
       .teacher-tools select { max-width: 100%; }
       .input-row input { min-width: 0; width: 100%; }
+      .input-row .btn { flex: 1 1 100%; justify-content: center; min-height: 44px; }
+      .chat-box { max-height: 42vh; }
+      .reading-focus { max-height: 38vh; }
       #panelCaminataActiva { grid-template-columns: 1fr !important; }
       #tab-evaluacion .study-grid { display: flex !important; flex-direction: column; }
       .btn-ctrl { padding: 8px 11px; font-size: 0.84rem; }
@@ -452,22 +470,22 @@
     </div>
   </div>
 
-  <!-- PESTAÑAS DE LAS 5 FUNCIONES CONECTADAS -->
+  <!-- NAVEGACIÓN VERTICAL SIEMPRE VISIBLE -->
   <nav class="tabs" aria-label="Funciones de estudio">
     <button class="tab-btn active" id="tabBtn_reproductor" onclick="cambiarTab('reproductor', this)">
-      <span class="tab-label-full">1. 🎧 Reproductor y PDF Sincronizado <span class="badge" id="badgeParrafos">0</span></span><span class="tab-label-short">🎧<br>Escuchar</span>
+      <span class="tab-label-full">🎧 Escuchar y leer <span class="badge" id="badgeParrafos">0</span></span><span class="tab-label-short">🎧<br>Leer</span>
     </button>
     <button class="tab-btn" id="tabBtn_profesor" onclick="cambiarTab('profesor', this)">
-      <span class="tab-label-full">2. 🧑‍🏫 Profesor Virtual (Síntesis vs. Citas)</span><span class="tab-label-short">🧑‍🏫<br>Profesor</span>
+      <span class="tab-label-full">🧑‍🏫 Profesor</span><span class="tab-label-short">🧑‍🏫<br>Profesor</span>
     </button>
     <button class="tab-btn" id="tabBtn_evaluacion" onclick="cambiarTab('evaluacion', this)">
-      <span class="tab-label-full">3. 🗣️ Evaluación Oral por Ideas y Test</span><span class="tab-label-short">✅<br>Practicar</span>
+      <span class="tab-label-full">✅ Práctica y test</span><span class="tab-label-short">✅<br>Test</span>
     </button>
     <button class="tab-btn" id="tabBtn_repasos" onclick="cambiarTab('repasos', this)">
-      <span class="tab-label-full">4. 📅 Calendario de Repasos y Modo Caminata <span class="badge" id="badgeRepasos">0</span></span><span class="tab-label-short">🚶<br>Caminar</span>
+      <span class="tab-label-full">🚶 Caminar y repasar <span class="badge" id="badgeRepasos">0</span></span><span class="tab-label-short">🚶<br>Caminar</span>
     </button>
     <button class="tab-btn" id="tabBtn_biblioteca" onclick="cambiarTab('biblioteca', this)">
-      <span class="tab-label-full">5. 📚 Biblioteca, Auditoría (18 Puntos) y Portabilidad</span><span class="tab-label-short">📚<br>Más</span>
+      <span class="tab-label-full">📚 Biblioteca y descargas</span><span class="tab-label-short">📚<br>Biblioteca</span>
     </button>
   </nav>
 
@@ -520,7 +538,8 @@
 
     <!-- MÓDULO 1: REPRODUCTOR DE ESTUDIO Y TRANSCRIPCIÓN VINCULADA AL PDF -->
     <section id="tab-reproductor" class="tab-panel active">
-      <div class="panel-box" style="margin-bottom: 14px; padding: 10px 14px; background: rgba(15, 23, 42, 0.75); font-size: 0.81rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+      <details class="panel-box" style="margin-bottom: 14px; padding: 10px 14px; background: rgba(15, 23, 42, 0.75); font-size: 0.81rem;">
+        <summary style="cursor:pointer; font-weight:700;">ℹ️ Cómo se sincronizan el audio, el texto y el PDF</summary>
         <div>
           <strong>🔍 Transparencia de Sincronización Audio–Texto–PDF:</strong>
           <span class="tag-time exact" style="margin-left:6px;">🎧 MM:SS (verificado en audio)</span> = inicio de frase comprobado escuchando y contrastando el MP3 (comienzo, mitad y final de cada unidad) ·
@@ -528,7 +547,7 @@
           <span class="tag-time manual" style="margin-left:6px;">📌 MM:SS (corregido manual)</span> = fijado manualmente por ti (recalibra los párrafos vecinos).
         </div>
         <button class="mini-btn" onclick="restablecerCorreccionesUnidad()" title="Borrar calibraciones manuales de esta unidad">↺ Restablecer tiempos de unidad</button>
-      </div>
+      </details>
 
       <div class="study-grid" id="studyGrid">
         <!-- Columna izquierda: Índice de apartados con página del PDF -->
@@ -555,6 +574,10 @@
           <div class="reader-status" aria-live="polite">
             <div><strong id="readerCurrentPage">Página actual</strong><br><span id="readerCurrentSection">El texto que suena se ilumina abajo.</span></div>
             <button class="mini-btn" onclick="seguirLecturaActual()">↘ Seguir texto</button>
+          </div>
+          <div class="reading-focus" id="readingFocus" aria-label="Texto que acompaña al audio">
+            <small>🔊 Sigue aquí el fragmento que se escucha · frase estimada</small>
+            <div id="readingFocusText">Selecciona una unidad y pulsa Reproducir.</div>
           </div>
           <div class="pdf-follow" id="pdfFollowPanel">
             <div class="teacher-note" id="pdfFollowStatus">Preparando la página actual del PDF...</div>
@@ -597,7 +620,7 @@
       <div class="tutor-layout">
         <div class="panel-box">
           <div class="panel-title">
-            <span>🧑‍🏫 Profesor Virtual MUECTI · Síntesis Preparadas Etiquetadas y Fragmentos Literales del PDF</span>
+            <span>🧑‍🏫 Profesor · pregunta sobre los PDF</span>
             <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
               <label style="font-size:0.79rem; color:var(--text-muted);">
                 Alcance:
@@ -612,11 +635,8 @@
 
           <div class="chat-box" id="chatBox">
             <div class="msg bot">
-              <strong>👋 Modo Local Honesto y Auditado (100% respaldado en los PDFs oficiales de las 6 unidades):</strong><br>
-              Cuando me hagas una pregunta (con las palabras del texto o formulada con otras palabras), te responderé con total transparencia:<br>
-              1️⃣ <strong>📘 Síntesis preparada del apartado:</strong> Si tu consulta corresponde a uno de los 16 ejes temáticos del curso, te mostraré un resumen académico previamente redactado y verificado contra las páginas exactas del PDF, etiquetado explícitamente como <em>«Síntesis preparada del apartado»</em>.<br>
-              2️⃣ <strong>📄 Fragmentos textuales encontrados en el PDF:</strong> Siempre te mostraré las citas literales extraídas del documento con su <strong>Unidad, Página exacta y salto al audio</strong>. Si haces una pregunta muy específica que no tiene una síntesis preelaborada, te mostraré directamente los fragmentos literales sin fabricar un resumen mecánico.<br>
-              ⚠️ <em>Si preguntas por algo que los PDFs no abordan, te indicaré explícitamente qué conceptos no figuran en los documentos.</em>
+              <strong>👋 Pregúntame sobre los materiales del máster.</strong><br>
+              La respuesta aparecerá aquí, con la unidad y la página para comprobarla. Los ejemplos de apoyo se identifican aparte.
             </div>
           </div>
 
@@ -637,6 +657,7 @@
             <input type="text" id="txtPreguntaTutor" placeholder="Pregunta con tus palabras (ej: ¿Cómo se unieron la rama académica y la activista en los estudios CTS?)" onkeydown="if(event.key==='Enter') enviarPreguntaTutor()" />
             <button class="btn btn-primary" id="btnEnviarTutor" onclick="enviarPreguntaTutor()">Consultar al Profesor</button>
           </div>
+          <div class="tutor-status" id="tutorStatus" role="status" aria-live="polite">Escribe una pregunta o pulsa «Preguntar por voz». La respuesta aparecerá justo debajo.</div>
         </div>
 
         <div style="display:flex; flex-direction:column; gap:14px;">
@@ -854,6 +875,7 @@
     let visorPdfAbierto = false;
     let filtroCalendarioActual = 'todos';
     let audioPausadoPorProfesor = false;
+    let ultimaRespuestaTutorVoz = '';
     const consultasPendientesIA = new Map();
     let indicePracticaPDF = 0;
     let practicaPDFRevelada = false;
@@ -1058,11 +1080,9 @@
 
     function renderBarraUnidades() {
       const bar = document.getElementById('unitSelectorBar');
-      bar.innerHTML = DATA.unidades.map((u, idx) => `
-        <button class="unit-pill ${idx === unidadActualIdx ? 'active' : ''}" id="btnUnit_${u.numero}" onclick="seleccionarUnidad(${idx})">
-          Unidad ${u.numero}: ${escaparHTML(u.titulo_corto.length > 30 ? u.titulo_corto.slice(0, 30) + '…' : u.titulo_corto)}
-        </button>
-      `).join('');
+      bar.innerHTML = `<label for="selUnidad">Unidad</label><select id="selUnidad" aria-label="Elegir unidad" onchange="seleccionarUnidad(Number(this.value))">
+        ${DATA.unidades.map((u, idx) => `<option value="${idx}" ${idx === unidadActualIdx ? 'selected' : ''}>${u.numero}. ${escaparHTML(u.titulo_corto)}</option>`).join('')}
+      </select>`;
     }
 
     function seleccionarUnidad(idx, saltarASegundo = null) {
@@ -1086,6 +1106,8 @@
       document.getElementById('lblTiempoTotal').textContent = formatearSegundos(u.duracion_estimada_s);
 
       renderSeccionesYParrafosUnidad();
+      parrafoActivoIdx = 0;
+      resaltarParrafoActivo(0, false);
       actualizarIndicadorVivo(0);
       renderMarcadoresUnidad();
       renderSugerenciasTutor();
@@ -1341,10 +1363,11 @@
           resaltarParrafoActivo(encontradoIdx);
           actualizarIndicadorVivo(encontradoIdx);
         }
+        actualizarFraseLectura(actual);
       });
     }
 
-    function resaltarParrafoActivo(idx) {
+    function resaltarParrafoActivo(idx, seguir = true) {
       const anterior = document.getElementById(`pcard_${parrafoActivoIdx}`);
       if (anterior) {
         anterior.classList.remove('active');
@@ -1355,8 +1378,9 @@
       if (nuevo) {
         nuevo.classList.add('active');
         nuevo.setAttribute('aria-current', 'true');
-        if (document.getElementById('chkAutoScroll').checked && document.getElementById('tab-reproductor').classList.contains('active')) {
-          nuevo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (seguir && document.getElementById('chkAutoScroll').checked && document.getElementById('tab-reproductor').classList.contains('active')) {
+          const destino = document.querySelector('.reader-panel.pdf-mode') ? document.getElementById('readingFocus') : nuevo;
+          destino.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
       }
     }
@@ -1392,7 +1416,12 @@
       document.getElementById('readerCurrentPage').textContent = `Unidad ${u.numero} · Pág. ${pagEf} · Párrafo ${idxParrafo + 1} de ${u.parrafos.length}`;
       document.getElementById('readerCurrentSection').textContent = p.seccion;
       document.getElementById('pdfFollowPage').textContent = `Unidad ${u.numero} · Página ${pagEf} · ${p.seccion}`;
-      document.getElementById('pdfFollowParagraph').textContent = p.texto;
+      const fragmentos = dividirFrasesLectura(p.texto);
+      const htmlFrases = fragmentos.map((frase, idx) => `<span class="spoken-segment" data-frase="${idx}">${escaparHTML(frase)} </span>`).join('');
+      document.getElementById('pdfFollowParagraph').innerHTML = htmlFrases;
+      document.getElementById('readingFocusText').innerHTML = htmlFrases;
+      document.getElementById('readingFocus').dataset.paragraph = `${u.numero}_${idxParrafo}`;
+      actualizarFraseLectura(document.getElementById('mainAudio').currentTime || 0);
       const urlPdf = `${encodeURI(u.archivo_pdf)}#page=${pagEf}`;
       document.getElementById('lnkAbrirPdfVivo').href = urlPdf;
       document.getElementById('lnkAbrirPdfVivo').textContent = `📖 Ir a Pág. ${pagEf} en PDF`;
@@ -1419,6 +1448,34 @@
         }
       }
       if (document.querySelector('.reader-panel.pdf-mode')) renderizarPaginaPDFMovil(u, pagEf);
+    }
+
+    function dividirFrasesLectura(texto) {
+      return texto.split(/(?<=[.!?])\s+/u).filter(Boolean);
+    }
+
+    function actualizarFraseLectura(segundoActual) {
+      const u = DATA.unidades[unidadActualIdx];
+      if (!u || !u.parrafos[parrafoActivoIdx]) return;
+      const frases = dividirFrasesLectura(u.parrafos[parrafoActivoIdx].texto);
+      if (!frases.length) return;
+      const inicio = obtenerTiempoEfectivoParrafo(u, parrafoActivoIdx);
+      const fin = parrafoActivoIdx + 1 < u.parrafos.length
+        ? obtenerTiempoEfectivoParrafo(u, parrafoActivoIdx + 1)
+        : (document.getElementById('mainAudio').duration || u.duracion_estimada_s);
+      const proporcion = Math.max(0, Math.min(0.999, (segundoActual - inicio) / Math.max(1, fin - inicio)));
+      const caracteres = frases.reduce((suma, frase) => suma + frase.length, 0);
+      let acumulado = 0;
+      let fraseActiva = frases.length - 1;
+      for (let i = 0; i < frases.length; i++) {
+        acumulado += frases[i].length / caracteres;
+        if (proporcion < acumulado) { fraseActiva = i; break; }
+      }
+      ['readingFocusText', 'pdfFollowParagraph'].forEach(id => {
+        document.getElementById(id).querySelectorAll('.spoken-segment').forEach((span, idx) => {
+          span.classList.toggle('current', idx === fraseActiva);
+        });
+      });
     }
 
     function alternarLecturaPDFMovil() {
@@ -1915,12 +1972,17 @@
         .replace(/\n/g, '<br>');
     }
 
-    function enviarPreguntaTutor(parrafoForzado = null) {
+    function enviarPreguntaTutor(parrafoForzado = null, leerRespuesta = false) {
       pausarAudioParaProfesor();
       const input = document.getElementById('txtPreguntaTutor');
       const pregunta = input.value.trim();
-      if (!pregunta) return;
+      if (!pregunta) {
+        document.getElementById('tutorStatus').textContent = 'Escribe una pregunta antes de consultar.';
+        input.focus();
+        return;
+      }
       input.value = '';
+      document.getElementById('tutorStatus').textContent = `Pregunta recibida: «${pregunta}». Buscando en los PDF...`;
 
       const chat = document.getElementById('chatBox');
       chat.innerHTML += `<div class="msg user">❓ ${escaparHTML(pregunta)}</div>`;
@@ -2143,8 +2205,13 @@
         }
       }
 
-      chat.innerHTML += htmlRespuesta;
-      chat.scrollTop = chat.scrollHeight;
+      chat.insertAdjacentHTML('beforeend', htmlRespuesta);
+      const respuestaNueva = chat.lastElementChild;
+      chat.scrollTop = Math.max(0, respuestaNueva.offsetTop - 12);
+      ultimaRespuestaTutorVoz = textoVoz;
+      const estado = document.getElementById('tutorStatus');
+      estado.innerHTML = `✅ Respuesta lista debajo. <button class="mini-btn" type="button" onclick="escucharUltimaRespuestaTutor()">🔊 Escuchar respuesta</button>`;
+      if (leerRespuesta && textoVoz) escucharUltimaRespuestaTutor();
 
       if (tieneGeminiActivo) {
         consultasPendientesIA.set(idCajaGemini, {
@@ -2390,7 +2457,11 @@ Cita siempre la página correspondiente.`;
     }
 
     function hablarTexto(texto) {
-      if (!('speechSynthesis' in window)) return;
+      if (!('speechSynthesis' in window)) {
+        const estado = document.getElementById('tutorStatus');
+        if (estado) estado.textContent = 'La respuesta está escrita debajo. Este navegador no ofrece lectura de voz.';
+        return;
+      }
       const audio = document.getElementById('mainAudio');
       if (audio && !audio.paused) {
         audio.pause();
@@ -2403,7 +2474,23 @@ Cita siempre la página correspondiente.`;
       const utter = new SpeechSynthesisUtterance(texto);
       utter.lang = 'es-ES';
       utter.rate = 1.02;
+      utter.onstart = () => {
+        const estado = document.getElementById('tutorStatus');
+        if (estado && document.getElementById('tab-profesor').classList.contains('active')) estado.textContent = '🔊 Leyendo la respuesta. El texto está debajo.';
+      };
+      utter.onend = () => {
+        const estado = document.getElementById('tutorStatus');
+        if (estado && document.getElementById('tab-profesor').classList.contains('active')) estado.innerHTML = '✅ Lectura terminada. <button class="mini-btn" type="button" onclick="escucharUltimaRespuestaTutor()">🔊 Repetir respuesta</button>';
+      };
+      utter.onerror = () => {
+        const estado = document.getElementById('tutorStatus');
+        if (estado && document.getElementById('tab-profesor').classList.contains('active')) estado.textContent = 'No pude reproducir la voz. La respuesta escrita está debajo.';
+      };
       window.speechSynthesis.speak(utter);
+    }
+
+    function escucharUltimaRespuestaTutor() {
+      if (ultimaRespuestaTutorVoz) hablarTexto(ultimaRespuestaTutorVoz);
     }
 
     function detenerVozSintetica() {
@@ -2413,25 +2500,38 @@ Cita siempre la página correspondiente.`;
     function iniciarDictadoTutor() {
       const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
       if (!SpeechRec) {
-        alert('Tu navegador no soporta dictado por voz directo (requiere Google Chrome o Microsoft Edge con conexión a internet). Puedes escribir tu pregunta en el cuadro de texto.');
+        document.getElementById('tutorStatus').textContent = 'El dictado no está disponible en este navegador. Escribe la pregunta y podrás escuchar la respuesta.';
         return;
       }
       const btn = document.getElementById('btnMicTutor');
+      const estado = document.getElementById('tutorStatus');
       pausarAudioParaProfesor();
       const rec = new SpeechRec();
+      let preguntaEnviada = false;
+      let transcripcionFinal = '';
       rec.lang = 'es-ES';
-      rec.interimResults = false;
+      rec.interimResults = true;
       btn.classList.add('recording');
       btn.textContent = '🔴 Escuchando...';
+      estado.textContent = '🎤 Escuchando tu pregunta. Cuando termines, verás el texto y escucharás la respuesta.';
       rec.onresult = (e) => {
-        document.getElementById('txtPreguntaTutor').value = e.results[0][0].transcript;
-        enviarPreguntaTutor();
+        const texto = Array.from(e.results).map(r => r[0].transcript).join(' ').trim();
+        document.getElementById('txtPreguntaTutor').value = texto;
+        estado.textContent = `🎤 Escuché: «${texto}»`;
+        if (!preguntaEnviada && e.results[e.results.length - 1].isFinal) {
+          preguntaEnviada = true;
+          transcripcionFinal = texto;
+          rec.stop();
+        }
       };
+      rec.onerror = (e) => { estado.textContent = e.error === 'not-allowed' ? 'El micrófono está bloqueado. Actívalo en los permisos del navegador o escribe tu pregunta.' : `No pude reconocer la voz (${e.error}). Puedes escribir la pregunta.`; };
+      rec.onnomatch = () => { estado.textContent = 'No pude entender la pregunta. Inténtalo otra vez o escríbela.'; };
       rec.onend = () => {
         btn.classList.remove('recording');
         btn.textContent = '🎤 Preguntar por Voz';
+        if (preguntaEnviada && transcripcionFinal) enviarPreguntaTutor(null, true);
       };
-      rec.start();
+      try { rec.start(); } catch (e) { rec.onerror({error: 'inicio'}); rec.onend(); }
     }
 
     // =========================================================================
@@ -3132,7 +3232,7 @@ Cita siempre la página correspondiente.`;
             <div>
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
                 <span class="badge" style="font-size:0.8rem;">UNIDAD ${u.numero}</span>
-                <span style="font-size:0.78rem; color:var(--text-muted);">⏱️ ${mins} min · 📦 ${u.tamano_mb} MB · 🎧 ${u.puntos_verificados_audio || 3} puntos verificados en audio</span>
+                <span style="font-size:0.78rem; color:var(--text-muted);">⏱️ ${mins} min · 📦 ${u.tamano_mb} MB · 🎧 ${Array.isArray(u.puntos_verificados_audio) ? u.puntos_verificados_audio.length : (Number(u.puntos_verificados_audio) || 3)} puntos verificados en audio</span>
               </div>
               <h3 style="font-size:1rem; margin-bottom:6px; color:var(--primary);">${escaparHTML(u.titulo_corto)}</h3>
               <p style="font-size:0.81rem; color:var(--text-muted); margin-bottom:8px;">
