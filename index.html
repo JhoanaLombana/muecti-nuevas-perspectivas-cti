@@ -550,7 +550,7 @@
           <span class="tag-time exact" style="margin-left:6px;">🎧 MM:SS (verificado en audio)</span> = inicio de frase comprobado escuchando y contrastando el MP3 (comienzo, mitad y final de cada unidad) ·
           <span class="tag-time approx" style="margin-left:6px;">≈ MM:SS (tiempo aproximado)</span> = estimado por silencios acústicos (sin garantía de segundo exacto hasta que lo calibres) ·
           <span class="tag-time manual" style="margin-left:6px;">📌 MM:SS (corregido manual)</span> = fijado manualmente por ti (recalibra los párrafos vecinos).
-          <br>La línea amarilla se estima dentro del párrafo según el tiempo del audio; puede adelantarse o retrasarse respecto a la voz.
+          <br>Las dos líneas amarillas se estiman dentro del párrafo según el tiempo del audio; pueden adelantarse o retrasarse respecto a la voz.
         </div>
         <button class="mini-btn" onclick="restablecerCorreccionesUnidad()" title="Borrar calibraciones manuales de esta unidad">↺ Restablecer tiempos de unidad</button>
       </details>
@@ -582,7 +582,7 @@
             <button class="mini-btn" onclick="seguirLecturaActual()">↘ Seguir texto</button>
           </div>
           <div class="reading-focus" id="readingFocus" aria-label="Texto que acompaña al audio">
-            <small>🔊 Sigue aquí el fragmento que se escucha · línea estimada</small>
+            <small>🔊 Sigue aquí el fragmento que se escucha · dos líneas estimadas</small>
             <div id="readingFocusText">Selecciona una unidad y pulsa Reproducir.</div>
           </div>
           <div class="pdf-follow" id="pdfFollowPanel">
@@ -1492,13 +1492,24 @@
       const rect = palabra?.getClientRects()[0];
       if (!rect) return null;
       const alturas = Array.from(palabras, span => span.getClientRects()[0]?.top);
-      let primeraPalabra = indicePalabra;
+      const renglones = [];
+      alturas.forEach(alto => {
+        if (alto !== undefined && !renglones.some(renglon => Math.abs(renglon - alto) < 3)) {
+          renglones.push(alto);
+        }
+      });
+      const renglonActual = renglones.findIndex(alto => Math.abs(alto - rect.top) < 3);
+      const inicioBloque = Math.floor(Math.max(0, renglonActual) / 2) * 2;
+      const alturasActivas = renglones.slice(inicioBloque, inicioBloque + 2);
+      let primeraPalabra = palabras.length;
       palabras.forEach((span, idx) => {
-        const activa = alturas[idx] !== undefined && Math.abs(alturas[idx] - rect.top) < 3;
+        const activa = alturas[idx] !== undefined &&
+          alturasActivas.some(alto => Math.abs(alturas[idx] - alto) < 3);
         span.classList.toggle('current', activa);
         if (activa && idx < primeraPalabra) primeraPalabra = idx;
       });
-      return { palabra, primeraPalabra, rect };
+      const inicio = palabras[primeraPalabra];
+      return { palabra: inicio, primeraPalabra, rect: inicio?.getClientRects()[0] };
     }
 
     let ultimaPalabraSeguida = '';
