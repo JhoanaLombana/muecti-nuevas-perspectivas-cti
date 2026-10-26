@@ -1735,6 +1735,13 @@
         host.replaceChildren(canvas);
         pdfMovilPagina = numeroPagina;
         estado.textContent = `PDF original · página ${numeroPagina}. El recuadro inferior muestra el párrafo que está sonando; su tiempo puede ser aproximado.`;
+        if (document.getElementById('chkAutoScroll').checked &&
+            document.getElementById('tab-reproductor').classList.contains('active')) {
+          requestAnimationFrame(() => {
+            document.getElementById('pdfFollowPanel').scrollIntoView({ behavior: 'auto', block: 'start' });
+            if (!document.getElementById('mainAudio').paused) mantenerLineaVisible(true, 'auto');
+          });
+        }
       } catch (err) {
         if (solicitud !== pdfMovilSolicitud) return;
         estado.textContent = 'No se pudo abrir la página dentro de la aplicación. Usa el guion iluminado o el enlace al PDF original.';
