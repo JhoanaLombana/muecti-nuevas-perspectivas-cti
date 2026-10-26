@@ -358,8 +358,9 @@
     .tutor-status { margin: 10px 0; padding: 10px 12px; border-radius: 9px; background: var(--highlight-bg); border: 1px solid var(--highlight-border); font-size: 0.86rem; }
     .reading-focus { background: #0b2538; border: 2px solid var(--primary); border-radius: 10px; padding: 12px; margin: 10px 0; max-height: 30vh; overflow-y: auto; scroll-margin-top: 180px; }
     .reading-focus small { display: block; color: #bae6fd; margin-bottom: 6px; }
-    .spoken-segment { border-radius: 4px; padding: 1px 2px; }
+    .spoken-segment { border-radius: 4px; padding: 1px 2px; scroll-margin-top: 190px; }
     .spoken-segment.current { background: #facc15; color: #172033; font-weight: 750; box-decoration-break: clone; }
+    .p-card.active .spoken-segment.current { box-shadow: 0 0 0 2px rgba(250,204,21,0.35); }
     .mobile-pdf-note { display: none; }
     .mobile-reader-toggle, .pdf-follow { display: none; }
     .pdf-follow { background: #111c30; padding: 10px; border-radius: 10px; }
@@ -1186,7 +1187,7 @@
                 <a class="mini-btn" href="${urlPdfPag}" target="_blank" title="Abrir PDF en página ${pagEfectiva}">📖 PDF</a>
               </div>
             </div>
-            <div class="p-text">${escaparHTML(p.texto)}</div>
+            <div class="p-text">${htmlFrasesLectura(p.texto)}</div>
             <div class="calib-box" id="calib_${p.indice}" onclick="event.stopPropagation();">
               <span><strong>Calibrar párrafo #${p.indice}:</strong></span>
               <button class="mini-btn" style="border-color:var(--success); color:#86efac;" onclick="fijarParrafoAlSegundoActual(${p.indice})">
@@ -1375,6 +1376,7 @@
       if (anterior) {
         anterior.classList.remove('active');
         anterior.removeAttribute('aria-current');
+        anterior.querySelectorAll('.spoken-segment.current').forEach(span => span.classList.remove('current'));
       }
       parrafoActivoIdx = idx;
       const nuevo = document.getElementById(`pcard_${idx}`);
@@ -1419,10 +1421,10 @@
       document.getElementById('readerCurrentPage').textContent = `Unidad ${u.numero} · Pág. ${pagEf} · Párrafo ${idxParrafo + 1} de ${u.parrafos.length}`;
       document.getElementById('readerCurrentSection').textContent = p.seccion;
       document.getElementById('pdfFollowPage').textContent = `Unidad ${u.numero} · Página ${pagEf} · ${p.seccion}`;
-      const fragmentos = dividirFrasesLectura(p.texto);
-      const htmlFrases = fragmentos.map((frase, idx) => `<span class="spoken-segment" data-frase="${idx}">${escaparHTML(frase)} </span>`).join('');
+      const htmlFrases = htmlFrasesLectura(p.texto);
       document.getElementById('pdfFollowParagraph').innerHTML = htmlFrases;
       document.getElementById('readingFocusText').innerHTML = htmlFrases;
+      document.getElementById('readingFocus').scrollTop = 0;
       document.getElementById('readingFocus').dataset.paragraph = `${u.numero}_${idxParrafo}`;
       actualizarFraseLectura(document.getElementById('mainAudio').currentTime || 0);
       const urlPdf = `${encodeURI(u.archivo_pdf)}#page=${pagEf}`;
@@ -1457,6 +1459,14 @@
       return texto.split(/(?<=[.!?])\s+/u).filter(Boolean);
     }
 
+    function htmlFrasesLectura(texto) {
+      return dividirFrasesLectura(texto)
+        .map((frase, idx) => `<span class="spoken-segment" data-frase="${idx}">${escaparHTML(frase)} </span>`)
+        .join('');
+    }
+
+    let ultimaFraseVisible = '';
+
     function actualizarFraseLectura(segundoActual) {
       const u = DATA.unidades[unidadActualIdx];
       if (!u || !u.parrafos[parrafoActivoIdx]) return;
@@ -1474,11 +1484,35 @@
         acumulado += frases[i].length / caracteres;
         if (proporcion < acumulado) { fraseActiva = i; break; }
       }
-      ['readingFocusText', 'pdfFollowParagraph'].forEach(id => {
-        document.getElementById(id).querySelectorAll('.spoken-segment').forEach((span, idx) => {
+      const destinos = [document.getElementById('readingFocusText'),
+        document.getElementById('pdfFollowParagraph'),
+        document.querySelector(`#pcard_${parrafoActivoIdx} .p-text`)];
+      destinos.filter(Boolean).forEach(destino => {
+        destino.querySelectorAll('.spoken-segment').forEach((span, idx) => {
           span.classList.toggle('current', idx === fraseActiva);
         });
       });
+      const claveFrase = `${unidadActualIdx}_${parrafoActivoIdx}_${fraseActiva}`;
+      if (claveFrase !== ultimaFraseVisible) {
+        ultimaFraseVisible = claveFrase;
+        const enfoque = document.getElementById('readingFocus');
+        const fraseEnEnfoque = destinos[0]?.querySelector(`.spoken-segment[data-frase="${fraseActiva}"]`);
+        const primeraLinea = fraseEnEnfoque?.getClientRects()[0];
+        if (primeraLinea) {
+          const caja = enfoque.getBoundingClientRect();
+          const posicionDeseada = caja.top + Math.min(caja.height * 0.35, 100);
+          if (Math.abs(primeraLinea.top - posicionDeseada) > 24) {
+            enfoque.scrollTop += primeraLinea.top - posicionDeseada;
+          }
+        }
+        const panel = document.getElementById('tab-reproductor');
+        if (panel.classList.contains('active') && !document.getElementById('mainAudio').paused &&
+            document.getElementById('chkAutoScroll').checked &&
+            !document.querySelector('.reader-panel.pdf-mode')) {
+          const fraseEnGuion = destinos[2]?.querySelector(`.spoken-segment[data-frase="${fraseActiva}"]`);
+          fraseEnGuion?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
     }
 
     function alternarLecturaPDFMovil() {
