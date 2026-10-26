@@ -170,12 +170,13 @@
     }
     .p-card:hover { border-color: var(--border); }
     .p-card.active {
-      background: var(--highlight-bg); border-color: var(--highlight-border);
-      box-shadow: 0 0 14px rgba(56, 189, 248, 0.18);
+      background: var(--bg-card); border-color: var(--highlight-border);
+      box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.16);
     }
     .p-card.is-heading {
       background: rgba(168, 85, 247, 0.13); border-left: 4px solid var(--accent); font-weight: 700;
     }
+    .p-card.active.is-heading { background: var(--bg-card); }
     .p-header {
       display: flex; justify-content: space-between; align-items: center;
       flex-wrap: wrap; gap: 6px; margin-bottom: 6px; font-size: 0.76rem; color: var(--text-muted);
@@ -402,7 +403,7 @@
       #panelDerecho { order: 2; }
       .transcript-container { max-height: none; overflow: visible; }
       .p-card { scroll-margin-top: 180px; }
-      .p-card.active { border-width: 2px; box-shadow: 0 0 0 3px rgba(56,189,248,0.14); }
+      .p-card.active { border-width: 2px; box-shadow: 0 0 0 1px rgba(56,189,248,0.14); }
       .mobile-reader-toggle { display: inline-flex; }
       .reader-panel.pdf-mode .transcript-container { display: none; }
       .reader-panel.pdf-mode .pdf-follow { display: block; }
@@ -1314,6 +1315,10 @@
         actualizarBotonContinuarAudio();
         document.getElementById('btnPlayPause').innerHTML = '⏸ Pausar';
         if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
+        requestAnimationFrame(() => {
+          ultimaLineaGuion = '';
+          actualizarLineaLectura(audio.currentTime || 0, true);
+        });
       });
       audio.addEventListener('pause', () => {
         document.getElementById('btnPlayPause').innerHTML = '▶ Reproducir';
@@ -1371,7 +1376,7 @@
           }
         }
         if (encontradoIdx !== parrafoActivoIdx) {
-          resaltarParrafoActivo(encontradoIdx);
+          resaltarParrafoActivo(encontradoIdx, !!document.querySelector('.reader-panel.pdf-mode'));
           actualizarIndicadorVivo(encontradoIdx);
         }
         actualizarLineaLectura(actual);
@@ -1499,6 +1504,26 @@
     let ultimaPalabraSeguida = '';
     let ultimaLineaEnfoque = '';
     let ultimaLineaGuion = '';
+    let ultimoDesplazamientoLectura = 0;
+
+    function mantenerLineaVisible(forzar = false) {
+      if (!document.getElementById('tab-reproductor').classList.contains('active') ||
+          !document.getElementById('chkAutoScroll').checked ||
+          document.querySelector('.reader-panel.pdf-mode')) return;
+      const linea = document.querySelector(`#pcard_${parrafoActivoIdx} .spoken-word.current`);
+      if (!linea) return;
+      const rect = linea.getBoundingClientRect();
+      const contenedor = document.getElementById('contenedorParrafos').getBoundingClientRect();
+      const barra = document.querySelector('.player-bar').getBoundingClientRect();
+      const limiteSuperior = Math.max(barra.bottom + 20, contenedor.top + 12);
+      const limiteInferior = Math.min(window.innerHeight - 28, contenedor.bottom - 12);
+      const ahora = performance.now();
+      if ((forzar || rect.top < limiteSuperior || rect.bottom > limiteInferior) &&
+          (forzar || ahora - ultimoDesplazamientoLectura > 1200)) {
+        ultimoDesplazamientoLectura = ahora;
+        linea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
 
     function actualizarLineaLectura(segundoActual, forzar = false) {
       const u = DATA.unidades[unidadActualIdx];
@@ -1519,7 +1544,10 @@
         if (proporcion < acumulado) { palabraActiva = i; break; }
       }
       const clavePalabra = `${unidadActualIdx}_${parrafoActivoIdx}_${palabraActiva}`;
-      if (!forzar && clavePalabra === ultimaPalabraSeguida) return;
+      if (!forzar && clavePalabra === ultimaPalabraSeguida) {
+        if (!document.getElementById('mainAudio').paused) mantenerLineaVisible();
+        return;
+      }
       ultimaPalabraSeguida = clavePalabra;
       const destinos = [document.getElementById('readingFocusText'),
         document.getElementById('pdfFollowParagraph'),
@@ -1545,9 +1573,10 @@
         if (panel.classList.contains('active') && !document.getElementById('mainAudio').paused &&
             document.getElementById('chkAutoScroll').checked &&
             !document.querySelector('.reader-panel.pdf-mode')) {
-          lineas[2]?.palabra.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          mantenerLineaVisible(true);
         }
       }
+      if (!document.getElementById('mainAudio').paused) mantenerLineaVisible();
     }
 
     function alternarLecturaPDFMovil() {
