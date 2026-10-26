@@ -322,6 +322,8 @@
       background: linear-gradient(135deg, rgba(14, 116, 144, 0.25) 0%, rgba(88, 28, 135, 0.25) 100%);
       border: 1px solid var(--primary); border-radius: 12px; padding: 16px; margin-bottom: 18px;
     }
+    .walk-box .panel-title > div { min-width: 0; }
+    .walk-box .panel-title select { max-width: 100%; }
     /* Panel IA Gratuita Google Gemini */
     .ia-config-btn {
       padding: 7px 13px; border-radius: 999px; border: 1px solid var(--accent);
@@ -364,7 +366,7 @@
     .p-card.active .spoken-word.current { box-shadow: 0 0 0 1px rgba(250,204,21,0.35); }
     .mobile-pdf-note { display: none; }
     .mobile-reader-toggle, .pdf-follow { display: none; }
-    .pdf-follow { background: #111c30; padding: 10px; border-radius: 10px; }
+    .pdf-follow { background: #111c30; padding: 10px; border-radius: 10px; scroll-margin-top: 180px; }
     .pdf-follow canvas { display: block; max-width: 100%; height: auto; margin: 0 auto; background: #fff; }
     .pdf-follow-fragment { margin-top: 10px; padding: 12px; border: 2px solid var(--highlight-border);
       border-radius: 10px; background: var(--highlight-bg); font-size: 0.95rem; }
@@ -417,6 +419,9 @@
       .chat-box { max-height: 42vh; }
       .reading-focus { max-height: 38vh; }
       #panelCaminataActiva { grid-template-columns: 1fr !important; }
+      .walk-box .panel-title > div, .walk-box .panel-title select { width: 100%; }
+      #tab-biblioteca .portable-guide-grid { grid-template-columns: minmax(0, 1fr) !important; }
+      #tablaAuditoriaSincronizacion { max-width: 100%; }
       #tab-evaluacion .study-grid { display: flex !important; flex-direction: column; }
       .btn-ctrl { padding: 8px 11px; font-size: 0.84rem; }
       .cards-grid { grid-template-columns: 1fr; }
@@ -456,6 +461,7 @@
       .reader-panel.pdf-mode .transcript-container { display: none; }
       .reader-panel.pdf-mode .pdf-follow { display: grid; grid-template-columns: minmax(140px, 34%) minmax(0, 1fr);
         grid-template-areas: 'status status' 'page text'; gap: 7px; align-items: start; }
+      .pdf-follow { scroll-margin-top: 90px; }
       #pdfFollowStatus { grid-area: status; margin: 0; }
       #pdfCanvasHost { grid-area: page; max-height: 62vh; overflow: auto; }
       .pdf-follow-fragment { grid-area: text; margin: 0; max-height: 62vh; overflow-y: auto; }
@@ -853,7 +859,7 @@
         <div class="panel-title">
           <span>📦 Guía de Paquete Portátil para Compañeros · Qué Funciona Sin Internet (Offline) vs. Con Internet / Según Navegador</span>
         </div>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:12px; font-size:0.82rem;">
+        <div class="portable-guide-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:12px; font-size:0.82rem;">
           <div style="background:var(--bg-card); padding:11px; border-radius:8px; border-left:3px solid var(--success);">
             <strong style="color:#86efac;">✅ 1. Cómo compartir en USB / ZIP (Sin servidor ni instalación)</strong>
             <p style="color:var(--text-muted); margin-top:4px;">
@@ -1444,7 +1450,7 @@
         const parrafoNuevo = DATA.unidades[unidadActualIdx]?.parrafos[idx];
         if (textoNuevo && parrafoNuevo) textoNuevo.innerHTML = htmlPalabrasLectura(parrafoNuevo.texto);
         if (seguir && document.getElementById('chkAutoScroll').checked && document.getElementById('tab-reproductor').classList.contains('active')) {
-          const destino = document.querySelector('.reader-panel.pdf-mode') ? document.getElementById('readingFocus') : nuevo;
+          const destino = document.querySelector('.reader-panel.pdf-mode') ? document.getElementById('pdfFollowPanel') : nuevo;
           destino.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
       }
@@ -1561,12 +1567,15 @@
 
     function mantenerLineaVisible(forzar = false, comportamiento = 'smooth') {
       if (!document.getElementById('tab-reproductor').classList.contains('active') ||
-          !document.getElementById('chkAutoScroll').checked ||
-          document.querySelector('.reader-panel.pdf-mode')) return;
-      const linea = document.querySelector(`#pcard_${parrafoActivoIdx} .spoken-word.current`);
+          !document.getElementById('chkAutoScroll').checked) return;
+      const vistaPdf = document.querySelector('.reader-panel.pdf-mode');
+      const contenedorEl = vistaPdf ? document.querySelector('.pdf-follow-fragment')
+        : document.getElementById('contenedorParrafos');
+      const linea = vistaPdf ? contenedorEl.querySelector('.spoken-word.current')
+        : document.querySelector(`#pcard_${parrafoActivoIdx} .spoken-word.current`);
       if (!linea) return;
       const rect = linea.getBoundingClientRect();
-      const contenedor = document.getElementById('contenedorParrafos').getBoundingClientRect();
+      const contenedor = contenedorEl.getBoundingClientRect();
       const barra = document.querySelector('.player-bar').getBoundingClientRect();
       const limiteSuperior = Math.max(barra.bottom + 20, contenedor.top + 12);
       const limiteInferior = Math.min(window.innerHeight - 28, contenedor.bottom - 12);
@@ -1619,13 +1628,14 @@
           }
         }
       }
-      const claveGuion = `${unidadActualIdx}_${parrafoActivoIdx}_${lineas[2]?.primeraPalabra}`;
+      const vistaPdf = document.querySelector('.reader-panel.pdf-mode');
+      const bloqueVisible = vistaPdf ? lineas[1] : lineas[2];
+      const claveGuion = `${unidadActualIdx}_${parrafoActivoIdx}_${bloqueVisible?.primeraPalabra}`;
       if (claveGuion !== ultimaLineaGuion) {
         ultimaLineaGuion = claveGuion;
         const panel = document.getElementById('tab-reproductor');
         if (panel.classList.contains('active') && !document.getElementById('mainAudio').paused &&
-            document.getElementById('chkAutoScroll').checked &&
-            !document.querySelector('.reader-panel.pdf-mode')) {
+            document.getElementById('chkAutoScroll').checked) {
           mantenerLineaVisible(true, comportamiento);
         }
       }
@@ -1680,6 +1690,14 @@
         const u = DATA.unidades[unidadActualIdx];
         renderizarPaginaPDFMovil(u, obtenerPaginaEfectivaParrafo(u, parrafoActivoIdx));
       }
+      requestAnimationFrame(() => {
+        const destino = mostrarPDF ? document.getElementById('pdfFollowPanel')
+          : document.getElementById(`pcard_${parrafoActivoIdx}`);
+        if (document.getElementById('chkAutoScroll').checked) {
+          destino?.scrollIntoView({ behavior: 'auto', block: mostrarPDF ? 'start' : 'center' });
+          if (!mostrarPDF) mantenerLineaVisible(true, 'auto');
+        }
+      });
     }
 
     async function renderizarPaginaPDFMovil(u, numeroPagina) {
@@ -2177,7 +2195,8 @@
       chat.innerHTML += `<div class="msg user">❓ ${escaparHTML(pregunta)}</div>`;
 
       const alcance = document.getElementById('selAlcanceTutor').value;
-      const unidadesBusqueda = alcance === 'actual' ? [DATA.unidades[unidadActualIdx]] : DATA.unidades;
+      const unidadesBusqueda = parrafoForzado || alcance === 'actual'
+        ? [DATA.unidades[unidadActualIdx]] : DATA.unidades;
       const tokens = extraerTerminosSignificativos(pregunta);
       const tokensEspecificos = tokens.filter(t => !TERMINOS_GENERICOS_CURSO.has(t));
       const pregNorm = normalizarTexto(pregunta);
@@ -2190,6 +2209,8 @@
       let maxScoreConcepto = 0;
       (DATA.base_conocimiento_profesor || []).forEach(c => {
         if (alcance === 'actual' && c.unidad !== DATA.unidades[unidadActualIdx].numero) return;
+        if (parrafoForzado && (c.unidad !== DATA.unidades[unidadActualIdx].numero ||
+            Math.abs(c.pagina_principal - parrafoForzado.pagina_inicio) > 1)) return;
         let sc = 0;
         const blobConcepto = normalizarTexto(
           `${c.titulo} ${(c.terminos_clave || []).join(' ')} ${(c.vocabulario_parafraasis || []).join(' ')} ${c.sintesis_elaborada}`
@@ -2246,6 +2267,7 @@
 
       unidadesBusqueda.forEach(u => {
         u.parrafos.forEach(p => {
+          if (parrafoForzado && p === parrafoForzado) return;
           if (p.es_titulo || p.texto.length < 40) return;
           const textoNorm = normalizarTexto(p.texto);
           const secNorm = normalizarTexto(p.seccion);
@@ -3350,10 +3372,13 @@ Cita siempre la página correspondiente.`;
       const cap = colaCaminata[idxCaminataActual];
       if (!cap) return;
       detenerCaminata();
+      const idxUnidad = DATA.unidades.findIndex(u => u.numero === cap.unidadNum);
+      if (idxUnidad >= 0 && idxUnidad !== unidadActualIdx) seleccionarUnidad(idxUnidad);
       cambiarTab('profesor', document.getElementById('tabBtn_profesor'));
       document.getElementById('txtPreguntaTutor').value =
         `Explícame con palabras sencillas: ${cap.pregunta_caminata || cap.titulo} (Unidad ${cap.unidadNum}, página ${cap.pagina}).`;
-      document.getElementById('txtPreguntaTutor').focus();
+      const parrafo = idxUnidad >= 0 ? DATA.unidades[idxUnidad].parrafos[cap.parrafoIdx] : null;
+      enviarPreguntaTutor(parrafo || null, true);
     }
 
     function detenerCaminata() {
