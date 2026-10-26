@@ -358,9 +358,9 @@
     .tutor-status { margin: 10px 0; padding: 10px 12px; border-radius: 9px; background: var(--highlight-bg); border: 1px solid var(--highlight-border); font-size: 0.86rem; }
     .reading-focus { background: #0b2538; border: 2px solid var(--primary); border-radius: 10px; padding: 12px; margin: 10px 0; max-height: 30vh; overflow-y: auto; scroll-margin-top: 180px; }
     .reading-focus small { display: block; color: #bae6fd; margin-bottom: 6px; }
-    .spoken-segment { border-radius: 4px; padding: 1px 2px; scroll-margin-top: 190px; }
-    .spoken-segment.current { background: #facc15; color: #172033; font-weight: 750; box-decoration-break: clone; }
-    .p-card.active .spoken-segment.current { box-shadow: 0 0 0 2px rgba(250,204,21,0.35); }
+    .spoken-word { border-radius: 2px; scroll-margin-top: 190px; }
+    .spoken-word.current { background: #facc15; color: #172033; box-decoration-break: clone; }
+    .p-card.active .spoken-word.current { box-shadow: 0 0 0 1px rgba(250,204,21,0.35); }
     .mobile-pdf-note { display: none; }
     .mobile-reader-toggle, .pdf-follow { display: none; }
     .pdf-follow { background: #111c30; padding: 10px; border-radius: 10px; }
@@ -549,6 +549,7 @@
           <span class="tag-time exact" style="margin-left:6px;">🎧 MM:SS (verificado en audio)</span> = inicio de frase comprobado escuchando y contrastando el MP3 (comienzo, mitad y final de cada unidad) ·
           <span class="tag-time approx" style="margin-left:6px;">≈ MM:SS (tiempo aproximado)</span> = estimado por silencios acústicos (sin garantía de segundo exacto hasta que lo calibres) ·
           <span class="tag-time manual" style="margin-left:6px;">📌 MM:SS (corregido manual)</span> = fijado manualmente por ti (recalibra los párrafos vecinos).
+          <br>La línea amarilla se estima dentro del párrafo según el tiempo del audio; puede adelantarse o retrasarse respecto a la voz.
         </div>
         <button class="mini-btn" onclick="restablecerCorreccionesUnidad()" title="Borrar calibraciones manuales de esta unidad">↺ Restablecer tiempos de unidad</button>
       </details>
@@ -580,7 +581,7 @@
             <button class="mini-btn" onclick="seguirLecturaActual()">↘ Seguir texto</button>
           </div>
           <div class="reading-focus" id="readingFocus" aria-label="Texto que acompaña al audio">
-            <small>🔊 Sigue aquí el fragmento que se escucha · frase estimada</small>
+            <small>🔊 Sigue aquí el fragmento que se escucha · línea estimada</small>
             <div id="readingFocusText">Selecciona una unidad y pulsa Reproducir.</div>
           </div>
           <div class="pdf-follow" id="pdfFollowPanel">
@@ -1187,7 +1188,7 @@
                 <a class="mini-btn" href="${urlPdfPag}" target="_blank" title="Abrir PDF en página ${pagEfectiva}">📖 PDF</a>
               </div>
             </div>
-            <div class="p-text">${htmlFrasesLectura(p.texto)}</div>
+            <div class="p-text">${escaparHTML(p.texto)}</div>
             <div class="calib-box" id="calib_${p.indice}" onclick="event.stopPropagation();">
               <span><strong>Calibrar párrafo #${p.indice}:</strong></span>
               <button class="mini-btn" style="border-color:var(--success); color:#86efac;" onclick="fijarParrafoAlSegundoActual(${p.indice})">
@@ -1205,6 +1206,12 @@
           </div>
         `;
       }).join('');
+      const textoActivo = document.querySelector(`#pcard_${parrafoActivoIdx} .p-text`);
+      if (textoActivo && u.parrafos[parrafoActivoIdx]) {
+        textoActivo.innerHTML = htmlPalabrasLectura(u.parrafos[parrafoActivoIdx].texto);
+        ultimaPalabraSeguida = '';
+        ultimaLineaGuion = '';
+      }
     }
 
     function toggleCajaCalibracion(idx) {
@@ -1367,7 +1374,7 @@
           resaltarParrafoActivo(encontradoIdx);
           actualizarIndicadorVivo(encontradoIdx);
         }
-        actualizarFraseLectura(actual);
+        actualizarLineaLectura(actual);
       });
     }
 
@@ -1376,13 +1383,21 @@
       if (anterior) {
         anterior.classList.remove('active');
         anterior.removeAttribute('aria-current');
-        anterior.querySelectorAll('.spoken-segment.current').forEach(span => span.classList.remove('current'));
+        const textoAnterior = anterior.querySelector('.p-text');
+        const indiceAnterior = Number(anterior.id.replace('pcard_', ''));
+        const unidad = DATA.unidades[unidadActualIdx];
+        if (textoAnterior && unidad?.parrafos[indiceAnterior]) {
+          textoAnterior.innerHTML = escaparHTML(unidad.parrafos[indiceAnterior].texto);
+        }
       }
       parrafoActivoIdx = idx;
       const nuevo = document.getElementById(`pcard_${idx}`);
       if (nuevo) {
         nuevo.classList.add('active');
         nuevo.setAttribute('aria-current', 'true');
+        const textoNuevo = nuevo.querySelector('.p-text');
+        const parrafoNuevo = DATA.unidades[unidadActualIdx]?.parrafos[idx];
+        if (textoNuevo && parrafoNuevo) textoNuevo.innerHTML = htmlPalabrasLectura(parrafoNuevo.texto);
         if (seguir && document.getElementById('chkAutoScroll').checked && document.getElementById('tab-reproductor').classList.contains('active')) {
           const destino = document.querySelector('.reader-panel.pdf-mode') ? document.getElementById('readingFocus') : nuevo;
           destino.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -1421,12 +1436,12 @@
       document.getElementById('readerCurrentPage').textContent = `Unidad ${u.numero} · Pág. ${pagEf} · Párrafo ${idxParrafo + 1} de ${u.parrafos.length}`;
       document.getElementById('readerCurrentSection').textContent = p.seccion;
       document.getElementById('pdfFollowPage').textContent = `Unidad ${u.numero} · Página ${pagEf} · ${p.seccion}`;
-      const htmlFrases = htmlFrasesLectura(p.texto);
-      document.getElementById('pdfFollowParagraph').innerHTML = htmlFrases;
-      document.getElementById('readingFocusText').innerHTML = htmlFrases;
+      const htmlPalabras = htmlPalabrasLectura(p.texto);
+      document.getElementById('pdfFollowParagraph').innerHTML = htmlPalabras;
+      document.getElementById('readingFocusText').innerHTML = htmlPalabras;
       document.getElementById('readingFocus').scrollTop = 0;
       document.getElementById('readingFocus').dataset.paragraph = `${u.numero}_${idxParrafo}`;
-      actualizarFraseLectura(document.getElementById('mainAudio').currentTime || 0);
+      actualizarLineaLectura(document.getElementById('mainAudio').currentTime || 0, true);
       const urlPdf = `${encodeURI(u.archivo_pdf)}#page=${pagEf}`;
       document.getElementById('lnkAbrirPdfVivo').href = urlPdf;
       document.getElementById('lnkAbrirPdfVivo').textContent = `📖 Ir a Pág. ${pagEf} en PDF`;
@@ -1455,49 +1470,66 @@
       if (document.querySelector('.reader-panel.pdf-mode')) renderizarPaginaPDFMovil(u, pagEf);
     }
 
-    function dividirFrasesLectura(texto) {
-      return texto.split(/(?<=[.!?])\s+/u).filter(Boolean);
+    function palabrasLectura(texto) {
+      return texto.match(/\S+\s*/gu) || [];
     }
 
-    function htmlFrasesLectura(texto) {
-      return dividirFrasesLectura(texto)
-        .map((frase, idx) => `<span class="spoken-segment" data-frase="${idx}">${escaparHTML(frase)} </span>`)
+    function htmlPalabrasLectura(texto) {
+      return palabrasLectura(texto)
+        .map((palabra, idx) => `<span class="spoken-word" data-palabra="${idx}">${escaparHTML(palabra)}</span>`)
         .join('');
     }
 
-    let ultimaFraseVisible = '';
+    function iluminarLinea(destino, indicePalabra) {
+      if (!destino) return null;
+      const palabras = destino.querySelectorAll('.spoken-word');
+      const palabra = palabras[Math.min(indicePalabra, palabras.length - 1)];
+      const rect = palabra?.getClientRects()[0];
+      if (!rect) return null;
+      const alturas = Array.from(palabras, span => span.getClientRects()[0]?.top);
+      let primeraPalabra = indicePalabra;
+      palabras.forEach((span, idx) => {
+        const activa = alturas[idx] !== undefined && Math.abs(alturas[idx] - rect.top) < 3;
+        span.classList.toggle('current', activa);
+        if (activa && idx < primeraPalabra) primeraPalabra = idx;
+      });
+      return { palabra, primeraPalabra, rect };
+    }
 
-    function actualizarFraseLectura(segundoActual) {
+    let ultimaPalabraSeguida = '';
+    let ultimaLineaEnfoque = '';
+    let ultimaLineaGuion = '';
+
+    function actualizarLineaLectura(segundoActual, forzar = false) {
       const u = DATA.unidades[unidadActualIdx];
       if (!u || !u.parrafos[parrafoActivoIdx]) return;
-      const frases = dividirFrasesLectura(u.parrafos[parrafoActivoIdx].texto);
-      if (!frases.length) return;
+      const palabras = palabrasLectura(u.parrafos[parrafoActivoIdx].texto);
+      if (!palabras.length) return;
       const inicio = obtenerTiempoEfectivoParrafo(u, parrafoActivoIdx);
       const fin = parrafoActivoIdx + 1 < u.parrafos.length
         ? obtenerTiempoEfectivoParrafo(u, parrafoActivoIdx + 1)
         : (document.getElementById('mainAudio').duration || u.duracion_estimada_s);
       const proporcion = Math.max(0, Math.min(0.999, (segundoActual - inicio) / Math.max(1, fin - inicio)));
-      const caracteres = frases.reduce((suma, frase) => suma + frase.length, 0);
+      const pesos = palabras.map(palabra => Math.max(2, palabra.trim().length) + (/[.!?;:]\s*$/u.test(palabra) ? 3 : 0));
+      const total = pesos.reduce((suma, peso) => suma + peso, 0);
       let acumulado = 0;
-      let fraseActiva = frases.length - 1;
-      for (let i = 0; i < frases.length; i++) {
-        acumulado += frases[i].length / caracteres;
-        if (proporcion < acumulado) { fraseActiva = i; break; }
+      let palabraActiva = palabras.length - 1;
+      for (let i = 0; i < palabras.length; i++) {
+        acumulado += pesos[i] / total;
+        if (proporcion < acumulado) { palabraActiva = i; break; }
       }
+      const clavePalabra = `${unidadActualIdx}_${parrafoActivoIdx}_${palabraActiva}`;
+      if (!forzar && clavePalabra === ultimaPalabraSeguida) return;
+      ultimaPalabraSeguida = clavePalabra;
       const destinos = [document.getElementById('readingFocusText'),
         document.getElementById('pdfFollowParagraph'),
         document.querySelector(`#pcard_${parrafoActivoIdx} .p-text`)];
-      destinos.filter(Boolean).forEach(destino => {
-        destino.querySelectorAll('.spoken-segment').forEach((span, idx) => {
-          span.classList.toggle('current', idx === fraseActiva);
-        });
-      });
-      const claveFrase = `${unidadActualIdx}_${parrafoActivoIdx}_${fraseActiva}`;
-      if (claveFrase !== ultimaFraseVisible) {
-        ultimaFraseVisible = claveFrase;
+      const lineas = destinos.map(destino => iluminarLinea(destino, palabraActiva));
+      const claveEnfoque = `${unidadActualIdx}_${parrafoActivoIdx}_${lineas[0]?.primeraPalabra}`;
+      if (claveEnfoque !== ultimaLineaEnfoque) {
+        ultimaLineaEnfoque = claveEnfoque;
         const enfoque = document.getElementById('readingFocus');
-        const fraseEnEnfoque = destinos[0]?.querySelector(`.spoken-segment[data-frase="${fraseActiva}"]`);
-        const primeraLinea = fraseEnEnfoque?.getClientRects()[0];
+        const primeraLinea = lineas[0]?.rect;
         if (primeraLinea) {
           const caja = enfoque.getBoundingClientRect();
           const posicionDeseada = caja.top + Math.min(caja.height * 0.35, 100);
@@ -1505,12 +1537,15 @@
             enfoque.scrollTop += primeraLinea.top - posicionDeseada;
           }
         }
+      }
+      const claveGuion = `${unidadActualIdx}_${parrafoActivoIdx}_${lineas[2]?.primeraPalabra}`;
+      if (claveGuion !== ultimaLineaGuion) {
+        ultimaLineaGuion = claveGuion;
         const panel = document.getElementById('tab-reproductor');
         if (panel.classList.contains('active') && !document.getElementById('mainAudio').paused &&
             document.getElementById('chkAutoScroll').checked &&
             !document.querySelector('.reader-panel.pdf-mode')) {
-          const fraseEnGuion = destinos[2]?.querySelector(`.spoken-segment[data-frase="${fraseActiva}"]`);
-          fraseEnGuion?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          lineas[2]?.palabra.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
       }
     }
@@ -1524,6 +1559,8 @@
       }
       const mostrarPDF = panel.classList.toggle('pdf-mode');
       document.getElementById('btnVistaPDFMovil').textContent = mostrarPDF ? '📝 Seguir guion' : '📄 Ver PDF seguido';
+      ultimaLineaGuion = '';
+      actualizarLineaLectura(document.getElementById('mainAudio').currentTime || 0, true);
       if (mostrarPDF) {
         const u = DATA.unidades[unidadActualIdx];
         renderizarPaginaPDFMovil(u, obtenerPaginaEfectivaParrafo(u, parrafoActivoIdx));
@@ -3522,6 +3559,10 @@ Cita siempre la página correspondiente.`;
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       document.getElementById(`tab-${tabId}`).classList.add('active');
       if (btnEl) btnEl.classList.add('active');
+      if (tabId === 'reproductor') {
+        ultimaLineaGuion = '';
+        actualizarLineaLectura(document.getElementById('mainAudio').currentTime || 0, true);
+      }
     }
 
     // Suite de verificación de calidad, portabilidad (file:///) y seguridad XSS cuando se abre con ?autotest_v3=1
