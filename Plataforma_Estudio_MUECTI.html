@@ -230,7 +230,10 @@
     }
     /* Profesor Virtual */
     .tutor-layout { display: grid; grid-template-columns: 1fr 370px; gap: 18px; }
-    @media (max-width: 1024px) { .tutor-layout { grid-template-columns: 1fr; } }
+    @media (max-width: 1024px) {
+      .tutor-layout { grid-template-columns: minmax(0, 1fr); }
+      .tutor-layout > * { min-width: 0; }
+    }
     #tab-profesor .tutor-layout > .panel-box:first-child { display: flex; flex-direction: column; }
     #tab-profesor .tutor-layout > .panel-box:first-child > .panel-title { order: 1; }
     #tab-profesor .teacher-tools { order: 2; }
@@ -243,7 +246,7 @@
       gap: 14px; padding: 14px; background: #131c31; border-radius: 10px;
       border: 1px solid var(--border); margin-bottom: 12px;
     }
-    .msg { padding: 12px 16px; border-radius: 12px; max-width: 92%; font-size: 0.91rem; }
+    .msg { padding: 12px 16px; border-radius: 12px; max-width: 92%; font-size: 0.91rem; overflow-wrap: anywhere; }
     .msg.user { background: var(--primary-dark); color: #fff; align-self: flex-end; }
     .msg.bot { background: var(--bg-card); border: 1px solid var(--border); align-self: flex-start; width: 100%; }
     .elab-card {
