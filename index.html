@@ -97,6 +97,8 @@
       position: sticky; top: 0; z-index: 50;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
     }
+    .player-bar .unit-selector-bar { flex: 0 0 100%; min-width: 0; }
+    .player-bar .unit-selector-bar select { flex: 1; min-width: 0; max-width: 600px; }
     .player-controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .btn {
       background: var(--bg-card); color: var(--text);
@@ -468,6 +470,10 @@
       .pdf-follow-fragment { grid-area: text; margin: 0; max-height: 62vh; overflow-y: auto; }
       .pdf-follow canvas { max-height: 62vh; width: auto !important; max-width: 100%; }
     }
+    /* La barra puede cambiar de altura al girar el móvil. */
+    .p-card, .spoken-word, .reading-focus, .pdf-follow {
+      scroll-margin-top: calc(var(--player-bar-height, 240px) + 12px);
+    }
   </style>
 </head>
 <body>
@@ -485,7 +491,6 @@
       <button class="ia-config-btn" id="btnConfigIA" onclick="togglePanelConfigIA()" title="Configurar IA opcional; no se usa automáticamente">
         🔑 IA opcional: Modo Local
       </button>
-      <div class="unit-selector-bar" id="unitSelectorBar"></div>
     </div>
   </header>
 
@@ -543,6 +548,7 @@
 
   <!-- BARRA DE REPRODUCTOR DE ESTUDIO PERSISTENTE -->
   <div class="player-bar">
+    <div class="unit-selector-bar" id="unitSelectorBar"></div>
     <audio id="mainAudio" preload="metadata"></audio>
 
     <div class="player-controls">
@@ -922,6 +928,10 @@
       'Una ciudad instala cámaras para reducir congestión, pero el nuevo sistema crea preguntas sobre privacidad, mantenimiento y quién controla los datos. Resolver un problema puede producir otros que requieren nuevas decisiones.',
       'Para decidir cómo medir la calidad del aire, un gobierno puede reunir científicos, vecinos y organizaciones. Cada parte aporta información y criterios; la decisión se construye mediante coordinación y debate.'
     ];
+    const CLAVE_PROGRESO_LECTURA = 'muecti_progreso_lectura_v1';
+    const progresoLectura = cargarProgresoLectura();
+    let restauracionLecturaPendiente = null;
+    let ultimoGuardadoLectura = 0;
     let unidadActualIdx = 0;
     let parrafoActivoIdx = 0;
     let factorEscalaAudio = 1.0;
@@ -1126,13 +1136,67 @@
       inicializarEstadoGeminiUI();
       renderBarraUnidades();
       configurarEventosAudio();
-      seleccionarUnidad(0);
+      const ultimaUnidad = DATA.unidades.findIndex(u => u.numero === progresoLectura.ultimaUnidad);
+      seleccionarUnidad(ultimaUnidad >= 0 ? ultimaUnidad : 0);
+      const barraReproductor = document.querySelector('.player-bar');
+      const ajustarAlturaBarra = () => document.documentElement.style.setProperty(
+        '--player-bar-height', barraReproductor.getBoundingClientRect().height + 'px');
+      ajustarAlturaBarra();
+      if ('ResizeObserver' in window) new ResizeObserver(ajustarAlturaBarra).observe(barraReproductor);
       renderBiblioteca();
       renderAuditoriaSincronizacion();
       renderCalendarioYRepasos();
       prepararColaCaminata();
       actualizarContadores();
     });
+
+    // La posición de cada unidad se conserva solo en este navegador.
+    function cargarProgresoLectura() {
+      const limpio = { ultimaUnidad: null, posiciones: {} };
+      try {
+        const datos = JSON.parse(localStorage.getItem(CLAVE_PROGRESO_LECTURA) || 'null');
+        if (!datos || typeof datos !== 'object') return limpio;
+        if (DATA.unidades.some(u => u.numero === datos.ultimaUnidad)) limpio.ultimaUnidad = datos.ultimaUnidad;
+        for (const u of DATA.unidades) {
+          const seg = datos.posiciones?.[u.numero];
+          if (typeof seg === 'number' && Number.isFinite(seg) && seg >= 0) limpio.posiciones[u.numero] = seg;
+        }
+      } catch (err) {}
+      return limpio;
+    }
+
+    function escribirProgresoLectura() {
+      try { localStorage.setItem(CLAVE_PROGRESO_LECTURA, JSON.stringify(progresoLectura)); } catch (err) {}
+    }
+
+    function guardarProgresoLectura(forzar = false) {
+      const audio = document.getElementById('mainAudio');
+      const u = DATA.unidades[unidadActualIdx];
+      // Ignorar eventos del audio anterior o un tiempo cero durante la carga.
+      if (!u || audio.dataset.unidadLectura !== String(u.numero) ||
+          restauracionLecturaPendiente || audio.readyState < 1 || !Number.isFinite(audio.currentTime)) return;
+      if (!forzar && Date.now() - ultimoGuardadoLectura < 2000) return;
+      progresoLectura.ultimaUnidad = u.numero;
+      progresoLectura.posiciones[u.numero] = Math.max(0, audio.currentTime);
+      escribirProgresoLectura();
+      ultimoGuardadoLectura = Date.now();
+    }
+
+    function restaurarPosicionLectura() {
+      const audio = document.getElementById('mainAudio');
+      const pendiente = restauracionLecturaPendiente;
+      if (!pendiente || audio.readyState < 1 ||
+          audio.dataset.unidadLectura !== String(pendiente.unidadNum)) return;
+      const limite = Number.isFinite(audio.duration) ? Math.max(0, audio.duration - 0.1) : pendiente.segundo;
+      const segundo = Math.min(pendiente.segundo, limite);
+      try {
+        audio.currentTime = segundo;
+        restauracionLecturaPendiente = null;
+        document.getElementById('lblTiempoActual').textContent = formatearSegundos(segundo);
+        document.getElementById('timelineSlider').value = audio.duration ? (segundo / audio.duration) * 100 : 0;
+      } catch (err) { return; }
+      guardarProgresoLectura(true);
+    }
 
     function renderBarraUnidades() {
       const bar = document.getElementById('unitSelectorBar');
@@ -1142,9 +1206,10 @@
     }
 
     function seleccionarUnidad(idx, saltarASegundo = null) {
-      unidadActualIdx = idx;
       const u = DATA.unidades[idx];
       if (!u) return;
+      guardarProgresoLectura(true);
+      unidadActualIdx = idx;
 
       renderBarraUnidades();
       document.getElementById('badgeParrafos').textContent = u.parrafos.length;
@@ -1154,6 +1219,13 @@
       const audio = document.getElementById('mainAudio');
       const srcDeseado = encodeURI(u.archivo_mp3);
       if (!audio.getAttribute('src') || audio.getAttribute('src') !== srcDeseado) {
+        // Guardar antes de cargar otra unidad; al volver, esperar a Reproducir.
+        audio.pause();
+        caminataReproduciendoMp3 = false;
+        finSegundoCaminataMp3 = null;
+        restauracionLecturaPendiente = saltarASegundo === null
+          ? { unidadNum: u.numero, segundo: progresoLectura.posiciones[u.numero] || 0 } : null;
+        audio.dataset.unidadLectura = String(u.numero);
         audio.dataset.fallbackTried = '0';
         audio.src = srcDeseado;
         audio.load();
@@ -1172,8 +1244,12 @@
       practicaPDFRevelada = false;
       renderPracticaPDF();
 
+      progresoLectura.ultimaUnidad = u.numero;
+      escribirProgresoLectura();
       if (saltarASegundo !== null) {
         reproducirDesdeSegundo(saltarASegundo);
+      } else {
+        restaurarPosicionLectura();
       }
     }
 
@@ -1319,7 +1395,10 @@
 
     function reproducirDesdeSegundo(seg, iniciarPlay = true) {
       const audio = document.getElementById('mainAudio');
+      const unidadSolicitada = unidadActualIdx;
+      restauracionLecturaPendiente = null;
       const aplicar = () => {
+        if (unidadActualIdx !== unidadSolicitada) return;
         try {
           audio.currentTime = Math.max(0, seg);
         } catch (e) {}
@@ -1357,6 +1436,7 @@
           document.getElementById('lblTiempoTotal').textContent = formatearSegundos(audio.duration);
           renderSeccionesYParrafosUnidad();
         }
+        restaurarPosicionLectura();
       });
 
       audio.addEventListener('play', () => {
@@ -1371,8 +1451,16 @@
         });
       });
       audio.addEventListener('pause', () => {
+        guardarProgresoLectura(true);
         document.getElementById('btnPlayPause').innerHTML = '▶ Reproducir';
         if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
+      });
+
+      audio.addEventListener('seeked', () => guardarProgresoLectura(true));
+      audio.addEventListener('ended', () => guardarProgresoLectura(true));
+      window.addEventListener('pagehide', () => guardarProgresoLectura(true));
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') guardarProgresoLectura(true);
       });
 
       // Controles desde pantalla bloqueada del teléfono móvil y audífonos Bluetooth (Media Session API)
@@ -1396,6 +1484,7 @@
       }
 
       audio.addEventListener('timeupdate', () => {
+        guardarProgresoLectura();
         const u = DATA.unidades[unidadActualIdx];
         if (!u) return;
         const dur = audio.duration || u.duracion_estimada_s || 1;
