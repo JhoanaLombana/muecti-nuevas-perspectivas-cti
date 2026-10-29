@@ -1,4 +1,4 @@
-const CORE_CACHE = 'muecti-core-v13';
+const CORE_CACHE = 'muecti-core-v14';
 const UNIT_CACHE = 'muecti-unidades-v1';
 
 self.addEventListener('install', event => {
