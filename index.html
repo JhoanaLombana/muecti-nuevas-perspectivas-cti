@@ -474,9 +474,49 @@
     .p-card, .spoken-word, .reading-focus, .pdf-follow {
       scroll-margin-top: calc(var(--player-bar-height, 240px) + 12px);
     }
+    /* Saludo temporal para la demostración de Innovación — estilo neón ochentero */
+    .innovation-neon-banner {
+      position:relative; isolation:isolate; overflow:hidden;
+      margin:16px 22px 0; padding:22px 18px;
+      text-align:center; border:2px solid #fa67df; border-radius:18px;
+      background:radial-gradient(ellipse at 50% 0%,#47236c 0%,#18102f 65%,#0d1028 100%);
+      box-shadow:0 0 8px #ff53db, inset 0 0 18px #a34bca66, 0 0 28px #4eeaff44;
+    }
+    .innovation-neon-banner::before {
+      content:""; position:absolute; inset:0; z-index:-1; opacity:.24;
+      background:repeating-linear-gradient(90deg,transparent 0 39px,#4deaff 40px 41px),
+                 repeating-linear-gradient(0deg,transparent 0 39px,#ff6edf 40px 41px);
+      transform:perspective(300px) rotateX(40deg) scale(1.2);
+      pointer-events:none;
+    }
+    .innovation-neon-title {
+      margin:0; color:#fff5ff; font-size:clamp(1.4rem,4vw,2.7rem);
+      font-family:'Trebuchet MS','Segoe UI',sans-serif;
+      font-weight:900; line-height:1.2; letter-spacing:.045em; text-transform:uppercase;
+      text-shadow:0 0 5px #fff,0 0 12px #ff4bd8,0 0 24px #ff4bd8,0 0 40px #9c3cff;
+      animation:innovation-neon-glow 2.5s ease-in-out infinite alternate;
+    }
+    .innovation-neon-subtitle {
+      margin:10px 0 0;color:#89faff;font-size:clamp(.8rem,1.8vw,1rem);
+      letter-spacing:.12em;font-weight:700;
+      text-shadow:0 0 8px #00ddff,0 0 20px #00ddff;
+    }
+    @keyframes innovation-neon-glow {
+      from {text-shadow:0 0 5px #fff,0 0 12px #ff4bd8,0 0 24px #ff4bd8;}
+      to {text-shadow:0 0 8px #fff,0 0 20px #ff4bd8,0 0 34px #ff4bd8,0 0 46px #9c3cff;}
+    }
+    @media (prefers-reduced-motion:reduce) {.innovation-neon-title {animation:none;}}
+    @media (max-width:650px) {.innovation-neon-banner {margin:12px 10px 0;padding:18px 12px;}}
   </style>
 </head>
 <body>
+
+  <!-- Saludo para la clase de Innovación: demostración en vivo -->
+  <section class="innovation-neon-banner" aria-label="Saludo a los estudiantes de innovación">
+    <h2 class="innovation-neon-title">¡Hola, estudiantes de innovación!</h2>
+    <p class="innovation-neon-subtitle">✨ EL FUTURO SE CREA CON IDEAS ✨</p>
+  </section>
+
 
   <!-- ENCABEZADO Y SELECTOR DE LAS 6 UNIDADES -->
   <header>
