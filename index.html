@@ -638,96 +638,12 @@
     <!-- MÓDULO 1: REPRODUCTOR DE ESTUDIO Y TRANSCRIPCIÓN VINCULADA AL PDF -->
     <section id="tab-reproductor" class="tab-panel active">
       <details id="tarea-historia-cti" class="panel-box" style="margin-bottom:14px; padding:10px 14px;">
-        <summary style="cursor:pointer; font-weight:700;">Historia de la CTI · Tarea final y defensa oral</summary>
-        <p>Carga tu archivo de estudio para leer y escuchar la tarea por secciones. El archivo se abre en este navegador y no se sube al sitio.</p>
-        <label for="archivo-historia-cti">Archivo privado de la tarea (.muecti.json)</label>
+        <summary style="cursor:pointer; font-weight:700;">Historia de la CTI · Módulo 1</summary>
+        <p>Abre tu archivo privado para estudiar la tarea final en el mismo reproductor, con PDF, evaluaciones y repasos.</p>
+        <label for="archivo-historia-cti">Archivo privado de Historia de la CTI (.muecti.json)</label>
         <input id="archivo-historia-cti" type="file" accept=".json,application/json" style="display:block; max-width:100%;">
         <p id="estado-historia-cti" role="status"></p>
-        <div id="contenido-historia-cti" hidden>
-          <label for="seccion-historia-cti">Sección para estudiar</label>
-          <select id="seccion-historia-cti"></select>
-          <audio id="audio-historia-cti" controls preload="metadata" aria-label="Audio de la sección" style="display:block; width:100%; margin-top:10px;"></audio>
-          <article id="lectura-historia-cti" aria-label="Texto de la sección" style="max-width:78ch; line-height:1.65; white-space:pre-line;"></article>
-        </div>
       </details>
-      <script>
-        (() => {
-          const panel = document.getElementById('tarea-historia-cti');
-          const fileInput = document.getElementById('archivo-historia-cti');
-          const status = document.getElementById('estado-historia-cti');
-          const content = document.getElementById('contenido-historia-cti');
-          const selector = document.getElementById('seccion-historia-cti');
-          const player = document.getElementById('audio-historia-cti');
-          const reader = document.getElementById('lectura-historia-cti');
-          let sections = [];
-          let audioUrl;
-
-          function clearAudio() {
-            player.pause();
-            player.removeAttribute('src');
-            player.load();
-            if (audioUrl) URL.revokeObjectURL(audioUrl);
-            audioUrl = undefined;
-          }
-
-          function showSection() {
-            const section = sections[Number(selector.value)];
-            clearAudio();
-            const heading = document.createElement('h3');
-            heading.textContent = section.title;
-            reader.replaceChildren(heading, ...section.paragraphs.map(text => {
-              const paragraph = document.createElement('p');
-              paragraph.textContent = text;
-              return paragraph;
-            }));
-            audioUrl = URL.createObjectURL(section.audio);
-            player.src = audioUrl;
-            status.textContent = '';
-          }
-
-          fileInput.addEventListener('change', async () => {
-            const file = fileInput.files[0];
-            clearAudio();
-            content.hidden = true;
-            sections = [];
-            reader.replaceChildren();
-            selector.replaceChildren();
-            if (!file) return;
-            fileInput.disabled = true;
-            status.textContent = 'Abriendo archivo…';
-            try {
-              if (file.size > 64 * 1024 * 1024) throw new Error();
-              const pack = JSON.parse(await file.text());
-              if (pack?.format !== 'muecti-historia-cti-v1' || !Array.isArray(pack.sections) || !pack.sections.length) throw new Error();
-              sections = pack.sections.map(section => {
-                if (typeof section?.title !== 'string' || !Array.isArray(section.paragraphs) ||
-                    !section.paragraphs.every(text => typeof text === 'string') ||
-                    typeof section.wav !== 'string') throw new Error();
-                const wav = atob(section.wav);
-                if (!wav.startsWith('RIFF') || wav.slice(8, 12) !== 'WAVE') throw new Error();
-                const bytes = new Uint8Array(wav.length);
-                for (let i = 0; i < wav.length; i++) bytes[i] = wav.charCodeAt(i);
-                const audio = new Blob([bytes], { type: 'audio/wav' });
-                return { title: section.title, paragraphs: section.paragraphs, audio };
-              });
-              selector.replaceChildren(...sections.map((section, index) => new Option(section.title, index)));
-              showSection();
-              content.hidden = false;
-            } catch {
-              status.textContent = 'No se pudo abrir el archivo. Selecciona el paquete .muecti.json de la tarea de Historia de la CTI.';
-            } finally {
-              fileInput.disabled = false;
-              fileInput.value = '';
-            }
-          });
-          selector.addEventListener('change', showSection);
-          panel.addEventListener('toggle', () => { if (!panel.open) player.pause(); });
-          player.addEventListener('error', () => {
-            status.textContent = 'El navegador no pudo reproducir el audio. Puedes seguir leyendo el texto.';
-          });
-          if (location.hash === '#tarea-historia-cti') panel.open = true;
-        })();
-      </script>
       <details class="panel-box" style="margin-bottom: 14px; padding: 10px 14px; background: rgba(15, 23, 42, 0.75); font-size: 0.81rem;">
         <summary style="cursor:pointer; font-weight:700;">ℹ️ Cómo se sincronizan el audio, el texto y el PDF</summary>
         <div>
@@ -1289,9 +1205,9 @@
         const datos = JSON.parse(localStorage.getItem(CLAVE_PROGRESO_LECTURA) || 'null');
         if (!datos || typeof datos !== 'object') return limpio;
         if (DATA.unidades.some(u => u.numero === datos.ultimaUnidad)) limpio.ultimaUnidad = datos.ultimaUnidad;
-        for (const u of DATA.unidades) {
-          const seg = datos.posiciones?.[u.numero];
-          if (typeof seg === 'number' && Number.isFinite(seg) && seg >= 0) limpio.posiciones[u.numero] = seg;
+        for (const numero of [...DATA.unidades.map(u => u.numero), 7]) {
+          const seg = datos.posiciones?.[numero];
+          if (typeof seg === 'number' && Number.isFinite(seg) && seg >= 0) limpio.posiciones[numero] = seg;
         }
       } catch (err) {}
       return limpio;
@@ -1333,7 +1249,7 @@
     function renderBarraUnidades() {
       const bar = document.getElementById('unitSelectorBar');
       bar.innerHTML = `<label for="selUnidad">Unidad</label><select id="selUnidad" aria-label="Elegir unidad" onchange="seleccionarUnidad(Number(this.value))">
-        ${DATA.unidades.map((u, idx) => `<option value="${idx}" ${idx === unidadActualIdx ? 'selected' : ''}>${u.numero}. ${escaparHTML(u.titulo_corto)}</option>`).join('')}
+        ${DATA.unidades.map((u, idx) => `<option value="${idx}" ${idx === unidadActualIdx ? 'selected' : ''}>${u.modulo_privado ? 'Historia CTI · ' : u.numero + '. '}${escaparHTML(u.titulo_corto)}</option>`).join('')}
       </select>`;
     }
 
@@ -1345,8 +1261,12 @@
 
       renderBarraUnidades();
       document.getElementById('badgeParrafos').textContent = u.parrafos.length;
-      document.getElementById('lblUnidadActual').textContent = `Unidad ${u.numero}: ${u.titulo_corto}`;
-      document.getElementById('lnkDescargarMp3').href = encodeURI(u.archivo_mp3);
+      document.getElementById('lblUnidadActual').textContent = u.modulo_privado
+        ? 'Historia CTI · Módulo 1: ' + u.titulo_corto : `Unidad ${u.numero}: ${u.titulo_corto}`;
+      const descarga = document.getElementById('lnkDescargarMp3');
+      descarga.href = encodeURI(u.archivo_mp3);
+      descarga.textContent = u.modulo_privado ? '⬇ WAV' : '⬇ MP3';
+      descarga.download = u.modulo_privado ? 'Tarea final Historia CTI.wav' : '';
 
       const audio = document.getElementById('mainAudio');
       const srcDeseado = encodeURI(u.archivo_mp3);
@@ -2246,7 +2166,9 @@
           "¿Cuáles son los tres sentidos de la democratización de la ciencia según la Declaración de Santo Domingo?"
         ]
       };
-      const lista = sugerenciasPorUnidad[u.numero] || sugerenciasPorUnidad[1];
+      const lista = u.modulo_privado
+        ? DATA.capsulas_base.filter(c => c.unidadNum === u.numero).map(c => c.pregunta_caminata)
+        : sugerenciasPorUnidad[u.numero] || sugerenciasPorUnidad[1];
       document.getElementById('contenedorSugerenciasTutor').innerHTML = lista.map((q, idx) => `
         <button class="btn" style="text-align:left; justify-content:flex-start; font-size:0.8rem;" data-q="${escaparHTML(q)}" onclick="hacerPreguntaDirectaTutor(this.getAttribute('data-q'))">
           💬 ${escaparHTML(q)}
@@ -3417,7 +3339,7 @@ Cita siempre la página correspondiente.`;
 
     function renderCalendarioYRepasos() {
       const hoy = hoyISO(0);
-      const todos = estadoEstudio.calendarioRepasos;
+      const todos = repasosConUnidadDisponible();
 
       const vencidosHoy = todos.filter(r => r.proximo_repaso <= hoy);
       const programadosFuturo = todos.filter(r => r.proximo_repaso > hoy);
@@ -3547,21 +3469,26 @@ Cita siempre la página correspondiente.`;
     }
 
     // Funciones del Modo Caminata (Cápsulas Breves + Respuesta por Voz)
+    function repasosConUnidadDisponible() {
+      return estadoEstudio.calendarioRepasos.filter(r => r.unidadNum !== 7 || DATA.unidades.some(u => u.numero === 7));
+    }
+
     function prepararColaCaminata() {
       const filtro = document.getElementById('selFiltroCaminata')?.value || 'todas';
       const hoy = hoyISO(0);
       const uNum = DATA.unidades[unidadActualIdx]?.numero || 1;
+      const repasos = repasosConUnidadDisponible();
 
       if (filtro === 'hoy') {
-        colaCaminata = estadoEstudio.calendarioRepasos.filter(r => r.proximo_repaso <= hoy);
+        colaCaminata = repasos.filter(r => r.proximo_repaso <= hoy);
       } else if (filtro === 'unidad') {
-        colaCaminata = estadoEstudio.calendarioRepasos.filter(r => r.unidadNum === uNum);
+        colaCaminata = repasos.filter(r => r.unidadNum === uNum);
       } else {
-        colaCaminata = [...estadoEstudio.calendarioRepasos];
+        colaCaminata = repasos;
       }
 
       if (colaCaminata.length === 0) {
-        colaCaminata = [...estadoEstudio.calendarioRepasos];
+        colaCaminata = repasos;
       }
       idxCaminataActual = Math.min(idxCaminataActual, Math.max(0, colaCaminata.length - 1));
       mostrarCapsulaCaminataActual();
@@ -3577,7 +3504,7 @@ Cita siempre la página correspondiente.`;
     }
 
     function reproducirCapsulaIndividualEnCaminata(idCap) {
-      colaCaminata = [...estadoEstudio.calendarioRepasos];
+      colaCaminata = repasosConUnidadDisponible();
       const idx = colaCaminata.findIndex(r => r.id === idCap);
       if (idx >= 0) idxCaminataActual = idx;
       mostrarCapsulaCaminataActual();
@@ -3698,7 +3625,7 @@ Cita siempre la página correspondiente.`;
           <div class="panel-box" style="display:flex; flex-direction:column; justify-content:space-between; gap:12px;">
             <div>
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-                <span class="badge" style="font-size:0.8rem;">UNIDAD ${u.numero}</span>
+                <span class="badge" style="font-size:0.8rem;">${u.modulo_privado ? 'HISTORIA CTI · MÓDULO 1' : 'UNIDAD ' + u.numero}</span>
                 <span style="font-size:0.78rem; color:var(--text-muted);">⏱️ ${mins} min · 📦 ${u.tamano_mb} MB · 🎧 ${Array.isArray(u.puntos_verificados_audio) ? u.puntos_verificados_audio.length : (Number(u.puntos_verificados_audio) || 3)} puntos verificados en audio</span>
               </div>
               <h3 style="font-size:1rem; margin-bottom:6px; color:var(--primary);">${escaparHTML(u.titulo_corto)}</h3>
@@ -3715,11 +3642,11 @@ Cita siempre la página correspondiente.`;
                 🎧 Abrir en Reproductor
               </button>
               <a class="btn" href="${encodeURI(u.archivo_pdf)}" target="_blank">📄 PDF</a>
-              <a class="btn" href="${encodeURI(u.archivo_mp3)}" download>⬇ MP3</a>
+              <a class="btn" href="${encodeURI(u.archivo_mp3)}" download="${u.modulo_privado ? 'Tarea final Historia CTI.wav' : ''}">⬇ ${u.modulo_privado ? 'WAV' : 'MP3'}</a>
               <a class="btn" href="${encodeURI(u.archivo_guion)}" target="_blank">📝 Guion</a>
-              <button class="btn btn-success" id="btnOffline_${idx}" onclick="guardarUnidadOffline(${idx})">📥 Guardar unidad para uso sin conexión</button>
+              ${u.modulo_privado ? '' : `<button class="btn btn-success" id="btnOffline_${idx}" onclick="guardarUnidadOffline(${idx})">📥 Guardar unidad para uso sin conexión</button>`}
             </div>
-            <div class="teacher-note" id="offlineEstado_${idx}">En teléfono: abre la versión HTTPS una vez y guarda cada unidad que quieras escuchar sin conexión.</div>
+            <div class="teacher-note" id="offlineEstado_${idx}">${u.modulo_privado ? 'Conserva el archivo privado para volver a abrirlo, incluso sin conexión.' : 'En teléfono: abre la versión HTTPS una vez y guarda cada unidad que quieras escuchar sin conexión.'}</div>
           </div>
         `;
       }).join('');
@@ -3739,6 +3666,7 @@ Cita siempre la página correspondiente.`;
       if (!('caches' in window) || location.protocol === 'file:') return;
       for (let idx = 0; idx < DATA.unidades.length; idx++) {
         const u = DATA.unidades[idx];
+        if (u.modulo_privado) continue;
         const audio = await caches.match(new URL(encodeURI(u.archivo_mp3), location.href).href).catch(() => null);
         const pdf = await caches.match(new URL(encodeURI(u.archivo_pdf), location.href).href).catch(() => null);
         const estado = document.getElementById(`offlineEstado_${idx}`);
@@ -4126,5 +4054,6 @@ Cita siempre la página correspondiente.`;
       }, 900);
     });
   </script>
+  <script src="historia_cti.js"></script>
 </body>
 </html>
