@@ -4,7 +4,7 @@
 
 | Parámetro | Valor |
 | --- | --- |
-| Convertidor | [MUECTI V4](Convertidor_Audiolibros_V4_Master_MUECTI.ipynb), paso 3 |
+| Convertidor | [MUECTI V4](Convertidor_Audiolibros_V4_Master_MUECTI.ipynb), pasos 3 y 4 |
 | Motor | Microsoft Neural mediante `edge-tts` |
 | Voz | Elvira, español de España (`es-ES-ElviraNeural`) |
 | Velocidad | Normal (`+0%`) |
@@ -15,11 +15,11 @@ Este perfil corresponde a las cuatro grabaciones de **Herramientas para los estu
 ## Cómo incorporar una lectura
 
 1. Registrar la lectura en el inventario privado con módulo, unidad, número de lectura, título y PDF de origen. Conservar una fila por lectura, incluso cuando una unidad tenga varios textos.
-2. Abrir el V4, cargar el PDF y revisar el guion extraído contra la fuente. Verificar el orden de las páginas, las palabras cortadas y los encabezados repetidos. El paso 3 envía el guion a Microsoft para sintetizar la voz. Usarlo con material autorizado para ese procesamiento.
-3. Generar el MP3 con el perfil aprobado. Para archivos nuevos, usar nombres como `M03-U03-L02-trabajo-de-campo.mp3`. Mantener los enlaces existentes al corregir un audio mediante **Gestionar versiones** en Drive.
-4. Verificar que el MP3 se decodifica completo. Escuchar el inicio, la mitad y el final, contrastarlos con la lectura y comprobar que la voz y el ritmo coinciden con el perfil. La verificación técnica puede hacerse con `ffmpeg -v error -xerror -i "audiolibro.mp3" -f null -`.
+2. Abrir el V4, cargar el PDF y revisar el guion extraído contra la fuente. Verificar el orden de las páginas, las palabras cortadas y los encabezados repetidos. Los pasos 3 y 4 envían a Microsoft la muestra y el guion completo, respectivamente. Usarlos con material autorizado para ese procesamiento.
+3. Escuchar la muestra del paso 3 y confirmar el perfil aprobado. Ejecutar el paso 4 para generar el MP3 con ese mismo ajuste. Para archivos nuevos, usar nombres como `M03-U03-L02-trabajo-de-campo.mp3`. Mantener los enlaces existentes al corregir un audio mediante **Gestionar versiones** en Drive.
+4. El paso 4 verifica que el MP3 se decodifica completo antes de descargarlo. Escuchar el inicio, la mitad y el final, contrastarlos con la lectura y comprobar que la voz y el ritmo coinciden con el perfil. La verificación técnica puede hacerse con `ffmpeg -v error -xerror -i "audiolibro.mp3" -f null -`.
 5. Guardar el MP3 junto con su lectura en Drive privado. Comprobar que el enlace abre con la cuenta que estudia y que el audio se reproduce desde la app de Drive. Registrar por separado la verificación técnica y la prueba en el teléfono.
-6. Si se integra en el reproductor sincronizado del portal, empaquetar el PDF, el audio definitivo y su mapa de segmentos en privado. Volver a calcular las marcas cuando cambie el audio y comprobar el salto entre texto y audio al principio, en la mitad y al final. El paso 3 del V4 genera el MP3. El paquete sincronizado se prepara aparte.
+6. Si se integra en el reproductor sincronizado del portal, empaquetar el PDF, el audio definitivo y su mapa de segmentos en privado. Volver a calcular las marcas cuando cambie el audio y comprobar el salto entre texto y audio al principio, en la mitad y al final. El paso 4 del V4 genera el MP3. El paquete sincronizado se prepara aparte.
 
 GitHub guarda la configuración, las instrucciones y el código del portal. Guardar los PDF privados, los guiones extraídos, los MP3, los mapas y los paquetes que contienen esos materiales en Drive privado.
 
