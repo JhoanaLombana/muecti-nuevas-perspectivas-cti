@@ -136,7 +136,10 @@
     }
     if (seleccionar) {
       cambiarTab('reproductor', document.getElementById('tabBtn_reproductor'));
-      seleccionarUnidad(DATA.unidades.findIndex(u => u.modulo === 3));
+      const lectura = Number(input.dataset.lectura || 0);
+      const unidad = DATA.unidades.filter(u => u.modulo === 3)[lectura];
+      seleccionarUnidad(DATA.unidades.indexOf(unidad));
+      delete input.dataset.lectura;
     } else {
       renderBarraUnidades();
     }
@@ -178,7 +181,7 @@
       }
     } catch (error) {
       console.warn('No se pudo cargar Herramientas CTI', error);
-      status.textContent = 'No se pudo abrir el archivo. Elige «Herramientas-CTI-Modulo-3.muecti.json».';
+      status.textContent = 'No se pudo abrir el archivo. Elige «Herramientas-CTI-Modulo-3-Elvira.muecti.json».';
     } finally {
       input.value = '';
       input.disabled = false;

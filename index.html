@@ -639,23 +639,7 @@
     <section id="tab-reproductor" class="tab-panel active">
       <details id="modulo-hecti" class="panel-box" style="margin-bottom:14px; padding:10px 14px;">
         <summary style="cursor:pointer; font-weight:700;">Herramientas CTI · Módulo 3</summary>
-        <p>Escucha los audiolibros con la voz Elvira Neural. Puedes guardar los enlaces privados de Drive en este navegador.</p>
-        <ul id="audios-hecti">
-          <li><button type="button">Escuchar</button> <span>Unidad 1 · Cienciometría</span></li>
-          <li><button type="button">Escuchar</button> <span>Unidad 2 · Técnicas cuantitativas</span></li>
-          <li><button type="button">Escuchar</button> <span>Unidad 3 · Lectura 1 · Métodos cualitativos</span></li>
-          <li><button type="button">Escuchar</button> <span>Unidad 3 · Lectura 2 · Trabajo de campo</span></li>
-        </ul>
-        <div id="reproductor-hecti"></div>
-        <p><a id="enlace-audio-hecti" target="_blank" rel="noopener" hidden>Abrir esta lectura en Drive</a></p>
-        <form id="config-audios-hecti">
-          <label for="enlaces-audios-hecti">Enlaces de Drive (uno por línea, en el orden de la lista)</label>
-          <textarea id="enlaces-audios-hecti" rows="4" required style="display:block;width:100%"></textarea>
-          <button type="submit">Guardar enlaces en este navegador</button>
-          <p id="estado-audios-hecti" role="status"></p>
-        </form>
-        <p>Para usar las herramientas de lectura sincronizada del paquete local, descárgalo de Drive e impórtalo aquí una vez por navegador. El audio del paquete puede ser de una versión anterior.</p>
-        <p><a href="https://drive.google.com/drive/u/0/folders/1fSMYXOmEFwg3sPay3ym_4Cy0tf542-1W" target="_blank" rel="noopener">Abrir carpeta de Herramientas en Drive</a></p>
+        <p>Activa las cuatro lecturas una vez en este navegador con tu paquete privado Elvira. Luego podrás leer y escuchar cada unidad desde el selector.</p>
         <label for="archivo-hecti">Paquete privado de Herramientas CTI (.muecti.json)</label>
         <input id="archivo-hecti" type="file" accept=".json,application/json" style="display:block; max-width:100%;">
         <p id="estado-hecti" role="status"></p>
@@ -1269,71 +1253,12 @@
       guardarProgresoLectura(true);
     }
 
-    const listaAudiosHerramientas = document.getElementById('audios-hecti');
-    const campoAudiosHerramientas = document.getElementById('enlaces-audios-hecti');
-    const estadoAudiosHerramientas = document.getElementById('estado-audios-hecti');
-    const enlaceAudioHerramientas = document.getElementById('enlace-audio-hecti');
-    const claveAudiosHerramientas = 'muecti-enlaces-audio-herramientas';
-
-    function enlacesHerramientas(texto) {
-      return texto.trim().split(/\s+/).map(enlace =>
-        /^https:\/\/drive\.google\.com\/file\/d\/([\w-]+)\/view(?:[?#][^\s]*)?$/.exec(enlace)?.[1]
-      );
-    }
-
-    let audiosHerramientas = [];
-    try {
-      const guardados = localStorage.getItem(claveAudiosHerramientas);
-      if (guardados) {
-        campoAudiosHerramientas.value = guardados;
-        audiosHerramientas = enlacesHerramientas(guardados);
-      }
-    } catch (error) {
-      estadoAudiosHerramientas.textContent = 'El navegador no permite recuperar los enlaces guardados.';
-    }
-
-    document.getElementById('config-audios-hecti').addEventListener('submit', event => {
-      event.preventDefault();
-      const ids = enlacesHerramientas(campoAudiosHerramientas.value);
-      if (ids.length !== listaAudiosHerramientas.children.length || ids.some(id => !id) || new Set(ids).size !== ids.length) {
-        estadoAudiosHerramientas.textContent = 'Pega los cuatro enlaces de archivo de Drive, en el orden de la lista.';
-        return;
-      }
-      audiosHerramientas = ids;
-      try {
-        localStorage.setItem(claveAudiosHerramientas, campoAudiosHerramientas.value.trim());
-        estadoAudiosHerramientas.textContent = 'Enlaces guardados en este navegador.';
-      } catch (error) {
-        estadoAudiosHerramientas.textContent = 'Los enlaces están disponibles durante esta visita.';
-      }
-    });
-
-    function reproducirAudioHerramientas(indice) {
-      const panel = document.getElementById('modulo-hecti');
-      cambiarTab('reproductor', document.getElementById('tabBtn_reproductor'));
-      panel.open = true;
-      const id = audiosHerramientas[indice];
-      if (!id) {
-        estadoAudiosHerramientas.textContent = 'Guarda los enlaces privados para escuchar las lecturas aquí.';
-        campoAudiosHerramientas.focus();
-        return;
-      }
-      document.getElementById('mainAudio').pause();
-      const url = new URL('/file/d/' + id + '/', 'https://drive.google.com');
-      const reproductor = document.createElement('iframe');
-      reproductor.title = listaAudiosHerramientas.children[indice].querySelector('span').textContent;
-      reproductor.src = new URL('preview', url).href;
-      reproductor.style.cssText = 'width:100%;height:180px;border:0';
-      document.getElementById('reproductor-hecti').replaceChildren(reproductor);
-      enlaceAudioHerramientas.href = new URL('view', url).href;
-      enlaceAudioHerramientas.hidden = false;
-      reproductor.scrollIntoView({ block: 'nearest' });
-    }
-
-    listaAudiosHerramientas.addEventListener('click', event => {
-      const boton = event.target.closest('button');
-      if (boton) reproducirAudioHerramientas(Array.from(listaAudiosHerramientas.children).indexOf(boton.parentElement));
-    });
+    const lecturasHerramientas = [
+      'Unidad 1 · Cienciometría',
+      'Unidad 2 · Técnicas cuantitativas',
+      'Unidad 3 · Lectura 1 · Métodos cualitativos',
+      'Unidad 3 · Lectura 2 · Trabajo de campo'
+    ];
 
     function renderBarraUnidades() {
       const bar = document.getElementById('unitSelectorBar');
@@ -1347,22 +1272,30 @@
           : u.modulo_privado ? 'Módulo 1 · Historia de la CTI' : 'Módulo 2 · Nuevas perspectivas';
         const titulo = u.etiqueta ? u.etiqueta + ' · ' + u.titulo_corto
           : u.modulo_privado ? u.titulo_corto : u.numero + '. ' + u.titulo_corto;
-        grupos.get(grupo).push(`<option value="${idx}" ${idx === unidadActualIdx ? 'selected' : ''}>${escaparHTML(titulo)}${u.modulo === 3 ? ' · Paquete sincronizado' : ''}</option>`);
+        grupos.get(grupo).push(`<option value="${idx}" ${idx === unidadActualIdx ? 'selected' : ''}>${escaparHTML(titulo)}</option>`);
       });
       const historia = grupos.get('Módulo 1 · Historia de la CTI');
       if (!historia.length) historia.push('<option value="tarea-historia-cti">Abrir archivo de Historia</option>');
-      const titulosHerramientas = Array.from(listaAudiosHerramientas.querySelectorAll('span'));
-      grupos.get('Módulo 3 · Herramientas CTI').push(...titulosHerramientas.map((titulo, i) =>
-        `<option value="audio-hecti-${i}">${escaparHTML(titulo.textContent)} · Elvira Neural</option>`
-      ));
+      const herramientas = grupos.get('Módulo 3 · Herramientas CTI');
+      if (!herramientas.length) {
+        herramientas.push(...lecturasHerramientas.map((titulo, i) =>
+          `<option value="activar-hecti-${i}">${escaparHTML(titulo)}</option>`
+        ));
+      }
       bar.innerHTML = `<label for="selUnidad">Unidad</label><select id="selUnidad" aria-label="Elegir unidad">
         ${Array.from(grupos, ([titulo, items]) => `<optgroup label="${escaparHTML(titulo)}">${items.join('')}</optgroup>`).join('')}
       </select>`;
       bar.querySelector('select').addEventListener('change', event => {
         const valor = event.target.value;
         if (/^\d+$/.test(valor)) return seleccionarUnidad(Number(valor));
-        if (valor.startsWith('audio-hecti-')) {
-          reproducirAudioHerramientas(Number(valor.slice('audio-hecti-'.length)));
+        if (valor.startsWith('activar-hecti-')) {
+          const panel = document.getElementById('modulo-hecti');
+          const archivo = document.getElementById('archivo-hecti');
+          archivo.dataset.lectura = valor.slice('activar-hecti-'.length);
+          cambiarTab('reproductor', document.getElementById('tabBtn_reproductor'));
+          panel.open = true;
+          panel.scrollIntoView({ block: 'center' });
+          archivo.focus();
           event.target.value = String(unidadActualIdx);
           return;
         }
@@ -1379,8 +1312,6 @@
     function seleccionarUnidad(idx, saltarASegundo = null) {
       const u = DATA.unidades[idx];
       if (!u) return;
-      document.getElementById('reproductor-hecti').replaceChildren();
-      enlaceAudioHerramientas.hidden = true;
       guardarProgresoLectura(true);
       unidadActualIdx = idx;
 
@@ -4183,6 +4114,6 @@ Cita siempre la página correspondiente.`;
     });
   </script>
   <script src="historia_cti.js"></script>
-  <script src="herramientas_cti.js"></script>
+  <script src="herramientas_cti.js?v=elvira"></script>
 </body>
 </html>
