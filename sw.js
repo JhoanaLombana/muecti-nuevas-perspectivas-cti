@@ -1,11 +1,11 @@
-const CORE_CACHE = 'muecti-core-v16';
+const CORE_CACHE = 'muecti-core-v17';
 const UNIT_CACHE = 'muecti-unidades-v1';
 
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CORE_CACHE);
     await cache.addAll([
-      './index.html', './datos_unidades.js', './historia_cti.js', './manifest.webmanifest', './icon.svg',
+      './index.html', './datos_unidades.js', './historia_cti.js', './herramientas_cti.js', './manifest.webmanifest', './icon.svg',
       './vendor/pdfjs/pdf.min.mjs', './vendor/pdfjs/pdf.worker.min.mjs'
     ]);
     await self.skipWaiting();

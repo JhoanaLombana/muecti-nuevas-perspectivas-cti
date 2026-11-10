@@ -637,6 +637,14 @@
 
     <!-- MÓDULO 1: REPRODUCTOR DE ESTUDIO Y TRANSCRIPCIÓN VINCULADA AL PDF -->
     <section id="tab-reproductor" class="tab-panel active">
+      <details id="modulo-hecti" class="panel-box" style="margin-bottom:14px; padding:10px 14px;">
+        <summary style="cursor:pointer; font-weight:700;">Herramientas CTI · Módulo 3</summary>
+        <p>Descarga el paquete de tu Drive y ábrelo aquí para cargar las tres unidades y sus cuatro lecturas en el reproductor.</p>
+        <p><a href="https://drive.google.com/drive/u/0/folders/1fSMYXOmEFwg3sPay3ym_4Cy0tf542-1W" target="_blank" rel="noopener">Abrir carpeta de Herramientas en Drive</a></p>
+        <label for="archivo-hecti">Paquete privado de Herramientas CTI (.muecti.json)</label>
+        <input id="archivo-hecti" type="file" accept=".json,application/json" style="display:block; max-width:100%;">
+        <p id="estado-hecti" role="status"></p>
+      </details>
       <details id="tarea-historia-cti" class="panel-box" style="margin-bottom:14px; padding:10px 14px;">
         <summary style="cursor:pointer; font-weight:700;">Historia de la CTI · Módulo 1</summary>
         <p>Abre tu archivo privado para estudiar la tarea final en el mismo reproductor, con PDF, evaluaciones y repasos.</p>
@@ -1205,7 +1213,7 @@
         const datos = JSON.parse(localStorage.getItem(CLAVE_PROGRESO_LECTURA) || 'null');
         if (!datos || typeof datos !== 'object') return limpio;
         if (DATA.unidades.some(u => u.numero === datos.ultimaUnidad)) limpio.ultimaUnidad = datos.ultimaUnidad;
-        for (const numero of [...DATA.unidades.map(u => u.numero), 7]) {
+        for (const numero of [...new Set([...DATA.unidades.map(u => u.numero), 7, 8, 9, 10, 11])]) {
           const seg = datos.posiciones?.[numero];
           if (typeof seg === 'number' && Number.isFinite(seg) && seg >= 0) limpio.posiciones[numero] = seg;
         }
@@ -1248,9 +1256,38 @@
 
     function renderBarraUnidades() {
       const bar = document.getElementById('unitSelectorBar');
-      bar.innerHTML = `<label for="selUnidad">Unidad</label><select id="selUnidad" aria-label="Elegir unidad" onchange="seleccionarUnidad(Number(this.value))">
-        ${DATA.unidades.map((u, idx) => `<option value="${idx}" ${idx === unidadActualIdx ? 'selected' : ''}>${u.modulo_privado ? 'Historia CTI · ' : u.numero + '. '}${escaparHTML(u.titulo_corto)}</option>`).join('')}
+      const grupos = new Map([
+        ['Módulo 1 · Historia de la CTI', []],
+        ['Módulo 2 · Nuevas perspectivas', []],
+        ['Módulo 3 · Herramientas CTI', []]
+      ]);
+      DATA.unidades.forEach((u, idx) => {
+        const grupo = u.modulo === 3 ? 'Módulo 3 · Herramientas CTI'
+          : u.modulo_privado ? 'Módulo 1 · Historia de la CTI' : 'Módulo 2 · Nuevas perspectivas';
+        const titulo = u.etiqueta ? u.etiqueta + ' · ' + u.titulo_corto
+          : u.modulo_privado ? u.titulo_corto : u.numero + '. ' + u.titulo_corto;
+        grupos.get(grupo).push(`<option value="${idx}" ${idx === unidadActualIdx ? 'selected' : ''}>${escaparHTML(titulo)}</option>`);
+      });
+      for (const [grupo, id, texto] of [
+        ['Módulo 1 · Historia de la CTI', 'tarea-historia-cti', 'Abrir archivo de Historia'],
+        ['Módulo 3 · Herramientas CTI', 'modulo-hecti', 'Abrir paquete de Herramientas']
+      ]) {
+        if (!grupos.get(grupo).length) grupos.get(grupo).push(`<option value="${id}">${texto}</option>`);
+      }
+      bar.innerHTML = `<label for="selUnidad">Unidad</label><select id="selUnidad" aria-label="Elegir unidad">
+        ${Array.from(grupos, ([titulo, items]) => `<optgroup label="${escaparHTML(titulo)}">${items.join('')}</optgroup>`).join('')}
       </select>`;
+      bar.querySelector('select').addEventListener('change', event => {
+        const valor = event.target.value;
+        if (/^\d+$/.test(valor)) return seleccionarUnidad(Number(valor));
+        const panel = document.getElementById(valor);
+        if (!panel) return;
+        cambiarTab('reproductor', document.getElementById('tabBtn_reproductor'));
+        panel.open = true;
+        panel.querySelector('summary').focus();
+        panel.scrollIntoView({ block: 'center' });
+        event.target.value = String(unidadActualIdx);
+      });
     }
 
     function seleccionarUnidad(idx, saltarASegundo = null) {
@@ -1261,12 +1298,12 @@
 
       renderBarraUnidades();
       document.getElementById('badgeParrafos').textContent = u.parrafos.length;
-      document.getElementById('lblUnidadActual').textContent = u.modulo_privado
+      document.getElementById('lblUnidadActual').textContent = u.modulo === 3 ? 'Herramientas CTI · ' + u.etiqueta + ' · ' + u.titulo_corto : u.modulo_privado
         ? 'Historia CTI · Módulo 1: ' + u.titulo_corto : `Unidad ${u.numero}: ${u.titulo_corto}`;
       const descarga = document.getElementById('lnkDescargarMp3');
       descarga.href = encodeURI(u.archivo_mp3);
-      descarga.textContent = u.modulo_privado ? '⬇ WAV' : '⬇ MP3';
-      descarga.download = u.modulo_privado ? 'Tarea final Historia CTI.wav' : '';
+      descarga.textContent = u.modulo_privado && u.modulo !== 3 ? '⬇ WAV' : '⬇ MP3';
+      descarga.download = u.modulo === 3 ? u.nombre_base + '.mp3' : u.modulo_privado ? 'Tarea final Historia CTI.wav' : '';
 
       const audio = document.getElementById('mainAudio');
       const srcDeseado = encodeURI(u.archivo_mp3);
@@ -1342,6 +1379,9 @@
           claseTag = 'manual';
           etiquetaTiempo = `📌 ${formatearSegundos(tEfectivo)} (corregido manual)`;
           tituloTag = `Tiempo fijado manualmente por ti (${corr.fecha})`;
+        } else if (p.precision_tiempo === 'generado_por_segmento') {
+          claseTag = 'exact';
+          etiquetaTiempo = `🎧 ${formatearSegundos(tEfectivo)} (inicio del fragmento)`;
         } else if (p.precision_tiempo === 'verificado_audio') {
           claseTag = 'exact';
           etiquetaTiempo = `🎧 ${formatearSegundos(tEfectivo)} (verificado en audio)`;
@@ -1629,9 +1669,9 @@
 
       document.getElementById('lblPaginaViva').textContent = `📄 Pág. ${pagEf} del PDF`;
       document.getElementById('lblSeccionViva').textContent = p.seccion;
-      document.getElementById('readerCurrentPage').textContent = `Unidad ${u.numero} · Pág. ${pagEf} · Párrafo ${idxParrafo + 1} de ${u.parrafos.length}`;
+      document.getElementById('readerCurrentPage').textContent = `${u.etiqueta || 'Unidad ' + u.numero} · Pág. ${pagEf} · Párrafo ${idxParrafo + 1} de ${u.parrafos.length}`;
       document.getElementById('readerCurrentSection').textContent = p.seccion;
-      document.getElementById('pdfFollowPage').textContent = `Unidad ${u.numero} · Página ${pagEf} · ${p.seccion}`;
+      document.getElementById('pdfFollowPage').textContent = `${u.etiqueta || 'Unidad ' + u.numero} · Página ${pagEf} · ${p.seccion}`;
       const htmlPalabras = htmlPalabrasLectura(p.texto);
       document.getElementById('pdfFollowParagraph').innerHTML = htmlPalabras;
       document.getElementById('readingFocusText').innerHTML = htmlPalabras;
@@ -2978,7 +3018,7 @@ Cita siempre la página correspondiente.`;
       const urlPdf = `${encodeURI(unidad.archivo_pdf)}#page=${cap.pagina}`;
       panel.innerHTML = `
         <div class="eval-card" style="margin-bottom:0;">
-          <div style="color:var(--primary); font-size:0.82rem; font-weight:700;">Unidad ${unidad.numero} · Pregunta ${(indicePracticaPDF % preguntas.length) + 1} de ${preguntas.length} · Página ${cap.pagina}</div>
+          <div style="color:var(--primary); font-size:0.82rem; font-weight:700;">${escaparHTML(unidad.etiqueta || 'Unidad ' + unidad.numero)} · Pregunta ${(indicePracticaPDF % preguntas.length) + 1} de ${preguntas.length} · Página ${cap.pagina}</div>
           <h3 style="font-size:1rem; margin:8px 0;">${escaparHTML(cap.pregunta_caminata)}</h3>
           <p class="teacher-note">Piensa tu respuesta antes de mirar el texto. Algunas preguntas relacionan varias páginas del PDF.</p>
           <div class="walk-actions">
@@ -2986,7 +3026,7 @@ Cita siempre la página correspondiente.`;
             <button class="btn" onclick="siguientePracticaPDF()">Otra pregunta →</button>
           </div>
           <div id="respuestaPracticaPDF" class="cite-card" style="margin-top:12px; ${practicaPDFRevelada ? '' : 'display:none;'}">
-            <strong>Fragmento de partida del PDF · Unidad ${unidad.numero}, página ${cap.pagina}</strong>
+            <strong>Fragmento de partida del PDF · ${escaparHTML(unidad.etiqueta || 'Unidad ' + unidad.numero)}, página ${cap.pagina}</strong>
             <p style="margin:8px 0;">${escaparHTML(cap.descripcion)}</p>
             <p class="teacher-note">Si la pregunta compara autores o apartados, revisa también las otras páginas de la unidad antes de valorar tu respuesta.</p>
             <div class="walk-actions">
@@ -3470,7 +3510,7 @@ Cita siempre la página correspondiente.`;
 
     // Funciones del Modo Caminata (Cápsulas Breves + Respuesta por Voz)
     function repasosConUnidadDisponible() {
-      return estadoEstudio.calendarioRepasos.filter(r => r.unidadNum !== 7 || DATA.unidades.some(u => u.numero === 7));
+      return estadoEstudio.calendarioRepasos.filter(r => r.unidadNum < 7 || DATA.unidades.some(u => u.numero === r.unidadNum));
     }
 
     function prepararColaCaminata() {
@@ -3497,7 +3537,7 @@ Cita siempre la página correspondiente.`;
     function mostrarCapsulaCaminataActual() {
       const cap = colaCaminata[idxCaminataActual];
       if (!cap) return;
-      document.getElementById('lblMetaCaminata').textContent = `Cápsula ${idxCaminataActual + 1} de ${colaCaminata.length} · Unidad ${cap.unidadNum} · 📄 Página ${cap.pagina} del PDF`;
+      document.getElementById('lblMetaCaminata').textContent = `Cápsula ${idxCaminataActual + 1} de ${colaCaminata.length} · ${DATA.unidades.find(u => u.numero === cap.unidadNum)?.etiqueta || 'Unidad ' + cap.unidadNum} · 📄 Página ${cap.pagina} del PDF`;
       document.getElementById('lblTituloCaminata').textContent = cap.titulo;
       document.getElementById('lblPreguntaCaminata').textContent = `❓ Pregunta para responder en voz alta: ${cap.pregunta_caminata || '¿Cuáles son las ideas principales de este fragmento?'}`;
       document.getElementById('lblTextoCaminata').textContent = cap.descripcion;
@@ -3625,7 +3665,7 @@ Cita siempre la página correspondiente.`;
           <div class="panel-box" style="display:flex; flex-direction:column; justify-content:space-between; gap:12px;">
             <div>
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-                <span class="badge" style="font-size:0.8rem;">${u.modulo_privado ? 'HISTORIA CTI · MÓDULO 1' : 'UNIDAD ' + u.numero}</span>
+                <span class="badge" style="font-size:0.8rem;">${u.modulo === 3 ? 'MÓDULO 3 · ' + escaparHTML(u.etiqueta) : u.modulo_privado ? 'HISTORIA CTI · MÓDULO 1' : 'UNIDAD ' + u.numero}</span>
                 <span style="font-size:0.78rem; color:var(--text-muted);">⏱️ ${mins} min · 📦 ${u.tamano_mb} MB · 🎧 ${Array.isArray(u.puntos_verificados_audio) ? u.puntos_verificados_audio.length : (Number(u.puntos_verificados_audio) || 3)} puntos verificados en audio</span>
               </div>
               <h3 style="font-size:1rem; margin-bottom:6px; color:var(--primary);">${escaparHTML(u.titulo_corto)}</h3>
@@ -3642,7 +3682,7 @@ Cita siempre la página correspondiente.`;
                 🎧 Abrir en Reproductor
               </button>
               <a class="btn" href="${encodeURI(u.archivo_pdf)}" target="_blank">📄 PDF</a>
-              <a class="btn" href="${encodeURI(u.archivo_mp3)}" download="${u.modulo_privado ? 'Tarea final Historia CTI.wav' : ''}">⬇ ${u.modulo_privado ? 'WAV' : 'MP3'}</a>
+              <a class="btn" href="${encodeURI(u.archivo_mp3)}" download="${u.modulo === 3 ? u.nombre_base + '.mp3' : u.modulo_privado ? 'Tarea final Historia CTI.wav' : ''}">⬇ ${u.modulo_privado && u.modulo !== 3 ? 'WAV' : 'MP3'}</a>
               <a class="btn" href="${encodeURI(u.archivo_guion)}" target="_blank">📝 Guion</a>
               ${u.modulo_privado ? '' : `<button class="btn btn-success" id="btnOffline_${idx}" onclick="guardarUnidadOffline(${idx})">📥 Guardar unidad para uso sin conexión</button>`}
             </div>
@@ -4055,5 +4095,6 @@ Cita siempre la página correspondiente.`;
     });
   </script>
   <script src="historia_cti.js"></script>
+  <script src="herramientas_cti.js"></script>
 </body>
 </html>
