@@ -637,6 +637,97 @@
 
     <!-- MÓDULO 1: REPRODUCTOR DE ESTUDIO Y TRANSCRIPCIÓN VINCULADA AL PDF -->
     <section id="tab-reproductor" class="tab-panel active">
+      <details id="tarea-historia-cti" class="panel-box" style="margin-bottom:14px; padding:10px 14px;">
+        <summary style="cursor:pointer; font-weight:700;">Historia de la CTI · Tarea final y defensa oral</summary>
+        <p>Carga tu archivo de estudio para leer y escuchar la tarea por secciones. El archivo se abre en este navegador y no se sube al sitio.</p>
+        <label for="archivo-historia-cti">Archivo privado de la tarea (.muecti.json)</label>
+        <input id="archivo-historia-cti" type="file" accept=".json,application/json" style="display:block; max-width:100%;">
+        <p id="estado-historia-cti" role="status"></p>
+        <div id="contenido-historia-cti" hidden>
+          <label for="seccion-historia-cti">Sección para estudiar</label>
+          <select id="seccion-historia-cti"></select>
+          <audio id="audio-historia-cti" controls preload="metadata" aria-label="Audio de la sección" style="display:block; width:100%; margin-top:10px;"></audio>
+          <article id="lectura-historia-cti" aria-label="Texto de la sección" style="max-width:78ch; line-height:1.65; white-space:pre-line;"></article>
+        </div>
+      </details>
+      <script>
+        (() => {
+          const panel = document.getElementById('tarea-historia-cti');
+          const fileInput = document.getElementById('archivo-historia-cti');
+          const status = document.getElementById('estado-historia-cti');
+          const content = document.getElementById('contenido-historia-cti');
+          const selector = document.getElementById('seccion-historia-cti');
+          const player = document.getElementById('audio-historia-cti');
+          const reader = document.getElementById('lectura-historia-cti');
+          let sections = [];
+          let audioUrl;
+
+          function clearAudio() {
+            player.pause();
+            player.removeAttribute('src');
+            player.load();
+            if (audioUrl) URL.revokeObjectURL(audioUrl);
+            audioUrl = undefined;
+          }
+
+          function showSection() {
+            const section = sections[Number(selector.value)];
+            clearAudio();
+            const heading = document.createElement('h3');
+            heading.textContent = section.title;
+            reader.replaceChildren(heading, ...section.paragraphs.map(text => {
+              const paragraph = document.createElement('p');
+              paragraph.textContent = text;
+              return paragraph;
+            }));
+            audioUrl = URL.createObjectURL(section.audio);
+            player.src = audioUrl;
+            status.textContent = '';
+          }
+
+          fileInput.addEventListener('change', async () => {
+            const file = fileInput.files[0];
+            clearAudio();
+            content.hidden = true;
+            sections = [];
+            reader.replaceChildren();
+            selector.replaceChildren();
+            if (!file) return;
+            fileInput.disabled = true;
+            status.textContent = 'Abriendo archivo…';
+            try {
+              if (file.size > 64 * 1024 * 1024) throw new Error();
+              const pack = JSON.parse(await file.text());
+              if (pack?.format !== 'muecti-historia-cti-v1' || !Array.isArray(pack.sections) || !pack.sections.length) throw new Error();
+              sections = pack.sections.map(section => {
+                if (typeof section?.title !== 'string' || !Array.isArray(section.paragraphs) ||
+                    !section.paragraphs.every(text => typeof text === 'string') ||
+                    typeof section.wav !== 'string') throw new Error();
+                const wav = atob(section.wav);
+                if (!wav.startsWith('RIFF') || wav.slice(8, 12) !== 'WAVE') throw new Error();
+                const bytes = new Uint8Array(wav.length);
+                for (let i = 0; i < wav.length; i++) bytes[i] = wav.charCodeAt(i);
+                const audio = new Blob([bytes], { type: 'audio/wav' });
+                return { title: section.title, paragraphs: section.paragraphs, audio };
+              });
+              selector.replaceChildren(...sections.map((section, index) => new Option(section.title, index)));
+              showSection();
+              content.hidden = false;
+            } catch {
+              status.textContent = 'No se pudo abrir el archivo. Selecciona el paquete .muecti.json de la tarea de Historia de la CTI.';
+            } finally {
+              fileInput.disabled = false;
+              fileInput.value = '';
+            }
+          });
+          selector.addEventListener('change', showSection);
+          panel.addEventListener('toggle', () => { if (!panel.open) player.pause(); });
+          player.addEventListener('error', () => {
+            status.textContent = 'El navegador no pudo reproducir el audio. Puedes seguir leyendo el texto.';
+          });
+          if (location.hash === '#tarea-historia-cti') panel.open = true;
+        })();
+      </script>
       <details class="panel-box" style="margin-bottom: 14px; padding: 10px 14px; background: rgba(15, 23, 42, 0.75); font-size: 0.81rem;">
         <summary style="cursor:pointer; font-weight:700;">ℹ️ Cómo se sincronizan el audio, el texto y el PDF</summary>
         <div>
