@@ -33,7 +33,9 @@
   function media(base64, mime, prefix) {
     const bytes = atob(base64);
     if (!bytes.startsWith(prefix)) throw new Error('Formato de archivo');
-    return new Blob([Uint8Array.from(bytes, value => value.charCodeAt(0))], { type: mime });
+    const buffer = new Uint8Array(bytes.length);
+    for (let i = 0; i < bytes.length; i++) buffer[i] = bytes.charCodeAt(i);
+    return new Blob([buffer], { type: mime });
   }
 
   function prepare(record, index) {
@@ -94,42 +96,89 @@
     };
   }
 
+  async function paqueteLocal(mode, file) {
+    const db = await new Promise((resolve, reject) => {
+      const request = indexedDB.open('muecti-herramientas', 1);
+      request.onupgradeneeded = () => request.result.createObjectStore('paquetes');
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+    });
+    try {
+      return await new Promise((resolve, reject) => {
+        const transaction = db.transaction('paquetes', mode);
+        const store = transaction.objectStore('paquetes');
+        const request = file ? store.put(file, 'modulo3') : store.get('modulo3');
+        transaction.oncomplete = () => resolve(request.result);
+        transaction.onabort = () => reject(transaction.error);
+      });
+    } finally {
+      db.close();
+    }
+  }
+
+  async function cargarPaquete(file, seleccionar) {
+    if (file.size > 80 * 1024 * 1024) throw new Error('Paquete demasiado grande');
+    const pack = JSON.parse(await file.text());
+    if (pack?.format !== 'muecti-hecti-v1' || !Array.isArray(pack.readings) ||
+        pack.readings.length !== modules.length) throw new Error('Formato de módulo');
+    if (!DATA.unidades.some(u => u.modulo === 3)) {
+      for (const { unidad, capsulas, conceptos } of pack.readings.map(prepare)) {
+        for (const key of ['archivo_mp3', 'archivo_pdf', 'archivo_guion']) {
+          unidad[key] = URL.createObjectURL(unidad[key]);
+        }
+        DATA.unidades.push(unidad);
+        DATA.capsulas_base.push(...capsulas);
+        capsulas.forEach((cap, i) => registrarEnCalendarioRepasos({
+          ...cap, descripcion: unidad.evaluacion.orales[i].respuesta_modelo
+        }));
+        DATA.base_conocimiento_profesor.push(...conceptos);
+      }
+    }
+    if (seleccionar) {
+      cambiarTab('reproductor', document.getElementById('tabBtn_reproductor'));
+      seleccionarUnidad(DATA.unidades.findIndex(u => u.modulo === 3));
+    } else {
+      renderBarraUnidades();
+    }
+    renderBiblioteca();
+    renderCalendarioYRepasos();
+    prepararColaCaminata();
+  }
+
+  const listo = 'Las cuatro lecturas están disponibles en el desplegable de este navegador.';
+  input.disabled = true;
+  window.addEventListener('DOMContentLoaded', async () => {
+    try {
+      const file = await paqueteLocal('readonly');
+      if (file) {
+        await cargarPaquete(file, false);
+        status.textContent = listo;
+      }
+    } catch (error) {
+      console.warn('No se pudo recuperar el paquete de Herramientas CTI', error);
+      status.textContent = 'Puedes volver a abrir el paquete desde tu dispositivo.';
+    } finally {
+      input.disabled = false;
+    }
+  });
+
   input.addEventListener('change', async () => {
     const file = input.files[0];
     if (!file) return;
     input.disabled = true;
     status.textContent = 'Cargando las cuatro lecturas…';
     try {
-      if (file.size > 80 * 1024 * 1024) throw new Error('Paquete demasiado grande');
-      const pack = JSON.parse(await file.text());
-      if (pack?.format !== 'muecti-hecti-v1' || pack.readings?.length !== modules.length ||
-          !Array.isArray(pack.readings)) throw new Error('Formato de módulo');
-      const prepared = pack.readings.map(prepare);
-      if (!DATA.unidades.some(u => u.modulo === 3)) {
-        for (const { unidad, capsulas, conceptos } of prepared) {
-          for (const key of ['archivo_mp3', 'archivo_pdf', 'archivo_guion']) {
-            unidad[key] = URL.createObjectURL(unidad[key]);
-          }
-          DATA.unidades.push(unidad);
-          DATA.capsulas_base.push(...capsulas);
-          capsulas.forEach((cap, i) => registrarEnCalendarioRepasos({
-            ...cap, descripcion: unidad.evaluacion.orales[i].respuesta_modelo
-          }));
-          DATA.base_conocimiento_profesor.push(...conceptos);
-        }
+      await cargarPaquete(file, true);
+      try {
+        await paqueteLocal('readwrite', file);
+        status.textContent = listo;
+      } catch (error) {
+        console.warn('El navegador no pudo guardar el paquete de Herramientas CTI', error);
+        status.textContent = 'Las lecturas están disponibles en esta sesión. El navegador no pudo guardarlas para la próxima visita.';
       }
-      const saved = cargarProgresoLectura();
-      Object.assign(progresoLectura.posiciones, saved.posiciones);
-      const index = DATA.unidades.findIndex(u => u.numero === saved.ultimaUnidad && u.modulo === 3);
-      cambiarTab('reproductor', document.getElementById('tabBtn_reproductor'));
-      seleccionarUnidad(index >= 0 ? index : DATA.unidades.findIndex(u => u.modulo === 3));
-      renderBiblioteca();
-      renderCalendarioYRepasos();
-      prepararColaCaminata();
-      status.textContent = 'Módulo 3 listo. Elige una de las cuatro lecturas en el desplegable.';
     } catch (error) {
       console.warn('No se pudo cargar Herramientas CTI', error);
-      status.textContent = 'Elige el paquete «Herramientas-CTI-Modulo-3.muecti.json».';
+      status.textContent = 'No se pudo abrir el archivo. Elige «Herramientas-CTI-Modulo-3.muecti.json».';
     } finally {
       input.value = '';
       input.disabled = false;
