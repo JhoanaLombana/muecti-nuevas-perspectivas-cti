@@ -1206,6 +1206,21 @@ header {background:repeating-linear-gradient(0deg,transparent 0 5px,#ff41c608 5p
       actualizarContadores();
     });
 
+    // Al abrir o volver a la página, usar siempre la velocidad natural.
+    function restablecerVelocidadNatural() {
+      const selector = document.getElementById('speedSelect');
+      const audio = document.getElementById('mainAudio');
+      if (selector) selector.value = '1';
+      if (audio) {
+        audio.defaultPlaybackRate = 1;
+        audio.playbackRate = 1;
+      }
+    }
+    window.addEventListener('pageshow', restablecerVelocidadNatural);
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') restablecerVelocidadNatural();
+    });
+
     // La posición de cada unidad se conserva solo en este navegador.
     function cargarProgresoLectura() {
       const limpio = { ultimaUnidad: null, posiciones: {} };
