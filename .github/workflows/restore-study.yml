@@ -1,0 +1,63 @@
+name: Restore verified MUECTI study version
+on:
+  push:
+    branches: [codex/mobile-study-preview]
+    paths: [.github/workflows/restore-study.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recover complete working study version
+        env:
+          SOURCE: https://muecti-biblioteca-jhoana.adventurousbasin.chatgpt.site
+        run: |
+          set -eu
+          for file in index.html herramientas_cti.js datos_unidades.js historia_cti.js sw.js manifest.webmanifest icon.svg; do
+            curl --fail --location --retry 3 "$SOURCE/$file" -o "$file"
+          done
+          mkdir -p herramientas
+          curl --fail --location --retry 3 "$SOURCE/herramientas/lecturas.json" -o herramientas/lecturas.json
+          for n in 1 2 3 4; do
+            for ext in mp3 pdf; do
+              curl --fail --location --retry 3 "$SOURCE/herramientas/lectura-$n.$ext" -o "herramientas/lectura-$n.$ext"
+            done
+          done
+          python3 - <<'PY'
+          import json,re,pathlib
+          p=pathlib.Path('index.html')
+          s=p.read_text()
+          s,n=re.subn(r'<section class="innovation-neon-banner"[\s\S]*?</section>\s*','',s)
+          assert n == 1, 'Expected exactly one temporary greeting'
+          assert 'lecturasHerramientasListas' in s
+          p.write_text(s)
+          readings=json.loads(pathlib.Path('herramientas/lecturas.json').read_text())['readings']
+          assert len(readings)==4
+          for n in range(1,5):
+              assert pathlib.Path(f'herramientas/lectura-{n}.pdf').read_bytes().startswith(b'%PDF')
+              assert pathlib.Path(f'herramientas/lectura-{n}.mp3').stat().st_size>100000
+          p=pathlib.Path('sw.js')
+          p.write_text(re.sub(r"muecti-core-v\d+",'muecti-core-restored-20261113',p.read_text()))
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html herramientas_cti.js datos_unidades.js historia_cti.js sw.js manifest.webmanifest icon.svg herramientas
+          git commit -m "Restore complete working study version, removing only temporary greeting"
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - uses: actions/deploy-pages@v4
+        id: deployment
