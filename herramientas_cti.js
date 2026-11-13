@@ -1,5 +1,4 @@
 (() => {
-  const input = document.getElementById('archivo-hecti');
   const status = document.getElementById('estado-hecti');
   const modules = [
     ['Unidad 1', 'Investigación, publicación y cienciometría'],
@@ -30,12 +29,6 @@
     ]
   ];
 
-  function media(base64, mime, prefix) {
-    const bytes = atob(base64);
-    if (!bytes.startsWith(prefix)) throw new Error('Formato de archivo');
-    return new Blob([Uint8Array.from(bytes, value => value.charCodeAt(0))], { type: mime });
-  }
-
   function prepare(record, index) {
     if (!Number.isInteger(record.pages) || record.pages < 3 || record.pages > 50 ||
         !Array.isArray(record.segments) || !record.segments.length || record.segments.length > 350) {
@@ -51,11 +44,17 @@
           !Number.isInteger(page) || page < previousPage || page > record.pages ||
           !Number.isFinite(start) || !Number.isFinite(end) || Math.abs(start - previous) > .002 ||
           end <= start || end > 7200) throw new Error('Mapa de audio');
+      const wordStartsMs = item.wordStartsMs;
+      if (wordStartsMs !== undefined && (!Array.isArray(wordStartsMs) ||
+          wordStartsMs.length !== palabrasLectura(text).length ||
+          wordStartsMs.some((time, i) => !Number.isInteger(time) || time < (wordStartsMs[i - 1] ?? 0) ||
+            time >= (end - start) * 1000))) throw new Error('Marcas de palabras');
       previous = end;
       previousPage = page;
       return {
         id: 'hecti_' + numero + '_' + indice, indice, texto: text, seccion: 'Página ' + page,
         pagina_inicio: page, pagina_fin: page, inicio_s: start, fin_s: end,
+        marcas_palabras_ms: wordStartsMs,
         precision_tiempo: 'generado_por_segmento', nota_precision: 'Marca calculada a partir del audio generado para este fragmento.'
       };
     });
@@ -78,8 +77,8 @@
       conceptos.push({ id, unidad: numero, titulo: pregunta, paginas: p.seccion, pagina_principal: pagina,
         terminos_clave: pistas, sintesis_elaborada: respuesta });
     });
-    const pdf = media(record.pdf, 'application/pdf', '%PDF-');
-    const audio = media(record.audio, 'audio/mpeg', 'ID3');
+    const pdf = './herramientas/lectura-' + (index + 1) + '.pdf';
+    const audio = './herramientas/lectura-' + (index + 1) + '.mp3';
     const guion = new Blob([parrafos.map(p => p.texto).join('\n\n')], { type: 'text/plain;charset=utf-8' });
     return {
       unidad: {
@@ -88,51 +87,34 @@
         modulo_privado: true, archivo_mp3: audio, archivo_pdf: pdf, archivo_guion: guion,
         duracion_estimada_s: previous, total_paginas_pdf: record.pages,
         total_palabras: parrafos.reduce((n, p) => n + p.texto.split(/\s+/).length, 0),
-        tamano_mb: ((audio.size + pdf.size) / 1048576).toFixed(1), puntos_verificados_audio: [],
+        tamano_mb: record.tamano_mb, puntos_verificados_audio: [],
         parrafos, secciones, evaluacion: { orales, test }
       }, capsulas, conceptos
     };
   }
 
-  input.addEventListener('change', async () => {
-    const file = input.files[0];
-    if (!file) return;
-    input.disabled = true;
-    status.textContent = 'Cargando las cuatro lecturas…';
+
+  window.lecturasHerramientasListas = (async () => {
     try {
-      if (file.size > 80 * 1024 * 1024) throw new Error('Paquete demasiado grande');
-      const pack = JSON.parse(await file.text());
-      if (pack?.format !== 'muecti-hecti-v1' || pack.readings?.length !== modules.length ||
-          !Array.isArray(pack.readings)) throw new Error('Formato de módulo');
-      const prepared = pack.readings.map(prepare);
-      if (!DATA.unidades.some(u => u.modulo === 3)) {
-        for (const { unidad, capsulas, conceptos } of prepared) {
-          for (const key of ['archivo_mp3', 'archivo_pdf', 'archivo_guion']) {
-            unidad[key] = URL.createObjectURL(unidad[key]);
-          }
-          DATA.unidades.push(unidad);
-          DATA.capsulas_base.push(...capsulas);
-          capsulas.forEach((cap, i) => registrarEnCalendarioRepasos({
-            ...cap, descripcion: unidad.evaluacion.orales[i].respuesta_modelo
-          }));
-          DATA.base_conocimiento_profesor.push(...conceptos);
-        }
+      const response = await fetch('./herramientas/lecturas.json');
+      if (!response.ok) throw new Error('Lecturas no disponibles');
+      const pack = await response.json();
+      if (pack.format !== 'muecti-hecti-v1' || pack.readings.length !== modules.length) {
+        throw new Error('Formato de módulo');
       }
-      const saved = cargarProgresoLectura();
-      Object.assign(progresoLectura.posiciones, saved.posiciones);
-      const index = DATA.unidades.findIndex(u => u.numero === saved.ultimaUnidad && u.modulo === 3);
-      cambiarTab('reproductor', document.getElementById('tabBtn_reproductor'));
-      seleccionarUnidad(index >= 0 ? index : DATA.unidades.findIndex(u => u.modulo === 3));
-      renderBiblioteca();
-      renderCalendarioYRepasos();
-      prepararColaCaminata();
-      status.textContent = 'Módulo 3 listo. Elige una de las cuatro lecturas en el desplegable.';
+      for (const { unidad, capsulas, conceptos } of pack.readings.map(prepare)) {
+        unidad.archivo_guion = URL.createObjectURL(unidad.archivo_guion);
+        DATA.unidades.push(unidad);
+        DATA.capsulas_base.push(...capsulas);
+        capsulas.forEach((cap, i) => registrarEnCalendarioRepasos({
+          ...cap, descripcion: unidad.evaluacion.orales[i].respuesta_modelo
+        }));
+        DATA.base_conocimiento_profesor.push(...conceptos);
+      }
+      status.hidden = true;
     } catch (error) {
-      console.warn('No se pudo cargar Herramientas CTI', error);
-      status.textContent = 'Elige el paquete «Herramientas-CTI-Modulo-3.muecti.json».';
-    } finally {
-      input.value = '';
-      input.disabled = false;
+      console.error(error);
+      status.textContent = 'No se pudieron cargar las lecturas de Herramientas CTI. Recarga la página.';
     }
-  });
+  })();
 })();

@@ -97,7 +97,7 @@
       position: sticky; top: 0; z-index: 50;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
     }
-    .player-bar .unit-selector-bar { flex: 0 0 100%; min-width: 0; }
+    .player-bar .unit-selector-bar { display: grid; grid-template-columns: 4rem minmax(0, 1fr); flex: 0 0 100%; min-width: 0; }
     .player-bar .unit-selector-bar select { flex: 1; min-width: 0; max-width: 600px; }
     .player-controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .btn {
@@ -518,7 +518,7 @@
     <div class="brand">
       <div class="brand-icon">🎧</div>
       <div>
-        <h1>Sistema de Estudio MUECTI · Ciencia, Tecnología e Innovación</h1>
+        <h1>Sistema de Estudio MUECTI · Nuevas Perspectivas CTI</h1>
         <p>Escucha, sigue el texto y practica con los PDF · IA opcional solo bajo tu control</p>
       </div>
     </div>
@@ -609,7 +609,7 @@
         <span id="lblPrecisionViva" style="color:#fcd34d;">⏱️ Estado de sincronización del párrafo</span>
         <span><strong id="lblTiempoActual">00:00</strong> / <span id="lblTiempoTotal">00:00</span></span>
       </div>
-      <input type="range" id="timelineSlider" class="timeline-slider" min="0" max="100" value="0" step="0.1" oninput="buscarEnTimeline(this.value)" />
+      <input type="range" id="timelineSlider" class="timeline-slider" min="0" max="100" value="0" step="0.1" onchange="buscarEnTimeline(this.value)" />
     </div>
 
     <div class="live-pdf-indicator">
@@ -631,14 +631,7 @@
 
     <!-- MÓDULO 1: REPRODUCTOR DE ESTUDIO Y TRANSCRIPCIÓN VINCULADA AL PDF -->
     <section id="tab-reproductor" class="tab-panel active">
-      <details id="modulo-hecti" class="panel-box" style="margin-bottom:14px; padding:10px 14px;">
-        <summary style="cursor:pointer; font-weight:700;">Herramientas CTI · Módulo 3</summary>
-        <p>Descarga el paquete de tu Drive y ábrelo aquí para cargar las tres unidades y sus cuatro lecturas en el reproductor.</p>
-        <p><a href="https://drive.google.com/drive/u/0/folders/1fSMYXOmEFwg3sPay3ym_4Cy0tf542-1W" target="_blank" rel="noopener">Abrir carpeta de Herramientas en Drive</a></p>
-        <label for="archivo-hecti">Paquete privado de Herramientas CTI (.muecti.json)</label>
-        <input id="archivo-hecti" type="file" accept=".json,application/json" style="display:block; max-width:100%;">
-        <p id="estado-hecti" role="status"></p>
-      </details>
+      <p id="estado-hecti" role="status">Cargando las cuatro lecturas de Herramientas CTI…</p>
       <details id="tarea-historia-cti" class="panel-box" style="margin-bottom:14px; padding:10px 14px;">
         <summary style="cursor:pointer; font-weight:700;">Historia de la CTI · Módulo 1</summary>
         <p>Abre tu archivo privado para estudiar la tarea final en el mismo reproductor, con PDF, evaluaciones y repasos.</p>
@@ -982,6 +975,8 @@
     const progresoLectura = cargarProgresoLectura();
     let restauracionLecturaPendiente = null;
     let ultimoGuardadoLectura = 0;
+    let descargaAudioLectura = null;
+    let urlAudioLocal = null;
     let unidadActualIdx = 0;
     let parrafoActivoIdx = 0;
     let factorEscalaAudio = 1.0;
@@ -1181,13 +1176,14 @@
     }
 
     // Inicialización
-    window.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('DOMContentLoaded', async () => {
       registrarModoOffline();
       inicializarEstadoGeminiUI();
-      renderBarraUnidades();
       configurarEventosAudio();
+      await window.lecturasHerramientasListas;
       const ultimaUnidad = DATA.unidades.findIndex(u => u.numero === progresoLectura.ultimaUnidad);
-      seleccionarUnidad(ultimaUnidad >= 0 ? ultimaUnidad : 0);
+      const primeraLecturaActual = DATA.unidades.findIndex(u => u.modulo === 3);
+      seleccionarUnidad(ultimaUnidad >= 0 ? ultimaUnidad : Math.max(0, primeraLecturaActual));
       const barraReproductor = document.querySelector('.player-bar');
       const ajustarAlturaBarra = () => document.documentElement.style.setProperty(
         '--player-bar-height', barraReproductor.getBoundingClientRect().height + 'px');
@@ -1206,8 +1202,9 @@
       try {
         const datos = JSON.parse(localStorage.getItem(CLAVE_PROGRESO_LECTURA) || 'null');
         if (!datos || typeof datos !== 'object') return limpio;
-        if (DATA.unidades.some(u => u.numero === datos.ultimaUnidad)) limpio.ultimaUnidad = datos.ultimaUnidad;
-        for (const numero of [...new Set([...DATA.unidades.map(u => u.numero), 7, 8, 9, 10, 11])]) {
+        const numeros = new Set([...DATA.unidades.map(u => u.numero), 7, 8, 9, 10, 11]);
+        if (numeros.has(datos.ultimaUnidad)) limpio.ultimaUnidad = datos.ultimaUnidad;
+        for (const numero of numeros) {
           const seg = datos.posiciones?.[numero];
           if (typeof seg === 'number' && Number.isFinite(seg) && seg >= 0) limpio.posiciones[numero] = seg;
         }
@@ -1224,7 +1221,7 @@
       const u = DATA.unidades[unidadActualIdx];
       // Ignorar eventos del audio anterior o un tiempo cero durante la carga.
       if (!u || audio.dataset.unidadLectura !== String(u.numero) ||
-          restauracionLecturaPendiente || audio.readyState < 1 || !Number.isFinite(audio.currentTime)) return;
+          restauracionLecturaPendiente || audio.seeking || audio.readyState < 1 || !Number.isFinite(audio.currentTime)) return;
       if (!forzar && Date.now() - ultimoGuardadoLectura < 2000) return;
       progresoLectura.ultimaUnidad = u.numero;
       progresoLectura.posiciones[u.numero] = Math.max(0, audio.currentTime);
@@ -1235,52 +1232,62 @@
     function restaurarPosicionLectura() {
       const audio = document.getElementById('mainAudio');
       const pendiente = restauracionLecturaPendiente;
-      if (!pendiente || audio.readyState < 1 ||
+      if (!pendiente || pendiente.aplicada || audio.readyState < 1 ||
           audio.dataset.unidadLectura !== String(pendiente.unidadNum)) return;
       const limite = Number.isFinite(audio.duration) ? Math.max(0, audio.duration - 0.1) : pendiente.segundo;
       const segundo = Math.min(pendiente.segundo, limite);
       try {
+        pendiente.aplicada = true;
         audio.currentTime = segundo;
-        restauracionLecturaPendiente = null;
+        if (!audio.seeking && Math.abs(audio.currentTime - segundo) < 0.5) {
+          restauracionLecturaPendiente = null;
+        }
         document.getElementById('lblTiempoActual').textContent = formatearSegundos(segundo);
         document.getElementById('timelineSlider').value = audio.duration ? (segundo / audio.duration) * 100 : 0;
-      } catch (err) { return; }
+      } catch (err) { pendiente.aplicada = false; return; }
       guardarProgresoLectura(true);
     }
 
     function renderBarraUnidades() {
       const bar = document.getElementById('unitSelectorBar');
-      const grupos = new Map([
-        ['Módulo 1 · Historia de la CTI', []],
-        ['Módulo 2 · Nuevas perspectivas', []],
-        ['Módulo 3 · Herramientas CTI', []]
-      ]);
-      DATA.unidades.forEach((u, idx) => {
-        const grupo = u.modulo === 3 ? 'Módulo 3 · Herramientas CTI'
-          : u.modulo_privado ? 'Módulo 1 · Historia de la CTI' : 'Módulo 2 · Nuevas perspectivas';
+      const modulos = [
+        [3, 'Módulo 3 · Herramientas CTI'],
+        [2, 'Módulo 2 · Nuevas perspectivas'],
+        [1, 'Módulo 1 · Historia de la CTI']
+      ];
+      const moduloDe = u => u.modulo || (u.modulo_privado ? 1 : 2);
+      const lecturas = DATA.unidades.map((u, idx) => ({ u, idx, modulo: moduloDe(u) }));
+      const moduloActual = moduloDe(DATA.unidades[unidadActualIdx]);
+      const opciones = lecturas.filter(lectura => lectura.modulo === moduloActual).map(({ u, idx }) => {
         const titulo = u.etiqueta ? u.etiqueta + ' · ' + u.titulo_corto
           : u.modulo_privado ? u.titulo_corto : u.numero + '. ' + u.titulo_corto;
-        grupos.get(grupo).push(`<option value="${idx}" ${idx === unidadActualIdx ? 'selected' : ''}>${escaparHTML(titulo)}</option>`);
+        return `<option value="${idx}" ${idx === unidadActualIdx ? 'selected' : ''}>${escaparHTML(titulo)}</option>`;
       });
-      for (const [grupo, id, texto] of [
-        ['Módulo 1 · Historia de la CTI', 'tarea-historia-cti', 'Abrir archivo de Historia'],
-        ['Módulo 3 · Herramientas CTI', 'modulo-hecti', 'Abrir paquete de Herramientas']
-      ]) {
-        if (!grupos.get(grupo).length) grupos.get(grupo).push(`<option value="${id}">${texto}</option>`);
-      }
-      bar.innerHTML = `<label for="selUnidad">Unidad</label><select id="selUnidad" aria-label="Elegir unidad">
-        ${Array.from(grupos, ([titulo, items]) => `<optgroup label="${escaparHTML(titulo)}">${items.join('')}</optgroup>`).join('')}
-      </select>`;
-      bar.querySelector('select').addEventListener('change', event => {
-        const valor = event.target.value;
-        if (/^\d+$/.test(valor)) return seleccionarUnidad(Number(valor));
-        const panel = document.getElementById(valor);
-        if (!panel) return;
+      bar.innerHTML = `<label for="selModulo">Módulo</label>
+        <select id="selModulo">
+          ${modulos.map(([numero, titulo]) => `<option value="${numero}" ${numero === moduloActual ? 'selected' : ''}>${titulo}</option>`).join('')}
+        </select>
+        <label for="selUnidad">${moduloActual === 3 ? 'Lectura' : 'Unidad'}</label>
+        <select id="selUnidad">${opciones.join('')}</select>`;
+      bar.querySelector('#selModulo').addEventListener('change', event => {
+        const modulo = Number(event.target.value);
+        const primera = lecturas.find(lectura => lectura.modulo === modulo);
+        if (primera) {
+          seleccionarUnidad(primera.idx);
+          bar.querySelector('#selUnidad').focus();
+          return;
+        }
+        event.target.value = String(moduloActual);
+        const panel = document.getElementById('tarea-historia-cti');
+        if (modulo !== 1 || !panel) return;
         cambiarTab('reproductor', document.getElementById('tabBtn_reproductor'));
         panel.open = true;
         panel.querySelector('summary').focus();
         panel.scrollIntoView({ block: 'center' });
-        event.target.value = String(unidadActualIdx);
+      });
+      bar.querySelector('#selUnidad').addEventListener('change', event => {
+        seleccionarUnidad(Number(event.target.value));
+        bar.querySelector('#selUnidad').focus();
       });
     }
 
@@ -1301,7 +1308,7 @@
 
       const audio = document.getElementById('mainAudio');
       const srcDeseado = encodeURI(u.archivo_mp3);
-      if (!audio.getAttribute('src') || audio.getAttribute('src') !== srcDeseado) {
+      if (audio.dataset.fuenteLectura !== srcDeseado) {
         // Guardar antes de cargar otra unidad; al volver, esperar a Reproducir.
         audio.pause();
         caminataReproduciendoMp3 = false;
@@ -1310,9 +1317,7 @@
           ? { unidadNum: u.numero, segundo: progresoLectura.posiciones[u.numero] || 0 } : null;
         audio.dataset.unidadLectura = String(u.numero);
         audio.dataset.fallbackTried = '0';
-        audio.src = srcDeseado;
-        audio.load();
-        audio.playbackRate = parseFloat(document.getElementById('speedSelect').value || '1');
+        cargarAudioLectura(audio, srcDeseado, u.modulo === 3);
       }
       document.getElementById('lblTiempoTotal').textContent = formatearSegundos(u.duracion_estimada_s);
 
@@ -1334,6 +1339,43 @@
       } else {
         restaurarPosicionLectura();
       }
+    }
+
+    async function cargarAudioLectura(audio, fuente, cargarCompleto) {
+      descargaAudioLectura?.abort();
+      descargaAudioLectura = null;
+      audio.dataset.fuenteLectura = fuente;
+      const boton = document.getElementById('btnPlayPause');
+      if (urlAudioLocal) {
+        URL.revokeObjectURL(urlAudioLocal);
+        urlAudioLocal = null;
+      }
+      if (cargarCompleto) {
+        const descarga = new AbortController();
+        descargaAudioLectura = descarga;
+        audio.removeAttribute('src');
+        audio.load();
+        boton.disabled = true;
+        boton.textContent = 'Cargando audio…';
+        try {
+          const respuesta = await fetch(fuente, { signal: descarga.signal });
+          if (!respuesta.ok || !respuesta.headers.get('content-type')?.startsWith('audio/')) {
+            throw new Error('Archivo de audio no disponible');
+          }
+          const mp3 = await respuesta.blob();
+          if (descarga.signal.aborted) return;
+          urlAudioLocal = URL.createObjectURL(mp3);
+        } catch (error) {
+          if (descarga.signal.aborted) return;
+          console.warn('No se pudo preparar el audio para adelantar:', error);
+        }
+        descargaAudioLectura = null;
+      }
+      audio.src = urlAudioLocal || fuente;
+      audio.load();
+      audio.playbackRate = parseFloat(document.getElementById('speedSelect').value || '1');
+      boton.disabled = false;
+      boton.textContent = '▶ Reproducir';
     }
 
     function renderSeccionesYParrafosUnidad() {
@@ -1497,7 +1539,7 @@
         aplicar();
       } else {
         audio.addEventListener('loadedmetadata', aplicar, { once: true });
-        audio.load();
+        if (audio.hasAttribute('src')) audio.load();
       }
     }
 
@@ -1506,7 +1548,7 @@
 
       audio.addEventListener('error', () => {
         const u = DATA.unidades[unidadActualIdx];
-        if (!u || audio.dataset.fallbackTried === '1') return;
+        if (!u || u.modulo === 3 || audio.dataset.fallbackTried === '1') return;
         audio.dataset.fallbackTried = '1';
         const altNombre = u.archivo_mp3.startsWith('Audiolibro ')
           ? u.archivo_mp3.replace(/^Audiolibro\s+/, '')
@@ -1542,11 +1584,18 @@
         if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
       });
 
-      audio.addEventListener('seeked', () => guardarProgresoLectura(true));
+      audio.addEventListener('seeked', () => {
+        const pendiente = restauracionLecturaPendiente;
+        if (pendiente?.aplicada && audio.dataset.unidadLectura === String(pendiente.unidadNum)) {
+          if (Math.abs(audio.currentTime - pendiente.segundo) < 0.5) restauracionLecturaPendiente = null;
+        }
+        guardarProgresoLectura(true);
+      });
       audio.addEventListener('ended', () => guardarProgresoLectura(true));
       window.addEventListener('pagehide', () => guardarProgresoLectura(true));
       document.addEventListener('visibilitychange', () => {
         if (document.visibilityState === 'hidden') guardarProgresoLectura(true);
+        else restaurarPosicionLectura();
       });
 
       // Controles desde pantalla bloqueada del teléfono móvil y audífonos Bluetooth (Media Session API)
@@ -1576,7 +1625,8 @@
         const dur = audio.duration || u.duracion_estimada_s || 1;
         const actual = audio.currentTime;
         document.getElementById('lblTiempoActual').textContent = formatearSegundos(actual);
-        document.getElementById('timelineSlider').value = ((actual / dur) * 100).toFixed(2);
+        const barraTiempo = document.getElementById('timelineSlider');
+        if (!barraTiempo.matches(':active')) barraTiempo.value = ((actual / dur) * 100).toFixed(2);
 
         if (caminataReproduciendoMp3 && finSegundoCaminataMp3 !== null && actual >= finSegundoCaminataMp3) {
           caminataReproduciendoMp3 = false;
@@ -1595,7 +1645,7 @@
           const tFin = (i + 1 < u.parrafos.length)
             ? obtenerTiempoEfectivoParrafo(u, i + 1)
             : dur;
-          if (actual >= tIni && actual < tFin + 0.15) {
+          if (actual >= tIni && actual < tFin + (u.modulo === 3 ? 0 : 0.15)) {
             encontradoIdx = i;
             break;
           }
@@ -1769,20 +1819,35 @@
     function actualizarLineaLectura(segundoActual, forzar = false, comportamiento = 'smooth') {
       const u = DATA.unidades[unidadActualIdx];
       if (!u || !u.parrafos[parrafoActivoIdx]) return;
-      const palabras = palabrasLectura(u.parrafos[parrafoActivoIdx].texto);
-      if (!palabras.length) return;
+      const parrafo = u.parrafos[parrafoActivoIdx];
       const inicio = obtenerTiempoEfectivoParrafo(u, parrafoActivoIdx);
       const fin = parrafoActivoIdx + 1 < u.parrafos.length
         ? obtenerTiempoEfectivoParrafo(u, parrafoActivoIdx + 1)
         : (document.getElementById('mainAudio').duration || u.duracion_estimada_s);
       const proporcion = Math.max(0, Math.min(0.999, (segundoActual - inicio) / Math.max(1, fin - inicio)));
-      const pesos = palabras.map(palabra => Math.max(2, palabra.trim().length) + (/[.!?;:]\s*$/u.test(palabra) ? 3 : 0));
-      const total = pesos.reduce((suma, peso) => suma + peso, 0);
-      let acumulado = 0;
-      let palabraActiva = palabras.length - 1;
-      for (let i = 0; i < palabras.length; i++) {
-        acumulado += pesos[i] / total;
-        if (proporcion < acumulado) { palabraActiva = i; break; }
+      let palabraActiva = 0;
+      const marcas = parrafo.marcas_palabras_ms;
+      if (marcas?.length) {
+        const relativoMs = proporcion * (parrafo.fin_s - parrafo.inicio_s) * 1000;
+        let izquierda = 0;
+        let derecha = marcas.length;
+        while (izquierda < derecha) {
+          const mitad = Math.floor((izquierda + derecha) / 2);
+          if (marcas[mitad] <= relativoMs) izquierda = mitad + 1;
+          else derecha = mitad;
+        }
+        palabraActiva = Math.max(0, izquierda - 1);
+      } else {
+        const palabras = palabrasLectura(parrafo.texto);
+        if (!palabras.length) return;
+        const pesos = palabras.map(palabra => Math.max(2, palabra.trim().length) + (/[.!?;:]\s*$/u.test(palabra) ? 3 : 0));
+        const total = pesos.reduce((suma, peso) => suma + peso, 0);
+        let acumulado = 0;
+        palabraActiva = palabras.length - 1;
+        for (let i = 0; i < palabras.length; i++) {
+          acumulado += pesos[i] / total;
+          if (proporcion < acumulado) { palabraActiva = i; break; }
+        }
       }
       const clavePalabra = `${unidadActualIdx}_${parrafoActivoIdx}_${palabraActiva}`;
       if (!forzar && clavePalabra === ultimaPalabraSeguida) {
@@ -1989,7 +2054,9 @@
       const audio = document.getElementById('mainAudio');
       const u = DATA.unidades[unidadActualIdx];
       const dur = audio.duration || (u ? u.duracion_estimada_s : 100);
-      audio.currentTime = (parseFloat(porcentaje) / 100) * dur;
+      if (!u || !Number.isFinite(dur)) return;
+      const segundo = Math.max(0, Math.min(dur - 0.1, (Number(porcentaje) / 100) * dur));
+      if (Number.isFinite(segundo)) reproducirDesdeSegundo(segundo, false);
     }
 
     // =========================================================================
@@ -4090,5 +4157,5 @@ Cita siempre la página correspondiente.`;
   </script>
   <script src="historia_cti.js"></script>
   <script src="herramientas_cti.js"></script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a59dac2899ef51ae',t:'MTc5NDU3MTgxOA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a59dac2899ef51ae',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
